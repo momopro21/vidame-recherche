@@ -25,7 +25,7 @@ const pages = [
   { id: "soumission", label: "Demande de soumission" },
   { id: "blog", label: "Blog" },
 ];
-
+<img src="/vidame_logo.png" alt="Vidame" style={{ width: "260px" }} />
 const services = [
   {
     title: "Transcription et mise en phrases (unités de sens)",

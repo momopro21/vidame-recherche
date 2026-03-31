@@ -176,9 +176,8 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
           <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 font-semibold text-white">V</div>
             <div>
-              <div className="text-lg font-semibold tracking-tight">Vidame</div>
+              <img src="/vidame_logo.png" alt="Vidame" style={{ height: "40px" }} />
               <div className="text-xs text-slate-500">Services linguistiques et traitement de données</div>
             </div>
           </button>

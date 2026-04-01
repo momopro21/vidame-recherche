@@ -177,7 +177,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
           <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
             <div className="flex items-center gap-3">
-            <img src="/vidame_logo.png" alt="Vidame" style={{ height: "48px" }} />
+            <img src="/logo-vidame-texte2.svg" alt="Vidame" style={{ height: "48px" }} />
             <div className="leading-tight">
             <div className="text-sm font-semibold">Vidame</div>
             <div className="text-xs text-slate-500">Services linguistiques et traitement de données</div>

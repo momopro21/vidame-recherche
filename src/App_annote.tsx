@@ -340,13 +340,13 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             {/* h1 = titre principal de la page */}
             <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
-              Transformer un corpus de recherche qualitative en objet navigable, structuré et prêt pour l’analyse.
+              Traduction, transcription et préparation de corpus pour la recherche qualitative
             </h1>
-            <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-              Vidame accompagne les équipes de recherche dans la transformation de leur corpus — transcription, nettoyage, anonymisation, segmentation et organisation analytique — afin de le rendre navigable et exploitable pour l’analyse.
+            <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
+             
             </p>
           </div>
-
+            Vidame propose des services de soutien à la recherche qualitative, couvrant la transcription, la traduction et la préparation des données — incluant la post-édition, l’anonymisation, la segmentation et l’organisation analytique — afin de produire un corpus structuré, navigable et prêt pour l’analyse.
           <div className="flex flex-wrap gap-3">
             <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
               Demander une soumission

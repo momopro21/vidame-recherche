@@ -427,7 +427,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
  
-          /<PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
+          <PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
           <div className="mt-10 grid gap-6 md:grid-cols-5">
             {steps.map((step, i) => {
               const Icon = step.icon;

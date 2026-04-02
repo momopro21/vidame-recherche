@@ -343,10 +343,10 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               Traduction, transcription et préparation de corpus pour la recherche qualitative
             </h1>
             <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
-             
+              Vidame propose des services de soutien à la recherche qualitative, couvrant la transcription, la traduction et la préparation des données — incluant la post-édition, l’anonymisation, la segmentation et l’organisation analytique — afin de produire un corpus structuré, navigable et prêt pour l’analyse.
             </p>
           </div>
-            Vidame propose des services de soutien à la recherche qualitative, couvrant la transcription, la traduction et la préparation des données — incluant la post-édition, l’anonymisation, la segmentation et l’organisation analytique — afin de produire un corpus structuré, navigable et prêt pour l’analyse.
+            
           <div className="flex flex-wrap gap-3">
             <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
               Demander une soumission

@@ -335,7 +335,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       {/* Grand bloc du haut sur la page d’accueil */}
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
         <div className="space-y-8">
-          <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Pipeline Vidame · conformité d’abord</Badge>
+          <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Conformité éthique · Loi 25 · Données sensibles protégées</Badge>
           <div className="space-y-5">
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             {/* h1 = titre principal de la page */}

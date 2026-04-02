@@ -360,16 +360,16 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
           <div className="grid gap-4 md:grid-cols-2">
             {pillars.map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-2xl border border-slate-200 p-4">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0" />
-                <div className="text-sm leading-7 text-slate-700">{item}</div>
+              <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3">
+                <CheckCircle2 className="mt-0.4 h-4 w-4 shrink-0" />
+                <div className="text-sm leading-6 text-slate-700">{item}</div>
               </div>
             ))}
           </div>
         </div>
 
         <div className="flex items-center">
-          <Card className="w-full rounded-[2rem] border-slate-200 shadow-sm">
+          <Card className="w-full rounded-2x1 border-slate-200 shadow-sm">
             <CardHeader>
               <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
               <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>

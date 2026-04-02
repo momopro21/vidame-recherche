@@ -422,12 +422,12 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <section className="border-y border-slate-200">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
           <SectionTitle
-             <PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
             eyebrow="Pipeline Vidame"
             title="Du terrain à l’analyse, une chaîne opératoire claire"
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
-
+ 
+          /<PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
           <div className="mt-10 grid gap-6 md:grid-cols-5">
             {steps.map((step, i) => {
               const Icon = step.icon;

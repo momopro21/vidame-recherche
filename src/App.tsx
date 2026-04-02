@@ -394,6 +394,24 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
+      {/* ===== VIDAME_REPERE_CONFORMITE ===== */}
+<section className="mx-auto max-w-5xl px-4 py-12 md:px-8 md:py-16">
+  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+    
+    <h2 className="text-xl font-semibold text-slate-900 md:text-2xl">
+      Un traitement conforme et responsable des données
+    </h2>
+    
+    <p className="mt-4 text-slate-600 leading-7">
+      Les données qualitatives impliquent souvent des informations sensibles. Vidame intègre les exigences des comités d’éthique et de la Loi 25 dès le traitement du corpus, afin d’assurer la confidentialité, la sécurité et la conformité des données tout au long du processus.
+    </p>
+
+    <div className="mt-6 text-sm font-medium text-slate-800">
+      Conformité aux comités d’éthique · Loi 25 · Données sensibles protégées
+    </div>
+
+  </div>
+</section>
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section className="border-y border-slate-200">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">

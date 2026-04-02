@@ -404,11 +404,11 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
     
     <h2 className="text-xl font-semibold text-slate-900 md:text-2xl">
-      Un traitement conforme et responsable des données
+      Un traitement des données conforme aux exigences des comités d’éthique et aux lois canadiennes
     </h2>
     
     <p className="mt-4 text-slate-600 leading-7">
-      Les données qualitatives impliquent souvent des informations sensibles. Vidame intègre les exigences des comités d’éthique et de la Loi 25 dès le traitement du corpus, afin d’assurer la confidentialité, la sécurité et la conformité des données tout au long du processus. Le traitement informatisé est encadré par une validation humaine rigoureuse à chaque étape critique.
+      Les données qualitatives comportent des informations sensibles. Vidame intègre les exigences des comités d’éthique et de la Loi 25 dès le traitement du corpus, afin d’assurer la confidentialité, la sécurité et la conformité des données tout au long du processus. Le traitement informatisé est encadré par une validation humaine rigoureuse à chaque étape critique.
     </p>
 
     <div className="mt-6 text-sm font-medium text-slate-800">

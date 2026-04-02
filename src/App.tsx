@@ -196,7 +196,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
             <div className="flex items-center gap-3">
             {/* ===== VIDAME_REPERE_LOGO ===== */}
             {/* Changer ici le fichier du logo affiché en haut du site */}
-            <img src="/logo-vidame-texte2.svg" alt="Vidame" style={{ height: "56px" }} />
+            <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
             <div className="leading-tight">
             <div className="text-sm font-semibold">Vidame</div>
             <div className="text-xs text-slate-500">Services linguistiques et traitement de données</div>

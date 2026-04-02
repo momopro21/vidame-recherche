@@ -424,6 +424,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           <SectionTitle
             eyebrow="Pipeline Vidame"
             title="Du terrain à l’analyse, une chaîne opératoire claire"
+            <PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
 

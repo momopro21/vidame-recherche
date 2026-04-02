@@ -190,7 +190,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
     <div className="min-h-screen bg-white text-slate-900">
       {/* ===== VIDAME_REPERE_HEADER ===== */}
       {/* En-tête fixe du site : logo + navigation + bouton de soumission */}
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-slate-250">
+      <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-350">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
           <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
             <div className="flex items-center gap-3">

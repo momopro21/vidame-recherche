@@ -422,9 +422,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <section className="border-y border-slate-200">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
           <SectionTitle
+             <PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
             eyebrow="Pipeline Vidame"
             title="Du terrain à l’analyse, une chaîne opératoire claire"
-            <PipelineDiagram /> {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
 

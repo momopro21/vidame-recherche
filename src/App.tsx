@@ -369,8 +369,8 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         <div className="flex items-center">
           <Card className="w-full rounded-[2rem] border-slate-200 shadow-sm">
             <CardHeader>
-              <CardTitle className="text-2xl">Ce que fait Vidame</CardTitle>
-              <CardDescription>Une chaîne de traitement pensée pour les contextes exigeants.</CardDescription>
+              <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
+              <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4 px-6 pb-6">
               {[

@@ -553,7 +553,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           <SectionTitle
             eyebrow="Services à la carte"
             title="Traduction & transcription"
-            text="Services offerts à la carte pour répondre rapidement à vos besoins en traduction, transcription et préparation des données."
+            text="Services linguistiques à la carte pour répondre rapidement à vos besoins en traduction, transcription et préparation des données."
             />
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service) => {

@@ -439,7 +439,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                 <div key={step.title} className="relative">
                   <Card
                       onClick={() => setActiveStep(i)}
-                      className={`relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${isActive ? "ring-2 ring-slate-900 bg-slate-50" : "hover:bg-slate-50 hover:shadow"}`}
+                     className={`relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"}`}
 >
                       <CardContent className="p-5">
                         <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100">

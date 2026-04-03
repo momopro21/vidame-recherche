@@ -486,25 +486,29 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               <div className="text-sm uppercase tracking-[0.18em] text-slate-500">Du matériau brut à l’analyse</div>
             </div>
 
-            <details className="group">
-              <summary className="list-none cursor-pointer">
-                <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-center">
-                  <div>
-                    <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                      Passons à l’analyse
+           <details className="group">
+            <summary className="list-none cursor-pointer">
+              <div className="relative grid gap-6 rounded-[1.5rem] transition-colors duration-200 group-hover:bg-slate-50 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                <div>
+                  <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+                    Passons à l’analyse
                     </div>
                     <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
                       L’étape qui révèle votre plein potentiel de chercheur.
-                    </p>
-                  </div>
-                  <div className="rounded-[1.5rem] bg-slate-50 p-5">
-                    <div className="text-sm font-semibold text-slate-900">Pourquoi ouvrir cette section</div>
-                    <p className="mt-2 text-sm leading-7 text-slate-600">
-                      Pour parler directement à celles et ceux qui portent le corpus au quotidien : doctorants, assistants et assistantes de recherche, équipes terrain.
-                    </p>
-                  </div>
-                </div>
-              </summary>
+                     </p>
+                    </div>
+                    <div className="rounded-[1.5rem] bg-slate-50 p-5">
+                      <div className="text-sm font-semibold text-slate-900">Pourquoi ouvrir cette section</div>
+                      <p className="mt-2 text-sm leading-7 text-slate-600">
+                        Pour parler directement à celles et ceux qui portent le corpus au quotidien : doctorants, assistants et assistantes de recherche, équipes terrain.
+                      </p>
+                     </div>
+
+                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-light leading-none text-slate-400 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                      +
+                    </div>
+                   </div>
+                 </summary>
 
               <div className="mt-6 space-y-6 leading-8 text-slate-600">
                 <p>

@@ -502,15 +502,15 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               </p>
             </div>
 
-            <div className="rounded-[1.5rem] bg-slate-50 p-5">
+            <div className="rounded-[1.5rem] bg-slate-50 p-5 transition-colors duration-200 group-hover:bg-slate-100">
               <div className="text-sm font-semibold text-slate-900">
                 Pourquoi ouvrir cette section
               </div>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 Pour parler directement à celles et ceux qui portent le corpus au quotidien :
                 doctorants, assistants et assistantes de recherche, équipes terrain.
-              </p>
-            </div>
+               </p>
+              </div>
 
             <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
               +

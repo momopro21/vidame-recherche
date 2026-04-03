@@ -444,7 +444,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                 <p className="mt-4 text-base leading-7 text-slate-600">
                   Le traitement informatisé est encadré par une validation humaine rigoureuse à chaque étape critique, garantissant la traçabilité et la qualité des transformations appliquées aux données.
                 </p>
-
               </div>
               </div>
  

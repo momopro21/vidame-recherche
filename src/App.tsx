@@ -375,7 +375,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
               <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4 px-6 pb-6">
+            <CardContent className="space-y-3 px-6 pb-6">
               {[
                 { icon:GraduationCap, title: "Expérience en recherche qualitative", text: "Niveau doctoral et plus de 10 ans de collaboration avec des unités de recherche universitaires" },
                 { icon: Lock, title: "Conformité intégrée", text: "Intégration des exigences des comités d’éthique et de la Loi 25 à chaque étape" },

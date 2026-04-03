@@ -430,6 +430,23 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             title="Du terrain à l’analyse, une chaîne opératoire claire"
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
+          
+         <div className="mt-10 rounded-2xl bg-slate-50">
+            <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
+                Un cadre de traitement conforme aux exigences des comités d’éthique et aux lois canadiennes
+                </h2>
+
+                <p className="mt-4 text-base leading-7 text-slate-600">
+                  Les données qualitatives comportent des informations sensibles. Vidame intègre les exigences des comités d’éthique et de la Loi 25 dès le traitement du corpus, afin d’assurer la confidentialité, la sécurité et la conformité des données tout au long du processus.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-600">
+                  Le traitement informatisé est encadré par une validation humaine rigoureuse à chaque étape critique, garantissant la traçabilité et la qualité des transformations appliquées aux données.
+                </p>
+
+              </div>
+              </div>
  
          {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
           <PipelineDiagram /> 

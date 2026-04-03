@@ -488,7 +488,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
            <details className="group">
             <summary className="list-none cursor-pointer">
-              <div className="relative grid gap-6 rounded-[1.5rem] transition-colors duration-200 group-hover:bg-slate-50 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+             <div className="relative grid gap-6 rounded-[1.5rem] transition-colors duration-200 hover:bg-slate-50 md:grid-cols-[1.1fr_0.9fr] md:items-center">
                 <div>
                   <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
                     Passons à l’analyse
@@ -504,7 +504,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </p>
                      </div>
 
-                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-light leading-none text-slate-400 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-light leading-none text-slate-400">
                       +
                     </div>
                    </div>

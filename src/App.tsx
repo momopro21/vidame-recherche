@@ -380,7 +380,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                 { icon:GraduationCap, title: "Expérience en recherche qualitative", text: "Niveau doctoral et plus de 10 ans de collaboration avec des unités de recherche universitaires" },
                 { icon: Lock, title: "Conformité intégrée", text: "Intégration des exigences des comités d’éthique et de la Loi 25 à chaque étape" },
                 { icon: PenSquare, title: "Maîtrise du sens", text: "Traduire au-delà des mots, en respectant le domaine de spécialité, le contexte et le niveau de langage" },
-                { icon: ShieldCheck, title: "Traitement des données sensibles", text: "Méthodes adaptées aux matériaux confidentiels" },
                 { icon: Workflow, title: "Rigueur méthodologique", text: "Un pipeline fonctionnel pensé pour l’analyse qualitative" },
                 { icon: FileSearch, title: "De l’oral à l’analyse", text: "Structuration et formatage des corpus d’entrevues en données prêtes à analyser" },
               ].map((item) => {

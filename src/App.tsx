@@ -36,33 +36,27 @@ const pages = [
 // Ici, tu modifies les titres et textes des cartes de services.
 const services = [
   {
-    title: "Transcription et mise en phrases (unités de sens)",
+    title: "Transcription",
     icon: FileText,
-    text: "Transcription assistée par IA avec révision humaine rigoureuse. Priorité donnée à la fidélité du discours : restitution du sens de la parole au texte, respect des nuances, du rythme et du langage réel des participants.",
+    text: "Transcription assistée avec validation humaine, fidèle au discours, aux nuances et au langage réel des participants.",
   },
   {
-    title: "Anonymisation et préparation des données",
+    title: "Anonymisation des données",
     icon: ShieldCheck,
-    text: "Nettoyage du texte, anonymisation, segmentation et mise en forme du corpus pour la recherche, l’analyse qualitative ou les traitements linguistiques.",
+    text: "Traitement des données sensibles et neutralisation des identifiants, conforme aux exigences éthiques et légales.",
   },
   {
-    title: "Segmentation analytique et structuration",
+    title: "Segmentation et structuration",
     icon: Workflow,
-    text: "Segmentation analytique du corpus visant à : (1) découper le corpus intelligemment en unités de sens, (2) organiser ces unités pour rendre les relations visibles, et (3) transformer le corpus en un objet navigable et exploitable pour l’analyse. Inclut le repérage de thèmes émergents et la préparation de fichiers compatibles avec NVivo, MAXQDA ou autres outils d’analyse.",
+    text: "Organisation du corpus en unités de sens et structuration pour une analyse qualitative claire et exploitable.",
   },
   {
     title: "Traduction et révision EN→FR",
     icon: Languages,
-    text: "Traduction vers le français canadien, révision linguistique, harmonisation terminologique et adaptation à des publics spécialisés ou grand public. Inclut la traduction de documents destinés aux comités d’éthique (formulaires de consentement, protocoles de recherche, documentation associée), avec attention particulière à la clarté, à la conformité et à l’intelligibilité pour les participants.",
-  },
-  {
-    title: "Soutien aux projets de recherche",
-    icon: Microscope,
-    text: "Appui aux équipes de recherche pour la conformité, la clarté documentaire, les protocoles de traitement linguistique et les flux de travail sécurisés.",
+    text: "Traduction vers le français canadien, avec révision linguistique, harmonisation terminologique et adaptation au public.",
   },
 ];
-
-// ===== VIDAME_REPERE_DONNEES_PILIERS =====
+ // ===== VIDAME_REPERE_DONNEES_PILIERS =====
 // Petites phrases de repère affichées sur la page d’accueil.
 const pillars = [
   "Données hébergées et traitées avec priorité au Canada",

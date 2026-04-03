@@ -413,7 +413,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
           />
           
-         <div className="mt-10 rounded-2xl bg-slate-50">
+         <div className="mt-10 rounded-2xl bg-slate-100 border border-slate-200">
             <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
                 Un cadre de traitement conforme aux exigences des comités d’éthique et aux lois canadiennes

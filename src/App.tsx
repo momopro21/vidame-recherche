@@ -566,7 +566,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             })}
           </div>
           
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-14 flex flex-wrap justify-center gap-4">
             <a
               href="/demande-de-soumission"
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-slate-800"

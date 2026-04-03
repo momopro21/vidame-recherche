@@ -551,10 +551,10 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
           <SectionTitle
-            eyebrow="Services"
-            title="Une offre pensée pour les équipes qui ne peuvent pas improviser"
-            text="Chaque mandat peut combiner traitement linguistique, préparation documentaire, anonymisation, structuration de corpus et accompagnement méthodique."
-          />
+            eyebrow="Services à la carte"
+            title="Traduction & transcription"
+            text="Services offerts à la carte pour répondre rapidement à vos besoins en traduction, transcription et préparation des données."
+            />
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service) => {
               const Icon = service.icon;

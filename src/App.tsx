@@ -439,22 +439,27 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               return (
                 <div key={step.title} className="relative">
                   <Card
-                    onClick={() => setActiveStep(i)}
-                    className={`h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition ${isActive ? "ring-2 ring-slate-900" : "hover:shadow"}`}
-                  >
-                    <CardContent className="p-5">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100">
-                        <Icon className="h-5 w-5" />
-                      </div>
-                      <div className="text-sm font-semibold">{i + 1}. {step.title}</div>
-                      <p className="mt-1 text-xs leading-6 text-slate-600">{step.text}</p>
-                      {step.highlight && (
-                        <div className="mt-2 text-[10px] font-medium uppercase tracking-wide text-slate-500">
-                          {step.highlight}
+                   <Card
+                      onClick={() => setActiveStep(i)}
+                      className={`relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${isActive ? "ring-2 ring-slate-900 bg-slate-50" : "hover:bg-slate-50 hover:shadow"}`}
+>
+                      <CardContent className="p-5">
+                        <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100">
+                          <Icon className="h-5 w-5" />
+                         </div>
+                          <div className="text-sm font-semibold">{i + 1}. {step.title}</div>
+                          <p className="mt-1 text-xs leading-6 text-slate-600">{step.text}</p>
+                          {step.highlight && (
+                            <div className="mt-2 text-[10px] font-medium uppercase tracking-wide text-slate-500">
+                              {step.highlight}
+                             </div>
+                              )}
+
+                        <div className="pointer-events-none absolute bottom-4 right-4 text-lg font-light leading-none text-slate-500">
+                          +
                         </div>
-                      )}
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
 
                   {i < steps.length - 1 && (
                     <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">

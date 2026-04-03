@@ -420,7 +420,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 </section>
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section className="border-y border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
           <SectionTitle
             eyebrow="Pipeline Vidame"
             title="Du terrain à l’analyse, une chaîne opératoire claire"

@@ -478,40 +478,48 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-4 md:px-8">
-        <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-[1px] shadow-sm">
-          <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
-            <div className="mb-5 flex flex-wrap items-center gap-3">
-              <Badge className="rounded-full bg-slate-900 px-4 py-1 text-white hover:bg-slate-900">Parcours doctorant</Badge>
-              <div className="text-sm uppercase tracking-[0.18em] text-slate-500">Du matériau brut à l’analyse</div>
+     <section className="mx-auto max-w-7xl px-4 pb-4 md:px-8">
+  <div className="group rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-[1px] shadow-sm">
+    <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
+      <div className="mb-5 flex flex-wrap items-center gap-3">
+        <Badge className="rounded-full bg-slate-900 px-4 py-1 text-white hover:bg-slate-900">
+          Parcours doctorant
+        </Badge>
+        <div className="text-sm uppercase tracking-[0.18em] text-slate-500">
+          Du matériau brut à l’analyse
+        </div>
+      </div>
+
+      <details>
+        <summary className="list-none cursor-pointer rounded-[1.5rem]">
+          <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
+            <div>
+              <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+                Passons à l’analyse
+              </div>
+              <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
+                L’étape qui révèle votre plein potentiel de chercheur.
+              </p>
             </div>
 
-           <details className="group">
-           <summary className="list-none cursor-pointer rounded-[1.5rem]">
-              <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
-                <div>
-                  <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                    Passons à l’analyse
-                    </div>
-                    <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
-                      L’étape qui révèle votre plein potentiel de chercheur.
-                     </p>
-                    </div>
-                    <div className="rounded-[1.5rem] bg-slate-50 p-5">
-                      <div className="text-sm font-semibold text-slate-900">Pourquoi ouvrir cette section</div>
-                      <p className="mt-2 text-sm leading-7 text-slate-600">
-                        Pour parler directement à celles et ceux qui portent le corpus au quotidien : doctorants, assistants et assistantes de recherche, équipes terrain.
-                      </p>
-                     </div>
+            <div className="rounded-[1.5rem] bg-slate-50 p-5">
+              <div className="text-sm font-semibold text-slate-900">
+                Pourquoi ouvrir cette section
+              </div>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Pour parler directement à celles et ceux qui portent le corpus au quotidien :
+                doctorants, assistants et assistantes de recherche, équipes terrain.
+              </p>
+            </div>
 
-                   <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
-                      +
-                    </div>
-                   </div>
-                 </summary>
+            <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
+              +
+            </div>
+          </div>
+        </summary>
 
-              <div className="mt-6 space-y-6 leading-8 text-slate-600">
-                <p>
+        <div className="mt-6 space-y-6 leading-8 text-slate-600">
+          <p>
                   Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
                 </p>
                 <p>

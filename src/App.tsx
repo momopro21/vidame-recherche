@@ -36,6 +36,11 @@ const pages = [
 // Ici, tu modifies les titres et textes des cartes de services.
 const services = [
   {
+    title: "Traduction et révision EN→FR",
+    icon: Languages,
+    text: "Traduction vers le français canadien, avec révision linguistique, harmonisation terminologique et adaptation au public.",
+  },
+  {
     title: "Transcription",
     icon: FileText,
     text: "Transcription assistée avec validation humaine, fidèle au discours, aux nuances et au langage réel des participants.",
@@ -49,11 +54,6 @@ const services = [
     title: "Segmentation et structuration",
     icon: Workflow,
     text: "Organisation du corpus en unités de sens et structuration pour une analyse qualitative claire et exploitable.",
-  },
-  {
-    title: "Traduction et révision EN→FR",
-    icon: Languages,
-    text: "Traduction vers le français canadien, avec révision linguistique, harmonisation terminologique et adaptation au public.",
   },
 ];
  // ===== VIDAME_REPERE_DONNEES_PILIERS =====

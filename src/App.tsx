@@ -487,7 +487,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </div>
 
            <details className="group">
-            <summary className="list-none cursor-pointer rounded-[1.5rem] transition-colors duration-200 hover:bg-slate-150">
+           <summary className="list-none cursor-pointer rounded-[1.5rem] transition-colors duration-200 hover:bg-slate-100">
               <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
                 <div>
                   <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">

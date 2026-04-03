@@ -439,7 +439,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               return (
                 <div key={step.title} className="relative">
                   <Card
-                   <Card
                       onClick={() => setActiveStep(i)}
                       className={`relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${isActive ? "ring-2 ring-slate-900 bg-slate-50" : "hover:bg-slate-50 hover:shadow"}`}
 >

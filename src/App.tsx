@@ -480,14 +480,14 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
       <section className="mx-auto max-w-7xl px-4 pb-4 md:px-8">
         <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-[1px] shadow-sm">
-          <div className="rounded-[calc(2rem-1px)] bg-white p-6 md:p-8">
+          <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
             <div className="mb-5 flex flex-wrap items-center gap-3">
               <Badge className="rounded-full bg-slate-900 px-4 py-1 text-white hover:bg-slate-900">Parcours doctorant</Badge>
               <div className="text-sm uppercase tracking-[0.18em] text-slate-500">Du matériau brut à l’analyse</div>
             </div>
 
            <details className="group">
-           <summary className="list-none cursor-pointer rounded-[1.5rem] transition-colors duration-200 hover:bg-slate-100">
+           <summary className="list-none cursor-pointer rounded-[1.5rem]">
               <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
                 <div>
                   <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
@@ -504,7 +504,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </p>
                      </div>
 
-                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-light leading-none text-slate-400">
+                   <div className="pointer-events-none absolute left-1/2 top-[70%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
                       +
                     </div>
                    </div>

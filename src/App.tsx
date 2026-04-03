@@ -504,7 +504,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </p>
                      </div>
 
-                   <div className="pointer-events-none absolute left-1/2 top-[70%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
+                   <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
                       +
                     </div>
                    </div>

@@ -387,11 +387,15 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                 const Icon = item.icon;
                 return (
                   <div key={item.title} className="rounded-2xl bg-slate-50 p-4">
-                    <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-2xl bg-white shadow-sm">
+                   <div className="flex items-start gap-3">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <div className="font-medium">{item.title}</div>
-                    <p className="mt-1 text-sm leading-7 text-slate-600">{item.text}</p>
+                    <div>
+                      <div className="font-medium">{item.title}</div>
+                      <p className="mt-1 text-sm leading-7 text-slate-600">{item.text}</p>
+                    </div>
+                    </div>
                   </div>
                 );
               })}

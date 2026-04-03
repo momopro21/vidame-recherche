@@ -454,9 +454,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                              </div>
                               )}
 
-                        <div className="pointer-events-none absolute bottom-4 right-4 text-lg font-light leading-none text-slate-500">
-                          +
-                        </div>
+                      <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
+                        +
+                      </div>
                       </CardContent>
                     </Card>
 

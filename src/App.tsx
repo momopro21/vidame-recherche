@@ -595,7 +595,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       </section>
 
     {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
   <div className="mb-10">
     <div className="text-sm uppercase tracking-[0.18em] text-slate-500">
       Blog

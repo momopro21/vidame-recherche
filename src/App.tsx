@@ -272,7 +272,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
       {/* ===== VIDAME_REPERE_FOOTER ===== */}
       {/* Pied de page : coordonnées et rappel de navigation */}
     <section className="bg-slate-900 text-white">
-      <div className="mx-auto max-w-7xl px-4 pt-2 pb-1 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 pt-1 pb-0 md:px-8">
         <div className="text-sm uppercase tracking-[0.2em] text-slate-400">
           Vidame
         </div>

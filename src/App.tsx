@@ -196,7 +196,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
             <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
             <div className="leading-tight">
             <div className="text-sm font-semibold">Vidame</div>
-            <div className="text-xs text-slate-500">Services linguistiques et traitement de données</div>
+            <div className="text-xs text-slate-600">Services linguistiques et traitement de données</div>
           </div>
         </div>
           </button>
@@ -214,7 +214,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
           </nav>
 
           <div className="flex items-center gap-3">
-            <div className="hidden text-sm text-slate-500 md:block">{currentLabel}</div>
+            <div className="hidden text-sm text-slate-800 md:block">{currentLabel}</div>
             <Button onClick={() => setPage("soumission")} className="rounded-full">
               Demander une soumission
             </Button>

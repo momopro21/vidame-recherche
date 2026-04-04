@@ -667,7 +667,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
     </button>
   </div>
 
-  <div className="mt-10 flex justify-center">
+  <div className="mt-6 flex justify-center">
     <button
      type="button"
       onClick={() => setPage("blog")}

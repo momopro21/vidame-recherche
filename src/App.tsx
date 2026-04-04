@@ -616,7 +616,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
         Réflexion
       </div>
-    </a>
+   </button>
 
     <button
      type="button"
@@ -635,7 +635,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
         Conformité
       </div>
-    </a>
+    </button>
 
     <button
      type="button"
@@ -654,7 +654,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
         Méthode
       </div>
-    </a>
+    </button>
   </div>
 
   <div className="mt-10 flex justify-center">
@@ -664,7 +664,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
     >
       Voir tous les articles
-    </a>
+   </button>
   </div>
 </section>
 

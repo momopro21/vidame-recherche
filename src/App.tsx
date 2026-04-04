@@ -687,7 +687,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 function APropos({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-      <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] items-center">
+     className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] items-start"
   {/* Photo */}
  <div className="w-full h-full overflow-hidden rounded-[2rem]">
   <img

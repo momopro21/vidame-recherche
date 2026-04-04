@@ -702,7 +702,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
-            Un regard humain structuré sur des données complexes
+            Un regard humain structuré au coeur des données complexes
           </h1>
 
           <p className="text-lg leading-8 text-slate-700">

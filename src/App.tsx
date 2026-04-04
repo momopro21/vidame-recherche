@@ -687,11 +687,48 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 function APropos({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-      <SectionTitle
-        eyebrow="À propos"
-        title="Vidame est né d’un constat simple : un bon outil ne remplace pas un bon jugement."
-        text="Dans les domaines sensibles, la valeur ne réside pas seulement dans la rapidité de traitement, mais dans la capacité à encadrer ce traitement avec méthode, clarté et responsabilité. Vidame s’inscrit dans cette logique en contribuant à créer les conditions qui permettent aux chercheurs de déployer pleinement leur potentiel analytique."
-      />
+      <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] items-center">
+  {/* Photo */}
+  <div className="w-full">
+    <img
+      src="/monique.jpg"
+      alt="Monique Provost"
+      className="w-full h-auto rounded-[2rem] object-cover"
+    />
+  </div>
+
+  {/* Texte */}
+  <div className="space-y-6">
+    <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+      À propos
+    </div>
+
+    <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
+      Un regard humain structuré sur des données complexes
+    </h1>
+
+    <p className="text-lg leading-8 text-slate-700">
+      Je suis spécialisée dans le traitement de données qualitatives, à l’intersection
+      du langage, de la recherche et des outils assistés par intelligence artificielle.
+      Mon travail consiste à transformer des corpus complexes en matériaux fiables,
+      structurés et directement exploitables pour l’analyse.
+    </p>
+
+    <p className="leading-8 text-slate-600">
+      Vidame est né d’un constat simple : un bon outil ne remplace pas un bon jugement.
+      Dans les environnements sensibles, la valeur ne réside pas seulement dans la vitesse
+      d’exécution, mais dans la capacité à encadrer les transformations avec méthode,
+      traçabilité et rigueur.
+    </p>
+
+    <p className="leading-8 text-slate-600">
+      J’interviens comme un pont entre le terrain et l’analyse, en veillant à ce que
+      chaque étape — de la transcription à la structuration — respecte à la fois les
+      exigences scientifiques, les contraintes éthiques et les réalités opérationnelles
+      des équipes.
+    </p>
+  </div>
+</div>
 
       <div className="grid gap-8 md:grid-cols-2">
         <Card className="rounded-[2rem] border-slate-200">

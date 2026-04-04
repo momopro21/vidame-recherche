@@ -689,13 +689,13 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
       <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] items-center">
   {/* Photo */}
-  <div className="w-full">
-    <img
-      src="/monique.jpg"
-      alt="Monique Provost"
-      className="w-full h-auto rounded-[2rem] object-cover"
-    />
-  </div>
+ <div className="w-full h-full overflow-hidden rounded-[2rem]">
+  <img
+    src="/monique.jpg"
+    alt="Monique Provost"
+    className="w-full h-full object-cover object-[center_20%]"
+  />
+</div>
 
   {/* Texte */}
   <div className="space-y-6">

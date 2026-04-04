@@ -271,7 +271,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
 
       {/* ===== VIDAME_REPERE_FOOTER ===== */}
       {/* Pied de page : coordonnées et rappel de navigation */}
-      <footer className="border-t border-slate-400 bg-slate-200">
+      <footer className="border-t border-slate-300 bg-slate-200">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">

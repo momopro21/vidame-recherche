@@ -937,7 +937,25 @@ function Soumission() {
             <option value="combine">Soutien combiné</option>
           </select>
         </div>
-    
+
+        <div className="space-y-2">
+  <label className="text-sm font-medium">Décrivez brièvement votre demande</label>
+
+  <p className="text-sm leading-6 text-slate-500">
+    Les coûts varient selon le type de service, le volume, le domaine de spécialité et les exigences de protection des données. Les projets impliquant des vocabulaires techniques ou sensibles nécessitent une approche adaptée.
+  </p>
+
+  <p className="text-sm leading-6 text-slate-500">
+    Pour faciliter l’évaluation de votre demande, vous pouvez indiquer le type de matériau, le volume approximatif, l’échéancier souhaité et toute contrainte particulière.
+  </p>
+
+  <p className="mt-2 text-sm leading-6 text-slate-500">
+    Chaque demande fait l’objet d’une évaluation contextualisée.
+  </p>
+
+  <Textarea placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques." />
+</div>
+        
         <Button className="rounded-full">Demander une soumission</Button>
       </div>
     </div>

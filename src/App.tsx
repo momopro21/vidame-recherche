@@ -599,8 +599,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   </div>
 
   <div className="grid gap-6 md:grid-cols-3">
-    <a
-      href="/blog"
+    <button
+     type="button"
+      onClick={() => setPage("blog")}
       className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
     >
       <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
@@ -617,8 +618,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       </div>
     </a>
 
-    <a
-      href="/blog"
+    <button
+     type="button"
+      onClick={() => setPage("blog")}
       className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
     >
       <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
@@ -635,8 +637,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       </div>
     </a>
 
-    <a
-      href="/blog"
+    <button
+     type="button"
+      onClick={() => setPage("blog")}
       className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
     >
       <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
@@ -655,8 +658,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   </div>
 
   <div className="mt-10 flex justify-center">
-    <a
-      href="/blog"
+    <button
+     type="button"
+      onClick={() => setPage("blog")}
       className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
     >
       Voir tous les articles

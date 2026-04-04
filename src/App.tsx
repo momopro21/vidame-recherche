@@ -276,7 +276,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
         <div className="text-sm uppercase tracking-[0.2em] text-slate-400">
           Vidame
         </div>
-        <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-300">
+        <p className="mt-1 max-w-2xl text-sm leading-7 text-slate-300">
           Clarté linguistique. Rigueur documentaire. Flux sécurisés.
     </p>
   </div>

@@ -601,7 +601,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   <div className="grid gap-6 md:grid-cols-3">
     <a
       href="/blog"
-      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-50"
+      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
     >
       <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
         Mars 2026
@@ -637,7 +637,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
     <a
       href="/blog"
-      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-50"
+      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
     >
       <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
         Mars 2026

@@ -938,7 +938,7 @@ function Soumission() {
           </select>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 rounded-xl bg-slate-50 p-4">
   <label className="text-sm font-medium">Décrivez brièvement votre demande</label>
 
   <p className="text-sm leading-6 text-slate-500">

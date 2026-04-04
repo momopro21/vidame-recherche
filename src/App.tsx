@@ -938,7 +938,7 @@ function Soumission() {
           </select>
         </div>
 
-        <div className="space-y-2 rounded-xl bg-slate-50 p-4">
+       <div className="space-y-2 rounded-xl bg-slate-50 p-4">
   <label className="text-sm font-medium">Décrivez brièvement votre demande</label>
 
   <p className="text-sm leading-6 text-slate-500">
@@ -954,11 +954,12 @@ function Soumission() {
   </p>
 
   <Textarea
-  className="mt-2 bg-slate-100 border border-slate-300 focus:border-slate-400 focus:ring-0"
-  placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques."
-/>
-        
-        <Button className="rounded-full">Envoyer</Button>
+    className="mt-2 bg-slate-100 border border-slate-300 focus:border-slate-400 focus:ring-0"
+    placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques."
+  />
+</div>
+
+<Button className="mt-8 rounded-full">Envoyer</Button>
       </div>
     </div>
   );

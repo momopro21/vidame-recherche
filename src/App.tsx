@@ -956,7 +956,7 @@ function Soumission() {
   <Textarea placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques." />
 </div>
         
-        <Button className="rounded-full">Demander une soumission</Button>
+        <Button className="rounded-full">Envoyer</Button>
       </div>
     </div>
   );

@@ -214,7 +214,6 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
           </nav>
 
           <div className="flex items-center gap-3">
-            <div className="hidden text-sm text-slate-800 md:block">{currentLabel}</div>
             <Button onClick={() => setPage("soumission")} className="rounded-full">
               Demander une soumission
             </Button>

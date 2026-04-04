@@ -953,8 +953,10 @@ function Soumission() {
     Chaque demande fait l’objet d’une évaluation contextualisée.
   </p>
 
-  <Textarea placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques." />
-</div>
+  <Textarea
+  className="mt-2 bg-slate-100 border border-slate-300 focus:border-slate-400 focus:ring-0"
+  placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d’audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques."
+/>
         
         <Button className="rounded-full">Envoyer</Button>
       </div>

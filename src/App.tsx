@@ -859,11 +859,30 @@ function Services() {
 
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-      <SectionTitle
-        eyebrow="Offre de services"
-        title="Une littéracie commune, du terrain à l’analyse"
-        text="Que vous soyez dans une démarche inductive ou déductive, Vidame s’inscrit dans votre processus de recherche. Les blocs ci-dessous présentent les catégories de soutien comme des repères stables dans la chaîne de production du corpus."
-      />
+     <div className="grid gap-8 md:grid-cols-2 items-start">
+  <div className="space-y-4">
+    <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+      Offre de services
+    </div>
+
+    <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
+      Du terrain à l’analyse : structurer, sécuriser et rendre vos corpus exploitables
+    </h1>
+  </div>
+
+  <div className="space-y-4 text-slate-700 leading-7">
+    <p>
+      Vidame intervient à chaque étape du traitement des données qualitatives,
+      de la transcription à la structuration du corpus.
+    </p>
+
+    <p>
+      Que votre besoin soit ponctuel — traduction, transcription, postédition —
+      ou qu’il s’inscrive dans une transformation complète, l’intervention
+      s’adapte à votre réalité.
+    </p>
+  </div>
+</div>
 
       <div className="grid gap-6 md:grid-cols-2">
         <Card className="rounded-[1.5rem] border-slate-200">

@@ -273,7 +273,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
       {/* Pied de page : coordonnées et rappel de navigation */}
     <section className="bg-slate-900 text-white">
       <div className="mx-auto max-w-7xl px-4 pt-3 pb-1 md:px-8">
-        <div className="text-sm uppercase tracking-[0.2em] text-slate-400">
+        <div className="mt-6 text-sm uppercase tracking-[0.2em] text-slate-400">
           Vidame
         </div>
         <p className="mt-1 max-w-2xl text-sm leading-7 text-slate-300">

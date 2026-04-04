@@ -727,9 +727,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </p>
         </div>
       </div>
-    </div>
-  );
-}
+
       <div className="grid gap-8 md:grid-cols-2">
         <Card className="rounded-[2rem] border-slate-200">
           <CardHeader>
@@ -737,7 +735,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Offrir des services linguistiques et documentaires de haute rigueur, appuyés par des workflows structurés, afin d’aider les organisations à traiter leurs contenus avec plus de clarté, de sécurité et de cohérence.
+              Offrir des services linguistiques et documentaires de haute rigueur, appuyés
+              par des workflows structurés, afin d’aider les organisations à traiter leurs
+              contenus avec plus de clarté, de sécurité et de cohérence.
             </p>
           </CardContent>
         </Card>
@@ -748,7 +748,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Développer une pratique du langage assisté par IA qui reste profondément humaine : transparente, traçable, adaptée aux contraintes réelles du terrain et respectueuse de la valeur scientifique des données.
+              Développer une pratique du langage assisté par IA qui reste profondément
+              humaine : transparente, traçable, adaptée aux contraintes réelles du terrain
+              et respectueuse de la valeur scientifique des données.
             </p>
           </CardContent>
         </Card>
@@ -783,7 +785,8 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           <CardContent className="p-8">
             <Quote className="h-8 w-8 text-slate-400" />
             <p className="mt-5 text-xl leading-9 text-slate-800">
-              Vidame s’adresse aux équipes qui veulent intégrer des outils contemporains sans perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
+              Vidame s’adresse aux équipes qui veulent intégrer des outils contemporains
+              sans perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
             </p>
           </CardContent>
         </Card>
@@ -796,13 +799,14 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
             <li>Institutions et milieux documentaires</li>
             <li>Professionnels ayant des corpus sensibles à traiter</li>
           </ul>
-          <Button className="mt-4 rounded-full" onClick={() => setPage("services")}>Voir les services</Button>
+          <Button className="mt-4 rounded-full" onClick={() => setPage("services")}>
+            Voir les services
+          </Button>
         </div>
       </div>
     </div>
   );
 }
-
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 // Page détaillée de l’offre de services.
 function Services() {

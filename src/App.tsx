@@ -584,49 +584,85 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
-          <SectionTitle
-            eyebrow="Équipes"
-            title="Des contextes variés, des exigences réelles"
-            text="Vidame s’inscrit dans des environnements de recherche diversifiés : équipes pancanadiennes, projets en santé, psychologie, sciences sociales et contextes sensibles nécessitant rigueur et adaptabilité."
-          />
+    {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
+<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+  <div className="mb-10">
+    <div className="text-sm uppercase tracking-[0.18em] text-slate-500">
+      Blog
+    </div>
+    <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+      Réflexions sur les données, le langage et l’IA
+    </h2>
+    <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+      Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs.
+    </p>
+  </div>
 
-          <div className="space-y-4">
-            <div className="rounded-2xl border border-slate-200 p-5">
-              <div className="font-semibold">Corpus bilingues et analyse</div>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                Dans les projets pancanadiens, les données circulent entre le français et l’anglais. Or, analyser une entrevue dans une langue que l’on ne maîtrise pas introduit une perte directe de sens. Vidame intervient ici avec une traduction fidèle au langage réel — y compris le langage populaire et l’usage quotidien — pour préserver la richesse du matériau et permettre une analyse rigoureuse.
-              </p>
-              <p className="mt-3 text-sm font-medium leading-7 text-slate-800">
-                Une traduction qui neutralise le langage du participant transforme déjà l’analyse.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="grid gap-6 md:grid-cols-3">
+    <a
+      href="/blog"
+      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-50"
+    >
+      <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
+        Mars 2026
+      </div>
+      <h3 className="mt-2 text-lg font-semibold text-slate-900">
+        Pourquoi la préparation des données est une étape scientifique à part entière
+      </h3>
+      <p className="mt-3 text-sm leading-7 text-slate-600">
+        Transcrire, segmenter, anonymiser et structurer un corpus ne relève pas seulement de l’exécution technique : ce sont des opérations qui influencent directement la qualité du matériau de recherche.
+      </p>
+      <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+        Réflexion
+      </div>
+    </a>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
-          <SectionTitle
-            eyebrow="Positionnement"
-            title="Une approche humaine de l’IA appliquée au langage"
-            text="Vidame ne repose pas sur une logique d’automatisation, mais sur une dynamique de cocréation humain‑IA. L’objectif n’est pas seulement la qualité du résultat, mais la qualité du processus : une interaction structurée où le jugement humain reste central, en particulier dans les contextes de recherche qualitative où l’interprétation, la sensibilité au terrain et la rigueur analytique ne peuvent pas être déléguées."
-          />
-          <div className="grid gap-4">
-            {[
-              "Intervention humaine explicite, structurée et documentée sur les étapes critiques.",
-              "Attention soutenue à la qualité du corpus et à son usage futur.",
-              "Adaptation aux exigences des milieux académiques, institutionnels et cliniques.",
-              "Communication claire avec les équipes pour soutenir la prise de décision.",
-            ].map((item) => (
-              <div key={item} className="rounded-2xl border border-slate-200 p-5 text-slate-700">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <a
+      href="/blog"
+      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-50"
+    >
+      <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
+        Mars 2026
+      </div>
+      <h3 className="mt-2 text-lg font-semibold text-slate-900">
+        L’IA en contexte sensible : garder la conformité au centre du workflow
+      </h3>
+      <p className="mt-3 text-sm leading-7 text-slate-600">
+        Quand les données touchent la santé, la recherche ou des milieux institutionnels, l’enjeu n’est pas seulement la performance des outils, mais la gouvernance de leur usage.
+      </p>
+      <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+        Conformité
+      </div>
+    </a>
+
+    <a
+      href="/blog"
+      className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-50"
+    >
+      <div className="text-sm uppercase tracking-[0.14em] text-slate-500">
+        Mars 2026
+      </div>
+      <h3 className="mt-2 text-lg font-semibold text-slate-900">
+        Du verbatim brut au corpus exploitable : les étapes du pipeline Vidame
+      </h3>
+      <p className="mt-3 text-sm leading-7 text-slate-600">
+        Un bon pipeline ne se limite pas à produire du texte. Il organise une chaîne opératoire complète : intégrité, anonymisation, structuration, traçabilité et réutilisation.
+      </p>
+      <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+        Méthode
+      </div>
+    </a>
+  </div>
+
+  <div className="mt-10 flex justify-center">
+    <a
+      href="/blog"
+      className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
+    >
+      Voir tous les articles
+    </a>
+  </div>
+</section>
 
       <section className="bg-slate-900 text-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-16 md:flex-row md:items-center md:justify-between md:px-8">

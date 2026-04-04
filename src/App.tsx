@@ -271,17 +271,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
 
       {/* ===== VIDAME_REPERE_FOOTER ===== */}
       {/* Pied de page : coordonnées et rappel de navigation */}
-    <section className="bg-slate-900 text-white">
-      <div className="mx-auto max-w-7xl px-4 pt-3 pb-1 md:px-8">
-        <div className="mt-6 text-sm uppercase tracking-[0.2em] text-slate-400">
-          Vidame
-        </div>
-        <p className="mt-1 max-w-2xl text-sm leading-7 text-slate-300">
-          Clarté linguistique. Rigueur documentaire. Flux sécurisés.
-    </p>
-  </div>
-</section>
-      <footer className="border-t border-slate-200 bg-slate-50">
+       <footer className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">

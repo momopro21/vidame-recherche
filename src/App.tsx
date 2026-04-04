@@ -937,73 +937,7 @@ function Soumission() {
             <option value="combine">Soutien combiné</option>
           </select>
         </div>
-
-        {type === "transcription" && (
-          <div className="space-y-4">
-            <div>
-              <label className="text-sm font-medium">Type de verbatim souhaité</label>
-              <select className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm">
-                <option>Verbatim intégral</option>
-                <option>Verbatim nettoyé</option>
-                <option>Résumé structuré</option>
-              </select>
-            </div>
-            <div>
-              <label className="text-sm font-medium">Options de structuration du texte</label>
-              <select className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm">
-                <option>Avec timestamps</option>
-                <option>Construction en unités de sens</option>
-                <option>Segmentation numérotée</option>
-              </select>
-            </div>
-          </div>
-        )}
-
-        {type === "segmentation" && (
-          <div>
-            <label className="text-sm font-medium">Type de segmentation souhaité</label>
-            <select className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm">
-              <option>Segmentation avec timestamps</option>
-              <option>Segmentation par unités de sens</option>
-              <option>Segmentation numérotée</option>
-            </select>
-          </div>
-        )}
-
-        {type === "traduction" && (
-          <div>
-            <label className="text-sm font-medium">Langue source / cible</label>
-            <Input className="mt-2" placeholder="Ex : anglais → français (fr-CA)" />
-          </div>
-        )}
-
-        {type === "segmentation_analytique" && (
-          <div>
-            <label className="text-sm font-medium">Logique d’analyse</label>
-            <Input className="mt-2" placeholder="Ex : inductive, déductive, mixte" />
-          </div>
-        )}
-
-        <div>
-          <label className="text-sm font-medium">Volume approximatif</label>
-          <select className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm">
-            <option>Moins de 5 heures</option>
-            <option>5 à 20 heures</option>
-            <option>20 à 100 heures</option>
-            <option>100+ heures</option>
-          </select>
-        </div>
-
-        <div>
-          <label className="text-sm font-medium">Contraintes (éthique, Loi 25, délais)</label>
-          <Textarea placeholder="Décrivez les exigences spécifiques de votre projet" />
-        </div>
-
-        <div>
-          <label className="text-sm font-medium">Décrivez brièvement votre projet</label>
-          <Textarea placeholder="Contexte, objectifs, type de données…" />
-        </div>
-
+    
         <Button className="rounded-full">Demander une soumission</Button>
       </div>
     </div>

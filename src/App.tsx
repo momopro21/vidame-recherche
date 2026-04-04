@@ -196,7 +196,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
             <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
             <div className="leading-tight">
             <div className="text-sm font-semibold">Vidame</div>
-            <div className="text-xs text-slate-600">Services linguistiques et traitement de données</div>
+            <div className="text-xs text-slate-700">Services linguistiques et traitement de données</div>
           </div>
         </div>
           </button>
@@ -218,7 +218,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
             <Button onClick={() => setPage("soumission")} className="rounded-full">
               Demander une soumission
             </Button>
-            <button className="rounded-xl border border-slate-200 p-2 md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Ouvrir le menu">
+            <button className="rounded-xl border border-slate-400 p-2 md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Ouvrir le menu">
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
@@ -240,7 +240,7 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
                       setPage(item.id);
                       setOpen(false);
                     }}
-                    className="rounded-xl px-3 py-3 text-left text-sm text-slate-700 hover:bg-slate-100"
+                    className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
                   >
                     {item.label}
                   </button>

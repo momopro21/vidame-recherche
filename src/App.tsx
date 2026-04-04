@@ -885,24 +885,34 @@ function Services() {
 </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <Card className="rounded-[1.5rem] border-slate-200">
-          <CardContent className="space-y-3 p-6">
-            <div className="font-semibold">Approche inductive</div>
-            <p className="text-sm leading-7 text-slate-600">
-              L’analyse émerge du corpus. Le rôle de Vidame est de préserver la richesse du matériau, d’en soutenir l’exploration et de rendre les unités de sens repérables sans imposer une structure interprétative prématurée.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="rounded-[1.5rem] border-slate-200">
-          <CardContent className="space-y-3 p-6">
-            <div className="font-semibold">Approche déductive</div>
-            <p className="text-sm leading-7 text-slate-600">
-              L’analyse repose sur une grille ou un cadre préalable. Le rôle de Vidame est d’organiser le corpus pour permettre une application cohérente, traçable et reproductible des catégories d’analyse.
-            </p>
-          </CardContent>
-        </Card>
+  <Card className="rounded-[1.5rem] border-slate-200 bg-blue-50 hover:shadow-md transition">
+    <CardContent className="space-y-3 p-6">
+      <div className="text-xs uppercase tracking-[0.15em] text-blue-700">
+        Approche
       </div>
+      <div className="font-semibold text-slate-900">
+        Inductive
+      </div>
+      <p className="text-sm leading-7 text-slate-600">
+        L’analyse émerge du corpus. Le rôle de Vidame est de préserver la richesse du matériau, d’en soutenir l’exploration et de rendre les unités de sens repérables sans imposer une structure interprétative prématurée.
+      </p>
+    </CardContent>
+  </Card>
+
+  <Card className="rounded-[1.5rem] border-slate-200 bg-emerald-50 hover:shadow-md transition">
+    <CardContent className="space-y-3 p-6">
+      <div className="text-xs uppercase tracking-[0.15em] text-emerald-700">
+        Approche
+      </div>
+      <div className="font-semibold text-slate-900">
+        Déductive
+      </div>
+      <p className="text-sm leading-7 text-slate-600">
+        L’analyse repose sur une grille ou un cadre préalable. Le rôle de Vidame est d’organiser le corpus pour permettre une application cohérente, traçable et reproductible des catégories d’analyse.
+      </p>
+    </CardContent>
+  </Card>
+</div>
 
       <div className="space-y-8">
         {serviceNarrative.map((item, index) => {

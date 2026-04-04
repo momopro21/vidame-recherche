@@ -213,15 +213,12 @@ function Shell({ page, setPage }: { page: string; setPage: (page: string) => voi
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
-            <Button onClick={() => setPage("soumission")} className="rounded-full">
-              Demander une soumission
-            </Button>
-            <button className="rounded-xl border border-slate-400 p-2 md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Ouvrir le menu">
-              {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
-          </div>
-        </div>
+        <div className="flex items-center gap-3">
+        <button className="rounded-xl border border-slate-200 p-2 md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Ouvrir le menu">
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </div>
+      </div>
 
         <AnimatePresence>
           {open && (

@@ -803,22 +803,30 @@ import PipelineDiagram from "./components/PipelineDiagram";
               <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-slate-400 blur-3xl" />
               <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-stone-300 blur-3xl" />
             </div>
-            <div className="relative mx-auto max-w-5xl text-center">
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                <span className="inline-block mb-4 rounded-full bg-teal-500/20 border border-teal-400/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-300">
-                  Offre de services
-                </span>
-                 <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white md:text-6xl md:leading-[1.05]">
-                      Des services conçus pour le{" "}
-                      <span className="text-teal-400">langage</span>, la{" "}
-                      <span className="text-teal-400">recherche</span><br />
-                      et les <span className="text-teal-400">données</span>
-                    </h1>
-                <p className="mt-6 text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                  Deux types d'offres complémentaires : des services linguistiques à la carte, et un pipeline complet de préparation de données — une approche innovante qui transforme votre verbatim en corpus exploitable.
-                </p>
-              </motion.div>
-              <motion.div
+           <div className="relative mx-auto max-w-5xl text-center">
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="mx-auto max-w-4xl"
+  >
+    <span className="inline-block mb-4 rounded-full border border-teal-400/30 bg-teal-500/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-300">
+        Offre de services
+     </span>
+
+      <h1 className="text-4xl font-semibold tracking-tight text-white md:text-6xl md:leading-[1.05]">
+        Des services conçus pour le{" "}
+        <span className="text-teal-400">langage</span>, la{" "}
+        <span className="text-teal-400">recherche</span><br />
+         et les <span className="text-teal-400">données</span>
+        </h1>
+
+        <p className="mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-slate-300">
+           Deux types d'offres complémentaires : des services linguistiques à la carte, et un pipeline complet de préparation de données — une approche qui transforme votre verbatim en corpus exploitable.
+         </p>
+        </motion.div>
+
+            <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}

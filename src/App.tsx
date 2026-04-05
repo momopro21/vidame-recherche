@@ -603,7 +603,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
             </div>
           </section>
     
-         <section className="bg-[#2F5D50] text-white border-t-0">
+        <section className="bg-slate-900 text-white">
             <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-16 md:flex-row md:items-center md:justify-between md:px-8">
               <div className="max-w-2xl space-y-3">
                 <div className="text-sm uppercase tracking-[0.2em] text-slate-300">Prêt à démarrer</div>

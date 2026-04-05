@@ -808,12 +808,12 @@ import PipelineDiagram from "./components/PipelineDiagram";
                 <span className="inline-block mb-4 rounded-full bg-teal-500/20 border border-teal-400/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-300">
                   Offre de services
                 </span>
-               <h1 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
-                  Des services conçus pour le{" "}
-                  <span className="text-teal-400">langage</span>,<br className="hidden md:block" />
-                  la <span className="text-teal-400">recherche</span> et les{" "}
-                  <span className="text-teal-400">données</span>
-                </h1>
+              <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white md:text-6xl md:leading-[1.05]">
+                 Des services conçus pour le{" "}
+                <span className="text-teal-400">langage</span>,<br className="hidden md:block" />
+                 la <span className="text-teal-400">recherche</span> et les{" "}
+                <span className="text-teal-400">données</span>
+              </h1>
                 <p className="mt-6 text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
                   Deux types d'offres complémentaires : des services linguistiques à la carte, et un pipeline complet de préparation de données — une approche innovante qui transforme votre verbatim en corpus exploitable.
                 </p>

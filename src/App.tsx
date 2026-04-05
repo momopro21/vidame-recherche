@@ -795,7 +795,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
           color: "bg-slate-700",
         },
       ];
-    
+    const [view, setView] = useState<"carte" | "pipeline">("carte");
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}

@@ -951,7 +951,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
                     Une offre intégrée qui couvre l'ensemble du pipeline, du verbatim brut jusqu'au corpus structuré et prêt pour l'analyse. Ce n'est pas seulement de la transcription — c'est une chaîne opératoire complète, documentée et traçable.
                   </p>
                 </div>
-               <div className="mb-12 rounded-3xl bg-slate-800 border border-slate-700 shadow-sm p-8 text-white">
+              <div className="mb-12 rounded-3xl bg-slate-100 border border-slate-200 shadow-sm p-8 text-slate-800">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20">
                       <Microscope className="h-5 w-5" />

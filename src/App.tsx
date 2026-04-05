@@ -176,7 +176,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
       const currentLabel = useMemo(() => pages.find((p) => p.id === page)?.label ?? "Accueil", [page]);
     
       return (
-        <div className="min-h-screen bg-white text-slate-900">
+        <div className="min-h-screen bg-white text-slate-800">
           {/* ===== VIDAME_REPERE_HEADER ===== */}
           <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">

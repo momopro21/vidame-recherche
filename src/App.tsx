@@ -919,8 +919,8 @@ import PipelineDiagram from "./components/PipelineDiagram";
                 <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
                   <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
                   <p className="mt-2 text-sm text-slate-500">Obtenez un devis personnalisé en moins de 48 heures.</p>
-                 <button
-                  className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-teal-500 px-6 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-teal-600"
+                <button
+                  className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-slate-900/80 border border-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-slate-800"
                   onClick={() => setPage("soumission")}
                 >
                   Obtenir un devis <ChevronRight className="h-4 w-4" />

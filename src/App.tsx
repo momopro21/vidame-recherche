@@ -26,7 +26,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
       { id: "accueil", label: "Accueil" },
       { id: "apropos", label: "À propos" },
       { id: "services", label: "Offre de services" },
-      { id: "soumission", label: "Demande de soumission" },
+      { id: "soumission", label: "Obtenir un devis" },
       { id: "blog", label: "Blog" },
     ];
     
@@ -186,7 +186,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
                   <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
                   <div className="leading-tight">
                     <div className="text-sm font-semibold">Vidame</div>
-                    <div className="text-xs text-slate-700">Services linguistiques et traitement de données</div>
+                    <div className="text-xs text-slate-900">Services linguistiques et traitement de données</div>
                   </div>
                 </div>
               </button>

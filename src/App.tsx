@@ -807,15 +807,12 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
     </div>
   );
 }
-// ===== VIDAME_REPERE_PAGE_SERVICES =====
-// Page détaillée de l’offre de services.
-function Services() {
-    // ===== NOUVELLE PAGE SERVICES DYNAMIQUE =====
-    // À remplacer dans App.tsx à la place de la fonction ServicesPage existante
+// ===== NOUVELLE PAGE SERVICES DYNAMIQUE =====
+    // Ã remplacer dans App.tsx Ã  la place de la fonction ServicesPage existante
     function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
       const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
       const [expandedService, setExpandedService] = useState<number | null>(null);
-      // ===== SERVICES À LA CARTE =====
+    
       const servicesACarte = [
         {
           icon: Languages,
@@ -852,7 +849,7 @@ function Services() {
           tag: "Service à la carte",
         },
       ];
-      // ===== OFFRE PRÉPARATION DONNÉES QUALITATIVES (INNOVATION) =====
+    
       const pipelineSteps = [
         {
           step: "01",
@@ -887,9 +884,10 @@ function Services() {
           color: "bg-slate-700",
         },
       ];
+    
       return (
         <div className="min-h-screen bg-white">
-          {/* ===== HERO SECTION ===== */}
+          {/* HERO SECTION */}
           <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 py-20 px-4">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-teal-400 blur-3xl" />
@@ -915,7 +913,7 @@ function Services() {
                   exploitable.
                 </p>
               </motion.div>
-              {/* Tabs */}
+    
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -945,9 +943,9 @@ function Services() {
               </motion.div>
             </div>
           </section>
-          {/* ===== CONTENU ONGLETS ===== */}
+    
+          {/* CONTENU ONGLETS */}
           <AnimatePresence mode="wait">
-            {/* ===== ONGLET 1 : SERVICES À LA CARTE ===== */}
             {activeTab === "carte" && (
               <motion.div
                 key="carte"
@@ -962,10 +960,10 @@ function Services() {
                     Services linguistiques à la carte
                   </h2>
                   <p className="mt-2 text-slate-500">
-                    Commandez uniquement ce dont vous avez besoin, quand vous en
-                    avez besoin.
+                    Commandez uniquement ce dont vous avez besoin, quand vous en avez besoin.
                   </p>
                 </div>
+    
                 <div className="grid gap-6 md:grid-cols-2">
                   {servicesACarte.map((service, i) => {
                     const Icon = service.icon;
@@ -975,32 +973,22 @@ function Services() {
                         key={i}
                         layout
                         className={`rounded-3xl border bg-white shadow-sm border-l-4 ${service.accent} cursor-pointer hover:shadow-md transition-shadow`}
-                        onClick={() =>
-                          setExpandedService(isExpanded ? null : i)
-                        }
+                        onClick={() => setExpandedService(isExpanded ? null : i)}
                       >
                         <div className="p-6">
                           <div className="flex items-start justify-between gap-4">
-                            <div
-                              className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border ${service.color}`}
-                            >
+                            <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border ${service.color}`}>
                               <Icon className="h-6 w-6" />
                             </div>
-                            <span
-                              className={`mt-1 rounded-full px-3 py-0.5 text-xs font-medium ${service.badge}`}
-                            >
+                            <span className={`mt-1 rounded-full px-3 py-0.5 text-xs font-medium ${service.badge}`}>
                               {service.tag}
                             </span>
                           </div>
                           <h3 className="mt-4 text-xl font-semibold text-slate-900">
                             {service.title}
                           </h3>
-                          <p className="text-xs text-slate-400 mt-0.5">
-                            {service.subtitle}
-                          </p>
-                          <p className="mt-3 text-sm leading-7 text-slate-600">
-                            {service.description}
-                          </p>
+                          <p className="text-xs text-slate-400 mt-0.5">{service.subtitle}</p>
+                          <p className="mt-3 text-sm leading-7 text-slate-600">{service.description}</p>
                           <AnimatePresence>
                             {isExpanded && (
                               <motion.div
@@ -1011,10 +999,7 @@ function Services() {
                               >
                                 <ul className="space-y-2 border-t border-slate-100 pt-4">
                                   {service.details.map((d, j) => (
-                                    <li
-                                      key={j}
-                                      className="flex items-start gap-2 text-sm text-slate-700"
-                                    >
+                                    <li key={j} className="flex items-start gap-2 text-sm text-slate-700">
                                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal-500" />
                                       {d}
                                     </li>
@@ -1024,9 +1009,7 @@ function Services() {
                             )}
                           </AnimatePresence>
                           <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
-                            <ChevronRight
-                              className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
-                            />
+                            <ChevronRight className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`} />
                             {isExpanded ? "Réduire" : "Voir les détails"}
                           </div>
                         </div>
@@ -1034,7 +1017,7 @@ function Services() {
                     );
                   })}
                 </div>
-                {/* CTA carte */}
+    
                 <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
                   <h3 className="text-xl font-semibold text-slate-900">
                     Prêt à soumettre une demande ?
@@ -1052,7 +1035,7 @@ function Services() {
                 </div>
               </motion.div>
             )}
-            {/* ===== ONGLET 2 : PIPELINE PRÉPARATION DONNÉES ===== */}
+    
             {activeTab === "pipeline" && (
               <motion.div
                 key="pipeline"
@@ -1062,7 +1045,6 @@ function Services() {
                 transition={{ duration: 0.4 }}
                 className="mx-auto max-w-5xl px-4 py-16"
               >
-                {/* Badge Innovation */}
                 <div className="mb-10 text-center">
                   <span className="inline-block rounded-full bg-teal-50 border border-teal-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-700">
                     ✦ Service innovant — peu connu, très utile
@@ -1071,29 +1053,25 @@ function Services() {
                     Préparation des données qualitatives
                   </h2>
                   <p className="mt-3 text-slate-500 max-w-2xl mx-auto text-sm leading-7">
-                    Une offre intégrée qui couvre l'ensemble du pipeline, du
-                    verbatim brut jusqu'au corpus structuré et prêt pour
-                    l'analyse. Ce n'est pas seulement de la transcription —
-                    c'est une chaîne opératoire complète, documentée et traçable.
+                    Une offre intégrée qui couvre l'ensemble du pipeline, du verbatim brut
+                    jusqu'au corpus structuré et prêt pour l'analyse. Ce n'est pas seulement
+                    de la transcription — c'est une chaîne opératoire complète, documentée et traçable.
                   </p>
                 </div>
-                {/* Pourquoi c'est innovant */}
+    
                 <div className="mb-12 rounded-3xl bg-gradient-to-r from-teal-600 to-teal-800 p-8 text-white">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20">
                       <Microscope className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">
-                        Pourquoi ce service est innovant
-                      </h3>
+                      <h3 className="text-lg font-semibold">Pourquoi ce service est innovant</h3>
                       <p className="mt-2 text-sm leading-7 text-teal-100">
-                        La préparation des données qualitatives est souvent perçue
-                        comme une tâche technique secondaire. Chez Vidame, nous la
-                        traitons comme une étape scientifique à part entière. Chaque
-                        opération — transcription, anonymisation, segmentation,
-                        structuration — influence directement la qualité du matériau
-                        de recherche et la rigueur de l'analyse qui en découle.
+                        La préparation des données qualitatives est souvent perçue comme une tâche
+                        technique secondaire. Chez Vidame, nous la traitons comme une étape scientifique
+                        à part entière. Chaque opération — transcription, anonymisation, segmentation,
+                        structuration — influence directement la qualité du matériau de recherche et la
+                        rigueur de l'analyse qui en découle.
                       </p>
                       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
                         {[
@@ -1101,10 +1079,7 @@ function Services() {
                           { label: "Conformité éthique", icon: ShieldCheck },
                           { label: "Corpus exploitable", icon: FileSearch },
                         ].map(({ label, icon: Icon }, i) => (
-                          <div
-                            key={i}
-                            className="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-3"
-                          >
+                          <div key={i} className="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-3">
                             <Icon className="h-4 w-4 text-teal-200" />
                             <span className="text-sm font-medium">{label}</span>
                           </div>
@@ -1113,7 +1088,7 @@ function Services() {
                     </div>
                   </div>
                 </div>
-                {/* Pipeline steps */}
+    
                 <div className="relative">
                   <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 to-slate-300 hidden md:block" />
                   <div className="space-y-6">
@@ -1127,28 +1102,20 @@ function Services() {
                           transition={{ delay: i * 0.1 }}
                           className="relative flex gap-6"
                         >
-                          <div
-                            className={`relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl ${step.color} text-white shadow-md`}
-                          >
-                            <span className="text-xs font-bold opacity-70">
-                              {step.step}
-                            </span>
+                          <div className={`relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl ${step.color} text-white shadow-md`}>
+                            <span className="text-xs font-bold opacity-70">{step.step}</span>
                             <Icon className="h-5 w-5" />
                           </div>
                           <div className="flex-1 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                            <h3 className="font-semibold text-slate-900">
-                              {step.title}
-                            </h3>
-                            <p className="mt-1 text-sm leading-7 text-slate-600">
-                              {step.description}
-                            </p>
+                            <h3 className="font-semibold text-slate-900">{step.title}</h3>
+                            <p className="mt-1 text-sm leading-7 text-slate-600">{step.description}</p>
                           </div>
                         </motion.div>
                       );
                     })}
                   </div>
                 </div>
-                {/* Pour qui */}
+    
                 <div className="mt-12 grid gap-4 sm:grid-cols-3">
                   {[
                     {
@@ -1167,28 +1134,23 @@ function Services() {
                       text: "Évaluations de programmes, consultations, focus groups",
                     },
                   ].map(({ icon: Icon, title, text }, i) => (
-                    <div
-                      key={i}
-                      className="rounded-3xl border border-slate-100 bg-slate-50 p-6 text-center"
-                    >
+                    <div key={i} className="rounded-3xl border border-slate-100 bg-slate-50 p-6 text-center">
                       <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
                         <Icon className="h-5 w-5" />
                       </div>
-                      <h4 className="text-sm font-semibold text-slate-900">
-                        {title}
-                      </h4>
+                      <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
                       <p className="mt-1 text-xs text-slate-500">{text}</p>
                     </div>
                   ))}
                 </div>
-                {/* CTA pipeline */}
+    
                 <div className="mt-12 rounded-3xl border border-teal-200 bg-teal-50 p-8 text-center">
                   <h3 className="text-xl font-semibold text-slate-900">
                     Intéressé par le pipeline complet ?
                   </h3>
                   <p className="mt-2 text-sm text-slate-500">
-                    Discutons de votre projet de recherche — nous vous proposerons
-                    un pipeline adapté à vos données et à vos délais.
+                    Discutons de votre projet de recherche — nous vous proposerons un pipeline
+                    adapté à vos données et à vos délais.
                   </p>
                   <div className="mt-6 flex flex-wrap justify-center gap-3">
                     <Button

@@ -812,142 +812,410 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
 function Services() {
     // ===== VIDAME_REPERE_CONTENU_SERVICES_DETAIL =====
   // Contenu détaillé des blocs de services sur la page Offre de services.
-  const serviceNarrative = [
-    {
-      title: "Transcription et mise en phrases (unités de sens)",
-      icon: FileText,
-      intro: "Le travail commence souvent avec des enregistrements riches, mais encore difficiles à mobiliser pour la recherche.",
-      need: "Passer de la parole au texte sans perdre le sens du discours.",
-      support: "Transcription assistée par IA avec révision humaine rigoureuse. Priorité donnée à la fidélité du discours : restitution du sens de la parole au texte, respect des nuances, du rythme et du langage réel des participants.",
-    },
-    {
-      title: "Anonymisation et éthique des données",
-      icon: ShieldCheck,
-      intro: "Une fois transcrit, le corpus doit être sécurisé avant de pouvoir circuler ou être confié à une équipe.",
-      need: "Protéger les participants, neutraliser les identifiants et respecter les exigences éthiques.",
-      support: "Anonymisation des données sensibles, gestion des identifiants et conformité aux exigences éthiques et légales, incluant la Loi 25.",
-    },
-    {
-      title: "Nettoyage du texte et mise en forme du corpus",
-      icon: PenSquare,
-      intro: "Le texte brut reste souvent irrégulier, chargé de bruit et peu commode pour la lecture analytique.",
-      need: "Rendre le corpus lisible, homogène et prêt à être manipulé.",
-      support: "Nettoyage du texte, mise en phrases, homogénéisation et mise en forme du corpus pour soutenir la recherche qualitative.",
-    },
-    {
-      title: "Segmentation analytique (cartographie du corpus)",
-      icon: Workflow,
-      intro: "À ce stade, le chercheur doit pouvoir repérer, comparer, revenir en arrière et suivre les unités de sens dans l’ensemble du corpus.",
-      need: "Transformer le corpus en objet navigable, structuré et traçable.",
-      support: "Segmentation analytique du corpus visant à découper le matériau en unités de sens, organiser les relations entre segments et soutenir le repérage, la navigation et la traçabilité.",
-    },
-    {
-      title: "Traduction et révision EN→FR",
-      icon: Languages,
-      intro: "Dans les projets pancanadiens ou multilingues, l’analyse peut être ralentie ou biaisée lorsque le corpus circule dans une langue que l’équipe ne maîtrise pas pleinement.",
-      need: "Préserver le sens du matériau tout en le rendant lisible pour l’équipe de recherche.",
-      support: "Traduction vers le français canadien, fidèle au langage réel des participants, incluant les documents destinés aux comités d’éthique, formulaires de consentement et protocoles de recherche.",
-    },
-    {
-      title: "Soutien aux projets de recherche",
-      icon: Microscope,
-      intro: "Certains projets demandent un appui plus transversal pour articuler les étapes, documenter les choix et maintenir la cohérence du traitement.",
-      need: "Assurer la continuité du processus et la cohérence méthodologique du corpus.",
-      support: "Appui aux équipes de recherche pour la conformité, la clarté documentaire, les protocoles de traitement linguistique et les flux de travail sécurisés.",
-    },
-  ];
-
-  return (
-    <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-     <div className="grid gap-8 md:grid-cols-2 items-start">
-  <div className="space-y-4">
-    <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-      Offre de services
-    </div>
-
-    <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
-      Du terrain à l’analyse : structurer, sécuriser et rendre vos corpus exploitables
-    </h1>
-  </div>
-
-  <div className="space-y-4 text-slate-700 leading-7">
-    <p>
-      Vidame intervient à chaque étape du traitement des données qualitatives,
-      de la transcription à la structuration du corpus.
-    </p>
-
-    <p>
-      Que votre besoin soit ponctuel — traduction, transcription, postédition —
-      ou qu’il s’inscrive dans une transformation complète, l’intervention
-      s’adapte à votre réalité.
-    </p>
-  </div>
-</div>
-
-      <div className="grid gap-6 md:grid-cols-2">
-  <Card className="rounded-[1.5rem] border-slate-200 bg-blue-50 hover:shadow-md transition">
-    <CardContent className="space-y-3 p-6">
-      <div className="text-xs uppercase tracking-[0.15em] text-blue-700">
-        Approche
-      </div>
-      <div className="font-semibold text-slate-900">
-        Inductive
-      </div>
-      <p className="text-sm leading-7 text-slate-600">
-        L’analyse émerge du corpus. Le rôle de Vidame est de préserver la richesse du matériau, d’en soutenir l’exploration et de rendre les unités de sens repérables sans imposer une structure interprétative prématurée.
-      </p>
-    </CardContent>
-  </Card>
-
-  <Card className="rounded-[1.5rem] border-slate-200 bg-emerald-50 hover:shadow-md transition">
-    <CardContent className="space-y-3 p-6">
-      <div className="text-xs uppercase tracking-[0.15em] text-emerald-700">
-        Approche
-      </div>
-      <div className="font-semibold text-slate-900">
-        Déductive
-      </div>
-      <p className="text-sm leading-7 text-slate-600">
-        L’analyse repose sur une grille ou un cadre préalable. Le rôle de Vidame est d’organiser le corpus pour permettre une application cohérente, traçable et reproductible des catégories d’analyse.
-      </p>
-    </CardContent>
-  </Card>
-</div>
-
-      <div className="space-y-8">
-        {serviceNarrative.map((item, index) => {
-          const Icon = item.icon;
-          return (
-            <Card key={item.title} className="rounded-[2rem] border-slate-200">
-              <CardContent className="p-8">
-                <div className="grid gap-6 md:grid-cols-[260px_1fr] md:items-start">
-                  <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm">
-                      <Icon className="h-5 w-5" />
+ // ===== NOUVELLE PAGE SERVICES DYNAMIQUE =====
+    // À remplacer dans App.tsx à la place de la fonction ServicesPage existante
+    function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
+      const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
+      const [expandedService, setExpandedService] = useState<number | null>(null);
+      // ===== SERVICES À LA CARTE =====
+      const servicesACarte = [
+        {
+          icon: Languages,
+          color: "bg-amber-50 text-amber-700 border-amber-200",
+          accent: "border-l-amber-500",
+          badge: "bg-amber-100 text-amber-800",
+          title: "Traduction EN → FR",
+          subtitle: "Français canadien · Adaptation culturelle",
+          description:
+            "Traduction professionnelle de l'anglais vers le français canadien, avec révision linguistique complète, harmonisation terminologique et adaptation au registre et au public cible.",
+          details: [
+            "Traduction fidèle au sens et à la nuance",
+            "Adaptation au vocabulaire de la recherche qualitative",
+            "Harmonisation des termes clés du corpus",
+            "Révision par une spécialiste bilingue",
+          ],
+          tag: "Service à la carte",
+        },
+        {
+          icon: FileText,
+          color: "bg-sky-50 text-sky-700 border-sky-200",
+          accent: "border-l-sky-500",
+          badge: "bg-sky-100 text-sky-800",
+          title: "Transcription",
+          subtitle: "Assistée par IA · Validée par un humain",
+          description:
+            "Transcription de verbatim assistée par intelligence artificielle, avec validation humaine systématique. Fidèle au discours réel, aux hésitations, aux nuances et au langage authentique des participants.",
+          details: [
+            "Transcription intégrale ou sélective selon le besoin",
+            "Respect des particularités langagières",
+            "Marqueurs de discours conservés",
+            "Livraison dans les formats requis (.docx, .txt)",
+          ],
+          tag: "Service à la carte",
+        },
+      ];
+      // ===== OFFRE PRÉPARATION DONNÉES QUALITATIVES (INNOVATION) =====
+      const pipelineSteps = [
+        {
+          step: "01",
+          icon: FileText,
+          title: "Transcription validée",
+          description:
+            "Conversion du verbatim brut en texte exploitable, avec validation humaine à chaque segment sensible.",
+          color: "bg-teal-600",
+        },
+        {
+          step: "02",
+          icon: ShieldCheck,
+          title: "Anonymisation conforme",
+          description:
+            "Neutralisation des identifiants personnels selon les exigences éthiques et légales en vigueur (Canada).",
+          color: "bg-teal-700",
+        },
+        {
+          step: "03",
+          icon: Workflow,
+          title: "Segmentation et structuration",
+          description:
+            "Organisation du corpus en unités de sens cohérentes, prêtes pour l'analyse qualitative.",
+          color: "bg-teal-800",
+        },
+        {
+          step: "04",
+          icon: Lock,
+          title: "Traçabilité et documentation",
+          description:
+            "Chaque opération est documentée, horodatée et traçable — pour la rigueur scientifique et les comités d'éthique.",
+          color: "bg-slate-700",
+        },
+      ];
+      return (
+        <div className="min-h-screen bg-white">
+          {/* ===== HERO SECTION ===== */}
+          <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 py-20 px-4">
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-teal-400 blur-3xl" />
+              <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-amber-400 blur-3xl" />
+            </div>
+            <div className="relative mx-auto max-w-5xl text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="inline-block mb-4 rounded-full bg-teal-500/20 border border-teal-400/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-300">
+                  Offre de services
+                </span>
+                <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+                  Des services conçus pour la{" "}
+                  <span className="text-teal-400">recherche qualitative</span>
+                </h1>
+                <p className="mt-6 text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                  Deux types d'offres complémentaires : des services linguistiques
+                  à la carte, et un pipeline complet de préparation de données —
+                  une approche innovante qui transforme votre verbatim en corpus
+                  exploitable.
+                </p>
+              </motion.div>
+              {/* Tabs */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className="mt-10 inline-flex gap-2 rounded-2xl border border-white/10 bg-white/5 p-1.5 backdrop-blur"
+              >
+                <button
+                  onClick={() => setActiveTab("carte")}
+                  className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${
+                    activeTab === "carte"
+                      ? "bg-white text-slate-900 shadow-lg"
+                      : "text-slate-300 hover:text-white"
+                  }`}
+                >
+                  Services à la carte
+                </button>
+                <button
+                  onClick={() => setActiveTab("pipeline")}
+                  className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${
+                    activeTab === "pipeline"
+                      ? "bg-teal-500 text-white shadow-lg"
+                      : "text-slate-300 hover:text-white"
+                  }`}
+                >
+                  ✦ Préparation de données
+                </button>
+              </motion.div>
+            </div>
+          </section>
+          {/* ===== CONTENU ONGLETS ===== */}
+          <AnimatePresence mode="wait">
+            {/* ===== ONGLET 1 : SERVICES À LA CARTE ===== */}
+            {activeTab === "carte" && (
+              <motion.div
+                key="carte"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="mx-auto max-w-5xl px-4 py-16"
+              >
+                <div className="mb-10 text-center">
+                  <h2 className="text-2xl font-semibold text-slate-900">
+                    Services linguistiques à la carte
+                  </h2>
+                  <p className="mt-2 text-slate-500">
+                    Commandez uniquement ce dont vous avez besoin, quand vous en
+                    avez besoin.
+                  </p>
+                </div>
+                <div className="grid gap-6 md:grid-cols-2">
+                  {servicesACarte.map((service, i) => {
+                    const Icon = service.icon;
+                    const isExpanded = expandedService === i;
+                    return (
+                      <motion.div
+                        key={i}
+                        layout
+                        className={`rounded-3xl border bg-white shadow-sm border-l-4 ${service.accent} cursor-pointer hover:shadow-md transition-shadow`}
+                        onClick={() =>
+                          setExpandedService(isExpanded ? null : i)
+                        }
+                      >
+                        <div className="p-6">
+                          <div className="flex items-start justify-between gap-4">
+                            <div
+                              className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border ${service.color}`}
+                            >
+                              <Icon className="h-6 w-6" />
+                            </div>
+                            <span
+                              className={`mt-1 rounded-full px-3 py-0.5 text-xs font-medium ${service.badge}`}
+                            >
+                              {service.tag}
+                            </span>
+                          </div>
+                          <h3 className="mt-4 text-xl font-semibold text-slate-900">
+                            {service.title}
+                          </h3>
+                          <p className="text-xs text-slate-400 mt-0.5">
+                            {service.subtitle}
+                          </p>
+                          <p className="mt-3 text-sm leading-7 text-slate-600">
+                            {service.description}
+                          </p>
+                          <AnimatePresence>
+                            {isExpanded && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                className="mt-4 overflow-hidden"
+                              >
+                                <ul className="space-y-2 border-t border-slate-100 pt-4">
+                                  {service.details.map((d, j) => (
+                                    <li
+                                      key={j}
+                                      className="flex items-start gap-2 text-sm text-slate-700"
+                                    >
+                                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal-500" />
+                                      {d}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                          <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
+                            <ChevronRight
+                              className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
+                            />
+                            {isExpanded ? "Réduire" : "Voir les détails"}
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+                {/* CTA carte */}
+                <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
+                  <h3 className="text-xl font-semibold text-slate-900">
+                    Prêt à soumettre une demande ?
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-500">
+                    Obtenez une soumission personnalisée en moins de 48 heures.
+                  </p>
+                  <Button
+                    className="mt-6 rounded-2xl"
+                    size="lg"
+                    onClick={() => setPage("soumission")}
+                  >
+                    Demander une soumission <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            )}
+            {/* ===== ONGLET 2 : PIPELINE PRÉPARATION DONNÉES ===== */}
+            {activeTab === "pipeline" && (
+              <motion.div
+                key="pipeline"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="mx-auto max-w-5xl px-4 py-16"
+              >
+                {/* Badge Innovation */}
+                <div className="mb-10 text-center">
+                  <span className="inline-block rounded-full bg-teal-50 border border-teal-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-700">
+                    ✦ Service innovant — peu connu, très utile
+                  </span>
+                  <h2 className="mt-4 text-2xl font-semibold text-slate-900">
+                    Préparation des données qualitatives
+                  </h2>
+                  <p className="mt-3 text-slate-500 max-w-2xl mx-auto text-sm leading-7">
+                    Une offre intégrée qui couvre l'ensemble du pipeline, du
+                    verbatim brut jusqu'au corpus structuré et prêt pour
+                    l'analyse. Ce n'est pas seulement de la transcription —
+                    c'est une chaîne opératoire complète, documentée et traçable.
+                  </p>
+                </div>
+                {/* Pourquoi c'est innovant */}
+                <div className="mb-12 rounded-3xl bg-gradient-to-r from-teal-600 to-teal-800 p-8 text-white">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20">
+                      <Microscope className="h-5 w-5" />
                     </div>
-                    <div className="text-sm uppercase tracking-[0.18em] text-slate-500">Étape {index + 1}</div>
-                    <h3 className="mt-2 text-lg font-semibold leading-7 text-slate-900">{item.title}</h3>
-                  </div>
-
-                  <div className="space-y-4">
-                    <p className="leading-8 text-slate-600">{item.intro}</p>
-                    <div className="rounded-xl bg-slate-50 p-4 text-sm leading-7 text-slate-700">
-                      <strong>Besoin du chercheur :</strong> {item.need}
-                    </div>
-                    <div className="rounded-xl border border-slate-200 p-4 text-sm leading-7 text-slate-700">
-                      <strong>Soutien Vidame :</strong> {item.support}
+                    <div>
+                      <h3 className="text-lg font-semibold">
+                        Pourquoi ce service est innovant
+                      </h3>
+                      <p className="mt-2 text-sm leading-7 text-teal-100">
+                        La préparation des données qualitatives est souvent perçue
+                        comme une tâche technique secondaire. Chez Vidame, nous la
+                        traitons comme une étape scientifique à part entière. Chaque
+                        opération — transcription, anonymisation, segmentation,
+                        structuration — influence directement la qualité du matériau
+                        de recherche et la rigueur de l'analyse qui en découle.
+                      </p>
+                      <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                        {[
+                          { label: "Traçabilité complète", icon: Lock },
+                          { label: "Conformité éthique", icon: ShieldCheck },
+                          { label: "Corpus exploitable", icon: FileSearch },
+                        ].map(({ label, icon: Icon }, i) => (
+                          <div
+                            key={i}
+                            className="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-3"
+                          >
+                            <Icon className="h-4 w-4 text-teal-200" />
+                            <span className="text-sm font-medium">{label}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
+                {/* Pipeline steps */}
+                <div className="relative">
+                  <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 to-slate-300 hidden md:block" />
+                  <div className="space-y-6">
+                    {pipelineSteps.map((step, i) => {
+                      const Icon = step.icon;
+                      return (
+                        <motion.div
+                          key={i}
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: i * 0.1 }}
+                          className="relative flex gap-6"
+                        >
+                          <div
+                            className={`relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl ${step.color} text-white shadow-md`}
+                          >
+                            <span className="text-xs font-bold opacity-70">
+                              {step.step}
+                            </span>
+                            <Icon className="h-5 w-5" />
+                          </div>
+                          <div className="flex-1 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="font-semibold text-slate-900">
+                              {step.title}
+                            </h3>
+                            <p className="mt-1 text-sm leading-7 text-slate-600">
+                              {step.description}
+                            </p>
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </div>
+                {/* Pour qui */}
+                <div className="mt-12 grid gap-4 sm:grid-cols-3">
+                  {[
+                    {
+                      icon: GraduationCap,
+                      title: "Chercheurs universitaires",
+                      text: "Thèses, projets de recherche, études longitudinales",
+                    },
+                    {
+                      icon: Microscope,
+                      title: "Équipes de recherche",
+                      text: "Projets multi-sites, corpus volumineux, délais serrés",
+                    },
+                    {
+                      icon: FileSearch,
+                      title: "Organisations et OBNL",
+                      text: "Évaluations de programmes, consultations, focus groups",
+                    },
+                  ].map(({ icon: Icon, title, text }, i) => (
+                    <div
+                      key={i}
+                      className="rounded-3xl border border-slate-100 bg-slate-50 p-6 text-center"
+                    >
+                      <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <h4 className="text-sm font-semibold text-slate-900">
+                        {title}
+                      </h4>
+                      <p className="mt-1 text-xs text-slate-500">{text}</p>
+                    </div>
+                  ))}
+                </div>
+                {/* CTA pipeline */}
+                <div className="mt-12 rounded-3xl border border-teal-200 bg-teal-50 p-8 text-center">
+                  <h3 className="text-xl font-semibold text-slate-900">
+                    Intéressé par le pipeline complet ?
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-500">
+                    Discutons de votre projet de recherche — nous vous proposerons
+                    un pipeline adapté à vos données et à vos délais.
+                  </p>
+                  <div className="mt-6 flex flex-wrap justify-center gap-3">
+                    <Button
+                      className="rounded-2xl"
+                      size="lg"
+                      onClick={() => setPage("soumission")}
+                    >
+                      Demander une soumission <ChevronRight className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="rounded-2xl"
+                      size="lg"
+                      onClick={() => setPage("blog")}
+                    >
+                      En savoir plus sur l'approche
+                    </Button>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      );
+    }
 // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 // Page formulaire.
 function Soumission() {

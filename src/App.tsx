@@ -810,9 +810,9 @@ import PipelineDiagram from "./components/PipelineDiagram";
                 </span>
                 <h1 className="text-4xl font-semibold tracking-tight text-white md:text-5xl"> 
                   Des services conçus pour le{" "}
-                  <span className="text-teal-400">langage</span>, les{" "}
-                  <span className="text-teal-400">données</span> et la{" "}
-                  <span className="text-teal-400">recherche</span>
+                  <span className="text-teal-400">langage</span>, la{" "}
+                  <span className="text-teal-400">recherche</span> et les{" "}
+                  <span className="text-teal-400">données</span>
                 </h1>
                 <p className="mt-6 text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
                   Deux types d'offres complémentaires : des services linguistiques à la carte, et un pipeline complet de préparation de données — une approche innovante qui transforme votre verbatim en corpus exploitable.

@@ -821,9 +821,11 @@ import PipelineDiagram from "./components/PipelineDiagram";
          et les <span className="text-teal-400">données</span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-slate-300">
-           Deux types d'offres complémentaires : des services linguistiques à la carte, et un pipeline complet de préparation de données — une approche qui transforme votre verbatim en corpus exploitable.
-         </p>
+        <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-300">
+          Deux types d'offres complémentaires : des services linguistiques à la carte,
+          et un pipeline complet de préparation de données — une approche
+          qui transforme votre verbatim en corpus exploitable.
+        </p>
         </motion.div>
 
             <motion.div

@@ -920,7 +920,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
                   <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
                   <p className="mt-2 text-sm text-slate-500">Obtenez un devis personnalisé en moins de 48 heures.</p>
                  <button
-                  className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+                  className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-teal-500 px-6 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-teal-600"
                   onClick={() => setPage("soumission")}
                 >
                   Obtenir un devis <ChevronRight className="h-4 w-4" />

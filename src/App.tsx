@@ -799,9 +799,9 @@ import PipelineDiagram from "./components/PipelineDiagram";
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
             <section className="relative overflow-hidden bg-slate-900 py-20 px-4">  
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-teal-400 blur-3xl" />
-              <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-amber-400 blur-3xl" />
+           <div className="absolute inset-0 opacity-5">
+              <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-slate-400 blur-3xl" />
+              <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-stone-300 blur-3xl" />
             </div>
             <div className="relative mx-auto max-w-5xl text-center">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>

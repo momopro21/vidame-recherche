@@ -956,9 +956,9 @@ import PipelineDiagram from "./components/PipelineDiagram";
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20">
                       <Microscope className="h-5 w-5" />
                     </div>
-                    <div>
+                   <div>
                       <h3 className="text-lg font-semibold">Pourquoi ce service est innovant</h3>
-                      <p className="mt-2 text-sm leading-7 text-teal-100">
+                      <p className="mt-2 text-sm leading-7 text-slate-700">
                         La préparation des données qualitatives est souvent perçue comme une tâche technique secondaire. Chez Vidame, nous la traitons comme une étape scientifique à part entière. Chaque opération — transcription, anonymisation, segmentation, structuration — influence directement la qualité du matériau de recherche et la rigueur de l'analyse qui en découle.
                       </p>
                       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">

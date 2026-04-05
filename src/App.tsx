@@ -966,9 +966,9 @@ import PipelineDiagram from "./components/PipelineDiagram";
                           { label: "Traçabilité complète", icon: Lock },
                           { label: "Conformité éthique", icon: ShieldCheck },
                           { label: "Corpus exploitable", icon: FileSearch },
-                        ].map(({ label, icon: Icon }, i) => (
-                          <div key={i} className="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-3">
-                            <Icon className="h-4 w-4 text-teal-200" />
+                            ].map(({ label, icon: Icon }, i) => (
+                          <div key={i} className="flex items-center gap-2 rounded-xl bg-white border border-slate-200 px-4 py-3">
+                            <Icon className="h-4 w-4 text-teal-600" />
                             <span className="text-sm font-medium">{label}</span>
                           </div>
                         ))}

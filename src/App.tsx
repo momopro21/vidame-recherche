@@ -810,9 +810,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 // Page détaillée de l’offre de services.
 function Services() {
-    // ===== VIDAME_REPERE_CONTENU_SERVICES_DETAIL =====
-  // Contenu détaillé des blocs de services sur la page Offre de services.
- // ===== NOUVELLE PAGE SERVICES DYNAMIQUE =====
+    // ===== NOUVELLE PAGE SERVICES DYNAMIQUE =====
     // À remplacer dans App.tsx à la place de la fonction ServicesPage existante
     function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
       const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");

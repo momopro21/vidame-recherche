@@ -1070,7 +1070,6 @@ function Shell({
     
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
-  const [type, setType] = useState("");
 
   const content = {
     fr: {
@@ -1201,12 +1200,19 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 
         <div>
           <label className="text-sm font-medium">{t.supportLabel}</label>
-          <select
+          <div className="mt-2 space-y-3 rounded-xl border border-slate-200 p-4">
+            {Object.entries(t.supportOptions).map(([value, label]) => (
+            <label key={value} className="flex items-start gap-3 text-sm">
+            <input
+            type="checkbox"
             name="support_type"
-            value={type}
-            onChange={(e) => setType(e.target.value)}
-            className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm"
-          >
+            value={label}
+            className="mt-0.5 h-4 w-4"
+          />
+          <span>{label}</span>
+        </label>
+      ))}
+    </div>
             <option value="">{t.supportDefault}</option>
             <option value="transcription">{t.supportOptions.transcription}</option>
             <option value="anonymisation">{t.supportOptions.anonymisation}</option>

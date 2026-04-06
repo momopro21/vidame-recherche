@@ -1156,7 +1156,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
       <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
 
       <form
-        action="https://formspree.io/f/TON_ID_ICI"
+        action="https://formspree.io/f/xwvwawel"
         method="POST"
         className="mt-8 space-y-6"
       >

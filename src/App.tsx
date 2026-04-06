@@ -1231,8 +1231,10 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
     }
     
     // ===== VIDAME_REPERE_POINT_ENTREE_APP =====
-    export default function App() {
-      const [page, setPage] = useState("accueil");
-      return <Shell page={page} setPage={setPage} />;
-    }
+export default function App() {
+  const [page, setPage] = useState("accueil");
+  const [lang, setLang] = useState<"fr" | "en">("fr");
+
+  return <Shell page={page} setPage={setPage} lang={lang} setLang={setLang} />;
+}
 

@@ -561,14 +561,20 @@ function Shell({
                 })}
               </div>
               <div className="mt-14 flex flex-wrap justify-center gap-4">
-                <a className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-slate-700">
-                  Demander une soumission
-                </a>
-                <a href="/offre-de-services" className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50">
-                  Voir l'offre de services
-                </a>
-              </div>
+                <button
+                onClick={() => setPage("soumission")}
+                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-slate-700"
+              >
+                Demander une soumission
+              </button>
+              <button
+               onClick={() => setPage("services")}
+               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
+              >
+                Voir l'offre de services
+              </button>
             </div>
+          </div>
           </section>
     
           {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}

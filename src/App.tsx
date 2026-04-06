@@ -250,7 +250,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
                 {page === "accueil" && <Accueil setPage={setPage} />}
                 {page === "apropos" && <APropos setPage={setPage} />}
                 {page === "services" && <ServicesPage setPage={setPage} />}
-                {page === "soumission" && <Soumission />}
+                {page === "soumission" && <Soumission lang={lang} />}
                 {page === "blog" && <Blog />}
               </motion.div>
             </AnimatePresence>

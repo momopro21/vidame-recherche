@@ -1077,7 +1077,8 @@ function Shell({
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 const [submitted, setSubmitted] = useState(false);
-
+const [sending, setSending] = useState(false);
+    
   const content = {
     fr: {
       eyebrow: "Demande de devis",
@@ -1159,10 +1160,12 @@ const [submitted, setSubmitted] = useState(false);
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
-
+  setSending(true);
+      
   const form = e.currentTarget;
   const data = new FormData(form);
 
+try {
   const response = await fetch("https://formspree.io/f/xwvwawel", {
     method: "POST",
     body: data,
@@ -1174,9 +1177,20 @@ const [submitted, setSubmitted] = useState(false);
   if (response.ok) {
     setSubmitted(true);
     form.reset();
+ } else {
+      alert(lang === "fr"
+        ? "L'envoi a échoué. Veuillez réessayer."
+        : "Submission failed. Please try again.");
+    }
+  } catch (error) {
+    alert(lang === "fr"
+      ? "Une erreur est survenue pendant l'envoi."
+      : "An error occurred while sending the form.");
+  } finally {
+    setSending(false);
   }
 };
-
+    
   return (
    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
     <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />

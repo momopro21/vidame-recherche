@@ -1039,7 +1039,7 @@ import PipelineDiagram from "./components/PipelineDiagram";
     }
     
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
-function Soumission({ lang }: { lang: "fr" | "en" }) {
+function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
   const [type, setType] = useState("");
 
   const content = {

@@ -1195,7 +1195,6 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
                 {role}
               </option>
             ))}
-          </select>
         </div>
 
         <div>
@@ -1213,18 +1212,8 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
         </label>
       ))}
     </div>
-            <option value="">{t.supportDefault}</option>
-            <option value="transcription">{t.supportOptions.transcription}</option>
-            <option value="anonymisation">{t.supportOptions.anonymisation}</option>
-            <option value="segmentation">{t.supportOptions.segmentation}</option>
-            <option value="structuration">{t.supportOptions.structuration}</option>
-            <option value="segmentation_analytique">
-              {t.supportOptions.segmentation_analytique}
-            </option>
-            <option value="traduction">{t.supportOptions.traduction}</option>
-            <option value="combine">{t.supportOptions.combine}</option>
-          </select>
-        </div>
+        
+          </div>
 
         <div className="space-y-2 rounded-xl bg-slate-50 p-5">
           <label className="text-sm font-medium">{t.requestLabel}</label>

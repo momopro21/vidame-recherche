@@ -171,7 +171,17 @@ import PipelineDiagram from "./components/PipelineDiagram";
     }
     
     // ===== VIDAME_REPERE_STRUCTURE_GLOBALE =====
-    function Shell({ page, setPage }: { page: string; setPage: (page: string) => void }) {
+function Shell({
+  page,
+  setPage,
+  lang,
+  setLang,
+}: {
+  page: string;
+  setPage: (page: string) => void;
+  lang: "fr" | "en";
+  setLang: (lang: "fr" | "en") => void;
+}) {
       const [open, setOpen] = useState(false);
       const currentLabel = useMemo(() => pages.find((p) => p.id === page)?.label ?? "Accueil", [page]);
     

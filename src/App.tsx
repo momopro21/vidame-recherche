@@ -1178,18 +1178,19 @@ const [submitted, setSubmitted] = useState(false);
 };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-      <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
-  return (
-    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-      <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
+   <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
+    <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
 
-      <form
-        action="https://formspree.io/f/xwvwawel"
-        method="POST"
-        className="mt-8 space-y-6"
-      >
-        <input type="hidden" name="lang" value={lang} />
+    {submitted && (
+      <div className="mb-6 rounded-xl bg-green-50 p-4 text-sm text-green-800">
+        {lang === "fr"
+          ? "Votre demande a été envoyée avec succès."
+          : "Your request has been sent successfully."}
+      </div>
+    )}
+
+    <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+     <input type="hidden" name="lang" value={lang} />
         
         <input
           type="hidden"

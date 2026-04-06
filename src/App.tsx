@@ -1161,7 +1161,13 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
         className="mt-8 space-y-6"
       >
         <input type="hidden" name="lang" value={lang} />
-
+        
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://google.com"
+      />
+          
         <div className="grid gap-4 md:grid-cols-2">
           <Input name="name" placeholder={t.name} />
           <Input name="organization" placeholder={t.org} />

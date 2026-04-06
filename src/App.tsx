@@ -1076,6 +1076,7 @@ function Shell({
     
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
+const [submitted, setSubmitted] = useState(false);
 
   const content = {
     fr: {
@@ -1155,7 +1156,30 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
   } as const;
 
   const t = content[lang];
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
+  const form = e.currentTarget;
+  const data = new FormData(form);
+
+  const response = await fetch("https://formspree.io/f/xwvwawel", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    setSubmitted(true);
+    form.reset();
+  }
+};
+
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
+      <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
       <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />

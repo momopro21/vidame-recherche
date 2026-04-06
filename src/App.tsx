@@ -1195,7 +1195,8 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
                 {role}
               </option>
             ))}
-        </div>
+           </select>
+          </div>
 
         <div>
           <label className="text-sm font-medium">{t.supportLabel}</label>

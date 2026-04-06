@@ -1076,9 +1076,7 @@ function Shell({
     
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
-const [submitted, setSubmitted] = useState(false);
-const [sending, setSending] = useState(false);
-    
+
   const content = {
     fr: {
       eyebrow: "Demande de devis",
@@ -1157,54 +1155,17 @@ const [sending, setSending] = useState(false);
   } as const;
 
   const t = content[lang];
-  
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  setSending(true);
-      
-  const form = e.currentTarget;
-  const data = new FormData(form);
 
-try {
-  const response = await fetch("https://formspree.io/f/xwvwawel", {
-    method: "POST",
-    body: data,
-    headers: {
-      Accept: "application/json",
-    },
-  });
-
-  if (response.ok) {
-    setSubmitted(true);
-    form.reset();
- } else {
-      alert(lang === "fr"
-        ? "L'envoi a échoué. Veuillez réessayer."
-        : "Submission failed. Please try again.");
-    }
-  } catch (error) {
-    alert(lang === "fr"
-      ? "Une erreur est survenue pendant l'envoi."
-      : "An error occurred while sending the form.");
-  } finally {
-    setSending(false);
-  }
-};
-    
   return (
-   <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-    <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
+    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
+      <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
 
-    {submitted && (
-      <div className="mb-6 rounded-xl bg-green-50 p-4 text-sm text-green-800">
-        {lang === "fr"
-          ? "Votre demande a été envoyée avec succès."
-          : "Your request has been sent successfully."}
-      </div>
-    )}
-
-    <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-     <input type="hidden" name="lang" value={lang} />
+      <form
+        action="https://formspree.io/f/xwvwawel"
+        method="POST"
+        className="mt-8 space-y-6"
+      >
+        <input type="hidden" name="lang" value={lang} />
         
         <input
           type="hidden"
@@ -1314,4 +1275,3 @@ export default function App() {
 
   return <Shell page={page} setPage={setPage} lang={lang} setLang={setLang} />;
 }
-

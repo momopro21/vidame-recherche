@@ -1038,73 +1038,174 @@ import PipelineDiagram from "./components/PipelineDiagram";
       );
     }
     
-    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
-    function Soumission() {
-      const [type, setType] = useState("");
-      return (
-        <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-          <SectionTitle
-            eyebrow="Demande de soumission"
-            title="Précisez votre projet"
-            text="Un court formulaire pour structurer votre demande et amorcer une réflexion claire."
-          />
-          <div className="mt-8 space-y-6">
-            <div className="grid gap-4 md:grid-cols-2">
-              <Input placeholder="Nom" />
-              <Input placeholder="Organisation / Université" />
-            </div>
-            <Input placeholder="Courriel" />
-            <div className="grid gap-4 md:grid-cols-2">
-              <Input placeholder="Département / Unité de recherche" />
-              <Input placeholder="Chaire de recherche (si applicable)" />
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Input placeholder="Nom du directeur / de la directrice de projet" />
-              <select className="w-full rounded-xl border border-slate-200 p-3 text-sm">
-                <option>Votre rôle</option>
-                <option>Étudiant·e</option>
-                <option>Assistant·e de recherche</option>
-                <option>Professionnel·le de recherche</option>
-                <option>Chercheur·e principal·e</option>
-                <option>Autre</option>
-              </select>
-            </div>
-            <div>
-              <label className="text-sm font-medium">Type de soutien souhaité</label>
-              <select value={type} onChange={(e) => setType(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm">
-                <option value="">Sélectionnez</option>
-                <option value="transcription">Transcription</option>
-                <option value="anonymisation">Anonymisation</option>
-                <option value="segmentation">Segmentation (timestamps / unités d'analyse)</option>
-                <option value="structuration">Nettoyage et mise en forme du corpus</option>
-                <option value="segmentation_analytique">Segmentation analytique</option>
-                <option value="traduction">Traduction</option>
-                <option value="combine">Soutien combiné</option>
-              </select>
-            </div>
-            <div className="space-y-2 rounded-xl bg-slate-50 p-5">
-              <label className="text-sm font-medium">Décrivez brièvement votre demande</label>
-              <p className="text-sm leading-6 text-slate-500">
-                Les coûts varient selon le type de service, le volume, le domaine de spécialité et les exigences de protection des données. Les projets impliquant des vocabulaires techniques ou sensibles nécessitent une approche adaptée.
-              </p>
-              <p className="text-sm leading-6 text-slate-500">
-                Pour faciliter l'évaluation de votre demande, vous pouvez indiquer le type de matériau, le volume approximatif, l'échéancier souhaité et toute contrainte particulière.
-              </p>
-              <p className="mt-2 text-sm leading-6 text-slate-500">
-                Chaque demande fait l'objet d'une évaluation contextualisée.
-              </p>
-              <Textarea
-                className="mt-2 bg-slate-100 border border-slate-300 focus:border-slate-400 focus:ring-0"
-                placeholder="Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d'audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques."
-              />
-            </div>
-            <Button className="mt-8 rounded-full">Envoyer</Button>
-          </div>
+   // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
+function Soumission({ lang }: { lang: "fr" | "en" }) {
+  const [type, setType] = useState("");
+
+  const content = {
+    fr: {
+      eyebrow: "Demande de devis",
+      title: "Précisez votre projet",
+      text: "Un court formulaire pour structurer votre demande et amorcer une réflexion claire.",
+      name: "Nom",
+      org: "Organisation / Université",
+      email: "Courriel",
+      dept: "Département / Unité de recherche",
+      chair: "Chaire de recherche (si applicable)",
+      director: "Nom du directeur / de la directrice de projet",
+      roleDefault: "Votre rôle",
+      roles: [
+        "Étudiant·e",
+        "Assistant·e de recherche",
+        "Professionnel·le de recherche",
+        "Chercheur·e principal·e",
+        "Autre",
+      ],
+      supportLabel: "Type de soutien souhaité",
+      supportDefault: "Sélectionnez",
+      supportOptions: {
+        transcription: "Transcription",
+        anonymisation: "Anonymisation",
+        segmentation: "Segmentation (timestamps / unités d'analyse)",
+        structuration: "Nettoyage et mise en forme du corpus",
+        segmentation_analytique: "Segmentation analytique",
+        traduction: "Traduction",
+        combine: "Soutien combiné",
+      },
+      requestLabel: "Décrivez brièvement votre demande",
+      p1: "Les coûts varient selon le type de service, le volume, le domaine de spécialité et les exigences de protection des données. Les projets impliquant des vocabulaires techniques ou sensibles nécessitent une approche adaptée.",
+      p2: "Pour faciliter l'évaluation de votre demande, vous pouvez indiquer le type de matériau, le volume approximatif, l'échéancier souhaité et toute contrainte particulière.",
+      p3: "Chaque demande fait l'objet d'une évaluation contextualisée.",
+      placeholder:
+        "Ex. : 12 entrevues semi-dirigées en français, environ 9 heures d'audio, transcription et anonymisation souhaitées, échéancier de 3 semaines, projet universitaire soumis à des exigences éthiques.",
+      submit: "Envoyer",
+    },
+    en: {
+      eyebrow: "Quote request",
+      title: "Tell me about your project",
+      text: "A short form to structure your request and begin with a clear understanding of your needs.",
+      name: "Name",
+      org: "Organization / University",
+      email: "Email",
+      dept: "Department / Research Unit",
+      chair: "Research Chair (if applicable)",
+      director: "Project Supervisor / Director",
+      roleDefault: "Your role",
+      roles: [
+        "Student",
+        "Research Assistant",
+        "Research Professional",
+        "Principal Investigator",
+        "Other",
+      ],
+      supportLabel: "Type of support requested",
+      supportDefault: "Select",
+      supportOptions: {
+        transcription: "Transcription",
+        anonymisation: "Anonymization",
+        segmentation: "Segmentation (timestamps / units of analysis)",
+        structuration: "Corpus cleaning and formatting",
+        segmentation_analytique: "Analytical segmentation",
+        traduction: "Translation",
+        combine: "Combined support",
+      },
+      requestLabel: "Briefly describe your request",
+      p1: "Costs vary depending on the type of service, volume, subject area, and data protection requirements. Projects involving technical or sensitive vocabulary require an adapted approach.",
+      p2: "To support the assessment of your request, you may indicate the type of material, approximate volume, desired timeline, and any specific constraints.",
+      p3: "Each request is assessed in its own context.",
+      placeholder:
+        "Example: 12 semi-structured interviews in French, approximately 9 hours of audio, transcription and anonymization requested, 3-week timeline, university project subject to ethics requirements.",
+      submit: "Send",
+    },
+  } as const;
+
+  const t = content[lang];
+
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
+      <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
+
+      <form
+        action="https://formspree.io/f/TON_ID_ICI"
+        method="POST"
+        className="mt-8 space-y-6"
+      >
+        <input type="hidden" name="lang" value={lang} />
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <Input name="name" placeholder={t.name} />
+          <Input name="organization" placeholder={t.org} />
         </div>
-      );
-    }
-    
-    // ===== VIDAME_REPERE_PAGE_BLOG =====
+
+        <Input name="email" type="email" placeholder={t.email} />
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <Input name="department" placeholder={t.dept} />
+          <Input name="research_chair" placeholder={t.chair} />
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <Input name="project_director" placeholder={t.director} />
+
+          <select
+            name="role"
+            className="w-full rounded-xl border border-slate-200 p-3 text-sm"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              {t.roleDefault}
+            </option>
+            {t.roles.map((role) => (
+              <option key={role} value={role}>
+                {role}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label className="text-sm font-medium">{t.supportLabel}</label>
+          <select
+            name="support_type"
+            value={type}
+            onChange={(e) => setType(e.target.value)}
+            className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm"
+          >
+            <option value="">{t.supportDefault}</option>
+            <option value="transcription">{t.supportOptions.transcription}</option>
+            <option value="anonymisation">{t.supportOptions.anonymisation}</option>
+            <option value="segmentation">{t.supportOptions.segmentation}</option>
+            <option value="structuration">{t.supportOptions.structuration}</option>
+            <option value="segmentation_analytique">
+              {t.supportOptions.segmentation_analytique}
+            </option>
+            <option value="traduction">{t.supportOptions.traduction}</option>
+            <option value="combine">{t.supportOptions.combine}</option>
+          </select>
+        </div>
+
+        <div className="space-y-2 rounded-xl bg-slate-50 p-5">
+          <label className="text-sm font-medium">{t.requestLabel}</label>
+
+          <p className="text-sm leading-6 text-slate-500">{t.p1}</p>
+          <p className="text-sm leading-6 text-slate-500">{t.p2}</p>
+          <p className="mt-2 text-sm leading-6 text-slate-500">{t.p3}</p>
+
+          <Textarea
+            name="message"
+            className="mt-2 border border-slate-300 bg-slate-100 focus:border-slate-400 focus:ring-0"
+            placeholder={t.placeholder}
+          />
+        </div>
+
+        <Button type="submit" className="mt-8 rounded-full">
+          {t.submit}
+        </Button>
+      </form>
+    </div>
+  );
+}
+       // ===== VIDAME_REPERE_PAGE_BLOG =====
     function Blog() {
       return (
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">

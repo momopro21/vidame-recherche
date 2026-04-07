@@ -864,8 +864,7 @@ function Shell({
          </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-       Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, 
-        ainsi que la préparation des données qualitatives en amont de l’analyse scientifique.
+     Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse.
       </p>
     </motion.div>
 

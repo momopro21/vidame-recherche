@@ -869,7 +869,7 @@ function Shell({
       </button>
       <button
        onClick={() => setActiveTab("pipeline")}
-     className="rounded-full bg-gradient-to-b from-slate-100 to-slate-300 text-slate-900 px-6 py-2 font-medium border border-slate-300"
+   className="rounded-full bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900 px-6 py-2 font-medium border border-slate-300 shadow-sm"
       >
         Chaine opératoire Vidame 
       </button>

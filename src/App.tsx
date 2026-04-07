@@ -846,11 +846,7 @@ function Shell({
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl"
          >
-     <span className="inline-block mb-4 rounded-full border border-slate-300 bg-gradient-to-b from-slate-100 to-slate-300 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-slate-900 shadow-sm">
-            Offre de services
-           </span>
-
-       <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
+           <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
            Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts.
          </h1>
 

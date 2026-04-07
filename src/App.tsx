@@ -890,7 +890,7 @@ function Shell({
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.4 }}
-                className="mx-auto max-w-5xl px-4 py-16"
+                className="mx-auto max-w-5xl px-4 pt-10 pb-16"
               >
                 <div className="mb-10 text-center">
                   <h2 className="text-2xl font-semibold text-slate-900">Services linguistiques à la carte</h2>

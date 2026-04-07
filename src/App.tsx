@@ -790,8 +790,8 @@ function Shell({
         {
           icon: FileText,
           color: "bg-sky-50 text-sky-700 border-sky-200",
-          accent: "border-l-sky-500",
-          badge: "bg-sky-100 text-sky-800",
+          accent: "border-l-sky-400",
+          badge: "bg-sky-50 text-sky-700",
           title: "Transcription",
           subtitle: "Assistée par IA · Validée par un humain",
           description: "Transcription de verbatim assistée par intelligence artificielle, avec validation humaine systématique. Fidèle au discours réel, aux hésitations, aux nuances et au langage authentique des participants.",

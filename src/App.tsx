@@ -850,7 +850,7 @@ function Shell({
             Offre de services
            </span>
 
-         <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.1]">
+       <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
            Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts.
          </h1>
 

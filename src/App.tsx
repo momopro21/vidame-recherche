@@ -838,7 +838,7 @@ function Shell({
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-rose-50 to-white py-20 px-4">
+      <section className="relative overflow-hidden bg-gradient-to-b from-rose-50 via-slate-50 to-white py-20 px-4">
         <div className="absolute inset-0 opacity-40">
          <div className="absolute top-10 left-10 h-64 w-64 rounded-full bg-orange-100 blur-3xl" />
          <div className="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-sky-100 blur-3xl" />
@@ -856,19 +856,16 @@ function Shell({
             Offre de services
            </span>
 
-          <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl md:leading-[1.05]">
-            Des services conçus pour le{" "}
-          <span className="text-teal-600">langage</span>, la{" "}
-          <span className="text-teal-600">recherche</span><br />
-          et les <span className="text-teal-600">données</span>
+         <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl md:leading-[1.05]">
+           Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts.
          </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-     Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse.
-      </p>
-    </motion.div>
+           Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse.
+          </p>
+        </motion.div>
 
-    <motion.div
+     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.5 }}

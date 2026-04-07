@@ -838,7 +838,7 @@ function Shell({
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
-     <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-700 to-white py-20 px-4">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/30 to-white py-20 px-4">
        <div className="relative mx-auto max-w-5xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

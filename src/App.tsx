@@ -850,11 +850,11 @@ function Shell({
             Offre de services
            </span>
 
-         <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl md:leading-[1.05]">
+         <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.1]">
            Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts.
          </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600">
            Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse.
           </p>
         </motion.div>

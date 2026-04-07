@@ -846,7 +846,7 @@ function Shell({
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl"
          >
-          <span className="inline-block mb-4 rounded-full border border-teal-200 bg-teal-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-700">
+        <span className="inline-block mb-4 rounded-full border border-teal-300 bg-teal-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-900">
             Offre de services
            </span>
 
@@ -872,8 +872,8 @@ function Shell({
         Services à la carte
       </button>
       <button
-        onClick={() => setActiveTab("pipeline")}
-        className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "pipeline" ? "bg-teal-600 text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`}
+  onClick={() => setActiveTab("pipeline")}
+  className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "pipeline" ? "bg-teal-600 text-white" : "text-slate-900 hover:bg-slate-100 hover:text-slate-900"}`}
       >
         Chaine opératoire Vidame 
       </button>

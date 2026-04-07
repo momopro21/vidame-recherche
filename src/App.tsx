@@ -838,7 +838,7 @@ function Shell({
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/30 to-white py-20 px-4">
+  <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white py-20 px-4">
        <div className="relative mx-auto max-w-5xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -846,7 +846,7 @@ function Shell({
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl"
          >
-       <span className="inline-block mb-4 rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-900">
+      <span className="inline-block mb-4 rounded-full border border-slate-300 bg-gradient-to-b from-slate-100 to-slate-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-900">
             Offre de services
            </span>
 
@@ -873,7 +873,7 @@ function Shell({
       </button>
       <button
        onClick={() => setActiveTab("pipeline")}
-       className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "pipeline" ? "bg-slate-700 text-white" : "bg-slate-100 text-slate-900 hover:bg-slate-200 hover:text-slate-900"}`}
+     className="rounded-full bg-gradient-to-b from-slate-100 to-slate-300 text-slate-900 px-6 py-2 font-medium border border-slate-300"
       >
         Chaine opératoire Vidame 
       </button>

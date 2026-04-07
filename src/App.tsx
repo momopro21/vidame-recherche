@@ -774,8 +774,8 @@ function Shell({
         {
           icon: Languages,
           color: "bg-amber-50 text-amber-700 border-amber-200",
-          accent: "border-l-amber-500",
-          badge: "bg-amber-100 text-amber-800",
+          accent: "border-l-amber-400",
+          badge: "bg-amber-50 text-amber-700",
           title: "Traduction EN vers FR",
           subtitle: "Français canadien · Adaptation culturelle",
           description: "Traduction professionnelle de l'anglais vers le français canadien, avec révision linguistique complète, harmonisation terminologique et adaptation au registre et au public cible.",

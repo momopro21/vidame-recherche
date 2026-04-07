@@ -838,57 +838,58 @@ function Shell({
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
-            <section className="relative overflow-hidden bg-slate-900 py-20 px-4">  
-           <div className="absolute inset-0 opacity-5">
-              <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-slate-400 blur-3xl" />
-              <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-stone-300 blur-3xl" />
-            </div>
-           <div className="relative mx-auto max-w-5xl text-center">
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    className="mx-auto max-w-4xl"
-  >
-    <span className="inline-block mb-4 rounded-full border border-teal-400/30 bg-teal-500/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-300">
-        Offre de services
-     </span>
+      <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-rose-50 to-white py-20 px-4">
+        <div className="absolute inset-0 opacity-40">
+         <div className="absolute top-10 left-10 h-64 w-64 rounded-full bg-orange-100 blur-3xl" />
+         <div className="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-sky-100 blur-3xl" />
+         <div className="absolute left-1/2 top-1/3 h-64 w-64 -translate-x-1/2 rounded-full bg-rose-100 blur-3xl" />
+       </div>
 
-      <h1 className="text-4xl font-semibold tracking-tight text-white md:text-6xl md:leading-[1.05]">
-        Des services conçus pour le{" "}
-        <span className="text-teal-400">langage</span>, la{" "}
-        <span className="text-teal-400">recherche</span><br />
-         et les <span className="text-teal-400">données</span>
-        </h1>
+       <div className="relative mx-auto max-w-5xl text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto max-w-4xl"
+         >
+          <span className="inline-block mb-4 rounded-full border border-teal-200 bg-teal-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-700">
+            Offre de services
+           </span>
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-          Deux types d'offres complémentaires : des services linguistiques à la carte,
-          et un pipeline complet de préparation de données — une approche
-          qui transforme votre verbatim en corpus exploitable.
-        </p>
-        </motion.div>
+          <h1 className="text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl md:leading-[1.05]">
+            Des services conçus pour le{" "}
+          <span className="text-teal-600">langage</span>, la{" "}
+          <span className="text-teal-600">recherche</span><br />
+          et les <span className="text-teal-600">données</span>
+         </h1>
 
-            <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                className="mt-10 inline-flex gap-2 rounded-2xl border border-white/10 bg-white/5 p-1.5 backdrop-blur"
-              >
-                <button
-                  onClick={() => setActiveTab("carte")}
-                  className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "carte" ? "bg-white text-slate-900 shadow-lg" : "text-slate-300 hover:text-white"}`}
-                >
-                  Services à la carte
-                </button>
-                <button
-                  onClick={() => setActiveTab("pipeline")}
-                  className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "pipeline" ? "bg-teal-500 text-white shadow-lg" : "text-slate-300 hover:text-white"}`}
-                >
-                  Preparation de données
-                </button>
-              </motion.div>
-            </div>
-          </section>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+       Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, 
+        ainsi que la préparation des données qualitatives en amont de l’analyse scientifique.
+      </p>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="mt-10 inline-flex gap-2 rounded-2xl border border-slate-200 bg-white/80 p-1.5 shadow-sm backdrop-blur"
+    >
+      <button
+        onClick={() => setActiveTab("carte")}
+        className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "carte" ? "bg-slate-900 text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`}
+      >
+        Services à la carte
+      </button>
+      <button
+        onClick={() => setActiveTab("pipeline")}
+        className={`rounded-xl px-6 py-2.5 text-sm font-medium transition-all ${activeTab === "pipeline" ? "bg-teal-600 text-white shadow-sm" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`}
+      >
+        Chaine opératoire Vidame 
+      </button>
+    </motion.div>
+  </div>
+</section>
     
           {/* CONTENU ONGLETS */}
           <AnimatePresence mode="wait">

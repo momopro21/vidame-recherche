@@ -838,13 +838,7 @@ function Shell({
       return (
         <div className="min-h-screen bg-white">
           {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-rose-50 via-slate-50 to-white py-20 px-4">
-        <div className="absolute inset-0 opacity-40">
-         <div className="absolute top-10 left-10 h-64 w-64 rounded-full bg-orange-100 blur-3xl" />
-         <div className="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-sky-100 blur-3xl" />
-         <div className="absolute left-1/2 top-1/3 h-64 w-64 -translate-x-1/2 rounded-full bg-rose-100 blur-3xl" />
-       </div>
-
+      <section className="relative overflow-hidden bg-white py-20 px-4">
        <div className="relative mx-auto max-w-5xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

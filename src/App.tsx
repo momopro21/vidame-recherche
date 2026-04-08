@@ -508,14 +508,14 @@ function Shell({
                   </summary>
                   <div className="mt-6 space-y-6 leading-8 text-slate-600">
                     <p>
-                       Le projet commence souvent par des heures d’entrevues. 
-                          Les données s’accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
+                     Le projet commence souvent par des heures d’entrevues. 
+                     Les données s’accumulent rapidement. Les données provenenant des entrevues enregistrées sont riches, mais difficiles à mobiliser tels quels.
                     </p>
                     <p>
                       Une première transformation est nécessaire : passer de l'audio au texte. Mais ce texte reste encore un matériau brut. Il faut ensuite le structurer, l'anonymiser, le segmenter et le rendre navigable.
                     </p>
                     <p>
-                      C'est à ce moment que se joue la qualité de l'analyse — et où votre expertise peut réellement se déployer. Sans préparation rigoureuse, le corpus devient difficile à explorer, à comparer et à interpréter.
+                      C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour que se déploie l'expertise des professionnels de recherche. Sans préparation rigoureuse, le corpus devient difficile à explorer, à comparer et à interpréter.
                     </p>
                     <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-5">
                       <div className="mb-3 font-semibold">Ce que Vidame prend en charge</div>

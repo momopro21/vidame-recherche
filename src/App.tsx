@@ -410,7 +410,7 @@ function Shell({
               <SectionTitle
                 eyebrow="Pipeline Vidame"
                 title="Du terrain à l'analyse, une chaîne opératoire solide"
-             />
+            />
               <div className="mt-10 rounded-2xl bg-slate-100 border border-slate-200">
                 <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
                   <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
@@ -421,7 +421,8 @@ function Shell({
                   </p>
                   <p className="mt-4 text-base leading-7 text-slate-600">
                     L’ensemble constitue une chaîne opératoire continue, où les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
-                  <p className="mt-4 text-base leading-7 text-slate-600">
+                  </p>
+                     <p className="mt-4 text-base leading-7 text-slate-600">
                      Le traitement des données respecte les exigences gouvernementales canadiennes et québécoises (Loi 25), ainsi que celles des comités d’éthique en matière de protection des renseignements personnels.
                   </p>
                 </div>

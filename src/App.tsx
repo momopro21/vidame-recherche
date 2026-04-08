@@ -343,7 +343,7 @@ function Shell({
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
           <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
             <div className="space-y-8">
-              <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Conformité éthique · Loi 25 · Données sensibles protégées</Badge>
+              <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Données sensibles · Conformité éthique · Cadre légal canadien (incluant Loi 25)</Badge>
               <div className="space-y-5">
                 {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
                 <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">

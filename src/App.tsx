@@ -346,8 +346,8 @@ function Shell({
               <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Données sensibles · Conformité éthique · Cadre légal canadien (incluant Loi 25)</Badge>
               <div className="space-y-5">
                 {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-                <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
-                  Ici, vous pouvez faire traduire, transcrire ou structurer des contenus pour l’analyse qualitative
+                <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl md:leading-[1.05]">
+                  Ici, vous pouvez faire traduire vos textes, transcrire des fichiers audio ou structurer des contenus pour l’analyse qualitative
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                   Vidame offre une expertise qui dépasse l'exécution méacanique. Sans méthode, ces opérations fragilisent la qualité : la traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. Bien faire ce travail requiert des connaissances solides et une expérience acquise sur le long cours.

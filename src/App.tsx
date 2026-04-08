@@ -376,7 +376,7 @@ function Shell({
                   <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
                   <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-2.5 px-6 pb-6">
+                <CardContent className="space-y-1.5 px-6 pb-6">
                   {[
                     { icon: GraduationCap, title: "Expertise en recherche qualitative", text: "Une compréhension des exigences méthodologiques et des contextes sensibles pour produire des contenus rigoureux et exploitables." },
                     { icon: Lock, title: "Traduction ancrée dans le réel", text: "Adapter les textes au français canadien, au domaine de spécialité et au registre de langue pour préserver le sens et éviter les décalages." },

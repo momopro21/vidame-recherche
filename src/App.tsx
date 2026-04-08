@@ -538,11 +538,6 @@ function Shell({
           {/* ===== VIDAME_REPERE_SECTION_SERVICES_ACCUEIL ===== */}
           <section className="border-y border-slate-200 bg-slate-50">
             <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
-              <SectionTitle
-                eyebrow="Services à la carte"
-                title="Traduction & transcription"
-                text="Services linguistiques à la carte pour répondre rapidement à vos besoins en traduction, transcription et préparation des données."
-              />
               <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                 {services.map((service) => {
                   const Icon = service.icon;

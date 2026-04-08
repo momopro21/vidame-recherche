@@ -350,7 +350,7 @@ function Shell({
                   Ici, vous pouvez faire traduire, transcrire ou structurer des contenus pour l’analyse qualitative
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
-                  Sans méthode, ces opérations fragilisent la qualité : la traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.Ce travail repose sur des connaissances solides et une expérience construite sur le long cours.
+                  Vidame offre une expertise qui dépasse l'exécution méacanique. Sans méthode, ces opérations fragilisent la qualité : la traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.Ce travail repose sur des connaissances solides et une expérience construite sur le long cours.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">

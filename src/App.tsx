@@ -56,10 +56,10 @@ import PipelineDiagram from "./components/PipelineDiagram";
     
     // ===== VIDAME_REPERE_DONNEES_PILIERS =====
     const pillars = [
-      "Données hébergées et traitées avec priorité au Canada",
-      "Approche conformité d'abord pour les équipes de recherche",
-      "Validation humaine structurée, documentée et traçable à chaque étape sensible",
-      "Clarté documentaire, traçabilité et rigueur linguistique",
+      "TRADUCTION - Préserver le sens, adapter au contexte culturel et au niveau de langage",
+      "TRANSCRIPTION - REstituter fidèlement le discours, au delà des limites de l'automatisation",
+      "STRUCTURATION - Organiser les contenus pour en faciliter la lecture et soutenir l’analyse scientifique",
+      "VALIDATION -Encadrer chaque étape pour assurer la qualité et la cohérence du résultat",
     ];
     
     // ===== VIDAME_REPERE_DONNEES_BLOG =====

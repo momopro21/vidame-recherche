@@ -376,7 +376,7 @@ function Shell({
                   <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
                   <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-1.5 px-9 pb-9">
+                <CardContent className="space-y-2.5 px-6 pb-6">
                   {[
                     { icon: GraduationCap, title: "Expertise en recherche qualitative", text: "Une compréhension des exigences méthodologiques et des contextes sensibles pour produire des contenus rigoureux et exploitables." },
                     { icon: Lock, title: "Traduction ancrée dans le réel", text: "Adapter les textes au français canadien, au domaine de spécialité et au registre de langue pour préserver le sens et éviter les décalages." },
@@ -409,9 +409,8 @@ function Shell({
             <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
               <SectionTitle
                 eyebrow="Pipeline Vidame"
-                title="Du terrain à l'analyse, une chaîne opératoire claire"
-                text="Cliquez sur chaque étape pour comprendre le rôle précis de Vidame dans la transformation du corpus."
-              />
+                title="Du terrain à l'analyse, une chaîne opératoire solide"
+             />
               <div className="mt-10 rounded-2xl bg-slate-100 border border-slate-200">
                 <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
                   <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">

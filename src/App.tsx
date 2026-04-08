@@ -196,7 +196,7 @@ function Shell({
                   <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
                   <div className="leading-tight">
                     <div className="text-sm font-semibold">Vidame</div>
-                    <div className="text-xs text-slate-900">Services linguistiques et traitement de données</div>
+                    <div className="text-xs text-slate-900">Soutien à la recherche qualitative, traduction et transcription</div>
                   </div>
                 </div>
               </button>

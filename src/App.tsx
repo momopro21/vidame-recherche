@@ -294,11 +294,11 @@ function Shell({
                   <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 font-semibold text-white">V</div>
                   <div>
                     <div className="font-semibold">Vidame</div>
-                    <div className="text-sm text-slate-500">Clarté linguistique. Rigueur documentaire. Flux sécurisés.</div>
+                    <div className="text-sm text-slate-500">Traitement des données de recherche qualitative conforme aux lois canddiennes (Loi25) et services de traduction et transcription. </div>
                   </div>
                 </div>
                 <p className="text-sm leading-7 text-slate-600">
-                  Vidame accompagne les équipes qui travaillent avec des données sensibles, des corpus complexes et des exigences élevées en matière de qualité linguistique.
+                 Vidame est une petite entreprise de soutien à la recherche qualitative qui offre des services de préparation des données brutes du terrain à l’analyse et des services à la carte de traduction, transcription et révision de textes. 
                 </p>
               </div>
               <div className="space-y-4">

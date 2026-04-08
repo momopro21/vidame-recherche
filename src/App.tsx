@@ -355,8 +355,7 @@ function Shell({
                 <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
                   Soutien à la recherche qualitative, et services de traduction et de transcription
                 </h1>
-               <div className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">
-               <p>
+                <p className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">               
                  Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. Bien faire ce travail requiert une maîtrise de connaissances et une expérience acquise sur le long cours.
                </p>
               </div>

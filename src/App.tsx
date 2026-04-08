@@ -298,6 +298,9 @@ function Shell({
                     <div className="text-sm text-slate-500">Soutien à la recherche qualitative, traduction, transcription </div>
                   </div>
                 </div>
+                  <p className="text-sm leading-7 text-slate-600">
+                 La chaine opératoire (le pipeline) Videme est conçue pour préparer les données de recherche qualitative à analyser. 
+                </p>
             </div>
               <div className="space-y-4">
                 <div className="font-semibold">Navigation</div>

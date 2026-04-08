@@ -290,17 +290,23 @@ function Shell({
             </AnimatePresence>
           </main>
 
-          {/* ===== VIDAME_REPERE_FOOTER ===== */}
-          <footer className="border-t border-slate-300 bg-slate-200">
-            <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 font-semibold text-white">V</div>
-                  <div>
-                    <div className="font-semibold">Vidame</div>
-                    <div className="text-sm text-slate-500">Soutien à la recherche qualitative, traduction, transcription </div>
-                  </div>
-                </div>
+         /* ===== VIDAME_REPERE_FOOTER ===== */}
+    <footer className="border-t border-slate-300 bg-slate-200">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <img
+              src="/vidame_favicon_blanc_noir_192x192.png"
+              alt="Vidame"
+              className="h-10 w-10 rounded-xl object-contain"
+            />
+            <div>
+              <div className="font-semibold">Vidame</div>
+              <div className="text-sm text-slate-500">
+                Soutien à la recherche qualitative, traduction, transcription
+              </div>
+            </div>
+          </div>
                   <p className="text-sm leading-7 text-slate-600">
                  La chaine opératoire (le pipeline) Vidame est conçue pour préparer les données de recherche qualitative à analyser. 
                 </p>

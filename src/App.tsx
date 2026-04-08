@@ -478,10 +478,7 @@ function Shell({
             <div className="group rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-[1px] shadow-sm">
               <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
                 <div className="mb-5 flex flex-wrap items-center gap-3">
-                  <Badge className="rounded-full bg-slate-900 px-4 py-1 text-white hover:bg-slate-900">
-                    Parcours doctorant
-                  </Badge>
-                  <div className="text-sm uppercase tracking-[0.18em] text-slate-500">
+                  <div className="text-sm uppercase tracking-[0.18em] text-slate-900">
                     Du matériau brut à l'analyse
                   </div>
                 </div>

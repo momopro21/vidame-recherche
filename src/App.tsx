@@ -487,19 +487,18 @@ function Shell({
                     <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
                       <div>
                         <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                          Passons à l'analyse
+                          Pensons à l'analyse
                         </div>
                         <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
-                          L’étape où le corpus devient un point d’appui pour la mise en théorie.
+                          L’étape qui mobilise le plein potentiel des professionels de recherche. 
                         </p>
                       </div>
                       <div className="rounded-[1.5rem] bg-slate-50 p-5 transition-colors duration-200 group-hover:bg-slate-100">
                         <div className="text-sm font-semibold text-slate-900">
-                          Pourquoi ouvrir cette section
+                          À cette étape, un corpus bien structuré prend toute sa valeur
                         </div>
                         <p className="mt-2 text-sm leading-7 text-slate-600">
-                          Le projet commence souvent par des heures d’entrevues. 
-                          Les données s’accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
+                         Le temps devient un enjeu majeur.
                         </p>
                       </div>
                       <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
@@ -509,7 +508,8 @@ function Shell({
                   </summary>
                   <div className="mt-6 space-y-6 leading-8 text-slate-600">
                     <p>
-                      Le projet commence souvent par des heures d'entrevues. Les données s'accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
+                       Le projet commence souvent par des heures d’entrevues. 
+                          Les données s’accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
                     </p>
                     <p>
                       Une première transformation est nécessaire : passer de l'audio au texte. Mais ce texte reste encore un matériau brut. Il faut ensuite le structurer, l'anonymiser, le segmenter et le rendre navigable.

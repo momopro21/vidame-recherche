@@ -646,7 +646,7 @@ function Shell({
                 <div className="text-sm uppercase tracking-[0.2em] text-slate-300">Prêt à démarrer</div>
                 <h3 className="text-3xl font-semibold tracking-tight">Parlez-moi de votre projet.</h3>
                 <p className="leading-8 text-slate-300">
-                  Décrivez votre besoin, votre volume, vos contraintes de confidentialité et votre échéancier. Une réponse pourra ensuite être préparée selon votre contexte.
+                  Décrivez votre besoin, votre volume, vos contraintes de confidentialité et votre échéancier. Nous évaluerons ensemble comment Vidame peut vous soutenir.
                 </p>
               </div>
               <Button size="lg" variant="secondary" className="rounded-full" onClick={() => setPage("soumission")}>

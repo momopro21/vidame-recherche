@@ -476,7 +476,7 @@ function Shell({
               <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
                 <div className="mb-5 flex flex-wrap items-center gap-3">
                   <div className="text-sm uppercase tracking-[0.18em] text-slate-900">
-                  Professionnels ou doctorants ?
+                  Professionnels et doctorants ?
                   </div>
                 </div>
                 <details>

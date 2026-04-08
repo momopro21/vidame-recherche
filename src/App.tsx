@@ -345,45 +345,49 @@ function Shell({
       return (
         <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-          <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
-            <div className="space-y-8">
-              <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
-               Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
-                </Badge>
-               <div className="space-y-5">
-              {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-        <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
-          Soutien à la recherche qualitative et services de traduction et de transcription
-        </h1>
+    <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
+      <div className="space-y-8">
+        <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+          Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+        </Badge>
+          
+    <div className="space-y-5">
+      {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+      <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
+        Soutien à la recherche qualitative et services de traduction et de transcription
+      </h1>
 
-        <div className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">
-         <p>
-            Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.
+      <div className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">
+        <p>
+          Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.
         </p>
-         <p>
-            Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
+        <p>
+          Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
         </p>
       </div>
 
-    <div className="flex flex-wrap gap-3">
-      <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-        Obtenir un devis
-      </Button>
-      <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-        Voir l'offre de services
-      </Button>
+       <div className="flex flex-wrap gap-3">
+         <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+           Obtenir un devis
+        </Button>
+        <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+          Voir l'offre de services
+        </Button>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        {pillars.map((item) => (
+          <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3">
+            <CheckCircle2 className="mt-0.4 h-4 w-4 shrink-0" />
+            <div className="text-sm leading-6 text-slate-700">{item}</div>
+          </div>
+        ))}
+      </div>
     </div>
-              <div className="grid gap-4 md:grid-cols-2">
-                {pillars.map((item) => (
-                  <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3">
-                    <CheckCircle2 className="mt-0.4 h-4 w-4 shrink-0" />
-                    <div className="text-sm leading-6 text-slate-700">{item}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex items-center">
-              <Card className="w-full rounded-2xl border-slate-200 shadow-sm">
+  </div>
+
+        <div className="flex items-center">
+            <Card className="w-full rounded-2xl border-slate-200 shadow-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
                   <CardDescription>Une chaîne opératoire rigoureuse, pensée pour les contenus complexes.</CardDescription>                 

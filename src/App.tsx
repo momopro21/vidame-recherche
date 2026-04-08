@@ -347,10 +347,10 @@ function Shell({
               <div className="space-y-5">
                 {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
                 <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
-                  Traduction, transcription et préparation des données pour l'analyse qualitative
+                  Traduire, transcrire ou structurer des contenus– pour l’analyse qualitative comme pour la rédaction de documents — requiert une expertise qui dépasse l’exécution mécanique.
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
-                  Vidame propose des services de soutien à la recherche qualitative, couvrant la transcription, la traduction et la préparation des données — incluant la post-édition, l'anonymisation, la segmentation et l'organisation analytique — afin de produire un corpus structuré, navigable et prêt pour l'analyse.
+                  Sans méthode, ces opérations fragilisent la qualité : la traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.Ce travail repose sur des connaissances solides et une expérience construite sur le long cours.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">

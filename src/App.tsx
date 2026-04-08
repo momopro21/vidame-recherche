@@ -356,8 +356,10 @@ function Shell({
                   Soutien à la recherche qualitative, et services de traduction et de transcription
                 </h1>
                 <p className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">               
-                 Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. Bien faire ce travail requiert une maîtrise de connaissances et une expérience acquise sur le long cours.
-               </p>
+                 Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. 
+                <p>
+                Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
+                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>

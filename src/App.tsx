@@ -378,13 +378,11 @@ function Shell({
                 </CardHeader>
                 <CardContent className="space-y-2.5 px-6 pb-6">
                   {[
-                    { icon: GraduationCap, title: "Expertise en recherche qualitative", text: "Une compréhension des exigences méthodologiques et des contextes sensibles
-→ pour produire des contenus rigoureux et exploitables
-" },
-                    { icon: Lock, title: "Conformité intégrée", text: "Intégration des exigences des comités d'éthique et de la Loi 25 à chaque étape" },
-                    { icon: PenSquare, title: "Maîtrise du sens", text: "Traduire au-delà des mots, en respectant le domaine de spécialité, le contexte et le niveau de langage" },
-                    { icon: Workflow, title: "Rigueur méthodologique", text: "Un pipeline fonctionnel pensé pour l'analyse qualitative" },
-                    { icon: FileSearch, title: "De l'oral à l'analyse", text: "Structuration et formatage des corpus d'entrevues en données prêtes à analyser" },
+                    { icon: GraduationCap, title: "Expertise en recherche qualitative", text: "Une compréhension des exigences méthodologiques et des contextes sensibles pour produire des contenus rigoureux et exploitables." },
+                    { icon: Lock, title: "Traduction ancrée dans le réel", text: "Adapter les textes au français canadien, au domaine de spécialité et au registre de langue pour préserver le sens et éviter les décalages." },
+                    { icon: PenSquare, title: "Maîtrise du discours et du sens", text: "Aller au-delà des mots pour restituer la logique, les nuances et les intentions pour maintenir l’intégrité des contenus" },
+                    { icon: Workflow, title: "Approche structurée du traitement", text: "Un pipeline fonctionnel pensé pour l'analyse qualitative" },
+                    { icon: FileSearch, title: "Expérience terrain reconnue et crédibilitée professionnelle", text: "Doctorat et collaborations avec des équipes universitaires et cliniques pour intervenir avec justesse dans des contextes exigeants." },
                   ].map((item) => {
                     const Icon = item.icon;
                     return (

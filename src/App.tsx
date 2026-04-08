@@ -193,7 +193,7 @@ function Shell({
               <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
                 <div className="flex items-center gap-3">
                   {/* ===== VIDAME_REPERE_LOGO ===== */}
-                  <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
+                  <img src="/vidame_favicon_couleur_192x192.png" alt="Vidame" style={{ height: "56px" }} />
                   <div className="leading-tight">
                     <div className="text-sm font-semibold">Vidame</div>
                     <div className="text-xs text-slate-900">Soutien à la recherche qualitative, traduction et transcription</div>

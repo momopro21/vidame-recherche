@@ -351,22 +351,28 @@ function Shell({
                Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
                 </Badge>
                <div className="space-y-5">
-                {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-                <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
-                  Soutien à la recherche qualitative, et services de traduction et de transcription
-                </h1>
-                <p className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">               
-                 Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
-               </p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-                 Obtenir un devis
-                </Button>
-                <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-                  Voir l'offre de services
-                </Button>
-              </div>
+              {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+        <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
+          Soutien à la recherche qualitative et services de traduction et de transcription
+        </h1>
+
+        <div className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">
+         <p>
+            Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.
+        </p>
+         <p>
+            Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
+        </p>
+      </div>
+
+    <div className="flex flex-wrap gap-3">
+      <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+        Obtenir un devis
+      </Button>
+      <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+        Voir l'offre de services
+      </Button>
+    </div>
               <div className="grid gap-4 md:grid-cols-2">
                 {pillars.map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3">

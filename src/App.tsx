@@ -294,13 +294,11 @@ function Shell({
                   <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 font-semibold text-white">V</div>
                   <div>
                     <div className="font-semibold">Vidame</div>
-                    <div className="text-sm text-slate-500">Traitement des données de recherche qualitative conforme aux lois canddiennes (Loi25) et services de traduction et transcription. </div>
+                    <div className="text-sm text-slate-500">Soutien à la recherche qualitative, traduction et transcription</div>
                   </div>
                 </div>
                 <p className="text-sm leading-7 text-slate-600">
-                 Vidame est une petite entreprise de soutien à la recherche qualitative qui offre des services de préparation des données brutes du terrain à l’analyse et des services à la carte de traduction, transcription et révision de textes. 
-                </p>
-              </div>
+             </div>
               <div className="space-y-4">
                 <div className="font-semibold">Navigation</div>
                 <div className="grid gap-2 text-sm text-slate-600">

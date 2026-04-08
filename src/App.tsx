@@ -406,7 +406,7 @@ function Shell({
     
           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
           <section className="border-y border-slate-200">
-            <div className="mx-auto max-w-7xl px-6 py-10 md:px-8">
+            <div className="mx-auto max-w-7xl px-6 py-6 md:px-8">
               <SectionTitle
                 eyebrow="Pipeline Vidame"
                 title="Du terrain à l'analyse, une chaîne opératoire solide"
@@ -414,13 +414,15 @@ function Shell({
               <div className="mt-10 rounded-2xl bg-slate-100 border border-slate-200">
                 <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
                   <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
-                    Un cadre de traitement conforme aux exigences des comités d'éthique et aux lois canadiennes
+                   Le Pipeline Vidame structure le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
                   </h2>
                   <p className="mt-4 text-base leading-7 text-slate-600">
-                    Les données qualitatives comportent des informations sensibles. Vidame intègre les exigences des comités d'éthique et de la Loi 25 dès le traitement du corpus, afin d'assurer la confidentialité, la sécurité et la conformité des données tout au long du processus.
+                    Chaque étape est conçue comme une opération distincte, avec des points de validation explicites, afin d’assurer la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
                   </p>
                   <p className="mt-4 text-base leading-7 text-slate-600">
-                    Le traitement informatisé est encadré par une validation humaine rigoureuse à chaque étape critique, garantissant la traçabilité et la qualité des transformations appliquées aux données.
+                    L’ensemble constitue une chaîne opératoire continue, où les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
+                  <p className="mt-4 text-base leading-7 text-slate-600">
+                     Le traitement des données respecte les exigences gouvernementales canadiennes et québécoises (Loi 25), ainsi que celles des comités d’éthique en matière de protection des renseignements personnels.
                   </p>
                 </div>
               </div>

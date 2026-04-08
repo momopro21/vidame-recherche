@@ -347,7 +347,7 @@ function Shell({
               <div className="space-y-5">
                 {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
                 <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
-                  Traduire, transcrire ou structurer des contenus– pour l’analyse qualitative comme pour la rédaction de documents — requiert une expertise qui dépasse l’exécution mécanique.
+                  Ici, vous pouvez faire traduire, transcrire ou structurer des contenus pour l’analyse qualitative
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                   Sans méthode, ces opérations fragilisent la qualité : la traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.Ce travail repose sur des connaissances solides et une expérience construite sur le long cours.

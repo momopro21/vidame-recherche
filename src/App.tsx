@@ -386,7 +386,7 @@ function Shell({
               <Card className="w-full rounded-2xl border-slate-200 shadow-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
-                  <CardDescription>Une chaîne de traitement pensée pour les contextes de recherche exigeants.</CardDescription>
+                  <CardDescription>Une chaîne opératoire rigoureuse, pensée pour les contextes de recherche exigeants.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2.5 px-6 pb-6">
                   {[

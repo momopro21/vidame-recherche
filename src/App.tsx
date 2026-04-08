@@ -509,10 +509,10 @@ function Shell({
                   <div className="mt-6 space-y-6 leading-8 text-slate-600">
                     <p>
                      Le projet commence souvent par des heures d’entrevues. 
-                     Les données s’accumulent rapidement. Les données provenenant des entrevues enregistrées sont riches, mais difficiles à mobiliser tels quels.
+                     Les données s’accumulent rapidement. Les enregistrements provenenant des entrevues sont riches, mais difficiles à mobiliser tels quels.
                     </p>
                     <p>
-                      Une première transformation est nécessaire : passer de l'audio au texte. Mais ce texte reste encore un matériau brut. Il faut ensuite le structurer, l'anonymiser, le segmenter et le rendre navigable.
+                      Une première transformation est nécessaire : passer de l'audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
                     </p>
                     <p>
                       C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour que se déploie l'expertise des professionnels de recherche. Sans préparation rigoureuse, le corpus devient difficile à explorer, à comparer et à interpréter.
@@ -521,13 +521,13 @@ function Shell({
                       <div className="mb-3 font-semibold">Ce que Vidame prend en charge</div>
                       <ol className="space-y-2 text-sm leading-7 text-slate-600">
                         <li>1. Transformer le matériau brut en corpus exploitable</li>
-                        <li>2. Sécuriser la transcription et la traçabilité</li>
+                        <li>2. Assurer la fidélité et la traçabilité des données</li>
                         <li>3. Préparer le corpus pour la navigation et l'analyse</li>
-                        <li>4. Soutenir l'organisation analytique en amont</li>
+                        <li>4. Structurer le corpus sans ajout interprétatif</li>
                       </ol>
                     </div>
                     <p>
-                      Vidame intervient dans cet espace critique : entre le terrain et l'analyse. L'objectif n'est pas seulement de produire du texte, mais de transformer le corpus en un objet navigable, réellement exploitable pour l'analyse.
+                      Vidame intervient dans cet espace critique : entre le terrain et l'analyse. L'objectif n'est pas de produire du texte, mais de transformer le corpus en un objet navigable, réellement exploitable pour l'analyse.
                     </p>
                   </div>
                 </details>

@@ -196,7 +196,7 @@ function Shell({
                   <img src="/vidame_favicon_blanc_noir_192x192.png" alt="Vidame" style={{ height: "56px" }} />
                   <div className="leading-tight">
                     <div className="text-sm font-semibold">Vidame</div>
-                    <div className="text-xs text-slate-600 leading-snug">
+                    <div className="text-xs text-slate-900 leading-snug">
                       <span>Soutien à la recherche qualitative,</span>
                       <br />
                       <span>traduction et transcription</span>
@@ -347,11 +347,13 @@ function Shell({
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
           <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
             <div className="space-y-8">
-              <Badge className="rounded-full bg-slate-100 px-4 py-1 text-slate-700 hover:bg-slate-100">Données sensibles · Conformité éthique · Cadre légal canadien (incluant Loi 25)</Badge>
-              <div className="space-y-5">
+              <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+               Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+                </Badge>
+               <div className="space-y-5">
                 {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
                 <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
-                  Ici, vous pouvez faire traduire vos textes, transcrire des fichiers audio ou structurer des contenus pour l’analyse qualitative
+                  Soutien à la recherche qualitative, et services de traduction et de transcription
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                  Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables. Bien faire ce travail requiert des connaissances maîtrisées et une expérience acquise sur le long cours.

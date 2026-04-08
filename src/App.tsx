@@ -539,8 +539,7 @@ function Shell({
           <section className="border-y border-slate-200 bg-slate-50">
             <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
               <SectionTitle
-                eyebrow="Services à la carte"
-                title="Traduction & transcription"
+               title="Services à la carte"
                  />             
                 <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                 {services.map((service) => {

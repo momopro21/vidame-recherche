@@ -479,7 +479,7 @@ function Shell({
               <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
                 <div className="mb-5 flex flex-wrap items-center gap-3">
                   <div className="text-sm uppercase tracking-[0.18em] text-slate-900">
-                    Du matériau brut à l'analyse
+                  Professionnels ou doctorants ?
                   </div>
                 </div>
                 <details>
@@ -490,7 +490,7 @@ function Shell({
                           Passons à l'analyse
                         </div>
                         <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
-                          L'étape qui révèle votre plein potentiel de chercheur.
+                          L’étape où le corpus devient un point d’appui pour la mise en théorie.
                         </p>
                       </div>
                       <div className="rounded-[1.5rem] bg-slate-50 p-5 transition-colors duration-200 group-hover:bg-slate-100">
@@ -498,8 +498,8 @@ function Shell({
                           Pourquoi ouvrir cette section
                         </div>
                         <p className="mt-2 text-sm leading-7 text-slate-600">
-                          Pour parler directement à celles et ceux qui portent le corpus au quotidien :
-                          doctorants, assistants et assistantes de recherche, équipes terrain.
+                          Le projet commence souvent par des heures d’entrevues. 
+                          Les données s’accumulent rapidement. Les enregistrements sont riches, mais difficiles à mobiliser tels quels.
                         </p>
                       </div>
                       <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">

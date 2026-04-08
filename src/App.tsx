@@ -295,7 +295,6 @@ function Shell({
                   <div>
                     <div className="font-semibold">Vidame</div>
                     <div className="text-sm text-slate-500">Soutien à la recherche qualitative, traduction et transcription</div>
-                  </div>
                 </div>
                 <p className="text-sm leading-7 text-slate-600">
              </div>

@@ -450,7 +450,9 @@ function Shell({
           </p>
 
           <div className="pt-4 border-t border-slate-200 space-y-4">
-
+            <p className="text-base leading-7 text-slate-600">
+              Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
+            </p>
             <p className="text-base leading-7 text-slate-600">
               À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
             </p>
@@ -458,7 +460,21 @@ function Shell({
             <p className="text-base leading-7 text-slate-600">
               Vidame intervient dans cet espace critique, entre le terrain et l’analyse, pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
             </p>
+        <p className="text-base leading-7 text-slate-600">
+          Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
+        </p>
 
+        <div className="rounded-2xl border border-slate-200 bg-white p-5">
+          <div className="mb-3 font-semibold text-slate-900">
+            Ce que Vidame prend en charge
+          </div>
+          <ol className="space-y-2 text-sm leading-7 text-slate-600">
+            <li>1. Transformer le matériau brut en corpus exploitable</li>
+            <li>2. Assurer la fidélité et la traçabilité des données</li>
+            <li>3. Préparer le corpus pour la navigation et l’analyse</li>
+            <li>4. Structurer le corpus sans ajout interprétatif</li>
+          </ol>
+           </div>
           </div>
         </div>
               {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}

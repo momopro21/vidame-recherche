@@ -1,4 +1,3 @@
- // ===== VIDAME_ANCIENNE_DONNEES_9AVRIL =====
 import PipelineDiagram from "./components/PipelineDiagram";
     import React, { useMemo, useState } from "react";
     import { motion, AnimatePresence } from "framer-motion";
@@ -352,80 +351,73 @@ function Shell({
       return (
         <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-    <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-24">
-      <div className="space-y-8">
-        <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
-          Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
-        </Badge>
-          
-    <div className="space-y-5">
-      {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-      <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-4xl md:leading-[1.02]">
-        Soutien à la recherche qualitative et services de traduction et de transcription
-      </h1>
+      <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+        <div className="max-w-5xl space-y-12">
+          <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+            Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+          </Badge>
 
-      <div className="max-w-xl text-base leading-relaxed text-slate-700 md:text-lg space-y-4">
-        <p>
-          Vidame se distingue par une expertise solide : il ne s’agit pas d’exécuter mécaniquement ces travaux, car sans méthode, la qualité se dégrade. La traduction devient maladroite, la transcription perd en fiabilité et les contenus deviennent difficilement exploitables.
-        </p>
-        <p>
-          Bien faire ce travail requiert des connaissances approfondies et une expérience acquise sur le long cours.
-        </p>
-      </div>
+          <div className="space-y-6">
+            {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+              Vidame : un pipeline de traitement des données qualitatives pour lever les contraintes opérationnelles
+            </h1>
 
-       <div className="flex flex-wrap gap-3">
-         <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-           Obtenir un devis
-        </Button>
-        <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-          Voir l'offre de services
-        </Button>
-      </div>
+            <p className="max-w-4xl text-base leading-8 text-slate-700 md:text-lg">
+              Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+            </p>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {pillars.map((item) => (
-          <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3">
-            <CheckCircle2 className="mt-0.4 h-4 w-4 shrink-0" />
-            <div className="text-sm leading-6 text-slate-700">{item}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-
-        <div className="flex items-center">
-            <Card className="w-full rounded-2xl border-slate-200 shadow-sm">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Pourquoi Vidame?</CardTitle>
-                  <CardDescription>Une chaîne opératoire rigoureuse, pensée pour les contenus complexes.</CardDescription>                 
-                </CardHeader>
-                <CardContent className="space-y-2.5 px-6 pb-6">
-                  {[
-                    { icon: GraduationCap, title: "Expertise en recherche qualitative", text: "Une compréhension des exigences méthodologiques et des contextes sensibles pour produire des contenus rigoureux et exploitables." },
-                    { icon: Lock, title: "Traduction ancrée dans le réel", text: "Adapter les textes au français canadien, au domaine de spécialité et au registre de langue pour préserver le sens et éviter les décalages." },
-                    { icon: PenSquare, title: "Maîtrise du discours et du sens", text: "Aller au-delà des mots pour restituer la logique, les nuances et les intentions pour maintenir l’intégrité des contenus" },
-                    { icon: Workflow, title: "Approche structurée du traitement", text: "Un pipeline fonctionnel pensé pour l'analyse qualitative" },
-                    { icon: FileSearch, title: "Expérience terrain reconnue et crédibilitée professionnelle", text: "Doctorat et collaborations avec des équipes universitaires et cliniques pour intervenir avec justesse dans des contextes exigeants." },
-                  ].map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <div key={item.title} className="rounded-2xl bg-slate-50 p-3.5">
-                        <div className="flex items-start gap-3">
-                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm">
-                            <Icon className="h-5 w-5" />
-                          </div>
-                          <div>
-                            <div className="font-medium">{item.title}</div>
-                            <p className="mt-1 text-sm leading-7 text-slate-600">{item.text}</p>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </CardContent>
-              </Card>
+            <div className="flex flex-wrap gap-3">
+              <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+                Obtenir un devis
+              </Button>
+              <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+                Voir l'offre de services
+              </Button>
             </div>
-          </section>
+          </div>
+
+          <div className="max-w-4xl space-y-10">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
+                Traiter des données en recherche qualitative dans le contexte actuel
+              </h2>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                Le traitement des données qualitatives s’appuie aujourd’hui sur des outils automatisés, notamment pour la transcription.
+                Ces outils produisent rapidement du matériau, mais nécessitent un travail de reprise, d’anonymisation et de structuration pour être utilisés dans l’analyse.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
+                Composer avec les aléas du traitement des données qualitatives, du terrain à l’analyse
+              </h2>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                L’automatisation du traitement des données ne supprime pas le travail : elle le transforme.
+                Transcriptions imparfaites, ajustements d’anonymisation et structuration du corpus exigent des décisions qui relèvent d’un jugement humain.
+              </p>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                À ces opérations s’ajoutent les exigences des comités d’éthique et des cadres légaux — notamment en matière de confidentialité et de protection des données — qui encadrent le traitement du corpus et en conditionnent l’utilisation.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
+                Vidame : un pipeline de traitement des données qualitatives pour lever les contraintes opérationnelles
+              </h3>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                Vidame intervient à cette étape pour prendre en charge le traitement des données qualitatives.
+              </p>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                Le travail est organisé selon une approche humaine assistée par l’IA : les outils automatisés sont mobilisés pour produire et accélérer certaines étapes, tandis que les décisions critiques — qualité du discours, anonymisation, structuration — relèvent d’une intervention humaine.
+              </p>
+              <p className="text-base leading-8 text-slate-600 md:text-lg">
+                Cette organisation permet de maîtriser les transformations du corpus, d’en assurer la cohérence et d’inscrire le traitement dans un cadre conforme aux exigences de la recherche.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
           <section className="border-y border-slate-200">

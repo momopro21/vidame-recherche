@@ -422,10 +422,15 @@ function Shell({
           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
           <section className="border-y border-slate-200">
             <div className="mx-auto max-w-7xl px-6 py-6 md:px-8">
-              <SectionTitle
-                eyebrow="Pipeline Vidame"
-                title="Du terrain à l'analyse, une chaîne opératoire solide"
+             <SectionTitle
+              eyebrow="Pipeline Vidame"
+              title="Du terrain à l'analyse, une chaîne opératoire solide"
             />
+
+          <div className="mt-8">
+            <PipelineDiagram />
+          </div>
+                
           <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8 space-y-6">
 
           <h3 className="text-xl font-semibold text-slate-900">

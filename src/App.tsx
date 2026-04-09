@@ -457,9 +457,7 @@ function Shell({
           </div>
         </div>
               {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
-              <PipelineDiagram />
-
-              <div className="mt-10 grid gap-6 md:grid-cols-5">
+               <div className="mt-10 grid gap-6 md:grid-cols-5">
                 {steps.map((step, i) => {
                   const Icon = step.icon;
                   const isActive = activeStep === i;

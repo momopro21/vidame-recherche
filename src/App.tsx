@@ -424,7 +424,7 @@ function Shell({
             <div className="mx-auto max-w-7xl px-6 py-6 md:px-8">
              <SectionTitle
               eyebrow="Pipeline Vidame"
-              title="Du terrain à l'analyse, une chaîne opératoire solide"
+              title="Du terrain à l'analyse : la chaine opératoire Vidame"
             />
 
           <div className="mt-8">

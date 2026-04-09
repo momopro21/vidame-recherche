@@ -426,23 +426,36 @@ function Shell({
                 eyebrow="Pipeline Vidame"
                 title="Du terrain à l'analyse, une chaîne opératoire solide"
             />
-              <div className="mt-10 rounded-2xl bg-slate-100 border border-slate-200">
-                <div className="mx-auto max-w-5xl px-4 py-10 md:px-8">
-                  <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
-                   Le Pipeline Vidame structure le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
-                  </h2>
-                  <p className="mt-4 text-base leading-7 text-slate-600">
-                    Chaque étape est conçue comme une opération distincte, avec des points de validation explicites, afin d’assurer la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
-                  </p>
-                  <p className="mt-4 text-base leading-7 text-slate-600">
-                    L’ensemble constitue une chaîne opératoire continue, où les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
-                  </p>
-                     <p className="mt-4 text-base leading-7 text-slate-600">
-                     Le traitement des données respecte les exigences gouvernementales canadiennes et québécoises (Loi 25), ainsi que celles des comités d’éthique en matière de protection des renseignements personnels.
-                  </p>
-                </div>
-              </div>
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8 space-y-6">
 
+          <h3 className="text-xl font-semibold text-slate-900">
+            De la préparation à l’analyse : un corpus qui devient exploitable
+          </h3>
+
+          <p className="text-base leading-7 text-slate-600">
+            Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
+          </p>
+
+          <p className="text-base leading-7 text-slate-600">
+            Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
+          </p>
+
+          <p className="text-base leading-7 text-slate-600">
+            Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
+          </p>
+
+          <div className="pt-4 border-t border-slate-200 space-y-4">
+
+            <p className="text-base leading-7 text-slate-600">
+              À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
+            </p>
+
+            <p className="text-base leading-7 text-slate-600">
+              Vidame intervient dans cet espace critique, entre le terrain et l’analyse, pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
+            </p>
+
+          </div>
+        </div>
               {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
               <PipelineDiagram />
 

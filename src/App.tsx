@@ -434,7 +434,7 @@ function Shell({
           <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8 space-y-6">
 
           <h3 className="text-xl font-semibold text-slate-900">
-            De la préparation à l’analyse : un corpus qui devient exploitable
+           Concentrez-vous sur l'analyse
           </h3>
 
           <p className="text-base leading-7 text-slate-600">

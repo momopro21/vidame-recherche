@@ -360,7 +360,7 @@ function Shell({
           <div className="space-y-6">
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              Vidame : un pipeline de traitement des données qualitatives pour lever les contraintes opérationnelles
+              Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
             </h1>
 
             <p className="max-w-4xl text-base leading-8 text-slate-700 md:text-lg">

@@ -503,68 +503,7 @@ function Shell({
                 <p className="mt-2 leading-7 text-slate-600">{steps[activeStep].detail}</p>
               </div>
             </div>
-          </section>
-
-          <section className="mx-auto max-w-7xl px-4 pb-4 md:px-8">
-            <div className="group rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-[1px] shadow-sm">
-              <div className="rounded-[calc(2rem-1px)] bg-white p-6 transition-colors duration-200 group-hover:bg-slate-100 md:p-8">
-                <div className="mb-5 flex flex-wrap items-center gap-3">
-                  <div className="text-sm uppercase tracking-[0.18em] text-slate-900">
-                  Professionnels ou doctorants ?
-                  </div>
-                </div>
-                <details>
-                  <summary className="list-none cursor-pointer rounded-[1.5rem]">
-                    <div className="relative grid gap-6 rounded-[1.5rem] md:grid-cols-[1.1fr_0.9fr] md:items-center">
-                      <div>
-                        <div className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                          Pensons à l'analyse
-                        </div>
-                        <p className="mt-3 max-w-2xl text-lg leading-8 text-slate-600">
-                          L’étape qui mobilise le plein potentiel des professionels de recherche. 
-                        </p>
-                      </div>
-                      <div className="rounded-[1.5rem] bg-slate-50 p-5 transition-colors duration-200 group-hover:bg-slate-100">
-                        <div className="text-sm font-semibold text-slate-900">
-                          À cette étape, un corpus bien structuré prend toute sa valeur
-                        </div>
-                        <p className="mt-2 text-sm leading-7 text-slate-600">
-                         Le temps devient un enjeu majeur.
-                        </p>
-                      </div>
-                      <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400">
-                        +
-                      </div>
-                    </div>
-                  </summary>
-                  <div className="mt-6 space-y-6 leading-8 text-slate-600">
-                    <p>
-                     Le projet commence souvent par des heures d’entrevues. 
-                     Les données s’accumulent rapidement. Les enregistrements provenenant des entrevues sont riches, mais difficiles à mobiliser tels quels.
-                    </p>
-                    <p>
-                      Une première transformation est nécessaire : passer de l'audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
-                    </p>
-                    <p>
-                      C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour que se déploie l'expertise des professionnels de recherche. Sans préparation rigoureuse, le corpus devient difficile à explorer, à comparer et à interpréter.
-                    </p>
-                    <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                      <div className="mb-3 font-semibold">Ce que Vidame prend en charge</div>
-                      <ol className="space-y-2 text-sm leading-7 text-slate-600">
-                        <li>1. Transformer le matériau brut en corpus exploitable</li>
-                        <li>2. Assurer la fidélité et la traçabilité des données</li>
-                        <li>3. Préparer le corpus pour la navigation et l'analyse</li>
-                        <li>4. Structurer le corpus sans ajout interprétatif</li>
-                      </ol>
-                    </div>
-                    <p>
-                      Vidame intervient dans cet espace critique : entre le terrain et l'analyse. L'objectif n'est pas de produire du texte, mais de transformer le corpus en un objet navigable, réellement exploitable pour l'analyse.
-                    </p>
-                  </div>
-                </details>
-              </div>
-            </div>
-          </section>
+          </section>         
 
           {/* ===== VIDAME_REPERE_SECTION_SERVICES_ACCUEIL ===== */}
           <section className="border-y border-slate-200 bg-slate-50">

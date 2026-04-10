@@ -441,56 +441,8 @@ function Shell({
           </ol>
         </div>
       </div>
-    </div>
-    {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
-    <div className="mt-10 grid gap-6 md:grid-cols-5">
-      {steps.map((step, i) => {
-        const Icon = step.icon;
-        const isActive = activeStep === i;
-        return (
-          <div key={step.title} className="relative">
-            <Card
-              onClick={() => setActiveStep(i)}
-              className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
-                isActive
-                  ? "ring-2 ring-slate-900 bg-slate-100"
-                  : "hover:bg-slate-100 hover:shadow"
-              }`}
-            >
-              <CardContent className="p-5 md:p-6">
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100">
-                  <Icon className="h-5 w-5" />
-                </div>
+     </div>
 
-                <div className="text-base font-semibold leading-7 md:text-lg">
-                  {i + 1}. {step.title}
-                </div>
-
-                <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
-                  {step.text}
-                </p>
-
-                {step.highlight && (
-                  <div className="mt-3 text-xs font-medium uppercase tracking-wide text-slate-500 md:text-sm">
-                    {step.highlight}
-                  </div>
-                )}
-
-                <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
-                  +
-                </div>
-              </CardContent>
-            </Card>
-
-            {i < steps.length - 1 && (
-              <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
-                <ChevronRight className="h-5 w-5 text-slate-400" />
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
     {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
     <div className="mt-10 grid gap-6 md:grid-cols-5">
       {steps.map((step, i) => {

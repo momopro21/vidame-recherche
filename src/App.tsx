@@ -351,7 +351,7 @@ function Shell({
       return (
         <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
   <div className="max-w-5xl space-y-12">
     <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
       Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25

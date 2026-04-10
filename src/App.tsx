@@ -380,7 +380,7 @@ function Shell({
         Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
       </p>
 
-      <div className="mt-8">
+      <div className="mt-4">
         <PipelineDiagram />
       </div>
     </div>

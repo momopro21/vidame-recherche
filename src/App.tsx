@@ -419,107 +419,133 @@ function Shell({
         </div>
       </section>
 
-          {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-          <section className="border-y border-slate-200">
-            <div className="mx-auto max-w-7xl px-6 py-6 md:px-8">
-             <SectionTitle
-              eyebrow="Pipeline Vidame"
-              title="Du terrain à l'analyse : la chaine opératoire Vidame"
-            />
+       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+<section className="border-y border-slate-200">
+  <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
+    <SectionTitle
+      eyebrow="Pipeline Vidame"
+      title="Du terrain à l'analyse : la chaine opératoire Vidame"
+    />
 
-          <div className="mt-8">
-            <PipelineDiagram />
-          </div>
-                
-          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8 space-y-6">
+    <div className="mt-8">
+      <PipelineDiagram />
+    </div>
 
-          <h3 className="text-xl font-semibold text-slate-900">
-           Concentrez-vous sur l'analyse
-          </h3>
+    <div className="mt-10 space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+      <h3 className="text-2xl font-semibold text-slate-900 md:text-3xl">
+        Concentrez-vous sur l'analyse
+      </h3>
 
-          <p className="text-base leading-7 text-slate-600">
-            Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
-          </p>
+      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+        Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
+      </p>
 
-          <p className="text-base leading-7 text-slate-600">
-            Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
-          </p>
+      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+        Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
+      </p>
 
-          <p className="text-base leading-7 text-slate-600">
-            Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
-          </p>
+      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+        C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
+      </p>
 
-          <div className="pt-4 border-t border-slate-200 space-y-4">
-            <p className="text-base leading-7 text-slate-600">
-              Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
-            </p>
-            <p className="text-base leading-7 text-slate-600">
-              À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
-            </p>
-
-            <p className="text-base leading-7 text-slate-600">
-              Vidame intervient dans cet espace critique, entre le terrain et l’analyse, pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
-            </p>
-        <p className="text-base leading-7 text-slate-600">
-          Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
+      <div className="border-t border-slate-200 pt-5 space-y-5">
+        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
         </p>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-5">
-          <div className="mb-3 font-semibold text-slate-900">
+        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
+        </p>
+
+        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
+        </p>
+
+        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+          À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
+        </p>
+
+        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+          L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable.
+        </p>
+
+        <div className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+          <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
             Ce que Vidame prend en charge
           </div>
-          <ol className="space-y-2 text-sm leading-7 text-slate-600">
+          <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
             <li>1. Transformer le matériau brut en corpus exploitable</li>
             <li>2. Assurer la fidélité et la traçabilité des données</li>
             <li>3. Préparer le corpus pour la navigation et l’analyse</li>
             <li>4. Structurer le corpus sans ajout interprétatif</li>
           </ol>
-           </div>
-          </div>
         </div>
-              {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
-               <div className="mt-10 grid gap-6 md:grid-cols-5">
-                {steps.map((step, i) => {
-                  const Icon = step.icon;
-                  const isActive = activeStep === i;
-                  return (
-                    <div key={step.title} className="relative">
-                      <Card
-                        onClick={() => setActiveStep(i)}
-                        className={`relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"}`}
-                      >
-                        <CardContent className="p-5">
-                          <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100">
-                            <Icon className="h-5 w-5" />
-                          </div>
-                          <div className="text-sm font-semibold">{i + 1}. {step.title}</div>
-                          <p className="mt-1 text-xs leading-6 text-slate-600">{step.text}</p>
-                          {step.highlight && (
-                            <div className="mt-2 text-[10px] font-medium uppercase tracking-wide text-slate-500">
-                              {step.highlight}
-                            </div>
-                          )}
-                          <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
-                            +
-                          </div>
-                        </CardContent>
-                      </Card>
-                      {i < steps.length - 1 && (
-                        <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
-                          <ChevronRight className="h-5 w-5 text-slate-400" />
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+      </div>
+    </div>
+
+    {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
+    <div className="mt-10 grid gap-6 md:grid-cols-5">
+      {steps.map((step, i) => {
+        const Icon = step.icon;
+        const isActive = activeStep === i;
+        return (
+          <div key={step.title} className="relative">
+            <Card
+              onClick={() => setActiveStep(i)}
+              className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
+                isActive
+                  ? "ring-2 ring-slate-900 bg-slate-100"
+                  : "hover:bg-slate-100 hover:shadow"
+              }`}
+            >
+              <CardContent className="p-5 md:p-6">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100">
+                  <Icon className="h-5 w-5" />
+                </div>
+
+                <div className="text-base font-semibold leading-7 md:text-lg">
+                  {i + 1}. {step.title}
+                </div>
+
+                <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
+                  {step.text}
+                </p>
+
+                {step.highlight && (
+                  <div className="mt-3 text-xs font-medium uppercase tracking-wide text-slate-500 md:text-sm">
+                    {step.highlight}
+                  </div>
+                )}
+
+                <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
+                  +
+                </div>
+              </CardContent>
+            </Card>
+
+            {i < steps.length - 1 && (
+              <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
+                <ChevronRight className="h-5 w-5 text-slate-400" />
               </div>
-              <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500">Étape {activeStep + 1}</div>
-                <div className="text-lg font-semibold">{steps[activeStep].title}</div>
-                <p className="mt-2 leading-7 text-slate-600">{steps[activeStep].detail}</p>
-              </div>
-            </div>
-          </section>         
+            )}
+          </div>
+        );
+      })}
+    </div>
+
+    <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
+      <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
+        Étape {activeStep + 1}
+      </div>
+      <div className="text-xl font-semibold text-slate-900 md:text-2xl">
+        {steps[activeStep].title}
+      </div>
+      <p className="mt-3 text-lg leading-8 text-slate-700 md:text-[1.15rem] md:leading-9">
+        {steps[activeStep].detail}
+      </p>
+    </div>
+  </div>
+</section>     
 
           {/* ===== VIDAME_REPERE_SECTION_SERVICES_ACCUEIL ===== */}
           <section className="border-y border-slate-200 bg-slate-50">

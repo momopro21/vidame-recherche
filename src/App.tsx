@@ -392,12 +392,11 @@ function Shell({
   <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
     <SectionTitle
       eyebrow="Pipeline Vidame"
-      title="Du terrain à l'analyse : la chaine opératoire&nbsp;Vidame"
+      title={"Du terrain à l'analyse : la chaine opératoire Vidame"}
     />
 
     <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
       <div className="mx-auto max-w-4xl space-y-8">
-
         <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
           Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
         </p>
@@ -411,7 +410,6 @@ function Shell({
         </p>
 
         <div className="space-y-6 border-t border-slate-200 pt-6">
-
           <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
             Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
           </p>
@@ -443,7 +441,6 @@ function Shell({
               <li>4. Structurer le corpus sans ajout interprétatif</li>
             </ol>
           </div>
-
         </div>
       </div>
     </div>

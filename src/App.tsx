@@ -951,117 +951,16 @@ function Shell({
                       </motion.div>
                     );
                   })}
-                </div>
+                               </div>
                 <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
                   <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
                   <p className="mt-2 text-sm text-slate-500">Obtenez un devis personnalisé en moins de 48 heures.</p>
-                   <button
-                className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
-                  onClick={() => setPage("soumission")}
-                >
-                  Obtenir un devis <ChevronRight className="h-4 w-4" />
-                </button>
-                </div>
-              </motion.div>
-            )}
-
-            {activeTab === "pipeline" && (
-              <motion.div
-                key="pipeline"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.4 }}
-                className="mx-auto max-w-5xl px-4 py-16"
-              >
-                <div className="mb-10 text-center">
-                  <span className="inline-block rounded-full bg-teal-50 border border-teal-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal-700">
-                    Service innovant — peu connu, très utile
-                  </span>
-                  <h2 className="mt-4 text-2xl font-semibold text-slate-900">Préparation des données qualitatives</h2>
-                  <p className="mt-3 text-slate-500 max-w-2xl mx-auto text-sm leading-7">
-                    Une offre intégrée qui couvre l'ensemble du pipeline, du verbatim brut jusqu'au corpus structuré et prêt pour l'analyse. Ce n'est pas seulement de la transcription — c'est une chaîne opératoire complète, documentée et traçable.
-                  </p>
-                </div>
-              <div className="mb-12 rounded-3xl bg-slate-100 border border-slate-300 shadow-sm p-8 text-slate-800">
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20">
-                      <Microscope className="h-5 w-5" />
-                    </div>
-                   <div>
-                      <h3 className="text-lg font-semibold">Pourquoi ce service est innovant</h3>
-                      <p className="mt-2 text-sm leading-7 text-slate-900">
-                        La préparation des données qualitatives est souvent perçue comme une tâche technique secondaire. Chez Vidame, nous la traitons comme une étape scientifique à part entière. Chaque opération — transcription, anonymisation, segmentation, structuration — influence directement la qualité du matériau de recherche et la rigueur de l'analyse qui en découle.
-                      </p>
-                      <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
-                        {[
-                          { label: "Traçabilité complète", icon: Lock },
-                          { label: "Conformité éthique", icon: ShieldCheck },
-                          { label: "Corpus exploitable", icon: FileSearch },
-                            ].map(({ label, icon: Icon }, i) => (
-                          <div key={i} className="flex items-center gap-2 rounded-xl bg-white border border-slate-200 px-4 py-3">
-                            <Icon className="h-4 w-4 text-teal-600" />
-                            <span className="text-sm font-medium">{label}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative">
-                  <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 to-slate-300 hidden md:block" />
-                  <div className="space-y-6">
-                    {pipelineSteps.map((step, i) => {
-                      const Icon = step.icon;
-                      return (
-                        <motion.div
-                          key={i}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: i * 0.1 }}
-                          className="relative flex gap-6"
-                        >
-                          <div className={`relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl ${step.color} text-white shadow-md`}>
-                            <span className="text-xs font-bold opacity-70">{step.step}</span>
-                            <Icon className="h-5 w-5" />
-                          </div>
-                          <div className="flex-1 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                            <h3 className="font-semibold text-slate-900">{step.title}</h3>
-                            <p className="mt-1 text-sm leading-7 text-slate-600">{step.description}</p>
-                          </div>
-                        </motion.div>
-                      );
-                    })}
-                  </div>
-                </div>
-                <div className="mt-12 grid gap-4 sm:grid-cols-3">
-                  {[
-                    { icon: GraduationCap, title: "Chercheurs universitaires", text: "Thèses, projets de recherche, études longitudinales" },
-                    { icon: Microscope, title: "Équipes de recherche", text: "Projets multi-sites, corpus volumineux, délais serrés" },
-                    { icon: FileSearch, title: "Organisations et OBNL", text: "Évaluations de programmes, consultations, focus groups" },
-                  ].map(({ icon: Icon, title, text }, i) => (
-                    <div key={i} className="rounded-3xl border border-slate-100 bg-slate-50 p-6 text-center">
-                      <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
-                        <Icon className="h-5 w-5" />
-                      </div>
-                      <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
-                      <p className="mt-1 text-xs text-slate-500">{text}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-12 rounded-3xl border border-teal-200 bg-teal-50 p-8 text-center">
-                  <h3 className="text-xl font-semibold text-slate-900">Intéressé par le pipeline complet ?</h3>
-                  <p className="mt-2 text-sm text-slate-500">
-                    Discutons de votre projet de recherche — nous vous proposerons un pipeline adapté à vos données et à vos délais.
-                  </p>
-                  <div className="mt-6 flex flex-wrap justify-center gap-3">
-                    <Button className="rounded-2xl" size="lg" onClick={() => setPage("soumission")}>
-                      Demander une soumission <ChevronRight className="h-4 w-4" />
-                    </Button>
-                    <Button variant="outline" className="rounded-2xl" size="lg" onClick={() => setPage("blog")}>
-                      En savoir plus sur l'approche
-                    </Button>
-                  </div>
+                  <button
+                    className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+                    onClick={() => setPage("soumission")}
+                  >
+                    Obtenir un devis <ChevronRight className="h-4 w-4" />
+                  </button>
                 </div>
               </motion.div>
             )}
@@ -1069,7 +968,6 @@ function Shell({
         </div>
       );
     }
-
    // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 

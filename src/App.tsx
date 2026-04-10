@@ -358,68 +358,34 @@ function Shell({
           </Badge>
 
           <div className="space-y-6">
-            {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-            </h1>
+           {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+<h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+  Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+</h1>
 
-            <p className="max-w-4xl text-base leading-8 text-slate-700 md:text-lg">
-              Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-            </p>
+<p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+  Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+</p>
 
-            <div className="flex flex-wrap gap-3">
-              <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-                Obtenir un devis
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-                Voir l'offre de services
-              </Button>
-            </div>
-          </div>
+<div className="flex flex-wrap gap-3">
+  <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+    Obtenir un devis
+  </Button>
+  <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+    Voir l'offre de services
+  </Button>
+</div>
 
-          <div className="max-w-4xl space-y-10">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-                Traiter des données en recherche qualitative dans le contexte actuel
-              </h2>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                Le traitement des données qualitatives s’appuie aujourd’hui sur des outils automatisés, notamment pour la transcription.
-                Ces outils produisent rapidement du matériau, mais nécessitent un travail de reprise, d’anonymisation et de structuration pour être utilisés dans l’analyse.
-              </p>
-            </div>
+{/* 🔥 NOUVEAU — micro-intro */}
+<p className="mt-10 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+  Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+</p>
 
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-                Composer avec les aléas du traitement des données qualitatives, du terrain à l’analyse
-              </h2>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                L’automatisation du traitement des données ne supprime pas le travail : elle le transforme.
-                Transcriptions imparfaites, ajustements d’anonymisation et structuration du corpus exigent des décisions qui relèvent d’un jugement humain.
-              </p>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                À ces opérations s’ajoutent les exigences des comités d’éthique et des cadres légaux — notamment en matière de confidentialité et de protection des données — qui encadrent le traitement du corpus et en conditionnent l’utilisation.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-                Vidame : un pipeline de traitement des données qualitatives pour lever les contraintes opérationnelles
-              </h3>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                Vidame intervient à cette étape pour prendre en charge le traitement des données qualitatives.
-              </p>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                Le travail est organisé selon une approche humaine assistée par l’IA : les outils automatisés sont mobilisés pour produire et accélérer certaines étapes, tandis que les décisions critiques — qualité du discours, anonymisation, structuration — relèvent d’une intervention humaine.
-              </p>
-              <p className="text-base leading-8 text-slate-600 md:text-lg">
-                Cette organisation permet de maîtriser les transformations du corpus, d’en assurer la cohérence et d’inscrire le traitement dans un cadre conforme aux exigences de la recherche.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+{/* 🔥 NOUVEAU — diagramme remonté */}
+<div className="mt-10">
+  <PipelineDiagram />
+</div>
+      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
 <section className="border-y border-slate-200">
   <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
     <SectionTitle

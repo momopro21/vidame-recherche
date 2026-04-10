@@ -446,7 +446,6 @@ function Shell({
     </div>
   </div>
 </section>
-
     {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
     <div className="mt-10 grid gap-6 md:grid-cols-5">
       {steps.map((step, i) => {

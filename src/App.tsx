@@ -388,6 +388,7 @@ function Shell({
 </section>
 
 {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+<section>
   <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
     <SectionTitle
       eyebrow="PIPELINE VIDAME"

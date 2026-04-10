@@ -358,88 +358,88 @@ function Shell({
           </Badge>
 
           <div className="space-y-6">
-           {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-<h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-  Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-</h1>
+          {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+        <div className="space-y-6">
 
-<p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-  Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-</p>
+          <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+            Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+          </h1>
 
-<div className="flex flex-wrap gap-3">
-  <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-    Obtenir un devis
-  </Button>
-  <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-    Voir l'offre de services
-  </Button>
-</div>
+          <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+            Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+          </p>
 
-{/* 🔥 NOUVEAU — micro-intro */}
-<p className="mt-10 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-  Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
-</p>
-
-{/* 🔥 NOUVEAU — diagramme remonté */}
-<div className="mt-10">
-  <PipelineDiagram />
-</div>
-      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-<section className="border-y border-slate-200">
-  <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
-    <SectionTitle
-      eyebrow="Pipeline Vidame"
-      title="Du terrain à l'analyse : la chaine opératoire Vidame"
-    />
-
-    <div className="mt-8">
-      <PipelineDiagram />
-    </div>
-
-    <div className="mt-10 space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
-      <h3 className="text-2xl font-semibold text-slate-900 md:text-3xl">
-        Concentrez-vous sur l'analyse
-      </h3>
-
-      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-        Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
-      </p>
-
-      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-        Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
-      </p>
-
-      <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-        C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
-      </p>
-
-      <div className="border-t border-slate-200 pt-5 space-y-5">
-        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-          Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
-        </p>
-
-        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-          Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
-        </p>
-
-        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-          Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
-        </p>
-
-        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-          À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
-        </p>
-
-        <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
-          L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable.
-        </p>
-
-        <div className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-          <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
-            Ce que Vidame prend en charge
+          <div className="flex flex-wrap gap-3">
+            <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+              Obtenir un devis
+            </Button>
+            <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+              Voir l'offre de services
+            </Button>
           </div>
-          <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
+
+          {/* micro-intro */}
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+            Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+          </p>
+
+          {/* diagramme */}
+          <div className="mt-8">
+            <PipelineDiagram />
+          </div>
+
+        </div>
+          {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+        <section className="border-y border-slate-200">
+          <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
+            <SectionTitle
+              eyebrow="Pipeline Vidame"
+              title="Du terrain à l'analyse : la chaine opératoire Vidame"
+            />
+
+        <div className="mt-10 space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+          <h3 className="text-2xl font-semibold text-slate-900 md:text-3xl">
+            Concentrez-vous sur l'analyse
+          </h3>
+
+          <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+            Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
+          </p>
+
+          <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+            Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
+          </p>
+
+          <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+            C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
+          </p>
+
+          <div className="border-t border-slate-200 pt-5 space-y-5">
+            <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+              Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+              Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+              Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+              À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
+              L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable.
+            </p>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+              <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
+                Ce que Vidame prend en charge
+              </div>
+              <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
             <li>1. Transformer le matériau brut en corpus exploitable</li>
             <li>2. Assurer la fidélité et la traçabilité des données</li>
             <li>3. Préparer le corpus pour la navigation et l’analyse</li>

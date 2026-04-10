@@ -395,7 +395,7 @@ function Shell({
       title={"Du terrain à l'analyse : la chaine opératoire Vidame"}
     />
 
-    <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+    <div className="mt-4">
       <div className="mx-auto max-w-4xl space-y-8">
         <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
           Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
@@ -430,7 +430,7 @@ function Shell({
             L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable.
           </p>
 
-          <div className="mt-2 rounded-xl bg-white/70 p-5 md:p-6">
+          <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
             <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
               Ce que Vidame prend en charge
             </div>
@@ -444,7 +444,6 @@ function Shell({
         </div>
       </div>
     </div>
-
     {/* VIDAME_REPERE_PIPELINE_DIAGRAM */}
     <div className="mt-10 grid gap-6 md:grid-cols-5">
       {steps.map((step, i) => {

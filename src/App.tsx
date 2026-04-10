@@ -388,14 +388,13 @@ function Shell({
 </section>
 
 {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-<section className="border-y border-slate-200">
   <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
     <SectionTitle
       eyebrow="PIPELINE VIDAME"
       title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
     />
 
-    <div className="mt-1 space-y-8">
+    <div className="mt-4 space-y-8">
       <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
         Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
       </p>

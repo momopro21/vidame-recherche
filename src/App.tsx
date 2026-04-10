@@ -351,58 +351,54 @@ function Shell({
       return (
         <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-        <div className="max-w-5xl space-y-12">
-          <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
-            Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
-          </Badge>
+<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+  <div className="max-w-5xl space-y-12">
+    <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+      Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+    </Badge>
 
-          <div className="space-y-6">
-          {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-<div className="space-y-6">
+    <div className="space-y-6">
+      {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+      <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+        Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+      </h1>
 
-  <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-    Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-  </h1>
+      <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+        Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+      </p>
 
-  <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-    Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-  </p>
+      <div className="flex flex-wrap gap-3">
+        <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+          Obtenir un devis
+        </Button>
+        <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+          Voir l'offre de services
+        </Button>
+      </div>
 
-  <div className="flex flex-wrap gap-3">
-    <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-      Obtenir un devis
-    </Button>
-    <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-      Voir l'offre de services
-    </Button>
-  </div>
+      <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+        Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+      </p>
 
-  {/* micro-intro */}
-  <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-    Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
-  </p>
-
-  {/* diagramme */}
-  <div className="mt-8">
-    <PipelineDiagram />
-    </div>
+      <div className="mt-8">
+        <PipelineDiagram />
+      </div>
     </div>
   </div>
 </section>
-          {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-        <section className="border-y border-slate-200">
-          <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
-            <SectionTitle
-              eyebrow="Pipeline Vidame"
-              title="Du terrain à l'analyse : la chaine opératoire Vidame"
-            />
 
-        <div className="mt-10 space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
-          <h3 className="text-2xl font-semibold text-slate-900 md:text-3xl">
-            Concentrez-vous sur l'analyse
-          </h3>
+{/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+<section className="border-y border-slate-200">
+  <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">
+    <SectionTitle
+      eyebrow="Pipeline Vidame"
+      title="Du terrain à l'analyse : la chaine opératoire Vidame"
+    />
 
+    <div className="mt-10 space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+      <h3 className="text-2xl font-semibold text-slate-900 md:text-3xl">
+        Concentrez-vous sur l'analyse
+      </h3>
           <p className="text-lg leading-8 text-slate-700 md:text-[1.2rem] md:leading-9">
             Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
           </p>

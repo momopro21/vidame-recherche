@@ -359,36 +359,37 @@ function Shell({
 
           <div className="space-y-6">
           {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-        <div className="space-y-6">
+<div className="space-y-6">
 
-          <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-            Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-          </h1>
+  <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+    Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+  </h1>
 
-          <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-            Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-          </p>
+  <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+    Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+  </p>
 
-          <div className="flex flex-wrap gap-3">
-            <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-              Obtenir un devis
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
-              Voir l'offre de services
-            </Button>
-          </div>
+  <div className="flex flex-wrap gap-3">
+    <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+      Obtenir un devis
+    </Button>
+    <Button size="lg" variant="outline" className="rounded-full" onClick={() => setPage("services")}>
+      Voir l'offre de services
+    </Button>
+  </div>
 
-          {/* micro-intro */}
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-            Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
-          </p>
+  {/* micro-intro */}
+  <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+    Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+  </p>
 
-          {/* diagramme */}
-          <div className="mt-8">
-            <PipelineDiagram />
-          </div>
-
-        </div>
+  {/* diagramme */}
+  <div className="mt-8">
+    <PipelineDiagram />
+    </div>
+    </div>
+  </div>
+</section>
           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
         <section className="border-y border-slate-200">
           <div className="mx-auto max-w-7xl px-6 py-8 md:px-8 md:py-10">

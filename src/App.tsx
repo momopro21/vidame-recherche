@@ -403,50 +403,98 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div>
  {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
-  <div className="max-w-5xl space-y-12">
-    <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
-      Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
-    </Badge>
+// ===== VIDAME_REPERE_PAGE_ACCUEIL =====
+function Accueil({ setPage }: { setPage: (page: string) => void }) {
+  const [activeStep, setActiveStep] = useState(0);
 
-    <div className="space-y-6">
-      <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-        Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-      </h1>
+  const steps = [
+    {
+      icon: FileText,
+      title: "Corpus brut",
+      text: "Entrevues audio/vidéo",
+      detail: "Données issues du terrain : riches, mais non exploitables telles quelles.",
+    },
+    {
+      icon: PenSquare,
+      title: "Transcription",
+      text: "Fidélité du discours",
+      detail:
+        "Transcription assistée + validation humaine visant la restitution du sens de la parole au texte, avec respect des nuances et du langage réel. Transcrire, c'est préserver le sens — pas seulement les mots.",
+      highlight: "Validation humaine",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Préparation",
+      text: "Anonymisation, segmentation",
+      detail: "Nettoyage du texte, anonymisation et mise en forme du corpus.",
+      highlight: "Conformité",
+    },
+    {
+      icon: Workflow,
+      title: "Segmentation analytique",
+      text: "Organisation analytique",
+      detail: "Repérage de thèmes et structuration pour faciliter l'analyse.",
+    },
+    {
+      icon: Microscope,
+      title: "Analyse",
+      text: "Corpus exploitable",
+      detail: "Corpus prêt pour NVivo, MAXQDA ou autre, structuré et traçable.",
+      highlight: "Intégrité analytique",
+    },
+  ];
 
-      <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-        Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-      </p>
+  return (
+    <div>
+      {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
+        <div className="max-w-5xl space-y-12">
+          <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+            Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+          </Badge>
 
-      <div className="flex flex-wrap gap-3">
-        <Button
-          size="lg"
-          className="rounded-full"
-          onClick={() => setPage("soumission")}
-        >
-          Obtenir un devis
-        </Button>
+          <div className="space-y-6">
+            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+              Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+            </h1>
 
-        <Button
-          size="lg"
-          variant="outline"
-          className="rounded-full"
-          onClick={() => setPage("services")}
-        >
-          Voir l'offre de services
-        </Button>
-      </div>
+            <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+              Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+            </p>
 
-      <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-        Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
-      </p>
-    </div>
-  </div>
+            <div className="flex flex-wrap gap-3">
+              <Button
+                size="lg"
+                className="rounded-full"
+                onClick={() => setPage("soumission")}
+              >
+                Obtenir un devis
+              </Button>
 
-  <div className="mt-10 w-full flex justify-center">
-    <PipelineDiagram />
-  </div>
-</section>
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full"
+                onClick={() => setPage("services")}
+              >
+                Voir l'offre de services
+              </Button>
+            </div>
+
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+              Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <img
+            src="/pipeline.png"
+            alt="Pipeline Vidame"
+            className="block h-auto max-w-full"
+          />
+        </div>
+      </section>
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">

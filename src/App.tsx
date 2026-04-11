@@ -448,7 +448,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
 
         <div className="mt-10">
-          <img src="/flowchart_vidame3.png" alt="Pipeline Vidame" className="block h-auto max-w-full" />
+          <img src="/flowchart_vidame.png" alt="Pipeline Vidame" className="block h-auto max-w-full" />
         </div>
       </section>
 

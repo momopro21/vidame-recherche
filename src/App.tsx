@@ -599,7 +599,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 function APropos({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-      <div className="grid items-start gap-8 md:grid-cols-[0.8fr_1.2fr]">
+      <div className="grid items-start gap-8 md:grid-cols-[0.6fr_1.4fr]">
         <div className="h-full w-full overflow-hidden rounded-[2rem]">
           <img
             src="/monique.jpg"

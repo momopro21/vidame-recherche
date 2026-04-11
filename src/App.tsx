@@ -402,7 +402,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div>
- {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
+// ===== VIDAME_REPERE_PAGE_ACCUEIL =====
 function Accueil({ setPage }: { setPage: (page: string) => void }) {
   const [activeStep, setActiveStep] = useState(0);
 

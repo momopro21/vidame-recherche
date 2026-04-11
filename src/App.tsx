@@ -553,30 +553,24 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 </div>
 
 {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16 flex justify-center">
+<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-20 flex justify-center">
   <button
     type="button"
     onClick={() => setPage("blog")}
-    className="group flex items-center gap-6 rounded-[2rem] border border-slate-200 bg-white px-10 py-7 shadow-sm transition-all duration-200 hover:shadow-md hover:border-slate-300"
+    className="group flex items-center gap-6 rounded-2xl border border-slate-200 bg-white px-10 py-8 shadow-sm transition-all duration-200 hover:shadow-md hover:border-slate-300"
   >
     {/* Icône LARGE */}
-    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-900 text-white transition-transform duration-200 group-hover:scale-105">
-      <MessageCircle className="h-8 w-8" />
+    <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-slate-900 text-white">
+      <MessageCircle className="h-10 w-10" />
     </div>
 
-    {/* Texte + Blog en valeur */}
-    <div className="flex items-baseline gap-4">
-      <span className="text-base md:text-lg text-slate-600">
-        Pour aller un peu plus loin…
-      </span>
-
-      <span className="text-2xl md:text-3xl font-semibold tracking-wide text-slate-900">
-        Blog
-      </span>
-    </div>
+    {/* Texte principal */}
+    <span className="text-3xl md:text-4xl font-bold tracking-wider text-slate-900">
+      Blogue
+    </span>
 
     {/* Flèche */}
-    <span className="text-xl text-slate-400 transition-transform duration-200 group-hover:translate-x-1">
+    <span className="text-2xl text-slate-400 transition-transform duration-200 group-hover:translate-x-1">
       →
     </span>
   </button>

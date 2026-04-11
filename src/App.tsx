@@ -553,100 +553,34 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 </div>
 
 {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
-
-  {/* Titre Blog cliquable */}
-  <div className="mb-6 text-sm uppercase tracking-[0.18em] text-slate-500">
-    <button
-      type="button"
-      onClick={() => setPage("blog")}
-      className="group inline-flex items-center gap-2 transition-colors duration-200 hover:text-slate-900"
-    >
-      <span className="font-semibold tracking-[0.2em]">Blog</span>
-      <span className="text-base transition-transform duration-200 group-hover:translate-x-1">
-        →
-      </span>
-    </button>
-  </div>
-
-  {/* Carte Blog */}
+<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16 flex justify-center">
   <button
     type="button"
     onClick={() => setPage("blog")}
-    className="group block w-full overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 p-8 text-left shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md md:p-10"
+    className="group flex items-center gap-6 rounded-[2rem] border border-slate-200 bg-white px-10 py-7 shadow-sm transition-all duration-200 hover:shadow-md hover:border-slate-300"
   >
-    <div className="grid gap-8 md:grid-cols-[1.4fr_0.6fr] md:items-end">
-      
-      <div>
-        <div className="mb-4 inline-flex rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-slate-600">
-          Lire les réflexions Vidame
-        </div>
-
-        <h2 className="max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.08]">
-          Réflexions sur les données, le langage et l&apos;IA
-        </h2>
-
-        <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-          Une section pensée pour approfondir les enjeux méthodologiques,
-          linguistiques et éthiques liés au traitement des corpus qualitatifs.
-        </p>
-      </div>
-
-      <div className="flex flex-col items-start gap-4 md:items-end">
-        <div className="flex flex-wrap gap-2">
-          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
-            Méthodologie
-          </span>
-          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
-            Langage
-          </span>
-          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
-            Éthique
-          </span>
-        </div>
-
-        <div className="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 group-hover:bg-slate-700">
-          Accéder au blog
-          <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-            →
-          </span>
-        </div>
-      </div>
-
+    {/* Icône LARGE */}
+    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-900 text-white transition-transform duration-200 group-hover:scale-105">
+      <MessageCircle className="h-8 w-8" />
     </div>
+
+    {/* Texte + Blog en valeur */}
+    <div className="flex items-baseline gap-4">
+      <span className="text-base md:text-lg text-slate-600">
+        Pour aller un peu plus loin…
+      </span>
+
+      <span className="text-2xl md:text-3xl font-semibold tracking-wide text-slate-900">
+        Blog
+      </span>
+    </div>
+
+    {/* Flèche */}
+    <span className="text-xl text-slate-400 transition-transform duration-200 group-hover:translate-x-1">
+      →
+    </span>
   </button>
 </section>
-
-</div>
-</section>
-
-      {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
-        <div className="mb-6 text-sm uppercase tracking-[0.18em] text-slate-500">
-          Blog
-        </div>
-
-        <button
-          type="button"
-          onClick={() => setPage("blog")}
-          className="block w-full rounded-[1.5rem] border border-slate-200 bg-slate-50 p-8 text-left transition-colors duration-200 hover:bg-slate-100"
-        >
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-            Réflexions sur les données, le langage et l&apos;IA
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-            Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs.
-          </p>
-
-          <div className="mt-6 text-sm font-medium text-slate-900">
-            Accéder au blog →
-          </div>
-        </button>
-      </section>
-    </div>
-  );
-}
 
     // ===== VIDAME_REPERE_PAGE_APROPOS =====
     function APropos({ setPage }: { setPage: (page: string) => void }) {

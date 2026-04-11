@@ -672,9 +672,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           structurant.
         </p>
       </div>
-     </div>
-
-      <div className="grid gap-8 md:grid-cols-2">
+     <div className="grid gap-8 md:grid-cols-2">
         <Card className="rounded-[2rem] border-slate-200">
           <CardHeader>
             <CardTitle>Mission</CardTitle>

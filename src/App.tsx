@@ -613,22 +613,33 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
             Un regard humain structuré au coeur des données complexes
           </h1>
+
           <p className="text-lg leading-8 text-slate-700">
-            Je suis spécialisée dans le traitement de données qualitatives, à l'intersection du
-            langage, de la recherche et des outils assistés par intelligence artificielle. Mon
-            travail consiste à transformer des corpus complexes en matériaux fiables, structurés et
-            directement exploitables pour l'analyse.
+            Monique Provost est titulaire d’un Ph. D. en ethnologie et patrimoine de l’Université
+            Laval (2016) et d’une maîtrise en ethnomusicologie de l’Université de Montréal (2010).
+            Ses travaux s’inscrivaient alors dans l’étude des phénomènes de mutation et des
+            processus d’adaptation locale des patrimoines culturels immatériels en contexte de
+            mondialisation.
           </p>
+
           <p className="leading-8 text-slate-600">
-            Vidame est né d'un constat simple : un bon outil ne remplace pas un bon jugement. Dans
-            les environnements sensibles, la valeur ne réside pas seulement dans la vitesse
-            d'exécution, mais dans la capacité à encadrer les transformations avec méthode,
-            traçabilité et rigueur.
+            Elle a contribué à plusieurs projets de recherche en ethnologie, notamment au sein de
+            la Chaire de recherche du Canada en patrimoine ethnologique (Université Laval), sous la
+            direction de Laurier Turgeon, ainsi qu’au Laboratoire d’enquête ethnologique et
+            multimédia (LEEM), dans le cadre des projets IREPI (Inventaire des ressources
+            ethnologiques du patrimoine immatériel) et IPIR (Inventaire du patrimoine immatériel
+            religieux du Québec). Elle a également participé à des activités de recherche et
+            d’édition scientifique, notamment comme assistante à la rédaction pour la revue{" "}
+            <em>Ethnologies</em> et comme responsable documentaire au Laboratoire de recherche sur
+            les musiques du monde (LRMM).
           </p>
+
           <p className="leading-8 text-slate-600">
-            J'interviens comme un pont entre le terrain et l'analyse, en veillant à ce que chaque
-            étape — de la transcription à la structuration — respecte à la fois les exigences
-            scientifiques, les contraintes éthiques et les réalités opérationnelles des équipes.
+            Après plusieurs années de pratique professionnelle en traduction et en soutien à la
+            recherche scientifique auprès de différentes équipes universitaires canadiennes, elle a
+            développé le pipeline Vidame, conçu comme un cadre de traitement rigoureux des données
+            qualitatives. Ses travaux actuels s’inscrivent dans un champ de recherche émergent,
+            celui du patrimoine cognitif à l’ère de l’intelligence artificielle.
           </p>
         </div>
       </div>
@@ -655,6 +666,20 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
         </p>
       </div>
 
+      {/* ===== VIDAME_REPERE_CHOIX_DES_MOTS ===== */}
+      <div className="max-w-3xl space-y-4">
+        <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+          Le choix des mots : « Vidame » et « pipeline »
+        </div>
+
+        <p className="text-sm leading-7 text-slate-600">
+          Le terme « pipeline » est utilisé ici en complément de la notion de chaîne opératoire :
+          là où celle-ci renvoie à une succession d’étapes, le pipeline introduit l’idée d’un flux
+          continu de transformation et de circulation de l’information au sein du dispositif
+          structurant.
+        </p>
+      </div>
+
       <div className="grid gap-8 md:grid-cols-2">
         <Card className="rounded-[2rem] border-slate-200">
           <CardHeader>
@@ -662,9 +687,8 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Offrir des services linguistiques et documentaires de haute rigueur, appuyés par des
-              workflows structurés, afin d'aider les organisations à traiter leurs contenus avec
-              plus de clarté, de sécurité et de cohérence.
+              Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le
+              développement de connaissances ancrées localement, au Québec et au Canada.
             </p>
           </CardContent>
         </Card>
@@ -675,9 +699,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Développer une pratique du langage assisté par IA qui reste profondément humaine :
-              transparente, traçable, adaptée aux contraintes réelles du terrain et respectueuse de
-              la valeur scientifique des données.
+              Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui
+              demeure profondément humaine : transparente, traçable, adaptée aux contraintes du
+              terrain et respectueuse de la valeur scientifique des données.
             </p>
           </CardContent>
         </Card>
@@ -686,16 +710,16 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
       <div className="grid gap-8 md:grid-cols-3">
         {[
           {
-            title: "Clarté",
-            text: "Rendre les contenus plus lisibles, plus structurés et plus utiles pour leurs destinataires.",
+            title: "Intégrité",
+            text: "Préserver la parole des participants en maintenant l’intégrité du sens tout au long de la chaîne opératoire Vidame.",
           },
           {
             title: "Rigueur",
-            text: "Documenter les choix, encadrer les étapes sensibles et maintenir un niveau élevé de contrôle qualité.",
+            text: "Documenter les choix et encadrer les étapes sensibles par des pratiques méthodologiques explicites et traçables.",
           },
           {
             title: "Responsabilité",
-            text: "Faire des choix techniques qui respectent les exigences éthiques, juridiques et opérationnelles du mandat.",
+            text: "Assumer des choix techniques conformes aux exigences éthiques, juridiques et scientifiques des contextes d’intervention, et veiller à la souveraineté des données scientifiques canadiennes.",
           },
         ].map((item) => (
           <Card key={item.title} className="rounded-[1.5rem] border-slate-200">
@@ -712,8 +736,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           <CardContent className="p-8">
             <Quote className="h-8 w-8 text-slate-400" />
             <p className="mt-5 text-xl leading-9 text-slate-800">
-              Vidame s'adresse aux équipes qui veulent intégrer des outils contemporains sans
-              perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
+              Vidame s’adresse aux équipes de recherche souhaitant intégrer des outils
+              contemporains tout en maintenant la maîtrise de leurs données, de leurs textes et de
+              leurs décisions.
             </p>
           </CardContent>
         </Card>
@@ -731,7 +756,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
             <p>Monique Provost</p>
             <p>Montréal, Québec</p>
             <p>
-              <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
+              <a href="mailto:tonemail@example.com" className="underline underline-offset-2">
                 tonemail@example.com
               </a>
             </p>

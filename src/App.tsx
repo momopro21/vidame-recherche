@@ -552,33 +552,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   </p>
 </div>
 
-{/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-20">
-  <div className="flex justify-center">
-    <button
-      type="button"
-      onClick={() => setPage("blog")}
-      className="group flex items-center gap-6 rounded-2xl border border-slate-200 bg-white px-10 py-8 shadow-sm transition-all duration-200 hover:border-slate-300 hover:shadow-md"
-    >
-      <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-slate-900 text-white">
-        <MessageCircle className="h-10 w-10" />
-      </div>
-
-      <span className="text-3xl font-bold tracking-wider text-slate-900 md:text-4xl">
-        Blogue
-      </span>
-
-      <span className="text-2xl text-slate-400 transition-transform duration-200 group-hover:translate-x-1">
-        →
-      </span>
-    </button>
-  </div>
-</section>
-    </div>
-  );
-}
-
-    // ===== VIDAME_REPERE_PAGE_APROPOS =====
+            // ===== VIDAME_REPERE_PAGE_APROPOS =====
     function APropos({ setPage }: { setPage: (page: string) => void }) {
       return (
         <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">

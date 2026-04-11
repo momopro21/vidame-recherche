@@ -420,7 +420,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </h1>
 
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Pipeline de traitement des données qualitatives, selon une approche humaine assistée
+              Pipeline (chaine opératoire) de traitement des données qualitatives, selon une approche humaine assistée
               par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la
               recherche qualitative.
             </p>

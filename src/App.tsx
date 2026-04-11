@@ -1,4 +1,3 @@
-import PipelineDiagram from "./components/PipelineDiagram";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -163,7 +162,11 @@ function Textarea({ className = "", ...props }: React.TextareaHTMLAttributes<HTM
 }
 
 function Badge({ className = "", children }: { className?: string; children: React.ReactNode }) {
-  return <span className={`inline-flex items-center border border-transparent text-xs font-medium ${className}`}>{children}</span>;
+  return (
+    <span className={`inline-flex items-center border border-transparent text-xs font-medium ${className}`}>
+      {children}
+    </span>
+  );
 }
 
 function SectionTitle({ eyebrow, title, text }: SectionTitleProps) {
@@ -320,7 +323,8 @@ function Shell({
               </div>
             </div>
             <p className="text-sm leading-7 text-slate-600">
-              La chaine opératoire (le pipeline) Vidame est conçue pour préparer les données de recherche qualitative à analyser.
+              La chaine opératoire (le pipeline) Vidame est conçue pour préparer les données de
+              recherche qualitative à analyser.
             </p>
           </div>
 
@@ -402,49 +406,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div>
-// ===== VIDAME_REPERE_PAGE_ACCUEIL =====
-function Accueil({ setPage }: { setPage: (page: string) => void }) {
-  const [activeStep, setActiveStep] = useState(0);
-
-  const steps = [
-    {
-      icon: FileText,
-      title: "Corpus brut",
-      text: "Entrevues audio/vidéo",
-      detail: "Données issues du terrain : riches, mais non exploitables telles quelles.",
-    },
-    {
-      icon: PenSquare,
-      title: "Transcription",
-      text: "Fidélité du discours",
-      detail:
-        "Transcription assistée + validation humaine visant la restitution du sens de la parole au texte, avec respect des nuances et du langage réel. Transcrire, c'est préserver le sens — pas seulement les mots.",
-      highlight: "Validation humaine",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Préparation",
-      text: "Anonymisation, segmentation",
-      detail: "Nettoyage du texte, anonymisation et mise en forme du corpus.",
-      highlight: "Conformité",
-    },
-    {
-      icon: Workflow,
-      title: "Segmentation analytique",
-      text: "Organisation analytique",
-      detail: "Repérage de thèmes et structuration pour faciliter l'analyse.",
-    },
-    {
-      icon: Microscope,
-      title: "Analyse",
-      text: "Corpus exploitable",
-      detail: "Corpus prêt pour NVivo, MAXQDA ou autre, structuré et traçable.",
-      highlight: "Intégrité analytique",
-    },
-  ];
-
-  return (
-    <div>
       {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
       <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
         <div className="max-w-5xl space-y-12">
@@ -454,19 +415,18 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
           <div className="space-y-6">
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+              Un service professionnel de traitement des données qualitatives, dans le respect de
+              la souveraineté des données canadiennes
             </h1>
 
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+              Pipeline de traitement des données qualitatives, selon une approche humaine assistée
+              par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la
+              recherche qualitative.
             </p>
 
             <div className="flex flex-wrap gap-3">
-              <Button
-                size="lg"
-                className="rounded-full"
-                onClick={() => setPage("soumission")}
-              >
+              <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
                 Obtenir un devis
               </Button>
 
@@ -481,19 +441,17 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </div>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+              Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse
+              qualitative.
             </p>
           </div>
         </div>
 
         <div className="mt-10">
-          <img
-            src="/pipeline.png"
-            alt="Pipeline Vidame"
-            className="block h-auto max-w-full"
-          />
+          <img src="/pipeline.png" alt="Pipeline Vidame" className="block h-auto max-w-full" />
         </div>
       </section>
+
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
@@ -504,36 +462,49 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
           <div className="mt-4 space-y-8">
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels.
+              Le projet commence souvent par des heures d’entrevues. Les données s’accumulent
+              rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser
+              tels quels.
             </p>
 
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables.
+              Une première transformation est nécessaire : passer de l’audio au texte. Mais ces
+              écrits représentent encore un matériau brut. Il faut ensuite les structurer, les
+              anonymiser, les segmenter et les rendre navigables.
             </p>
 
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable.
+              C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient
+              pour transformer le matériau brut en un corpus navigable, structuré et directement
+              exploitable.
             </p>
 
             <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative.
+                Le pipeline Vidame organise le passage des données brutes vers un corpus
+                exploitable pour l’analyse qualitative.
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques.
+                Chaque étape constitue une opération distincte, avec des points de validation
+                explicites assurant la qualité du traitement, la traçabilité des transformations et
+                la conformité aux exigences éthiques.
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques.
+                Les traitements automatisés sont encadrés par des interventions humaines aux
+                moments critiques.
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter.
+                À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans
+                préparation rigoureuse, les données restent difficiles à explorer, à comparer et à
+                interpréter.
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable.
+                L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir
+                d’un corpus déjà structuré, fiable et exploitable.
               </p>
 
               <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
@@ -562,9 +533,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                   <Card
                     onClick={() => setActiveStep(i)}
                     className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
-                      isActive
-                        ? "ring-2 ring-slate-900 bg-slate-100"
-                        : "hover:bg-slate-100 hover:shadow"
+                      isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
                     }`}
                   >
                     <CardContent className="p-5 md:p-6">
@@ -640,22 +609,21 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
             Un regard humain structuré au coeur des données complexes
           </h1>
           <p className="text-lg leading-8 text-slate-700">
-            Je suis spécialisée dans le traitement de données qualitatives, à l'intersection
-            du langage, de la recherche et des outils assistés par intelligence artificielle.
-            Mon travail consiste à transformer des corpus complexes en matériaux fiables,
-            structurés et directement exploitables pour l'analyse.
+            Je suis spécialisée dans le traitement de données qualitatives, à l'intersection du
+            langage, de la recherche et des outils assistés par intelligence artificielle. Mon
+            travail consiste à transformer des corpus complexes en matériaux fiables, structurés et
+            directement exploitables pour l'analyse.
           </p>
           <p className="leading-8 text-slate-600">
-            Vidame est né d'un constat simple : un bon outil ne remplace pas un bon jugement.
-            Dans les environnements sensibles, la valeur ne réside pas seulement dans la vitesse
+            Vidame est né d'un constat simple : un bon outil ne remplace pas un bon jugement. Dans
+            les environnements sensibles, la valeur ne réside pas seulement dans la vitesse
             d'exécution, mais dans la capacité à encadrer les transformations avec méthode,
             traçabilité et rigueur.
           </p>
           <p className="leading-8 text-slate-600">
-            J'interviens comme un pont entre le terrain et l'analyse, en veillant à ce que
-            chaque étape — de la transcription à la structuration — respecte à la fois les
-            exigences scientifiques, les contraintes éthiques et les réalités opérationnelles
-            des équipes.
+            J'interviens comme un pont entre le terrain et l'analyse, en veillant à ce que chaque
+            étape — de la transcription à la structuration — respecte à la fois les exigences
+            scientifiques, les contraintes éthiques et les réalités opérationnelles des équipes.
           </p>
         </div>
       </div>
@@ -667,9 +635,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Offrir des services linguistiques et documentaires de haute rigueur, appuyés
-              par des workflows structurés, afin d'aider les organisations à traiter leurs
-              contenus avec plus de clarté, de sécurité et de cohérence.
+              Offrir des services linguistiques et documentaires de haute rigueur, appuyés par des
+              workflows structurés, afin d'aider les organisations à traiter leurs contenus avec
+              plus de clarté, de sécurité et de cohérence.
             </p>
           </CardContent>
         </Card>
@@ -680,9 +648,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="leading-8 text-slate-600">
-              Développer une pratique du langage assisté par IA qui reste profondément
-              humaine : transparente, traçable, adaptée aux contraintes réelles du terrain
-              et respectueuse de la valeur scientifique des données.
+              Développer une pratique du langage assisté par IA qui reste profondément humaine :
+              transparente, traçable, adaptée aux contraintes réelles du terrain et respectueuse de
+              la valeur scientifique des données.
             </p>
           </CardContent>
         </Card>
@@ -717,8 +685,8 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           <CardContent className="p-8">
             <Quote className="h-8 w-8 text-slate-400" />
             <p className="mt-5 text-xl leading-9 text-slate-800">
-              Vidame s'adresse aux équipes qui veulent intégrer des outils contemporains
-              sans perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
+              Vidame s'adresse aux équipes qui veulent intégrer des outils contemporains sans
+              perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
             </p>
           </CardContent>
         </Card>
@@ -828,11 +796,14 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             className="mx-auto max-w-4xl"
           >
             <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
-              Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts.
+              Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les
+              discours et les concepts.
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse.
+              Ses opérations professionnelles comprennent des services à la carte en traduction et
+              transcription, ainsi que la préparation des données qualitatives en amont de
+              l’analyse.
             </p>
           </motion.div>
 
@@ -877,7 +848,9 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             className="mx-auto max-w-5xl px-4 pb-16 pt-10"
           >
             <div className="mb-10 text-center">
-              <h2 className="text-2xl font-semibold text-slate-900">Services linguistiques à la carte</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">
+                Services linguistiques à la carte
+              </h2>
               <p className="mt-2 text-slate-500">
                 Commandez uniquement ce dont vous avez besoin, quand vous en avez besoin.
               </p>
@@ -897,10 +870,14 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
                   >
                     <div className="p-6">
                       <div className="flex items-start justify-between gap-4">
-                        <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border ${service.color}`}>
+                        <div
+                          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border ${service.color}`}
+                        >
                           <Icon className="h-6 w-6" />
                         </div>
-                        <span className={`mt-1 rounded-full px-3 py-0.5 text-xs font-medium ${service.badge}`}>
+                        <span
+                          className={`mt-1 rounded-full px-3 py-0.5 text-xs font-medium ${service.badge}`}
+                        >
                           {service.tag}
                         </span>
                       </div>
@@ -930,7 +907,9 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
                       </AnimatePresence>
 
                       <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
-                        <ChevronRight className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`} />
+                        <ChevronRight
+                          className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
+                        />
                         {isExpanded ? "Réduire" : "Voir les détails"}
                       </div>
                     </div>
@@ -941,7 +920,9 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
               <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
-              <p className="mt-2 text-sm text-slate-500">Obtenez un devis personnalisé en moins de 48 heures.</p>
+              <p className="mt-2 text-sm text-slate-500">
+                Obtenez un devis personnalisé en moins de 48 heures.
+              </p>
               <button
                 className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
                 onClick={() => setPage("soumission")}
@@ -962,7 +943,8 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             <div className="mb-10 text-center">
               <h2 className="text-2xl font-semibold text-slate-900">Chaîne opératoire Vidame</h2>
               <p className="mx-auto mt-2 max-w-3xl text-slate-500">
-                Une séquence de traitement structurée pour transformer un matériau brut en corpus exploitable, traçable et conforme.
+                Une séquence de traitement structurée pour transformer un matériau brut en corpus
+                exploitable, traçable et conforme.
               </p>
             </div>
 
@@ -970,7 +952,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
               {pipelineSteps.map((step) => {
                 const Icon = step.icon;
                 return (
-                  <Card key={step.step} className="rounded-[2rem] border-slate-200 overflow-hidden">
+                  <Card key={step.step} className="overflow-hidden rounded-[2rem] border-slate-200">
                     <div className={`h-2 w-full ${step.color}`} />
                     <CardContent className="p-6">
                       <div className="mb-4 flex items-center justify-between">
@@ -990,9 +972,12 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             </div>
 
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
-              <h3 className="text-xl font-semibold text-slate-900">Besoin d’un cadre de traitement complet ?</h3>
+              <h3 className="text-xl font-semibold text-slate-900">
+                Besoin d’un cadre de traitement complet ?
+              </h3>
               <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-500">
-                Vidame peut intervenir en amont de l’analyse pour préparer, structurer et sécuriser vos données qualitatives.
+                Vidame peut intervenir en amont de l’analyse pour préparer, structurer et sécuriser
+                vos données qualitatives.
               </p>
               <button
                 className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
@@ -1183,10 +1168,16 @@ function Blog() {
         {blogPosts.map((post) => (
           <Card key={post.title} className="rounded-[1.5rem] border-slate-200">
             <CardContent className="p-6">
-              <div className="text-xs uppercase tracking-[0.14em] text-slate-500">{post.date}</div>
-              <h3 className="mt-2 text-xl font-semibold tracking-tight text-slate-900">{post.title}</h3>
+              <div className="text-xs uppercase tracking-[0.14em] text-slate-500">
+                {post.date}
+              </div>
+              <h3 className="mt-2 text-xl font-semibold tracking-tight text-slate-900">
+                {post.title}
+              </h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">{post.excerpt}</p>
-              <div className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-500">{post.tag}</div>
+              <div className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-500">
+                {post.tag}
+              </div>
             </CardContent>
           </Card>
         ))}

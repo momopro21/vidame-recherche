@@ -402,52 +402,51 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div>
-      {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
-        <div className="max-w-5xl space-y-12">
-          <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
-            Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
-          </Badge>
+     {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
+<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
+  <div className="max-w-5xl space-y-12">
+    <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-800 hover:bg-slate-200">
+      Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+    </Badge>
 
-          <div className="space-y-6">
-            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
-            </h1>
+    <div className="space-y-6">
+      <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
+        Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes
+      </h1>
 
-            <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
-            </p>
+      <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+        Pipeline de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative.
+      </p>
 
-            <div className="flex flex-wrap gap-3">
-              <Button
-                size="lg"
-                className="rounded-full"
-                onClick={() => setPage("soumission")}
-              >
-                Obtenir un devis
-              </Button>
+      <div className="flex flex-wrap gap-3">
+        <Button
+          size="lg"
+          className="rounded-full"
+          onClick={() => setPage("soumission")}
+        >
+          Obtenir un devis
+        </Button>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full"
-                onClick={() => setPage("services")}
-              >
-                Voir l'offre de services
-              </Button>
-            </div>
+        <Button
+          size="lg"
+          variant="outline"
+          className="rounded-full"
+          onClick={() => setPage("services")}
+        >
+          Voir l'offre de services
+        </Button>
+      </div>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
-            </p>
+      <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+        Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative.
+      </p>
+    </div>
+  </div>
 
-            <div className="mt-0">
-              <PipelineDiagram />
-            </div>
-          </div>
-        </div>
-      </section>
-
+  <div className="mt-10 flex justify-center">
+    <PipelineDiagram />
+  </div>
+</section>
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">

@@ -511,16 +511,23 @@ function Shell({
   </div>
 </section>     
 
-                   {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
+                 {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
           <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
             <div className="mb-6 text-sm uppercase tracking-[0.18em] text-slate-500">
               Blog
             </div>
 
-            <button
-              type="button"
+            <div
+              role="button"
+              tabIndex={0}
               onClick={() => setPage("blog")}
-              className="block w-full rounded-[1.5rem] border border-slate-200 bg-slate-50 p-8 text-left transition-colors duration-200 hover:bg-slate-100"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setPage("blog");
+                }
+              }}
+              className="block w-full cursor-pointer rounded-[1.5rem] border border-slate-200 bg-slate-50 p-8 text-left transition-colors duration-200 hover:bg-slate-100"
             >
               <h2 className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
                 Réflexions sur les données, le langage et l&apos;IA
@@ -533,7 +540,7 @@ function Shell({
               <div className="mt-6 text-sm font-medium text-slate-900">
                 Accéder au blog →
               </div>
-            </button>
+            </div>
           </section>
 
     // ===== VIDAME_REPERE_PAGE_APROPOS =====

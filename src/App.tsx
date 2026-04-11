@@ -487,72 +487,138 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </div>
           </div>
 
-          {/* ===== VIDAME_REPERE_PIPELINE_DIAGRAM ===== */}
-          <div className="mt-10 grid gap-6 md:grid-cols-5">
-            {steps.map((step, i) => {
-              const Icon = step.icon;
-              const isActive = activeStep === i;
+        {/* ===== VIDAME_REPERE_PIPELINE_DIAGRAM ===== */}
+<div className="mt-10 grid gap-6 md:grid-cols-5">
+  {steps.map((step, i) => {
+    const Icon = step.icon;
+    const isActive = activeStep === i;
 
-              return (
-                <div key={step.title} className="relative">
-                  <Card
-                    onClick={() => setActiveStep(i)}
-                    className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
-                      isActive
-                        ? "ring-2 ring-slate-900 bg-slate-100"
-                        : "hover:bg-slate-100 hover:shadow"
-                    }`}
-                  >
-                    <CardContent className="p-5 md:p-6">
-                      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100">
-                        <Icon className="h-5 w-5" />
-                      </div>
-
-                      <div className="text-base font-semibold leading-7 md:text-lg">
-                        {i + 1}. {step.title}
-                      </div>
-
-                      <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
-                        {step.text}
-                      </p>
-
-                      {step.highlight && (
-                        <div className="mt-3 text-xs font-medium uppercase tracking-wide text-slate-500 md:text-sm">
-                          {step.highlight}
-                        </div>
-                      )}
-
-                      <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
-                        +
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {i < steps.length - 1 && (
-                    <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
-                      <ChevronRight className="h-5 w-5 text-slate-400" />
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
-            <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
-              Étape {activeStep + 1}
+    return (
+      <div key={step.title} className="relative">
+        <Card
+          onClick={() => setActiveStep(i)}
+          className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
+            isActive
+              ? "ring-2 ring-slate-900 bg-slate-100"
+              : "hover:bg-slate-100 hover:shadow"
+          }`}
+        >
+          <CardContent className="p-5 md:p-6">
+            <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100">
+              <Icon className="h-5 w-5" />
             </div>
 
-            <div className="text-xl font-semibold text-slate-900 md:text-2xl">
-              {steps[activeStep].title}
+            <div className="text-base font-semibold leading-7 md:text-lg">
+              {i + 1}. {step.title}
             </div>
 
-            <p className="mt-3 text-lg leading-8 text-slate-700 md:text-[1.15rem] md:leading-9">
-              {steps[activeStep].detail}
+            <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
+              {step.text}
             </p>
+
+            {step.highlight && (
+              <div className="mt-3 text-xs font-medium uppercase tracking-wide text-slate-500 md:text-sm">
+                {step.highlight}
+              </div>
+            )}
+
+            <div className="pointer-events-none absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2 text-4xl font-light leading-none text-slate-400 transition-colors duration-200 group-hover:text-slate-600">
+              +
+            </div>
+          </CardContent>
+        </Card>
+
+        {i < steps.length - 1 && (
+          <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
+            <ChevronRight className="h-5 w-5 text-slate-400" />
           </div>
+        )}
+      </div>
+    );
+  })}
+</div>
+
+<div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
+  <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
+    Étape {activeStep + 1}
+  </div>
+
+  <div className="text-xl font-semibold text-slate-900 md:text-2xl">
+    {steps[activeStep].title}
+  </div>
+
+  <p className="mt-3 text-lg leading-8 text-slate-700 md:text-[1.15rem] md:leading-9">
+    {steps[activeStep].detail}
+  </p>
+</div>
+
+{/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
+<section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
+
+  {/* Titre Blog cliquable */}
+  <div className="mb-6 text-sm uppercase tracking-[0.18em] text-slate-500">
+    <button
+      type="button"
+      onClick={() => setPage("blog")}
+      className="group inline-flex items-center gap-2 transition-colors duration-200 hover:text-slate-900"
+    >
+      <span className="font-semibold tracking-[0.2em]">Blog</span>
+      <span className="text-base transition-transform duration-200 group-hover:translate-x-1">
+        →
+      </span>
+    </button>
+  </div>
+
+  {/* Carte Blog */}
+  <button
+    type="button"
+    onClick={() => setPage("blog")}
+    className="group block w-full overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 p-8 text-left shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md md:p-10"
+  >
+    <div className="grid gap-8 md:grid-cols-[1.4fr_0.6fr] md:items-end">
+      
+      <div>
+        <div className="mb-4 inline-flex rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-slate-600">
+          Lire les réflexions Vidame
         </div>
-      </section>
+
+        <h2 className="max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.08]">
+          Réflexions sur les données, le langage et l&apos;IA
+        </h2>
+
+        <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+          Une section pensée pour approfondir les enjeux méthodologiques,
+          linguistiques et éthiques liés au traitement des corpus qualitatifs.
+        </p>
+      </div>
+
+      <div className="flex flex-col items-start gap-4 md:items-end">
+        <div className="flex flex-wrap gap-2">
+          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
+            Méthodologie
+          </span>
+          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
+            Langage
+          </span>
+          <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
+            Éthique
+          </span>
+        </div>
+
+        <div className="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 group-hover:bg-slate-700">
+          Accéder au blog
+          <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </button>
+</section>
+
+</div>
+</section>
 
       {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
       <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">

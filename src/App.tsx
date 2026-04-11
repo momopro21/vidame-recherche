@@ -634,17 +634,24 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
       </div>
 
       {/* ===== VIDAME_REPERE_SENS_DU_MOT ===== */}
-      <div className="max-w-3xl space-y-6 pt-10 border-t border-slate-200">
+      <div className="max-w-3xl space-y-6 border-t border-slate-200 pt-10">
         <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
           Le sens du mot « Vidame »
         </div>
 
         <p className="text-sm leading-7 text-slate-600">
-          Un vidame, c’est, historiquement, un délégué laïque agissant pour le compte d’une autorité ecclésiastique. Le terme vient du bas latin <em>vicedominus</em>, « à la place du seigneur ». Les sources lexicographiques décrivent une figure chargée d’exercer des fonctions temporelles au nom d’une autorité qui ne les exerce pas directement.
+          Un vidame, c’est, historiquement, un délégué laïque agissant pour le compte d’une
+          autorité ecclésiastique. Le terme vient du bas latin <em>vicedominus</em>, « à la place
+          du seigneur ». Les sources lexicographiques décrivent une figure chargée d’exercer des
+          fonctions temporelles au nom d’une autorité qui ne les exerce pas directement.
         </p>
 
         <p className="text-sm leading-7 text-slate-600">
-          Inspiré des temps anciens, Vidame assume une fonction de médiation structurée par une chaîne opératoire rigoureuse. Celle-ci intervient dans un espace intermédiaire — entre le terrain et l’analyse, et aujourd’hui entre l’humain et les systèmes d’intelligence artificielle — afin de représenter le chercheur au sein d’un dispositif collaboratif humain–IA.
+          Inspiré des temps anciens, Vidame assume une fonction de médiation structurée par une
+          chaîne opératoire rigoureuse. Celle-ci intervient dans un espace intermédiaire — entre le
+          terrain et l’analyse, et aujourd’hui entre l’humain et les systèmes d’intelligence
+          artificielle — afin de représenter le chercheur au sein d’un dispositif collaboratif
+          humain–IA.
         </p>
       </div>
 
@@ -675,6 +682,58 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardContent>
         </Card>
       </div>
+
+      <div className="grid gap-8 md:grid-cols-3">
+        {[
+          {
+            title: "Clarté",
+            text: "Rendre les contenus plus lisibles, plus structurés et plus utiles pour leurs destinataires.",
+          },
+          {
+            title: "Rigueur",
+            text: "Documenter les choix, encadrer les étapes sensibles et maintenir un niveau élevé de contrôle qualité.",
+          },
+          {
+            title: "Responsabilité",
+            text: "Faire des choix techniques qui respectent les exigences éthiques, juridiques et opérationnelles du mandat.",
+          },
+        ].map((item) => (
+          <Card key={item.title} className="rounded-[1.5rem] border-slate-200">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold">{item.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{item.text}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
+        <Card className="rounded-[2rem] border-slate-200 bg-slate-50">
+          <CardContent className="p-8">
+            <Quote className="h-8 w-8 text-slate-400" />
+            <p className="mt-5 text-xl leading-9 text-slate-800">
+              Vidame s'adresse aux équipes qui veulent intégrer des outils contemporains sans
+              perdre la maîtrise de leurs données, de leurs textes et de leurs décisions.
+            </p>
+          </CardContent>
+        </Card>
+
+        <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
+          <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Pour qui</div>
+          <ul className="space-y-3 text-slate-700">
+            <li>Équipes de recherche</li>
+            <li>Organismes en santé</li>
+            <li>Institutions et milieux documentaires</li>
+            <li>Professionnels ayant des corpus sensibles à traiter</li>
+          </ul>
+          <Button className="mt-4 rounded-full" onClick={() => setPage("services")}>
+            Voir les services
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");

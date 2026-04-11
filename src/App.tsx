@@ -748,7 +748,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
             <p>Monique Provost</p>
             <p>Montréal, Québec</p>
             <p>
-              <a href="mailto:tonemail@example.com" className="underline underline-offset-2">
+              <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
                 tonemail@example.com
               </a>
             </p>

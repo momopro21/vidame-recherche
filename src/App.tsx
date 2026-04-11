@@ -511,128 +511,30 @@ function Shell({
   </div>
 </section>     
 
-          {/* ===== VIDAME_REPERE_SECTION_SERVICES_ACCUEIL ===== */}
-          <section className="border-y border-slate-200 bg-slate-50">
-            <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
-              <SectionTitle
-               title="Services à la carte"
-                 />             
-                <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                {services.map((service) => {
-                  const Icon = service.icon;
-                  return (
-                    <Card key={service.title} className="rounded-[1.5rem] border-slate-200">
-                      <CardContent className="p-6">
-                        <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100">
-                          <Icon className="h-5 w-5" />
-                        </div>
-                        <h3 className="text-lg font-semibold">{service.title}</h3>
-                        <p className="mt-3 text-sm leading-7 text-slate-600">{service.text}</p>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
-              <div className="mt-14 flex flex-wrap justify-center gap-4">
-                <button
-                onClick={() => setPage("soumission")}
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-slate-700"
-              >
-                Obtenir un devis
-              </button>
-              <button
-               onClick={() => setPage("services")}
-               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
-              >
-                Voir l'offre de services
-              </button>
-            </div>
-          </div>
-          </section>
-
-          {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
+                   {/* ===== VIDAME_REPERE_SECTION_ARTICLES_ACCUEIL ===== */}
           <section className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
-            <div className="mb-10">
-              <div className="text-sm uppercase tracking-[0.18em] text-slate-500">Blog</div>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                Réflexions sur les données, le langage et l'IA
+            <div className="mb-6 text-sm uppercase tracking-[0.18em] text-slate-500">
+              Blog
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setPage("blog")}
+              className="block w-full rounded-[1.5rem] border border-slate-200 bg-slate-50 p-8 text-left transition-colors duration-200 hover:bg-slate-100"
+            >
+              <h2 className="text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+                Réflexions sur les données, le langage et l&apos;IA
               </h2>
+
               <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
                 Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs.
               </p>
-            </div>
-            <div className="grid gap-6 md:grid-cols-3">
-              <button
-                type="button"
-                onClick={() => setPage("blog")}
-                className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
-              >
-                <div className="text-sm uppercase tracking-[0.14em] text-slate-500">Mars 2026</div>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
-                  Pourquoi la préparation des données est une étape scientifique à part entière
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  Transcrire, segmenter, anonymiser et structurer un corpus ne relève pas seulement de l'exécution technique : ce sont des opérations qui influencent directement la qualité du matériau de recherche.
-                </p>
-                <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">Réflexion</div>
-              </button>
-              <button
-                type="button"
-                onClick={() => setPage("blog")}
-                className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
-              >
-                <div className="text-sm uppercase tracking-[0.14em] text-slate-500">Mars 2026</div>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
-                  L'IA en contexte sensible : garder la conformité au centre du workflow
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  Quand les données touchent la santé, la recherche ou des milieux institutionnels, l'enjeu n'est pas seulement la performance des outils, mais la gouvernance de leur usage.
-                </p>
-                <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">Conformité</div>
-              </button>
-              <button
-                type="button"
-                onClick={() => setPage("blog")}
-                className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 transition-colors duration-200 hover:bg-slate-100"
-              >
-                <div className="text-sm uppercase tracking-[0.14em] text-slate-500">Mars 2026</div>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
-                  Du verbatim brut au corpus exploitable : les étapes du pipeline Vidame
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  Un bon pipeline ne se limite pas à produire du texte. Il organise une chaîne opératoire complète : intégrité, anonymisation, structuration, traçabilité et réutilisation.
-                </p>
-                <div className="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-slate-500">Méthode</div>
-              </button>
-            </div>
-            <div className="mt-6 flex justify-center">
-              <button
-                type="button"
-                onClick={() => setPage("blog")}
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
-              >
-                Voir tous les articles
-              </button>
-            </div>
-          </section>
 
-        <section className="bg-slate-900 text-white">
-            <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-16 md:flex-row md:items-center md:justify-between md:px-8">
-              <div className="max-w-2xl space-y-3">
-                <div className="text-sm uppercase tracking-[0.2em] text-slate-300">Prêt à démarrer</div>
-                <h3 className="text-3xl font-semibold tracking-tight">Parlez-moi de votre projet.</h3>
-                <p className="leading-8 text-slate-300">
-                  Décrivez votre besoin, votre volume, vos contraintes de confidentialité et votre échéancier. Nous évaluerons ensemble comment Vidame peut vous soutenir.
-                </p>
+              <div className="mt-6 text-sm font-medium text-slate-900">
+                Accéder au blog →
               </div>
-              <Button size="lg" variant="secondary" className="rounded-full" onClick={() => setPage("soumission")}>
-                Ouvrir le formulaire
-              </Button>
-            </div>
+            </button>
           </section>
-        </div>
-      );
-    }
 
     // ===== VIDAME_REPERE_PAGE_APROPOS =====
     function APropos({ setPage }: { setPage: (page: string) => void }) {

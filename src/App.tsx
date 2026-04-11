@@ -718,32 +718,33 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardContent>
         </Card>
 
-    <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
-  <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-    Coordonnées
-  </div>
+        <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
+          <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            Coordonnées
+          </div>
 
-  <p className="text-sm text-slate-600">
-    Pour toute question ou pour discuter de votre projet :
-  </p>
+          <p className="text-sm text-slate-600">
+            Pour toute question ou pour discuter de votre projet :
+          </p>
 
-  <div className="space-y-2 text-slate-700">
-    <p>Monique Provost</p>
-    <p>Montréal, Québec</p>
-    <p>
-      <a href="mailto:tonemail@example.com" className="underline underline-offset-2">
-        tonemail@example.com
-      </a>
-    </p>
-  </div>
+          <div className="space-y-2 text-slate-700">
+            <p>Monique Provost</p>
+            <p>Montréal, Québec</p>
+            <p>
+              <a href="mailto:tonemail@example.com" className="underline underline-offset-2">
+                tonemail@example.com
+              </a>
+            </p>
+          </div>
 
-  <Button
-    className="mt-4 rounded-full"
-    onClick={() => setPage("soumission")}
-  >
-    Obtenir un devis
-  </Button>
-</div>
+          <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
+            Obtenir un devis
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");

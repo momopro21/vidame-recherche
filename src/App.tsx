@@ -461,22 +461,24 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
 
           <div className="max-w-3xl text-left">
-            <p className="text-[17px] leading-7 text-slate-700">
-              Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
-            </p>
+  <p className="text-[17px] leading-7 text-slate-700">
+    Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
+  </p>
 
-            <a
-              href="#donnees-sensibles"
-              className="mt-2 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-            >
-              En savoir plus sur le traitement des données sensibles
-            </a>
-          </div>
+  <a
+    href="#donnees-sensibles"
+    className="mt-2 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+  >
+    En savoir plus sur le traitement des données sensibles
+  </a>
+</div>
 
-          <SectionTitle
-            eyebrow="PIPELINE VIDAME"
-            title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
-          />
+<div className="-mt-4">
+  <SectionTitle
+    eyebrow="PIPELINE VIDAME"
+    title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
+  />
+</div>
 
           <div className="mt-4 space-y-8">
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">

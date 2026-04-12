@@ -456,7 +456,18 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           />
         </div>
       </section>
-
+        {/* ===== VIDAME_REPERE_NOTE_SENSIBILITE ===== */}
+        <div className="mx-auto mt-10 max-w-3xl px-4 text-[17px] leading-7 text-slate-700">
+        <p>
+          Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
+        </p>
+        <a
+          href="#donnees-sensibles"
+          className="mt-3 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+        >
+          En savoir plus sur le traitement des données sensibles
+        </a>
+      </div>
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
         <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">

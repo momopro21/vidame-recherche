@@ -447,100 +447,101 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
         </div>
 
-      {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-      <div className="mt-0 max-w-4xl">
-        <img
-          src="/flowchart_vidame.png"
-          alt="Pipeline Vidame"
-          className="block h-auto w-full"
-        />
-      </div>
-    </section>
-
     {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-    <section>
-      <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
-        <div className="max-w-3xl text-left">
-          <p className="text-[17px] leading-7 text-slate-700">
-            Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
-          </p>
+<section>
 
-          <a
-            href="#donnees-sensibles"
-            className="mt-2 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-          >
-            En savoir plus sur le traitement des données sensibles
-          </a>
-        </div>
+  {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
+  <div className="mt-0 max-w-4xl">
+    <img
+      src="/flowchart_vidame.png"
+      alt="Pipeline Vidame"
+      className="block h-auto w-full"
+    />
+  </div>
 
-        <SectionTitle
-          eyebrow="PIPELINE VIDAME"
-          title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
-        />
+  <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
+    <div className="max-w-3xl text-left">
+      <p className="text-[17px] leading-7 text-slate-700">
+        Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
+      </p>
 
-        <div className="mt-4 space-y-8">
-          <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-            Le projet commence souvent par des heures d’entrevues. Les données s’accumulent
-            rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser
-            tels quels.
-          </p>
+      <a
+        href="#donnees-sensibles"
+        className="mt-2 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+      >
+        En savoir plus sur le traitement des données sensibles
+      </a>
+    </div>
 
-          <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-            Une première transformation est nécessaire : passer de l’audio au texte. Mais ces
-            écrits représentent encore un matériau brut. Il faut ensuite les structurer, les
-            anonymiser, les segmenter et les rendre navigables.
-          </p>
+    <SectionTitle
+      eyebrow="PIPELINE VIDAME"
+      title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
+    />
 
-          <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-            C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient
-            pour transformer le matériau brut en un corpus navigable, structuré et directement
-            exploitable.
-          </p>
+    <div className="mt-4 space-y-8">
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        Le projet commence souvent par des heures d’entrevues. Les données s’accumulent
+        rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser
+        tels quels.
+      </p>
 
-          <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
-            <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              Le pipeline Vidame organise le passage des données brutes vers un corpus
-              exploitable pour l’analyse qualitative.
-            </p>
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        Une première transformation est nécessaire : passer de l’audio au texte. Mais ces
+        écrits représentent encore un matériau brut. Il faut ensuite les structurer, les
+        anonymiser, les segmenter et les rendre navigables.
+      </p>
 
-            <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              Chaque étape constitue une opération distincte, avec des points de validation
-              explicites assurant la qualité du traitement, la traçabilité des transformations et
-              la conformité aux exigences éthiques.
-            </p>
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient
+        pour transformer le matériau brut en un corpus navigable, structuré et directement
+        exploitable.
+      </p>
 
-            <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              Les traitements automatisés sont encadrés par des interventions humaines aux
-              moments critiques.
-            </p>
+      <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Le pipeline Vidame organise le passage des données brutes vers un corpus
+          exploitable pour l’analyse qualitative.
+        </p>
 
-            <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans
-              préparation rigoureuse, les données restent difficiles à explorer, à comparer et à
-              interpréter.
-            </p>
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Chaque étape constitue une opération distincte, avec des points de validation
+          explicites assurant la qualité du traitement, la traçabilité des transformations et
+          la conformité aux exigences éthiques.
+        </p>
 
-            <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir
-              d’un corpus déjà structuré, fiable et exploitable.
-            </p>
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          Les traitements automatisés sont encadrés par des interventions humaines aux
+          moments critiques.
+        </p>
 
-            <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
-              <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
-                Ce que Vidame prend en charge
-              </div>
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans
+          préparation rigoureuse, les données restent difficiles à explorer, à comparer et à
+          interpréter.
+        </p>
 
-              <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
-                <li>1. Transformer le matériau brut en corpus exploitable</li>
-                <li>2. Assurer la fidélité et la traçabilité des données</li>
-                <li>3. Préparer le corpus pour la navigation et l’analyse</li>
-                <li>4. Structurer le corpus sans ajout interprétatif</li>
-              </ol>
-            </div>
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir
+          d’un corpus déjà structuré, fiable et exploitable.
+        </p>
+
+        <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
+          <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
+            Ce que Vidame prend en charge
           </div>
+
+          <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
+            <li>1. Transformer le matériau brut en corpus exploitable</li>
+            <li>2. Assurer la fidélité et la traçabilité des données</li>
+            <li>3. Préparer le corpus pour la navigation et l’analyse</li>
+            <li>4. Structurer le corpus sans ajout interprétatif</li>
+          </ol>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+</section>
           {/* ===== VIDAME_REPERE_PIPELINE_DIAGRAM ===== */}
           <div className="mt-10 grid gap-6 md:grid-cols-5">
             {steps.map((step, i) => {

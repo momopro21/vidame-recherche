@@ -448,7 +448,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
 
        {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-<div className="mt-0 max-w-4xl">
+  <div className="mt-0 max-w-4xl">
   <img
     src="/flowchart_vidame.png"
     alt="Pipeline Vidame"

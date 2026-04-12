@@ -407,8 +407,8 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div>
       {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-10 py-18 md:px-8 md:py-16">
-        <div className="max-w-5xl space-y-08">
+     <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
+  <div className="max-w-5xl space-y-08">
           <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
             Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
           </Badge>
@@ -450,7 +450,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
-        <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
+        <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
           {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
         <div className="mt-2 mb-8 max-w-4xl">
             <img

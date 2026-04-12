@@ -467,7 +467,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
   <a
     href="#donnees-sensibles"
-    className="mt-2 mb-2 inline-block text-[16px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+   className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
     >
         En savoir plus sur le traitement des données sensibles
       </a>

@@ -465,11 +465,11 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
     Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
   </p>
 
-  <a
-    href="#donnees-sensibles"
-   className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-    >
-        En savoir plus sur le traitement des données sensibles
+     <a
+      href="#charte"
+      className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+      >
+         En savoir plus sur le traitement des données sensibles
       </a>
     </div>
 

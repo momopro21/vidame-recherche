@@ -452,7 +452,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <section>
         <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
           {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-          <div className="mt-0 max-w-4xl">
+          <div className="mt-8 max-w-4xl">
             <img
               src="/flowchart_vidame4.png"
               alt="Pipeline Vidame"

@@ -611,7 +611,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
         <div className="space-y-6">
           <div className="text-sm uppercase tracking-[0.2em] text-slate-500">À propos</div>
           <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
-            Un regard humain structuré au coeur des données complexes
+            Un regard humain aguérri, au coeur des données complexes
           </h1>
 
           <p className="text-lg leading-8 text-slate-700">

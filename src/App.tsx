@@ -486,6 +486,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </a>
       </div>
     </div>
+</div>
 
     <SectionTitle
       eyebrow="PIPELINE VIDAME"

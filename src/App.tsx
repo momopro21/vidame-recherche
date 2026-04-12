@@ -541,7 +541,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </div>
           </div>
 
-          {/* ===== VIDAME_REPERE_PIPELINE_DIAGRAM ===== */}
+          {/* ===== VIDAME_REPERE_ETAPES_TRAITEMENT ===== */}
           <div className="mt-10 grid gap-6 md:grid-cols-5">
             {steps.map((step, i) => {
               const Icon = step.icon;
@@ -605,6 +605,37 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
         </div>
       </section>
+      {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
+<section id="charte" className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16">
+  <div className="max-w-3xl space-y-6">
+    
+    <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+      Données sensibles
+    </div>
+
+    <h2 className="text-2xl font-semibold text-slate-900 md:text-3xl">
+      Traitement des données sensibles
+    </h2>
+
+    <p className="text-lg leading-8 text-slate-700">
+      Certains corpus exigent un niveau de précaution accru en raison de leur sensibilité.
+      Dans ces contextes, Vidame privilégie des modalités de traitement adaptées, incluant
+      des interventions entièrement manuelles lorsque nécessaire.
+    </p>
+
+    <p className="text-lg leading-8 text-slate-700">
+      L’objectif est de garantir la protection des participants, la conformité aux exigences
+      éthiques et le respect des cadres légaux en vigueur, notamment dans le contexte canadien.
+    </p>
+
+    <p className="text-lg leading-8 text-slate-700">
+      Chaque projet est évalué individuellement afin de déterminer le niveau de traitement
+      approprié, en fonction de la nature des données, du contexte de recherche et des
+      exigences du comité d’éthique.
+    </p>
+
+  </div>
+</section>
     </div>
   );
 }

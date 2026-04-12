@@ -717,7 +717,14 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         Intégrité des données. Protection des participants. Méthode avant outil.
       </p>
     </div>
-
+<div className="pt-6">
+  <button
+    onClick={() => setPage("soumission")}
+    className="text-[17px] md:text-[18px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+  >
+    Discuter de votre projet
+  </button>
+</div>
   </div>
 </section>
     </div>

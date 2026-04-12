@@ -407,7 +407,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div>
        {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-0 py-18 md:px-8 md:py-16">
+      <section className="mx-auto max-w-7xl px-50 py-18 md:px-8 md:py-16">
         <div className="max-w-5xl space-y-12">
           <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
             Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25

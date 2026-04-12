@@ -450,7 +450,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
        {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
   <div className="mt-0 max-w-4xl">
   <img
-    src="/flowchart_vidame2.png"
+    src="/flowchart_vidame.png"
     alt="Pipeline Vidame"
     className="block h-auto w-full"
   />
@@ -460,20 +460,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
 <section>
   <div className="mx-auto max-w-7xl px-6 py-6 md:px-8 md:py-8">
-    {/* ===== VIDAME_REPERE_TEXTE_VALIDATION_HUMAINE ===== */}
-    <div className="mt-8 max-w-3xl text-left">
-      <p className="text-[17px] leading-7 text-slate-700">
-        Si certaines étapes peuvent être automatisées, leur fiabilité repose sur une validation humaine rigoureuse aux moments clés du traitement.
-      </p>
-    </div>
-
-    {/* ===== VIDAME_REPERE_NOTE_SENSIBILITE_INTEGREE ===== */}
-   <div className="mt-6 flex max-w-3xl items-start gap-3 text-left">
-      <div className="mt-1 shrink-0 text-slate-500">
-       <span>✱</span>
-      </div>
-
-      <div>
         <p className="text-[17px] leading-7 text-slate-700">
           Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
         </p>

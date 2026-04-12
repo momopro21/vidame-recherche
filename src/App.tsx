@@ -657,7 +657,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :
         </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
           <li>des personnes mineures</li>
           <li>des situations de vulnérabilité (santé mentale, parcours de vie)</li>
           <li>des milieux institutionnels sensibles (police, justice, milieu carcéral)</li>
@@ -672,7 +672,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           Ces incertitudes peuvent concerner :
         </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+       <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
           <li>la résidence des données</li>
           <li>la rétention temporaire liée aux mécanismes de sécurité</li>
           <li>les transformations involontaires du contenu (filtrage, reformulation, atténuation)</li>
@@ -687,7 +687,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle.
         </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
           <li>contrôle complet sur chaque étape</li>
           <li>fidélité du discours et de ses nuances</li>
           <li>préservation des éléments analytiques essentiels</li>

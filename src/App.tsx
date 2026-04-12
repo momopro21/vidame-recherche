@@ -460,7 +460,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             />
           </div>
 
-          <div className="max-w-3xl text-left">
+  <div className="max-w-3xl text-left">
   <p className="text-[17px] leading-7 text-slate-700">
     Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
   </p>

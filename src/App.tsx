@@ -996,7 +996,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
           >
             <div className="mb-10 text-center">
               <h2 className="text-2xl font-semibold text-slate-900">Chaîne opératoire Vidame</h2>
-              <p className="mx-auto mt-2 max-w-5xl text-slate-500">
+              <p className="mx-auto mt-2 max-w-0xl text-slate-500">
                 Une séquence de traitement structurée pour transformer un matériau brut en corpus
                 exploitable, traçable et conforme.
               </p>

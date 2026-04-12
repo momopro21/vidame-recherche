@@ -468,7 +468,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
     </div>
 
     {/* ===== VIDAME_REPERE_NOTE_SENSIBILITE_INTEGREE ===== */}
-    <div className="mt-6 flex max-w-3xl items-start gap-3">
+   <div className="mt-6 flex max-w-3xl items-start gap-3 text-left">
       <div className="mt-1 shrink-0 text-slate-500">
        <span>✱</span>
       </div>

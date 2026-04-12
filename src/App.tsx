@@ -440,7 +440,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               </Button>
             </div>
 
-            <p className="mt-06 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+            <p className="mt-06 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse
               qualitative.
             </p>

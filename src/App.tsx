@@ -606,106 +606,114 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
       {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
-<section id="charte" className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16">
-  <div className="max-w-3xl space-y-10">
+<section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
+  <div className="max-w-3xl space-y-12">
 
     <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
       Charte
     </div>
 
-    <h2 className="text-2xl font-semibold text-slate-900 md:text-3xl">
+    <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
       Posture et traitement des données sensibles
     </h2>
 
-    {/* 1 */}
-    <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900">1. Principe directeur</h3>
-      <p className="text-lg leading-8 text-slate-700">
-        Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants.
-      </p>
-      <p className="text-lg leading-8 text-slate-700">
-        Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet.
+    {/* Bloc visuel fort */}
+    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+      <p className="text-xl md:text-2xl leading-9 text-slate-900 font-medium">
+        Préserver l’intégrité du matériau et protéger les participants.
       </p>
     </div>
 
-    {/* 2 */}
-    <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900">2. Positionnement</h3>
-      <p className="text-lg leading-8 text-slate-700">
-        Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques.
-      </p>
-      <p className="text-lg leading-8 text-slate-700">
-        L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte.
-      </p>
+    {/* Sections */}
+    <div className="space-y-8">
+
+      {/* 1 */}
+      <div className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900">1. Principe directeur</h3>
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants.
+        </p>
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet.
+        </p>
+      </div>
+
+      {/* 2 */}
+      <div className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900">2. Positionnement</h3>
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques.
+        </p>
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte.
+        </p>
+      </div>
+
+      {/* 3 */}
+      <div className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900">3. Données sensibles</h3>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+          <li>des personnes mineures</li>
+          <li>des situations de vulnérabilité (santé mentale, parcours de vie)</li>
+          <li>des milieux institutionnels sensibles (police, justice, milieu carcéral)</li>
+          <li>des contenus à risque (discours violents, extrémisme, situations conflictuelles)</li>
+        </ul>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche.
+        </p>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Ces incertitudes peuvent concerner :
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+          <li>la résidence des données</li>
+          <li>la rétention temporaire liée aux mécanismes de sécurité</li>
+          <li>les transformations involontaires du contenu (filtrage, reformulation, atténuation)</li>
+        </ul>
+      </div>
+
+      {/* 4 */}
+      <div className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900">4. Traitement manuel</h3>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle.
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg md:text-[1.15rem] leading-9">
+          <li>contrôle complet sur chaque étape</li>
+          <li>fidélité du discours et de ses nuances</li>
+          <li>préservation des éléments analytiques essentiels</li>
+          <li>anonymisation fine et contextualisée</li>
+          <li>traçabilité des transformations</li>
+        </ul>
+      </div>
+
+      {/* 5 */}
+      <div className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900">5. Utilisation des outils assistés par IA</h3>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet.
+        </p>
+
+        <p className="text-lg md:text-[1.15rem] leading-9 text-slate-700">
+          Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel.
+        </p>
+      </div>
+
     </div>
 
-    {/* 3 */}
-    <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900">3. Données sensibles</h3>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :
-      </p>
-
-      <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg leading-8">
-        <li>des personnes mineures</li>
-        <li>des situations de vulnérabilité (santé mentale, parcours de vie)</li>
-        <li>des milieux institutionnels sensibles (police, justice, milieu carcéral)</li>
-        <li>des contenus à risque (discours violents, extrémisme, situations conflictuelles)</li>
-      </ul>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche.
-      </p>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Ces incertitudes peuvent concerner :
-      </p>
-
-      <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg leading-8">
-        <li>la résidence des données</li>
-        <li>la rétention temporaire liée aux mécanismes de sécurité</li>
-        <li>les transformations involontaires du contenu (filtrage, reformulation, atténuation)</li>
-      </ul>
-    </div>
-
-    {/* 4 */}
-    <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900">4. Traitement manuel</h3>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle.
-      </p>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Cette approche permet :
-      </p>
-
-      <ul className="list-disc pl-6 space-y-2 text-slate-700 text-lg leading-8">
-        <li>de garantir un contrôle complet sur chaque étape</li>
-        <li>de préserver la fidélité du discours et ses nuances</li>
-        <li>de maintenir les relations et les éléments analytiques essentiels</li>
-        <li>d’assurer une anonymisation fine et contextualisée</li>
-        <li>de garantir la traçabilité des transformations</li>
-      </ul>
-    </div>
-
-    {/* 5 */}
-    <div className="space-y-3">
-      <h3 className="font-semibold text-slate-900">5. Utilisation des outils assistés par IA</h3>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet.
-      </p>
-
-      <p className="text-lg leading-8 text-slate-700">
-        Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel.
-      </p>
-    </div>
-
-    {/* Signature */}
-    <div className="pt-6 border-t border-slate-200">
-      <p className="text-lg font-medium text-slate-900">
+    {/* Signature forte */}
+    <div className="pt-8 border-t border-slate-200">
+      <p className="text-xl md:text-2xl font-semibold text-slate-900">
         Intégrité des données. Protection des participants. Méthode avant outil.
       </p>
     </div>

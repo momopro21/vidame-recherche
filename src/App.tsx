@@ -642,7 +642,22 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </div>
                     </CardContent>
                   </Card>
+                  {/* ===== VIDAME_REPERE_DETAIL_ETAPE_MOBILE ===== */}
+                  {isActive && (
+                    <div className="mt-4 rounded-2xl border border-slate-300 bg-slate-100 p-5 md:hidden">
+                    <div className="mb-2 text-xs uppercase tracking-[0.2em] text-slate-500">
+                      Étape {i + 1}
+                    </div>
 
+                    <div className="text-lg font-semibold text-slate-900">
+                        {step.title}
+                    </div>
+
+                    <p className="mt-3 text-base leading-8 text-slate-700">
+                      {step.detail}
+                    </p>
+                   </div>
+                  )}
                   {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
                   {i < steps.length - 1 && (
                     <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">

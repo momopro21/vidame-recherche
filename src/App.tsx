@@ -609,7 +609,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               const isActive = activeStep === i;
 
               return (
-                <div key={step.title} className="relative">
+               <div key={step.title} className="relative flex flex-col">
                 {/* ===== VIDAME_REPERE_CARTE_ETAPE_PIPELINE ===== */}
                   <Card
                     onClick={() => setActiveStep(i)}

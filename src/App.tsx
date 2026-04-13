@@ -413,7 +413,6 @@ return (
 // ===== VIDAME_REPERE_PAGE_ACCUEIL =====
 function Accueil({ setPage }: { setPage: (page: string) => void }) {
   const [activeStep, setActiveStep] = useState(0);
-  const detailRef = useRef<HTMLDivElement | null>(null);
 
   // ===== VIDAME_REPERE_DONNEES_ETAPES_PIPELINE =====
   const steps = [

@@ -612,8 +612,19 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               return (
                 <div key={step.title} className="relative">
                   {/* ===== VIDAME_REPERE_CARTE_ETAPE_PIPELINE ===== */}
-                  <Card
-                    onClick={() => setActiveStep(i)}
+                 <Card
+                  onClick={() => {
+                    setActiveStep(i);
+                  
+                      if (window.innerWidth < 768) {
+                      setTimeout(() => {
+                      detailRef.current?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }, 100);
+                 }
+              }}
                     className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
                       isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
                     }`}
@@ -655,7 +666,10 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
 
           {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
-          <div className="mt-8 rounded-2xl border border-slate-300 bg-slate-100 p-6 md:p-7">
+          <div 
+            ref={detailRef}
+            className="mt-8 rounded-2xl border border-slate-300 bg-slate-100 p-6 md:p-7"
+            >
             <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
               Étape {activeStep + 1}
             </div>

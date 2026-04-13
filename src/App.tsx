@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
@@ -615,18 +615,8 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                  <Card
                   onClick={() => {
                     setActiveStep(i);
-                  
-                      if (window.innerWidth < 768) {
-                      setTimeout(() => {
-                      detailRef.current?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  }, 100);
-                 }
-              }}
                     className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
-                      isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
+                     isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
                     }`}
                   >
                     <CardContent className="p-5 md:p-6">

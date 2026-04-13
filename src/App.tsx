@@ -614,7 +614,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
     </div>
 
     <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
-      Posture et traitement des données sensibles
+      Pour le raitement des données plus sensibles
     </h2>
 
     {/* Bloc visuel fort */}

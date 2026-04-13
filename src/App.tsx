@@ -866,10 +866,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
                   : "They operate within a controlled methodological framework and never replace professional judgment."}
                 </p>
               </div>
-          </div>
+         </div> {/* fin VIDAME_REPERE_CONTENU_CHARTE */}
 
-                {/* ===== VIDAME_REPERE_SIGNATURE_CHARTE ===== */}
-            <div className="pt-8 border-t border-slate-200">
+        {/* ===== VIDAME_REPERE_SIGNATURE_CHARTE ===== */}
+        <div className="pt-8 border-t border-slate-200">
             <p className="text-xl md:text-2xl font-semibold text-slate-900">
               {lang === "fr"
                 ? "Intégrité des données. Protection des participants. Méthode avant outil."

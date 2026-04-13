@@ -344,7 +344,7 @@ function Shell({
               </div>
             </div>
             <p className="text-sm leading-7 text-slate-600">
-              La chaine opératoire (le pipeline) Vidame est conçue pour préparer les données de
+              La chaîne opératoire (le pipeline) Vidame est conçue pour préparer les données de
               recherche qualitative à analyser.
             </p>
           </div>
@@ -432,7 +432,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
     <div>
       {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
       <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
-        <div className="max-w-5xl space-y-08">
+        <div className="max-w-5xl space-y-8">
           {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
           <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
             Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
@@ -448,7 +448,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
             {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Pipeline (chaine opératoire) de traitement des données qualitatives, selon une approche humaine assistée
+              Pipeline (chaîne opératoire) de traitement des données qualitatives, selon une approche humaine assistée
               par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la
               recherche qualitative.
             </p>
@@ -470,7 +470,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             </div>
 
             {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-            <p className="mt-06 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+            <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse
               qualitative.
             </p>
@@ -509,7 +509,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           <div className="mt-10">
             <SectionTitle
               eyebrow="PIPELINE VIDAME"
-              title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
+              title={"Du terrain à l'analyse : la chaîne opératoire\u00A0Vidame"}
             />
           </div>
 
@@ -656,7 +656,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
           {/* ===== VIDAME_REPERE_TITRE_CHARTE ===== */}
           <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
-            Pour le raitement des données plus sensibles
+            Pour le traitement des données plus sensibles
           </h2>
 
           {/* ===== VIDAME_REPERE_BLOC_VISUEL_CHARTE ===== */}
@@ -795,7 +795,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
         <div className="space-y-6">
           <div className="text-sm uppercase tracking-[0.2em] text-slate-500">À propos</div>
           <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
-            Un regard humain aguérri, au coeur des données complexes
+            Un regard humain aguerri, au cœur des données complexes
           </h1>
 
           <p className="text-lg leading-8 text-slate-700">
@@ -1082,7 +1082,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
                   : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
               }`}
             >
-              Chaine opératoire Vidame
+              Chaîne opératoire Vidame
             </button>
           </motion.div>
         </div>
@@ -1197,7 +1197,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             {/* ===== VIDAME_REPERE_SECTION_PIPELINE_SERVICES ===== */}
             <div className="mb-10 text-center">
               <h2 className="text-2xl font-semibold text-slate-900">Chaîne opératoire Vidame</h2>
-              <p className="mx-auto mt-6 max-w-0xl text-slate-500">
+              <p className="mx-auto mt-6 max-w-2xl text-slate-500">
                 Une séquence de traitement structurée pour transformer un matériau brut en corpus
                 exploitable, traçable et conforme.
               </p>

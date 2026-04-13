@@ -869,13 +869,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
          </div> {/* fin VIDAME_REPERE_CONTENU_CHARTE */}
 
         {/* ===== VIDAME_REPERE_SIGNATURE_CHARTE ===== */}
-        <div className="pt-8 border-t border-slate-200">
-            <p className="text-xl md:text-2xl font-semibold text-slate-900">
-              {lang === "fr"
-                ? "Intégrité des données. Protection des participants. Méthode avant outil."
-                : "Data integrity. Participant protection. Method before tools."}
-              </p>
-            </div>
+        {/*
+<div className="pt-8 border-t border-slate-200">
+  <p>...</p>
+</div>
+*/}
 
                   {/* ===== VIDAME_REPERE_CTA_CHARTE ===== */}
             <div className="pt-6">

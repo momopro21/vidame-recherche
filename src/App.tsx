@@ -886,7 +886,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             {lang === "fr" ? "Discuter de votre projet" : "Discuss your project"}
         </button>
       </div>
-// ===== VIDAME_REPERE_PAGE_APROPOS =====
+// ===== VIDAME_REPERE_PAGE_APROPOS ===== */}
 function APropos({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">

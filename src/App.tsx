@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
@@ -203,6 +203,9 @@ function Shell({
   setLang: (lang: "fr" | "en") => void;
 }) {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, [page]);
 
   return (
     <div className="min-h-screen bg-white text-slate-800">

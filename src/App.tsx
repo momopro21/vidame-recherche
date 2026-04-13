@@ -18,6 +18,8 @@ import {
   PenSquare,
 } from "lucide-react";
 
+// ===== VIDAME_REPERE_IMPORTS =====
+
 // ===== VIDAME_REPERE_DONNEES_PAGES =====
 const pages = [
   { id: "accueil", label: "Accueil" },
@@ -52,6 +54,7 @@ const blogPosts = [
   },
 ];
 
+// ===== VIDAME_REPERE_TYPES =====
 type SectionTitleProps = {
   eyebrow: string;
   title: string;
@@ -75,6 +78,7 @@ function Card({
   );
 }
 
+// ===== VIDAME_REPERE_BRIQUE_CARDHEADER =====
 function CardHeader({
   className = "",
   children,
@@ -85,6 +89,7 @@ function CardHeader({
   return <div className={`p-6 ${className}`}>{children}</div>;
 }
 
+// ===== VIDAME_REPERE_BRIQUE_CARDTITLE =====
 function CardTitle({
   className = "",
   children,
@@ -95,6 +100,7 @@ function CardTitle({
   return <h3 className={`font-semibold tracking-tight text-slate-900 ${className}`}>{children}</h3>;
 }
 
+// ===== VIDAME_REPERE_BRIQUE_CARDCONTENT =====
 function CardContent({
   className = "",
   children,
@@ -105,6 +111,7 @@ function CardContent({
   return <div className={className}>{children}</div>;
 }
 
+// ===== VIDAME_REPERE_BRIQUE_BUTTON =====
 function Button({
   children,
   className = "",
@@ -143,6 +150,7 @@ function Button({
   );
 }
 
+// ===== VIDAME_REPERE_BRIQUE_INPUT =====
 function Input({ className = "", ...props }: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
@@ -152,6 +160,7 @@ function Input({ className = "", ...props }: React.InputHTMLAttributes<HTMLInput
   );
 }
 
+// ===== VIDAME_REPERE_BRIQUE_TEXTAREA =====
 function Textarea({ className = "", ...props }: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea
@@ -161,6 +170,7 @@ function Textarea({ className = "", ...props }: React.TextareaHTMLAttributes<HTM
   );
 }
 
+// ===== VIDAME_REPERE_BRIQUE_BADGE =====
 function Badge({ className = "", children }: { className?: string; children: React.ReactNode }) {
   return (
     <span className={`inline-flex items-center border border-transparent text-xs font-medium ${className}`}>
@@ -169,6 +179,7 @@ function Badge({ className = "", children }: { className?: string; children: Rea
   );
 }
 
+// ===== VIDAME_REPERE_BRIQUE_SECTIONTITLE =====
 function SectionTitle({ eyebrow, title, text }: SectionTitleProps) {
   return (
     <div className="max-w-3xl space-y-3">
@@ -198,6 +209,7 @@ function Shell({
       {/* ===== VIDAME_REPERE_HEADER ===== */}
       <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+          {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
           <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
             <div className="flex items-center gap-3">
               {/* ===== VIDAME_REPERE_LOGO ===== */}
@@ -206,6 +218,7 @@ function Shell({
                 alt="Vidame"
                 className="h-14 w-14 rounded-xl object-contain"
               />
+              {/* ===== VIDAME_REPERE_SIGNATURE_MARQUE ===== */}
               <div className="leading-tight">
                 <div className="text-sm font-semibold">Vidame</div>
                 <div className="text-xs leading-snug text-slate-900">
@@ -217,6 +230,7 @@ function Shell({
             </div>
           </button>
 
+          {/* ===== VIDAME_REPERE_NAVIGATION_PRINCIPALE ===== */}
           <nav className="hidden items-center gap-2 md:flex">
             {pages.map((item) => (
               <button
@@ -233,7 +247,9 @@ function Shell({
             ))}
           </nav>
 
+          {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
           <div className="flex items-center gap-3">
+            {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
             <div className="hidden items-center gap-2 md:flex">
               <button
                 onClick={() => setLang("fr")}
@@ -250,6 +266,7 @@ function Shell({
               </button>
             </div>
 
+            {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
             <button
               className="rounded-xl border border-slate-200 p-2 md:hidden"
               onClick={() => setOpen((v) => !v)}
@@ -260,6 +277,7 @@ function Shell({
           </div>
         </div>
 
+        {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
         <AnimatePresence>
           {open && (
             <motion.div
@@ -287,6 +305,7 @@ function Shell({
         </AnimatePresence>
       </header>
 
+      {/* ===== VIDAME_REPERE_CONTENU_PRINCIPAL ===== */}
       <main>
         <AnimatePresence mode="wait">
           <motion.div
@@ -296,6 +315,7 @@ function Shell({
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
           >
+            {/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
             {page === "accueil" && <Accueil setPage={setPage} />}
             {page === "apropos" && <APropos setPage={setPage} />}
             {page === "services" && <ServicesPage setPage={setPage} />}
@@ -308,6 +328,7 @@ function Shell({
       {/* ===== VIDAME_REPERE_FOOTER ===== */}
       <footer className="border-t border-slate-300 bg-slate-200">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
+          {/* ===== VIDAME_REPERE_FOOTER_MARQUE ===== */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
@@ -328,6 +349,7 @@ function Shell({
             </p>
           </div>
 
+          {/* ===== VIDAME_REPERE_FOOTER_NAVIGATION ===== */}
           <div className="space-y-4">
             <div className="font-semibold">Navigation</div>
             <div className="grid gap-2 text-sm text-slate-600">
@@ -343,6 +365,7 @@ function Shell({
             </div>
           </div>
 
+          {/* ===== VIDAME_REPERE_FOOTER_COORDONNEES ===== */}
           <div className="space-y-4">
             <div className="font-semibold">Coordonnées</div>
             <div className="space-y-3 text-sm text-slate-600">
@@ -367,6 +390,7 @@ function Shell({
 function Accueil({ setPage }: { setPage: (page: string) => void }) {
   const [activeStep, setActiveStep] = useState(0);
 
+  // ===== VIDAME_REPERE_DONNEES_ETAPES_PIPELINE =====
   const steps = [
     {
       icon: FileText,
@@ -407,24 +431,29 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div>
       {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-     <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
-  <div className="max-w-5xl space-y-08">
+      <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
+        <div className="max-w-5xl space-y-08">
+          {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
           <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
             Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
           </Badge>
 
+          {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
           <div className="space-y-6">
+            {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
               Un service professionnel de traitement des données qualitatives, dans le respect de
               la souveraineté des données canadiennes
             </h1>
 
+            {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               Pipeline (chaine opératoire) de traitement des données qualitatives, selon une approche humaine assistée
               par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la
               recherche qualitative.
             </p>
 
+            {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}
             <div className="flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
                 Obtenir un devis
@@ -440,6 +469,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               </Button>
             </div>
 
+            {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
             <p className="mt-06 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse
               qualitative.
@@ -452,7 +482,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
       <section>
         <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
           {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-        <div className="mt-2 mb-8 max-w-4xl">
+          <div className="mt-2 mb-8 max-w-4xl">
             <img
               src="/flowchart_vidame4.png"
               alt="Pipeline Vidame"
@@ -460,25 +490,30 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             />
           </div>
 
- <div className="max-w-3xl text-left">
-  <p className="text-[17px] leading-7 text-slate-700">
-    Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
-  </p>
+          {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
+          <div className="max-w-3xl text-left">
+            <p className="text-[17px] leading-7 text-slate-700">
+              Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
+            </p>
 
-     <a
-      href="#charte"
-      className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-      >
-         En savoir plus sur le traitement des données sensibles
-      </a>
-    </div>
+            {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
+            <a
+              href="#charte"
+              className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+            >
+              En savoir plus sur le traitement des données sensibles
+            </a>
+          </div>
 
-    <div className="mt-10">
-      <SectionTitle
-        eyebrow="PIPELINE VIDAME"
-        title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
-      />
-    </div>
+          {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
+          <div className="mt-10">
+            <SectionTitle
+              eyebrow="PIPELINE VIDAME"
+              title={"Du terrain à l'analyse : la chaine opératoire\u00A0Vidame"}
+            />
+          </div>
+
+          {/* ===== VIDAME_REPERE_TEXTE_SECTION_PIPELINE ===== */}
           <div className="mt-4 space-y-8">
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
               Le projet commence souvent par des heures d’entrevues. Les données s’accumulent
@@ -498,6 +533,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
               exploitable.
             </p>
 
+            {/* ===== VIDAME_REPERE_BLOC_EXPLICATION_PIPELINE ===== */}
             <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 Le pipeline Vidame organise le passage des données brutes vers un corpus
@@ -526,6 +562,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                 d’un corpus déjà structuré, fiable et exploitable.
               </p>
 
+              {/* ===== VIDAME_REPERE_BLOC_CE_QUE_VIDAME_PREND_EN_CHARGE ===== */}
               <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
                 <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
                   Ce que Vidame prend en charge
@@ -549,6 +586,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
               return (
                 <div key={step.title} className="relative">
+                  {/* ===== VIDAME_REPERE_CARTE_ETAPE_PIPELINE ===== */}
                   <Card
                     onClick={() => setActiveStep(i)}
                     className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
@@ -580,6 +618,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                     </CardContent>
                   </Card>
 
+                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
                   {i < steps.length - 1 && (
                     <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
                       <ChevronRight className="h-5 w-5 text-slate-400" />
@@ -590,6 +629,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             })}
           </div>
 
+          {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
           <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
             <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
               Étape {activeStep + 1}
@@ -605,136 +645,144 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
         </div>
       </section>
+
       {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
-<section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
-  <div className="max-w-3xl space-y-8">
+      <section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
+        <div className="max-w-3xl space-y-8">
+          {/* ===== VIDAME_REPERE_SURTITRE_CHARTE ===== */}
+          <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-900">
+            Charte
+          </div>
 
-    <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-900">
-      Charte
-    </div>
+          {/* ===== VIDAME_REPERE_TITRE_CHARTE ===== */}
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
+            Pour le raitement des données plus sensibles
+          </h2>
 
-    <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
-      Pour le raitement des données plus sensibles
-    </h2>
+          {/* ===== VIDAME_REPERE_BLOC_VISUEL_CHARTE ===== */}
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+            <p className="text-xl md:text-2xl leading-9 text-slate-900 font-medium">
+              Préserver l’intégrité du matériau et protéger les participants.
+            </p>
+          </div>
 
-    {/* Bloc visuel fort */}
-    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
-      <p className="text-xl md:text-2xl leading-9 text-slate-900 font-medium">
-        Préserver l’intégrité du matériau et protéger les participants.
-      </p>
-    </div>
+          {/* ===== VIDAME_REPERE_CONTENU_CHARTE ===== */}
+          <div className="space-y-6">
+            {/* ===== VIDAME_REPERE_CHARTE_PRINCIPE_DIRECTEUR ===== */}
+            <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+              <h3 className="text-lg font-semibold text-slate-900">1. Principe directeur</h3>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants.
+              </p>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet.
+              </p>
+            </div>
 
-    {/* Sections */}
-    <div className="space-y-6">
+            {/* ===== VIDAME_REPERE_CHARTE_POSITIONNEMENT ===== */}
+            <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+              <h3 className="text-lg font-semibold text-slate-900">2. Positionnement</h3>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques.
+              </p>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte.
+              </p>
+            </div>
 
-      {/* 1 */}
-     <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">1. Principe directeur</h3>
-       <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants.
-        </p>
-       <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet.
-        </p>
-      </div>
+            {/* ===== VIDAME_REPERE_CHARTE_DONNEES_SENSIBLES ===== */}
+            <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+              <h3 className="text-lg font-semibold text-slate-900">3. Données sensibles</h3>
 
-      {/* 2 */}
-     <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">2. Positionnement</h3>
-       <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques.
-        </p>
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte.
-        </p>
-      </div>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :
+              </p>
 
-      {/* 3 */}
-     <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">3. Données sensibles</h3>
+              {/* ===== VIDAME_REPERE_LISTE_DONNEES_SENSIBLES ===== */}
+              <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
+                <li>des personnes mineures</li>
+                <li>des situations de vulnérabilité (santé mentale, parcours de vie)</li>
+                <li>des milieux institutionnels sensibles (police, justice, milieu carcéral)</li>
+                <li>des contenus à risque (discours violents, extrémisme, situations conflictuelles)</li>
+              </ul>
 
-       <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :
-        </p>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche.
+              </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>des personnes mineures</li>
-          <li>des situations de vulnérabilité (santé mentale, parcours de vie)</li>
-          <li>des milieux institutionnels sensibles (police, justice, milieu carcéral)</li>
-          <li>des contenus à risque (discours violents, extrémisme, situations conflictuelles)</li>
-        </ul>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Ces incertitudes peuvent concerner :
+              </p>
 
-     <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche.
-        </p>
+              {/* ===== VIDAME_REPERE_LISTE_INCERTITUDES ===== */}
+              <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
+                <li>la résidence des données</li>
+                <li>la rétention temporaire liée aux mécanismes de sécurité</li>
+                <li>les transformations involontaires du contenu (filtrage, reformulation, atténuation)</li>
+              </ul>
+            </div>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Ces incertitudes peuvent concerner :
-        </p>
+            {/* ===== VIDAME_REPERE_CHARTE_TRAITEMENT_MANUEL ===== */}
+            <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+              <h3 className="text-lg font-semibold text-slate-900">4. Traitement manuel</h3>
 
-       <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>la résidence des données</li>
-          <li>la rétention temporaire liée aux mécanismes de sécurité</li>
-          <li>les transformations involontaires du contenu (filtrage, reformulation, atténuation)</li>
-        </ul>
-      </div>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle.
+              </p>
 
-      {/* 4 */}
-     <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">4. Traitement manuel</h3>
+              {/* ===== VIDAME_REPERE_LISTE_TRAITEMENT_MANUEL ===== */}
+              <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
+                <li>contrôle complet sur chaque étape</li>
+                <li>fidélité du discours et de ses nuances</li>
+                <li>préservation des éléments analytiques essentiels</li>
+                <li>anonymisation fine et contextualisée</li>
+                <li>traçabilité des transformations</li>
+              </ul>
+            </div>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle.
-        </p>
+            {/* ===== VIDAME_REPERE_CHARTE_IA_CADREE ===== */}
+            <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+              <h3 className="text-lg font-semibold text-slate-900">5. Utilisation des outils assistés par IA</h3>
 
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>contrôle complet sur chaque étape</li>
-          <li>fidélité du discours et de ses nuances</li>
-          <li>préservation des éléments analytiques essentiels</li>
-          <li>anonymisation fine et contextualisée</li>
-          <li>traçabilité des transformations</li>
-        </ul>
-      </div>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet.
+              </p>
 
-      {/* 5 */}
-     <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">5. Utilisation des outils assistés par IA</h3>
+              <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
+                Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel.
+              </p>
+            </div>
+          </div>
 
-       <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet.
-        </p>
+          {/* ===== VIDAME_REPERE_SIGNATURE_CHARTE ===== */}
+          <div className="pt-8 border-t border-slate-200">
+            <p className="text-xl md:text-2xl font-semibold text-slate-900">
+              Intégrité des données. Protection des participants. Méthode avant outil.
+            </p>
+          </div>
 
-      <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel.
-        </p>
-      </div>
-
-    </div>
-
-    {/* Signature forte */}
-    <div className="pt-8 border-t border-slate-200">
-      <p className="text-xl md:text-2xl font-semibold text-slate-900">
-        Intégrité des données. Protection des participants. Méthode avant outil.
-      </p>
-    </div>
-<div className="pt-6">
-  <button
-    onClick={() => setPage("soumission")}
-    className="text-[17px] md:text-[18px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-  >
-    Discuter de votre projet
-  </button>
-</div>
-  </div>
-</section>
+          {/* ===== VIDAME_REPERE_CTA_CHARTE ===== */}
+          <div className="pt-6">
+            <button
+              onClick={() => setPage("soumission")}
+              className="text-[17px] md:text-[18px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+            >
+              Discuter de votre projet
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
+
 // ===== VIDAME_REPERE_PAGE_APROPOS =====
 function APropos({ setPage }: { setPage: (page: string) => void }) {
   return (
     <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
+      {/* ===== VIDAME_REPERE_BLOC_INTRO_APROPOS ===== */}
       <div className="grid items-start gap-8 md:grid-cols-[0.5fr_1fr]">
+        {/* ===== VIDAME_REPERE_PHOTO_APROPOS ===== */}
         <div className="h-full w-full overflow-hidden rounded-[2rem]">
           <img
             src="/monique.jpg"
@@ -743,6 +791,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           />
         </div>
 
+        {/* ===== VIDAME_REPERE_TEXTE_APROPOS ===== */}
         <div className="space-y-6">
           <div className="text-sm uppercase tracking-[0.2em] text-slate-500">À propos</div>
           <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
@@ -799,7 +848,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           artificielle — afin de représenter le chercheur au sein d’un dispositif collaboratif
           humain–IA.
         </p>
-        
+
         <p className="text-sm leading-7 text-slate-600">
           Le terme « pipeline » est utilisé ici en complément de la notion de chaîne opératoire :
           là où celle-ci renvoie à une succession d’étapes, le pipeline introduit l’idée d’un flux
@@ -807,7 +856,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           structurant.
         </p>
       </div>
-     <div className="grid gap-8 md:grid-cols-2">
+
+      {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}
+      <div className="grid gap-8 md:grid-cols-2">
         <Card className="rounded-[2rem] border-slate-200">
           <CardHeader>
             <CardTitle>Mission</CardTitle>
@@ -834,6 +885,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
         </Card>
       </div>
 
+      {/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
       <div className="grid gap-8 md:grid-cols-3">
         {[
           {
@@ -858,7 +910,9 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
         ))}
       </div>
 
+      {/* ===== VIDAME_REPERE_CITATION_ET_COORDONNEES ===== */}
       <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
+        {/* ===== VIDAME_REPERE_CITATION_APROPOS ===== */}
         <Card className="rounded-[2rem] border-slate-200 bg-slate-50">
           <CardContent className="p-8">
             <Quote className="h-8 w-8 text-slate-400" />
@@ -870,6 +924,7 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
           </CardContent>
         </Card>
 
+        {/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
         <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
           <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Coordonnées
@@ -884,11 +939,12 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
             <p>Montréal, Québec</p>
             <p>
               <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
-               info@monique-provost.com
+                info@monique-provost.com
               </a>
             </p>
           </div>
 
+          {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
           <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
             Obtenir un devis
           </Button>
@@ -897,11 +953,13 @@ function APropos({ setPage }: { setPage: (page: string) => void }) {
     </div>
   );
 }
+
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
   const [expandedService, setExpandedService] = useState<number | null>(null);
 
+  // ===== VIDAME_REPERE_DONNEES_SERVICES =====
   const servicesACarte = [
     {
       icon: Languages,
@@ -939,6 +997,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
     },
   ];
 
+  // ===== VIDAME_REPERE_DONNEES_PIPELINE_SERVICES =====
   const pipelineSteps = [
     {
       step: "01",
@@ -976,8 +1035,10 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
       <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
         <div className="relative mx-auto max-w-5xl text-center">
+          {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -996,6 +1057,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             </p>
           </motion.div>
 
+          {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -1026,6 +1088,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
         </div>
       </section>
 
+      {/* ===== VIDAME_REPERE_CONTENU_SERVICES ===== */}
       <AnimatePresence mode="wait">
         {activeTab === "carte" ? (
           <motion.div
@@ -1036,12 +1099,14 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             transition={{ duration: 0.4 }}
             className="mx-auto max-w-5xl px-4 pb-16 pt-10"
           >
+            {/* ===== VIDAME_REPERE_SECTION_SERVICES_CARTE ===== */}
             <div className="mb-10 text-center">
               <h2 className="text-2xl font-semibold text-slate-900">
                 Services linguistiques à la carte
               </h2>
             </div>
 
+            {/* ===== VIDAME_REPERE_GRILLE_SERVICES_CARTE ===== */}
             <div className="grid gap-6 md:grid-cols-2">
               {servicesACarte.map((service, i) => {
                 const Icon = service.icon;
@@ -1080,6 +1145,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
                             exit={{ opacity: 0, height: 0 }}
                             className="mt-4 overflow-hidden"
                           >
+                            {/* ===== VIDAME_REPERE_DETAILS_SERVICE ===== */}
                             <ul className="space-y-2 border-t border-slate-100 pt-4">
                               {service.details.map((d, j) => (
                                 <li key={j} className="flex items-start gap-2 text-sm text-slate-700">
@@ -1092,6 +1158,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
                         )}
                       </AnimatePresence>
 
+                      {/* ===== VIDAME_REPERE_ETAT_EXPANSION_SERVICE ===== */}
                       <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
                         <ChevronRight
                           className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
@@ -1104,6 +1171,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
               })}
             </div>
 
+            {/* ===== VIDAME_REPERE_CTA_SERVICES_CARTE ===== */}
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
               <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
               <p className="mt-2 text-sm text-slate-500">
@@ -1126,6 +1194,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
             transition={{ duration: 0.4 }}
             className="mx-auto max-w-6xl px-4 pb-16 pt-10"
           >
+            {/* ===== VIDAME_REPERE_SECTION_PIPELINE_SERVICES ===== */}
             <div className="mb-10 text-center">
               <h2 className="text-2xl font-semibold text-slate-900">Chaîne opératoire Vidame</h2>
               <p className="mx-auto mt-6 max-w-0xl text-slate-500">
@@ -1134,6 +1203,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
               </p>
             </div>
 
+            {/* ===== VIDAME_REPERE_GRILLE_PIPELINE_SERVICES ===== */}
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {pipelineSteps.map((step) => {
                 const Icon = step.icon;
@@ -1157,6 +1227,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
               })}
             </div>
 
+            {/* ===== VIDAME_REPERE_CTA_PIPELINE_SERVICES ===== */}
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
               <h3 className="text-xl font-semibold text-slate-900">
                 Besoin d’un cadre de traitement complet ?
@@ -1181,6 +1252,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
 // ===== VIDAME_REPERE_PAGE_SOUMISSION =====
 function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
+  // ===== VIDAME_REPERE_DONNEES_FORMULAIRE_SOUMISSION =====
   const content = {
     fr: {
       eyebrow: "Demande de devis",
@@ -1260,28 +1332,35 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 md:px-8">
+      {/* ===== VIDAME_REPERE_ENTETE_SOUMISSION ===== */}
       <SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text} />
 
+      {/* ===== VIDAME_REPERE_FORMULAIRE_SOUMISSION ===== */}
       <form
         action="https://formspree.io/f/xwvwawel"
         method="POST"
         className="mt-8 space-y-6"
       >
+        {/* ===== VIDAME_REPERE_CHAMPS_CACHES_SOUMISSION ===== */}
         <input type="hidden" name="lang" value={lang} />
         <input type="hidden" name="_redirect" value="https://google.com" />
 
+        {/* ===== VIDAME_REPERE_CHAMPS_IDENTITE_SOUMISSION ===== */}
         <div className="grid gap-4 md:grid-cols-2">
           <Input name="name" placeholder={t.name} />
           <Input name="organization" placeholder={t.org} />
         </div>
 
+        {/* ===== VIDAME_REPERE_CHAMP_COURRIEL_SOUMISSION ===== */}
         <Input name="email" type="email" placeholder={t.email} />
 
+        {/* ===== VIDAME_REPERE_CHAMPS_AFFILIATION_SOUMISSION ===== */}
         <div className="grid gap-4 md:grid-cols-2">
           <Input name="department" placeholder={t.dept} />
           <Input name="research_chair" placeholder={t.chair} />
         </div>
 
+        {/* ===== VIDAME_REPERE_CHAMPS_ROLE_DIRECTION_SOUMISSION ===== */}
         <div className="grid gap-4 md:grid-cols-2">
           <Input name="project_director" placeholder={t.director} />
 
@@ -1301,6 +1380,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
           </select>
         </div>
 
+        {/* ===== VIDAME_REPERE_CHECKBOX_SOUTIEN_SOUMISSION ===== */}
         <div>
           <label className="text-sm font-medium">{t.supportLabel}</label>
           <div className="mt-2 space-y-3 rounded-xl border border-slate-200 p-4">
@@ -1318,6 +1398,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
           </div>
         </div>
 
+        {/* ===== VIDAME_REPERE_BLOC_DESCRIPTION_DEMANDE ===== */}
         <div className="space-y-2 rounded-xl bg-slate-50 p-5">
           <label className="text-sm font-medium">{t.requestLabel}</label>
 
@@ -1332,6 +1413,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
           />
         </div>
 
+        {/* ===== VIDAME_REPERE_BOUTON_ENVOI_SOUMISSION ===== */}
         <Button type="submit" className="mt-8 rounded-full">
           {t.submit}
         </Button>
@@ -1344,12 +1426,14 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 function Blog() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+      {/* ===== VIDAME_REPERE_ENTETE_BLOG ===== */}
       <SectionTitle
         eyebrow="Blog"
         title="Réflexions sur les données, le langage et l'IA"
         text="Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs."
       />
 
+      {/* ===== VIDAME_REPERE_GRILLE_BLOG ===== */}
       <div className="mt-10 grid gap-6 md:grid-cols-3">
         {blogPosts.map((post) => (
           <Card key={post.title} className="rounded-[1.5rem] border-slate-200">
@@ -1374,8 +1458,10 @@ function Blog() {
 
 // ===== VIDAME_REPERE_POINT_ENTREE_APP =====
 export default function App() {
+  // ===== VIDAME_REPERE_ETAT_APP =====
   const [page, setPage] = useState("accueil");
   const [lang, setLang] = useState<"fr" | "en">("fr");
 
+  // ===== VIDAME_REPERE_RENDU_APP =====
   return <Shell page={page} setPage={setPage} lang={lang} setLang={setLang} />;
 }

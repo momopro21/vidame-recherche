@@ -411,7 +411,8 @@ return (
 }
 
 // ===== VIDAME_REPERE_PAGE_ACCUEIL =====
-function Accueil({ setPage }: { setPage: (page: string) => void }) {
+function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | "en";
+}) {
   const [activeStep, setActiveStep] = useState(0);
 
   // ===== VIDAME_REPERE_DONNEES_ETAPES_PIPELINE =====

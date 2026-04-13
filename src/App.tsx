@@ -330,7 +330,7 @@ return (
             transition={{ duration: 0.25 }}
           >
             {/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
-            {page === "accueil" && <Accueil setPage={setPage} />}
+            {page === "accueil" && <Accueil setPage={setPage} lang={lang} />}
             {page === "apropos" && <APropos setPage={setPage} />}
             {page === "services" && <ServicesPage setPage={setPage} />}
             {page === "soumission" && <Soumission lang={lang} />}

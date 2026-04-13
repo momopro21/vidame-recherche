@@ -455,33 +455,36 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
   return (
     <div>
-      {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
+            {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
       <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
         <div className="max-w-5xl space-y-8">
           {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
           <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
-            Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25
+            {lang === "fr"
+              ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
+              : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}
           </Badge>
 
           {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
           <div className="space-y-6">
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              Un service professionnel de traitement des données qualitatives, dans le respect de
-              la souveraineté des données canadiennes
+              {lang === "fr"
+                ? "Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes"
+                : "Professional qualitative data processing, aligned with Canadian data sovereignty requirements"}
             </h1>
 
             {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Pipeline (chaîne opératoire) de traitement des données qualitatives, selon une approche humaine assistée
-              par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la
-              recherche qualitative.
+              {lang === "fr"
+                ? "Pipeline (chaîne opératoire) de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative."
+                : "A qualitative data processing pipeline (operational chain) combining human expertise and AI-assisted methods, with data hosted in Canada and overseen by a qualitative research professional."}
             </p>
 
             {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}
             <div className="flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-                Obtenir un devis
+                {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
               </Button>
 
               <Button
@@ -490,19 +493,19 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
                 className="rounded-full"
                 onClick={() => setPage("services")}
               >
-                Voir l'offre de services
+                {lang === "fr" ? "Voir l'offre de services" : "View services"}
               </Button>
             </div>
 
             {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
             <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse
-              qualitative.
+              {lang === "fr"
+                ? "Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative."
+                : "Vidame transforms your raw data into a structured corpus, ready for qualitative analysis."}
             </p>
           </div>
         </div>
       </section>
-
       {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
       <section>
         <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">

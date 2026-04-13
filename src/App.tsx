@@ -706,7 +706,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </h2>
 
           {/* ===== VIDAME_REPERE_BLOC_VISUEL_CHARTE ===== */}
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+          <div className="rounded-2xl border border-slate-200 bg-slate-150 p-6 md:p-8">
             <p className="text-xl md:text-2xl leading-9 text-slate-900 font-medium">
               Préserver l’intégrité du matériau et protéger les participants.
             </p>

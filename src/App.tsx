@@ -610,12 +610,11 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
 
               return (
                 <div key={step.title} className="relative">
-                  {/* ===== VIDAME_REPERE_CARTE_ETAPE_PIPELINE ===== */}
-                 <Card
-                  onClick={() => {
-                    setActiveStep(i);
+                {/* ===== VIDAME_REPERE_CARTE_ETAPE_PIPELINE ===== */}
+                  <Card
+                    onClick={() => setActiveStep(i)}
                     className={`group relative h-full cursor-pointer rounded-[1.5rem] border-slate-200 transition-colors duration-200 ${
-                     isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
+                      isActive ? "ring-2 ring-slate-900 bg-slate-100" : "hover:bg-slate-100 hover:shadow"
                     }`}
                   >
                     <CardContent className="p-5 md:p-6">
@@ -642,21 +641,29 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </div>
                     </CardContent>
                   </Card>
+
                   {/* ===== VIDAME_REPERE_DETAIL_ETAPE_MOBILE ===== */}
                   {isActive && (
                     <div className="mt-4 rounded-2xl border border-slate-300 bg-slate-100 p-5 md:hidden">
-                    <div className="mb-2 text-xs uppercase tracking-[0.2em] text-slate-500">
-                      Étape {i + 1}
-                    </div>
+                      <div className="mb-2 text-xs uppercase tracking-[0.2em] text-slate-500">
+                        Étape {i + 1}
+                      </div>
 
-                    <div className="text-lg font-semibold text-slate-900">
+                      <div className="text-lg font-semibold text-slate-900">
                         {step.title}
-                    </div>
+                      </div>
 
-                    <p className="mt-3 text-base leading-8 text-slate-700">
-                      {step.detail}
-                    </p>
-                   </div>
+                      <p className="mt-3 text-base leading-8 text-slate-700">
+                        {step.detail}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
+                  {i < steps.length - 1 && (
+                    <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
+                      <ChevronRight className="h-5 w-5 text-slate-400" />
+                    </div>
                   )}
                   {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
                   {i < steps.length - 1 && (

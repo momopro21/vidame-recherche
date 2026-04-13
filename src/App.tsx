@@ -203,12 +203,23 @@ function Shell({
   setLang: (lang: "fr" | "en") => void;
 }) {
   const [open, setOpen] = useState(false);
-  useEffect(() => {
+const [showScrollTop, setShowScrollTop] = useState(false);
+
+useEffect(() => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }, [page]);
 
-  return (
-    <div className="min-h-screen bg-white text-slate-800">
+useEffect(() => {
+  const handleScroll = () => {
+    setShowScrollTop(window.scrollY > 300);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+return (
+  <div className="min-h-screen bg-white text-slate-800">
       {/* ===== VIDAME_REPERE_HEADER ===== */}
       <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
@@ -385,7 +396,17 @@ function Shell({
           </div>
         </div>
       </footer>
-    </div>
+      {/* ===== VIDAME_REPERE_BOUTON_RETOUR_HAUT ===== */}
+    {showScrollTop && (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Retour en haut"
+      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-900 shadow-md transition hover:bg-slate-100"
+    >
+    ↑
+    </button>
+  )}
+  </div>
   );
 }
 

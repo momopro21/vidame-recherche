@@ -506,161 +506,136 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
           </div>
         </div>
       </section>
-      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-      <section>
-        <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
-          {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-          <div className="mt-2 mb-8 max-w-4xl">
-            <img
-              src="/flowchart_vidame4.png"
-              alt="Pipeline Vidame"
-              className="block h-auto w-full"
-            />
+     {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+<section>
+  <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
+    {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
+    <div className="mt-2 mb-8 max-w-4xl">
+      <img
+        src="/flowchart_vidame4.png"
+        alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
+        className="block h-auto w-full"
+      />
+    </div>
+
+    {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
+    <div className="max-w-3xl text-left">
+      <p className="text-[17px] leading-7 text-slate-700">
+        {lang === "fr"
+          ? "Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé."
+          : "In some cases, the sensitivity of the data requires specialized manual processing."}
+      </p>
+
+      {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
+      <a
+        href="#charte"
+        className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+      >
+        {lang === "fr"
+          ? "En savoir plus sur le traitement des données sensibles"
+          : "Learn more about the processing of sensitive data"}
+      </a>
+    </div>
+
+    {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
+    <div className="mt-10">
+      <SectionTitle
+        eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
+        title={
+          lang === "fr"
+            ? "Du terrain à l'analyse : la chaîne opératoire Vidame"
+            : "From fieldwork to analysis: the Vidame operational chain"
+        }
+      />
+    </div>
+
+    {/* ===== VIDAME_REPERE_TEXTE_SECTION_PIPELINE ===== */}
+    <div className="mt-4 space-y-8">
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        {lang === "fr"
+          ? "Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels."
+          : "A project often begins with hours of interviews. Data accumulates quickly, but recordings produced in the field remain difficult to use as they are."}
+      </p>
+
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        {lang === "fr"
+          ? "Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables."
+          : "A first transformation is needed: moving from audio to text. But these transcripts still remain raw material. They must then be structured, anonymized, segmented, and made navigable."}
+      </p>
+
+      <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+        {lang === "fr"
+          ? "C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable."
+          : "It is in this critical space, between fieldwork and analysis, that Vidame intervenes to transform raw material into a navigable, structured, and directly usable corpus."}
+      </p>
+
+      {/* ===== VIDAME_REPERE_BLOC_EXPLICATION_PIPELINE ===== */}
+      <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          {lang === "fr"
+            ? "Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative."
+            : "The Vidame pipeline organizes the transition from raw data to a corpus that can be used for qualitative analysis."}
+        </p>
+
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          {lang === "fr"
+            ? "Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques."
+            : "Each step is treated as a distinct operation, with explicit validation points to ensure processing quality, traceability of transformations, and compliance with ethical requirements."}
+        </p>
+
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          {lang === "fr"
+            ? "Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques."
+            : "Automated processing is framed by human intervention at critical moments."}
+        </p>
+
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          {lang === "fr"
+            ? "À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter."
+            : "At the analysis stage, a well-structured corpus reveals its full value. Without rigorous preparation, data remains difficult to explore, compare, and interpret."}
+        </p>
+
+        <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+          {lang === "fr"
+            ? "L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable."
+            : "Vidame’s goal is to allow you to focus on analysis using a corpus that is already structured, reliable, and ready to use."}
+        </p>
+
+        {/* ===== VIDAME_REPERE_BLOC_CE_QUE_VIDAME_PREND_EN_CHARGE ===== */}
+        <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
+          <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
+            {lang === "fr"
+              ? "Ce que Vidame prend en charge"
+              : "What Vidame handles"}
           </div>
 
-          {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
-          <div className="max-w-3xl text-left">
-            <p className="text-[17px] leading-7 text-slate-700">
-              Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé.
-            </p>
-
-            {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
-            <a
-              href="#charte"
-              className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-            >
-              En savoir plus sur le traitement des données sensibles
-            </a>
-          </div>
-
-               {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-      <section>
-        <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
-          {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-          <div className="mt-2 mb-8 max-w-4xl">
-            <img
-              src="/flowchart_vidame4.png"
-              alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
-              className="block h-auto w-full"
-            />
-          </div>
-
-          {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
-          <div className="max-w-3xl text-left">
-            <p className="text-[17px] leading-7 text-slate-700">
+          <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
+            <li>
               {lang === "fr"
-                ? "Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé."
-                : "In some cases, the sensitivity of the data requires specialized manual processing."}
-            </p>
-
-            {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
-            <a
-              href="#charte"
-              className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-            >
+                ? "1. Transformer le matériau brut en corpus exploitable"
+                : "1. Transform raw material into a usable corpus"}
+            </li>
+            <li>
               {lang === "fr"
-                ? "En savoir plus sur le traitement des données sensibles"
-                : "Learn more about the processing of sensitive data"}
-            </a>
-          </div>
-
-          {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
-          <div className="mt-10">
-            <SectionTitle
-              eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
-              title={
-                lang === "fr"
-                  ? "Du terrain à l'analyse : la chaîne opératoire Vidame"
-                  : "From fieldwork to analysis: the Vidame operational chain"
-              }
-            />
-          </div>
-
-          {/* ===== VIDAME_REPERE_TEXTE_SECTION_PIPELINE ===== */}
-          <div className="mt-4 space-y-8">
-            <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+                ? "2. Assurer la fidélité et la traçabilité des données"
+                : "2. Ensure data fidelity and traceability"}
+            </li>
+            <li>
               {lang === "fr"
-                ? "Le projet commence souvent par des heures d’entrevues. Les données s’accumulent rapidement, mais les enregistrements issus du terrain restent difficiles à mobiliser tels quels."
-                : "A project often begins with hours of interviews. Data accumulates quickly, but recordings produced in the field remain difficult to use as they are."}
-            </p>
-
-            <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
+                ? "3. Préparer le corpus pour la navigation et l’analyse"
+                : "3. Prepare the corpus for navigation and analysis"}
+            </li>
+            <li>
               {lang === "fr"
-                ? "Une première transformation est nécessaire : passer de l’audio au texte. Mais ces écrits représentent encore un matériau brut. Il faut ensuite les structurer, les anonymiser, les segmenter et les rendre navigables."
-                : "A first transformation is needed: moving from audio to text. But these transcripts still remain raw material. They must then be structured, anonymized, segmented, and made navigable."}
-            </p>
-
-            <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-              {lang === "fr"
-                ? "C’est dans cet espace critique, entre le terrain et l’analyse, que Vidame intervient pour transformer le matériau brut en un corpus navigable, structuré et directement exploitable."
-                : "It is in this critical space, between fieldwork and analysis, that Vidame intervenes to transform raw material into a navigable, structured, and directly usable corpus."}
-            </p>
-
-            {/* ===== VIDAME_REPERE_BLOC_EXPLICATION_PIPELINE ===== */}
-            <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative."
-                  : "The Vidame pipeline organizes the transition from raw data to a corpus that can be used for qualitative analysis."}
-              </p>
-
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques."
-                  : "Each step is treated as a distinct operation, with explicit validation points to ensure processing quality, traceability of transformations, and compliance with ethical requirements."}
-              </p>
-
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques."
-                  : "Automated processing is framed by human intervention at critical moments."}
-              </p>
-
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter."
-                  : "At the analysis stage, a well-structured corpus reveals its full value. Without rigorous preparation, data remains difficult to explore, compare, and interpret."}
-              </p>
-
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable."
-                  : "Vidame’s goal is to allow you to focus on analysis using a corpus that is already structured, reliable, and ready to use."}
-              </p>
-
-              {/* ===== VIDAME_REPERE_BLOC_CE_QUE_VIDAME_PREND_EN_CHARGE ===== */}
-              <div className="mt-2 rounded-xl bg-slate-50 p-5 md:p-6">
-                <div className="mb-3 text-lg font-semibold text-slate-900 md:text-xl">
-                  {lang === "fr"
-                    ? "Ce que Vidame prend en charge"
-                    : "What Vidame handles"}
-                </div>
-
-                <ol className="space-y-2 text-base leading-8 text-slate-700 md:text-lg">
-                  <li>
-                    {lang === "fr"
-                      ? "1. Transformer le matériau brut en corpus exploitable"
-                      : "1. Transform raw material into a usable corpus"}
-                  </li>
-                  <li>
-                    {lang === "fr"
-                      ? "2. Assurer la fidélité et la traçabilité des données"
-                      : "2. Ensure data fidelity and traceability"}
-                  </li>
-                  <li>
-                    {lang === "fr"
-                      ? "3. Préparer le corpus pour la navigation et l’analyse"
-                      : "3. Prepare the corpus for navigation and analysis"}
-                  </li>
-                  <li>
-                    {lang === "fr"
-                      ? "4. Structurer le corpus sans ajout interprétatif"
-                      : "4. Structure the corpus without adding interpretation"}
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
+                ? "4. Structurer le corpus sans ajout interprétatif"
+                : "4. Structure the corpus without adding interpretation"}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
           {/* ===== VIDAME_REPERE_ETAPES_TRAITEMENT ===== */}
           <div className="mt-10 grid gap-6 md:grid-cols-5">
             {steps.map((step, i) => {

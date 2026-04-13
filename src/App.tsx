@@ -669,9 +669,9 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
             })}
           </div>
 
-          {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
-           <div className="mt-8 hidden rounded-2xl border border-slate-300 bg-slate-100 p-6 md:block md:p-7">
-              <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
+                   {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
+          <div className="mt-8 hidden rounded-2xl border border-slate-300 bg-slate-100 p-6 md:block md:p-7">
+            <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
               Étape {activeStep + 1}
             </div>
 
@@ -685,7 +685,6 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
         </div>
       </section>
-
       {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
       <section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
         <div className="max-w-3xl space-y-8">

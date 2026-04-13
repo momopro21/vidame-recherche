@@ -654,7 +654,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
           </div>
 
           {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
-          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
+          <div className="mt-8 rounded-2xl border border-slate-300 bg-slate-100 p-6 md:p-7">
             <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
               Étape {activeStep + 1}
             </div>

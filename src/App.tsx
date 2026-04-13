@@ -654,7 +654,7 @@ function Accueil({ setPage }: { setPage: (page: string) => void }) {
                       </div>
 
                       <p className="mt-3 text-base leading-8 text-slate-700">
-                        TEST MOBILE — {step.detail}
+                       {step.detail}
                       </p>
                     </div>
                   )}

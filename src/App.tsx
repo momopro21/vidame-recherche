@@ -292,32 +292,32 @@ return (
           </div>
         </div>
 
-        {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              className="border-t border-slate-200 bg-white md:hidden"
-            >
-              <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
-                {pages.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      setPage(item.id);
-                      setOpen(false);
-                    }}
-                    className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
-                  >
-                    {item.label}
-                  </button>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+          {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+<AnimatePresence>
+  {open && (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: "auto", opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      className="border-t border-slate-200 bg-white md:hidden"
+    >
+      <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
+        {pages.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => {
+              setPage(item.id);
+              setOpen(false);
+            }}
+            className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
+          >
+            {lang === "fr" ? item.labelFr : item.labelEn}
+          </button>
+        ))}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
       </header>
 
       {/* ===== VIDAME_REPERE_CONTENU_PRINCIPAL ===== */}

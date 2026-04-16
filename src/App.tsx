@@ -221,106 +221,107 @@ useEffect(() => {
 
 return (
   <div className="min-h-screen bg-white text-slate-800">
-     
-    {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
-<button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
-  <div className="flex items-center gap-3">
-   
-    {/* ===== VIDAME_REPERE_LOGO ===== */}
-    <img
-      src="/vidame_favicon_blanc_noir_192x192.png"
-      alt="Vidame"
-      className="h-14 w-14 rounded-xl object-contain"
-    />
-
-    {/* ===== VIDAME_REPERE_SIGNATURE_MARQUE ===== */}
-    <div className="leading-tight">
-      <div className="text-sm font-semibold">Vidame</div>
-
-      <div className="text-xs leading-snug text-slate-900">
-        {lang === "fr" ? (
-          <span>Soutien à la recherche qualitative.</span>
-        ) : (
-          <span>Structured support for qualitative research.</span>
-        )}
-      </div>
-    </div>
-  </div>
-</button>
-         {/* ===== VIDAME_REPERE_NAVIGATION_PRINCIPALE ===== */}
-<nav className="hidden items-center gap-2 md:flex">
-  {pages.map((item) => (
-    <button
-      key={item.id}
-      onClick={() => setPage(item.id)}
-      className={`rounded-full px-4 py-2 text-base font-medium transition ${
-        page === item.id
-          ? "bg-black text-white"
-          : "text-slate-800 hover:bg-slate-100 hover:text-slate-900"
-      }`}
-    >
-      {lang === "fr" ? item.labelFr : item.labelEn}
-    </button>
-  ))}
-</nav>
-
-          {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
+    {/* ===== VIDAME_REPERE_HEADER ===== */}
+    <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+        {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
+        <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
           <div className="flex items-center gap-3">
-            {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
-            <div className="hidden items-center gap-2 md:flex">
-              <button
-                onClick={() => setLang("fr")}
-                className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
-              >
-                FR
-              </button>
-              <span className="text-slate-500">|</span>
-              <button
-                onClick={() => setLang("en")}
-                className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
-              >
-                EN
-              </button>
-            </div>
+            {/* ===== VIDAME_REPERE_LOGO ===== */}
+            <img
+              src="/vidame_favicon_blanc_noir_192x192.png"
+              alt="Vidame"
+              className="h-14 w-14 rounded-xl object-contain"
+            />
 
-            {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
+            {/* ===== VIDAME_REPERE_SIGNATURE_MARQUE ===== */}
+            <div className="leading-tight">
+              <div className="text-sm font-semibold">Vidame</div>
+              <div className="text-xs leading-snug text-slate-900">
+                {lang === "fr" ? (
+                  <span>Soutien à la recherche qualitative.</span>
+                ) : (
+                  <span>Structured support for qualitative research.</span>
+                )}
+              </div>
+            </div>
+          </div>
+        </button>
+
+        {/* ===== VIDAME_REPERE_NAVIGATION_PRINCIPALE ===== */}
+        <nav className="hidden items-center gap-2 md:flex">
+          {pages.map((item) => (
             <button
-              className="rounded-xl border border-slate-200 p-2 md:hidden"
-              onClick={() => setOpen((v) => !v)}
-              aria-label="Ouvrir le menu"
+              key={item.id}
+              onClick={() => setPage(item.id)}
+              className={`rounded-full px-4 py-2 text-base font-medium transition ${
+                page === item.id
+                  ? "bg-black text-white"
+                  : "text-slate-800 hover:bg-slate-100 hover:text-slate-900"
+              }`}
             >
-              {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {lang === "fr" ? item.labelFr : item.labelEn}
+            </button>
+          ))}
+        </nav>
+
+        {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
+        <div className="flex items-center gap-3">
+          {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
+          <div className="hidden items-center gap-2 md:flex">
+            <button
+              onClick={() => setLang("fr")}
+              className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
+            >
+              FR
+            </button>
+            <span className="text-slate-500">|</span>
+            <button
+              onClick={() => setLang("en")}
+              className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
+            >
+              EN
             </button>
           </div>
-        </div>
 
-          {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-<AnimatePresence>
-  {open && (
-    <motion.div
-      initial={{ height: 0, opacity: 0 }}
-      animate={{ height: "auto", opacity: 1 }}
-      exit={{ height: 0, opacity: 0 }}
-      className="border-t border-slate-200 bg-white md:hidden"
-    >
-      <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
-        {pages.map((item) => (
+          {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
           <button
-            key={item.id}
-            onClick={() => {
-              setPage(item.id);
-              setOpen(false);
-            }}
-            className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
+            className="rounded-xl border border-slate-200 p-2 md:hidden"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Ouvrir le menu"
           >
-            {lang === "fr" ? item.labelFr : item.labelEn}
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
-        ))}
+        </div>
       </div>
-    </motion.div>
-  )}
-</AnimatePresence>
-      </header>
+
+      {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="border-t border-slate-200 bg-white md:hidden"
+          >
+            <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
+              {pages.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    setPage(item.id);
+                    setOpen(false);
+                  }}
+                  className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
+                >
+                  {lang === "fr" ? item.labelFr : item.labelEn}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
 
       {/* ===== VIDAME_REPERE_CONTENU_PRINCIPAL ===== */}
       <main>

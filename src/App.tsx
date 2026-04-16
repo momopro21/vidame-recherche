@@ -233,17 +233,20 @@ return (
                 alt="Vidame"
                 className="h-14 w-14 rounded-xl object-contain"
               />
-              {/* ===== VIDAME_REPERE_SIGNATURE_MARQUE ===== */}
-              <div className="leading-tight">
-                <div className="text-sm font-semibold">Vidame</div>
-                <div className="text-xs leading-snug text-slate-900">
-                  <span>Soutien à la recherche qualitative,</span>
-                  <br />
-                  <span>traduction et transcription</span>
-                </div>
-              </div>
-            </div>
-          </button>
+             <div className="text-xs leading-snug text-slate-900">
+              {lang === "fr" ? (
+            <>
+              <span>Soutien structuré à la recherche qualitative.</span>
+            </>
+           ) : (
+            <>
+          <span>Structured support for qualitative research.</span>
+        </>
+        )}
+      </div>
+     </div>
+    </div>
+  </button>
 
          {/* ===== VIDAME_REPERE_NAVIGATION_PRINCIPALE ===== */}
 <nav className="hidden items-center gap-2 md:flex">

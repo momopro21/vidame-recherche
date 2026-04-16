@@ -221,9 +221,11 @@ useEffect(() => {
 
 return (
   <div className="min-h-screen bg-white text-slate-800">
-     {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
+     
+    {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
 <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
   <div className="flex items-center gap-3">
+   
     {/* ===== VIDAME_REPERE_LOGO ===== */}
     <img
       src="/vidame_favicon_blanc_noir_192x192.png"
@@ -237,7 +239,7 @@ return (
 
       <div className="text-xs leading-snug text-slate-900">
         {lang === "fr" ? (
-          <span>Soutien structuré à la recherche qualitative.</span>
+          <span>Soutien à la recherche qualitative.</span>
         ) : (
           <span>Structured support for qualitative research.</span>
         )}

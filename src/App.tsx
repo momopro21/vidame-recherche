@@ -221,23 +221,21 @@ useEffect(() => {
 
 return (
   <div className="min-h-screen bg-white text-slate-800">
-      {/* ===== VIDAME_REPERE_HEADER ===== */}
-      <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
-          {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
-          <button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
-            <div className="flex items-center gap-3">
-             {/* ===== VIDAME_REPERE_LOGO ===== */}
-      <img
-        src="/vidame_favicon_blanc_noir_192x192.png"
-        alt="Vidame"
-        className="h-14 w-14 rounded-xl object-contain"
-      />
+     {/* ===== VIDAME_REPERE_HEADER_MARQUE ===== */}
+<button onClick={() => setPage("accueil")} className="flex items-center gap-3 text-left">
+  <div className="flex items-center gap-3">
+    {/* ===== VIDAME_REPERE_LOGO ===== */}
+    <img
+      src="/vidame_favicon_blanc_noir_192x192.png"
+      alt="Vidame"
+      className="h-14 w-14 rounded-xl object-contain"
+    />
 
-        <div className="leading-tight">
-        <div className="text-sm font-semibold">Vidame</div>
+    {/* ===== VIDAME_REPERE_SIGNATURE_MARQUE ===== */}
+    <div className="leading-tight">
+      <div className="text-sm font-semibold">Vidame</div>
 
-        <div className="text-xs leading-snug text-slate-900">
+      <div className="text-xs leading-snug text-slate-900">
         {lang === "fr" ? (
           <span>Soutien structuré à la recherche qualitative.</span>
         ) : (
@@ -245,8 +243,8 @@ return (
         )}
       </div>
     </div>
-  </button>
-
+  </div>
+</button>
          {/* ===== VIDAME_REPERE_NAVIGATION_PRINCIPALE ===== */}
 <nav className="hidden items-center gap-2 md:flex">
   {pages.map((item) => (

@@ -23,11 +23,11 @@ import {
 
 // ===== VIDAME_REPERE_DONNEES_PAGES =====
 const pages = [
-  { id: "accueil", label: "Accueil" },
-  { id: "apropos", label: "À propos" },
-  { id: "services", label: "Offre de services" },
-  { id: "soumission", label: "Obtenir un devis" },
-  { id: "blog", label: "Blog" },
+  { id: "accueil", labelFr: "Accueil", labelEn: "Home" },
+  { id: "apropos", labelFr: "À propos", labelEn: "About" },
+  { id: "services", labelFr: "Offre de services", labelEn: "Services" },
+  { id: "soumission", labelFr: "Obtenir un devis", labelEn: "Request a quote" },
+  { id: "blog", labelFr: "Blog", labelEn: "Blog" },
 ];
 
 // ===== VIDAME_REPERE_DONNEES_BLOG =====

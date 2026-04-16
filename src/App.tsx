@@ -340,63 +340,79 @@ return (
         </AnimatePresence>
       </main>
 
-      {/* ===== VIDAME_REPERE_FOOTER ===== */}
-      <footer className="border-t border-slate-300 bg-slate-200">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
-          {/* ===== VIDAME_REPERE_FOOTER_MARQUE ===== */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img
-                src="/vidame_favicon_blanc_noir_192x192.png"
-                alt="Vidame"
-                className="h-10 w-10 rounded-xl object-contain"
-              />
-              <div>
-                <div className="font-semibold">Vidame</div>
-                <div className="text-sm text-slate-500">
-                  Soutien à la recherche qualitative, traduction, transcription
-                </div>
-              </div>
-            </div>
-            <p className="text-sm leading-7 text-slate-600">
-              La chaîne opératoire (le pipeline) Vidame est conçue pour préparer les données de
-              recherche qualitative à analyser.
-            </p>
-          </div>
-
-         {/* ===== VIDAME_REPERE_FOOTER_NAVIGATION ===== */}
+    {/* ===== VIDAME_REPERE_FOOTER ===== */}
+<footer className="border-t border-slate-300 bg-slate-200">
+  <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-8">
+    
+    {/* ===== VIDAME_REPERE_FOOTER_MARQUE ===== */}
     <div className="space-y-4">
-      <div className="font-semibold">Navigation</div>
+      <div className="flex items-center gap-3">
+        <img
+          src="/vidame_favicon_blanc_noir_192x192.png"
+          alt="Vidame"
+          className="h-10 w-10 rounded-xl object-contain"
+        />
+        <div>
+          <div className="font-semibold">Vidame</div>
+          <div className="text-sm text-slate-500">
+            {lang === "fr"
+              ? "Soutien à la recherche qualitative, traduction, transcription"
+              : "Support for qualitative research, translation, and transcription"}
+          </div>
+        </div>
+      </div>
+
+      <p className="text-sm leading-7 text-slate-600">
+        {lang === "fr"
+          ? "La chaîne opératoire (le pipeline) Vidame est conçue pour préparer les données de recherche qualitative à analyser."
+          : "The Vidame operational chain (pipeline) is designed to prepare qualitative research data for analysis."}
+      </p>
+    </div>
+
+    {/* ===== VIDAME_REPERE_FOOTER_NAVIGATION ===== */}
+    <div className="space-y-4">
+      <div className="font-semibold">
+        {lang === "fr" ? "Navigation" : "Navigation"}
+      </div>
+
       <div className="grid gap-2 text-sm text-slate-600">
         {pages.map((item) => (
           <button
             key={item.id}
             onClick={() => setPage(item.id)}
             className="text-left hover:text-slate-900"
-      >
+          >
             {item.label}
           </button>
         ))}
       </div>
     </div>
 
-          {/* ===== VIDAME_REPERE_FOOTER_COORDONNEES ===== */}
-          <div className="space-y-4">
-            <div className="font-semibold">Coordonnées</div>
-            <div className="space-y-3 text-sm text-slate-600">
-              <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4" /> contact@vidame.ca
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4" /> Sur demande
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="h-4 w-4" /> Montréal, Québec
-              </div>
-            </div>
-          </div>
+    {/* ===== VIDAME_REPERE_FOOTER_COORDONNEES ===== */}
+    <div className="space-y-4">
+      <div className="font-semibold">
+        {lang === "fr" ? "Coordonnées" : "Contact"}
+      </div>
+
+      <div className="space-y-3 text-sm text-slate-600">
+        <div className="flex items-center gap-3">
+          <Mail className="h-4 w-4" /> contact@vidame.ca
         </div>
-      </footer>
+
+        <div className="flex items-center gap-3">
+          <Phone className="h-4 w-4" />
+          {lang === "fr" ? "Sur demande" : "Available upon request"}
+        </div>
+
+        <div className="flex items-center gap-3">
+          <MapPin className="h-4 w-4" />
+          {lang === "fr" ? "Montréal, Québec" : "Montreal, Quebec"}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
       {/* ===== VIDAME_REPERE_BOUTON_RETOUR_HAUT ===== */}
     {showScrollTop && (
     <button

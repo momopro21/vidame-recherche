@@ -369,24 +369,24 @@ return (
       </p>
     </div>
 
-    {/* ===== VIDAME_REPERE_FOOTER_NAVIGATION ===== */}
-    <div className="space-y-4">
-      <div className="font-semibold">
-        {lang === "fr" ? "Navigation" : "Navigation"}
-      </div>
+   {/* ===== VIDAME_REPERE_FOOTER_NAVIGATION ===== */}
+<div className="space-y-4">
+  <div className="font-semibold">
+    {lang === "fr" ? "Navigation" : "Navigation"}
+  </div>
 
-      <div className="grid gap-2 text-sm text-slate-600">
-        {pages.map((item) => (
-          <button
-            key={item.id}
-            onClick={() => setPage(item.id)}
-            className="text-left hover:text-slate-900"
-          >
-            {item.label}
-          </button>
-        ))}
-      </div>
-    </div>
+  <div className="grid gap-2 text-sm text-slate-600">
+    {pages.map((item) => (
+      <button
+        key={item.id}
+        onClick={() => setPage(item.id)}
+        className="text-left hover:text-slate-900"
+      >
+        {lang === "fr" ? item.labelFr : item.labelEn}
+      </button>
+    ))}
+  </div>
+</div>
 
     {/* ===== VIDAME_REPERE_FOOTER_COORDONNEES ===== */}
     <div className="space-y-4">

@@ -537,16 +537,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-            {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              {lang === "fr"
-                ? "Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative."
-                : "Vidame transforms your raw data into a structured corpus, ready for qualitative analysis."}
-            </p>
-          </div>
-        </div>
-      </section>
-   {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+             {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
 <section>
   <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
 

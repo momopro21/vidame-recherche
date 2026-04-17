@@ -1457,13 +1457,18 @@ const pipelineSteps = [
             className="mx-auto max-w-6xl px-4 pb-16 pt-10"
           >
             {/* ===== VIDAME_REPERE_SECTION_PIPELINE_SERVICES ===== */}
-            <div className="mb-10 text-center">
-              <h2 className="text-2xl font-semibold text-slate-900">Chaîne opératoire Vidame</h2>
-              <p className="mx-auto mt-6 max-w-2xl text-slate-500">
-                Une séquence de traitement structurée pour transformer un matériau brut en corpus
-                exploitable, traçable et conforme.
-              </p>
-            </div>
+           <div className="mb-10 text-center">
+            <h2 className="text-2xl font-semibold text-slate-900">
+            {lang === "fr"
+            ? "Chaîne opératoire Vidame"
+            : "Vidame operational pipeline"}
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-slate-500">
+              {lang === "fr"
+              ? "Une séquence de traitement structurée pour transformer un matériau brut en corpus exploitable, traçable et conforme."
+              : "A structured processing sequence to transform raw material into a usable, traceable, and compliant corpus."}
+            </p>
+          </div>
 
             {/* ===== VIDAME_REPERE_GRILLE_PIPELINE_SERVICES ===== */}
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">

@@ -1120,50 +1120,50 @@ function APropos({
   ))}
 </div>
              
-                {/* ===== VIDAME_REPERE_CITATION_ET_COORDONNEES ===== */}
-      <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
-                  {/* ===== VIDAME_REPERE_CITATION_APROPOS ===== */}
-        <Card className="rounded-[2rem] border-slate-200 bg-slate-50">
-          <CardContent className="p-8">
-            <Quote className="h-8 w-8 text-slate-400" />
-            <p className="mt-5 text-xl leading-9 text-slate-800">
-              Vidame s’adresse aux équipes de recherche souhaitant intégrer des outils
-              contemporains tout en maintenant la maîtrise de leurs données, de leurs textes et de
-              leurs décisions.
-            </p>
-          </CardContent>
-        </Card>
+              {/* ===== VIDAME_REPERE_CITATION_ET_COORDONNEES ===== */}
+<div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
 
-                {/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
-        <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
-          <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            Coordonnées
-          </div>
+  {/* ===== VIDAME_REPERE_CITATION_APROPOS ===== */}
+  <Card className="rounded-[2rem] border-slate-200 bg-slate-50">
+    <CardContent className="p-8">
+      <Quote className="h-8 w-8 text-slate-400" />
+      <p className="mt-5 text-xl leading-9 text-slate-800">
+        {lang === "fr"
+          ? "Vidame s’adresse aux équipes de recherche souhaitant intégrer des outils contemporains tout en maintenant la maîtrise de leurs données, de leurs textes et de leurs décisions."
+          : "Vidame is designed for research teams seeking to integrate contemporary tools while maintaining control over their data, their texts, and their decisions."}
+      </p>
+    </CardContent>
+  </Card>
 
-          <p className="text-sm text-slate-600">
-            Pour toute question ou pour discuter de votre projet :
-          </p>
-
-          <div className="space-y-2 text-slate-700">
-            <p>Monique Provost</p>
-            <p>Montréal, Québec</p>
-            <p>
-              <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
-                info@monique-provost.com
-              </a>
-            </p>
-          </div>
-
-          {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
-          <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
-            Obtenir un devis
-          </Button>
-        </div>
-      </div>
+  {/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
+  <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
+    <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+      {lang === "fr" ? "Coordonnées" : "Contact"}
     </div>
-  );
-}
 
+    <p className="text-sm text-slate-600">
+      {lang === "fr"
+        ? "Pour toute question ou pour discuter de votre projet :"
+        : "For any question or to discuss your project:"}
+    </p>
+
+    <div className="space-y-2 text-slate-700">
+      <p>Monique Provost</p>
+      <p>{lang === "fr" ? "Montréal, Québec" : "Montreal, Quebec"}</p>
+      <p>
+        <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
+          info@monique-provost.com
+        </a>
+      </p>
+    </div>
+
+    {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
+    <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
+      {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
+    </Button>
+  </div>
+
+</div>
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");

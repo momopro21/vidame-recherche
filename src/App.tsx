@@ -956,126 +956,98 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   );
 }
 
-            // ===== VIDAME_REPERE_PAGE_APROPOS =====
-      function APropos({
-        setPage,
-        lang,
-      }: {
-        setPage: (page: string) => void;
-        lang: "fr" | "en";
-      }) {
-        return (
-        <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
-             {/* ===== VIDAME_REPERE_BLOC_INTRO_APROPOS ===== */}
-         <div className="grid items-start gap-8 md:grid-cols-[0.5fr_1fr]">
-            {/* ===== VIDAME_REPERE_PHOTO_APROPOS ===== */}
+         // ===== VIDAME_REPERE_PAGE_APROPOS =====
+function APropos({
+  setPage,
+  lang,
+}: {
+  setPage: (page: string) => void;
+  lang: "fr" | "en";
+}) {
+  return (
+    <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
+      {/* ===== VIDAME_REPERE_BLOC_INTRO_APROPOS ===== */}
+      <div className="grid items-start gap-8 md:grid-cols-[0.5fr_1fr]">
+        {/* ===== VIDAME_REPERE_PHOTO_APROPOS ===== */}
         <div className="h-full w-full overflow-hidden rounded-[2rem]">
           <img
             src="/monique.jpg"
             alt="Monique Provost"
             className="h-full w-full object-cover object-[center_20%]"
-            />
-          </div>
-
-              {/* ===== VIDAME_REPERE_TEXTE_APROPOS ===== */}
-<div className="space-y-6">
-  <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-    {lang === "fr" ? "À propos" : "About"}
-  </div>
-
-  <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
-    {lang === "fr"
-      ? "Un regard humain aguerri, au cœur des données complexes"
-      : "An experienced human perspective at the core of complex data"}
-  </h1>
-
-  {lang === "fr" ? (
-    <>
-      <p className="text-lg leading-8 text-slate-700">
-        Monique Provost est titulaire d’un Ph. D. en ethnologie et patrimoine de l’Université
-        Laval (2016) et d’une maîtrise en ethnomusicologie de l’Université de Montréal (2010).
-        Ses travaux s’inscrivaient alors dans l’étude des phénomènes de mutation et des
-        processus d’adaptation locale des patrimoines culturels immatériels en contexte de
-        mondialisation.
-      </p>
-
-      <p className="leading-8 text-slate-600">
-        Elle a contribué à plusieurs projets de recherche en ethnologie, notamment au sein de
-        la Chaire de recherche du Canada en patrimoine ethnologique (Université Laval), sous la
-        direction de Laurier Turgeon, ainsi qu’au Laboratoire d’enquête ethnologique et
-        multimédia (LEEM), dans le cadre des projets IREPI (Inventaire des ressources
-        ethnologiques du patrimoine immatériel) et IPIR (Inventaire du patrimoine immatériel
-        religieux du Québec). Elle a également participé à des activités de recherche et
-        d’édition scientifique, notamment comme assistante à la rédaction pour la revue{" "}
-        <em>Ethnologies</em> et comme responsable documentaire au Laboratoire de recherche sur
-        les musiques du monde (LRMM).
-      </p>
-
-      <p className="leading-8 text-slate-600">
-        Après plusieurs années de pratique professionnelle en traduction et en soutien à la
-        recherche scientifique auprès de différentes équipes universitaires canadiennes, elle a
-        développé le pipeline Vidame, conçu comme un cadre de traitement rigoureux des données
-        qualitatives. Ses travaux actuels s’inscrivent dans un champ de recherche émergent,
-        celui du patrimoine cognitif à l’ère de l’intelligence artificielle.
-      </p>
-    </>
-  ) : (
-    <>
-      <p className="text-lg leading-8 text-slate-700">
-        Monique Provost holds a Ph.D. in Ethnology and Heritage from Université Laval (2016)
-        and a Master’s degree in Ethnomusicology from Université de Montréal (2010). Her early
-        work focused on processes of transformation and local adaptation of intangible cultural
-        heritage in contexts of globalization.
-      </p>
-
-      <p className="leading-8 text-slate-600">
-        She contributed to several research projects in ethnology, notably within the Canada
-        Research Chair in Ethnological Heritage (Université Laval), under the supervision of
-        Laurier Turgeon, as well as at the Laboratoire d’enquête ethnologique et multimédia
-        (LEEM), through projects such as IREPI (Inventory of Ethnological Resources of
-        Intangible Heritage) and IPIR (Inventory of Religious Intangible Heritage of Quebec).
-        She also took part in research and academic publishing activities, including serving as
-        editorial assistant for the journal <em>Ethnologies</em> and as documentation manager at
-        the Laboratoire de recherche sur les musiques du monde (LRMM).
-      </p>
-
-      <p className="leading-8 text-slate-600">
-        After several years of professional practice in translation and research support with
-        various Canadian university teams, she developed the Vidame pipeline, designed as a
-        rigorous framework for processing qualitative data. Her current work is situated within
-        an emerging research field: cognitive heritage in the era of artificial intelligence.
-      </p>
-    </>
-  )}
-</div>
-                
-           {/* ===== VIDAME_REPERE_SENS_DU_MOT ===== */}
-      <div className="max-w-3xl space-y-6 border-t border-slate-900 pt-10">
-        <div className="text-sm uppercase tracking-[0.2em] text-slate-900">
-          Le choix des mots : « Vidame » et « pipeline »
+          />
         </div>
 
-        <p className="text-sm leading-7 text-slate-600">
-          Un vidame, c’est, historiquement, un délégué laïque agissant pour le compte d’une
-          autorité ecclésiastique. Le terme vient du bas latin <em>vicedominus</em>, « à la place
-          du seigneur ». Les sources lexicographiques décrivent une figure chargée d’exercer des
-          fonctions temporelles au nom d’une autorité qui ne les exerce pas directement.
-        </p>
+        {/* ===== VIDAME_REPERE_TEXTE_APROPOS ===== */}
+        <div className="space-y-6">
+          <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            {lang === "fr" ? "À propos" : "About"}
+          </div>
 
-        <p className="text-sm leading-7 text-slate-600">
-          Inspiré des temps anciens, Vidame assume une fonction de médiation structurée par une
-          chaîne opératoire rigoureuse. Celle-ci intervient dans un espace intermédiaire — entre le
-          terrain et l’analyse, et aujourd’hui entre l’humain et les systèmes d’intelligence
-          artificielle — afin de représenter le chercheur au sein d’un dispositif collaboratif
-          humain–IA.
-        </p>
+          <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
+            {lang === "fr"
+              ? "Un regard humain aguerri, au cœur des données complexes"
+              : "An experienced human perspective at the core of complex data"}
+          </h1>
 
-        <p className="text-sm leading-7 text-slate-600">
-          Le terme « pipeline » est utilisé ici en complément de la notion de chaîne opératoire :
-          là où celle-ci renvoie à une succession d’étapes, le pipeline introduit l’idée d’un flux
-          continu de transformation et de circulation de l’information au sein du dispositif
-          structurant.
-        </p>
+          {lang === "fr" ? (
+            <>
+              <p className="text-lg leading-8 text-slate-700">
+                Monique Provost est titulaire d’un Ph. D. en ethnologie et patrimoine de l’Université
+                Laval (2016) et d’une maîtrise en ethnomusicologie de l’Université de Montréal (2010).
+                Ses travaux s’inscrivaient alors dans l’étude des phénomènes de mutation et des
+                processus d’adaptation locale des patrimoines culturels immatériels en contexte de
+                mondialisation.
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                Elle a contribué à plusieurs projets de recherche en ethnologie, notamment au sein de
+                la Chaire de recherche du Canada en patrimoine ethnologique (Université Laval), sous la
+                direction de Laurier Turgeon, ainsi qu’au Laboratoire d’enquête ethnologique et
+                multimédia (LEEM), dans le cadre des projets IREPI (Inventaire des ressources
+                ethnologiques du patrimoine immatériel) et IPIR (Inventaire du patrimoine immatériel
+                religieux du Québec). Elle a également participé à des activités de recherche et
+                d’édition scientifique, notamment comme assistante à la rédaction pour la revue{" "}
+                <em>Ethnologies</em> et comme responsable documentaire au Laboratoire de recherche sur
+                les musiques du monde (LRMM).
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                Après plusieurs années de pratique professionnelle en traduction et en soutien à la
+                recherche scientifique auprès de différentes équipes universitaires canadiennes, elle a
+                développé le pipeline Vidame, conçu comme un cadre de traitement rigoureux des données
+                qualitatives. Ses travaux actuels s’inscrivent dans un champ de recherche émergent,
+                celui du patrimoine cognitif à l’ère de l’intelligence artificielle.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-lg leading-8 text-slate-700">
+                Monique Provost holds a Ph.D. in Ethnology and Heritage from Université Laval (2016)
+                and a Master’s degree in Ethnomusicology from Université de Montréal (2010). Her early
+                work focused on processes of transformation and local adaptation of intangible cultural
+                heritage in contexts of globalization.
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                She contributed to several research projects in ethnology, notably within the Canada
+                Research Chair in Ethnological Heritage (Université Laval), under the supervision of
+                Laurier Turgeon, as well as at the Laboratoire d’enquête ethnologique et multimédia
+                (LEEM), through projects such as IREPI (Inventory of Ethnological Resources of
+                Intangible Heritage) and IPIR (Inventory of Religious Intangible Heritage of Quebec).
+                She also took part in research and academic publishing activities, including serving as
+                editorial assistant for the journal <em>Ethnologies</em> and as documentation manager at
+                the Laboratoire de recherche sur les musiques du monde (LRMM).
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                After several years of professional practice in translation and research support with
+                various Canadian university teams, she developed the Vidame pipeline, designed as a
+                rigorous framework for processing qualitative data. Her current work is situated within
+                an emerging research field: cognitive heritage in the era of artificial intelligence.
+              </p>
+            </>
+          )}
+        </div>
       </div>
 
             {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}

@@ -1135,35 +1135,38 @@ function APropos({
     </CardContent>
   </Card>
 
-  {/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
-  <div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
-    <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-      {lang === "fr" ? "Coordonnées" : "Contact"}
-    </div>
-
-    <p className="text-sm text-slate-600">
-      {lang === "fr"
-        ? "Pour toute question ou pour discuter de votre projet :"
-        : "For any question or to discuss your project:"}
-    </p>
-
-    <div className="space-y-2 text-slate-700">
-      <p>Monique Provost</p>
-      <p>{lang === "fr" ? "Montréal, Québec" : "Montreal, Quebec"}</p>
-      <p>
-        <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
-          info@monique-provost.com
-        </a>
-      </p>
-    </div>
-
-    {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
-    <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
-      {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
-    </Button>
+{/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
+<div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
+  <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+    {lang === "fr" ? "Coordonnées" : "Contact"}
   </div>
 
+  <p className="text-sm text-slate-600">
+    {lang === "fr"
+      ? "Pour toute question ou pour discuter de votre projet :"
+      : "For any question or to discuss your project:"}
+  </p>
+
+  <div className="space-y-2 text-slate-700">
+    <p>Monique Provost</p>
+    <p>{lang === "fr" ? "Montréal, Québec" : "Montreal, Quebec"}</p>
+    <p>
+      <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
+        info@monique-provost.com
+      </a>
+    </p>
+  </div>
+
+  {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
+  <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>
+    {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
+  </Button>
 </div>
+
+</div>
+</div>
+);
+}
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
 function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");

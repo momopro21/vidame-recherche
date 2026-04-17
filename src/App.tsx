@@ -352,7 +352,6 @@ return (
 {page === "apropos" && <APropos setPage={setPage} lang={lang} />}
 {page === "services" && <ServicesPage setPage={setPage} lang={lang} />}
 {page === "blog" && <Blog lang={lang} />}
-{page === "blog" && <Blog />}
 </motion.div>
 </AnimatePresence>
 </main>

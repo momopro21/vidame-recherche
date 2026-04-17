@@ -1248,28 +1248,28 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
-        <div className="relative mx-auto max-w-5xl text-center">
-          {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mx-auto max-w-4xl"
-          >
-            <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
-              Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les
-              discours et les concepts.
-            </h1>
+     {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
+<section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
+  <div className="relative mx-auto max-w-5xl text-center">
+    {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="mx-auto max-w-4xl"
+    >
+      <h1 className="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
+        {lang === "fr"
+          ? "Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts."
+          : "Vidame supports the preservation of meaning and the faithful rendering of discourse and concepts."}
+      </h1>
 
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Ses opérations professionnelles comprennent des services à la carte en traduction et
-              transcription, ainsi que la préparation des données qualitatives en amont de
-              l’analyse.
-            </p>
-          </motion.div>
-
+      <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600">
+        {lang === "fr"
+          ? "Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse."
+          : "Its professional operations include à la carte services in translation and transcription, as well as the preparation of qualitative data prior to analysis."}
+      </p>
+    </motion.div>
           {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}

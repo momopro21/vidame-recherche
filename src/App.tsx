@@ -503,15 +503,15 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
               {lang === "fr"
-                ? "Un service professionnel de traitement des données qualitatives, dans le respect de la souveraineté des données canadiennes"
-                : "Professional qualitative data processing, aligned with Canadian data sovereignty requirements"}
+                ? "Un service de traitement des données qualitatives, dans le respect de la souveraineté des données au Canada"
+                : "Un service de traitement des données qualitatives, dans le respect de la souveraineté des données au Canada"}
             </h1>
 
             {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               {lang === "fr"
-                ? "Pipeline (chaîne opératoire) de traitement des données qualitatives, selon une approche humaine assistée par l’IA, avec données hébergées au Canada, encadré par une professionnelle de la recherche qualitative."
-                : "A qualitative data processing pipeline (operational chain) combining human expertise and AI-assisted methods, with data hosted in Canada and overseen by a qualitative research professional."}
+                ? "Une chaîne opératoire (pipeline) de traitement des données qualitatives, encadrée à un niveau doctoral et fondée sur une approche humaine assistée par l’IA"
+                : "A qualitative data processing pipeline, overseen at the doctoral level and based on a human-centered, AI-assisted approach"}
             </p>
 
             {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}

@@ -501,11 +501,18 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
           {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
           <div className="space-y-6">
             {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
-              {lang === "fr"
-                ? "Un service de traitement des données qualitatives, dans le respect de la souveraineté des données au Canada"
-                : "A qualitative data processing service, aligned with Canadian data sovereignty"}
-            </h1>
+            <h1 className="text-4xl font-semibold text-slate-900">
+          <span className="block">
+          {lang === "fr"
+            ? "Un service de traitement des données qualitatives"
+            : "A qualitative data processing service"}
+         </span>
+         <span className="mt-2 block text-slate-700">
+          {lang === "fr"
+          ? "dans le respect de la souveraineté des données au Canada"
+          : "aligned with Canadian data sovereignty"}
+      </span>
+          </h1>
 
             {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
             <p className="max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">

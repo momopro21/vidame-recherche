@@ -504,7 +504,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl md:leading-[1.05]">
               {lang === "fr"
                 ? "Un service de traitement des données qualitatives, dans le respect de la souveraineté des données au Canada"
-                : "Un service de traitement des données qualitatives, dans le respect de la souveraineté des données au Canada"}
+                : "A qualitative data processing service, aligned with Canadian data sovereignty"}
             </h1>
 
             {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}

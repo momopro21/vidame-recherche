@@ -522,7 +522,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             </p>
 
             {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-14 flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
                 {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
               </Button>

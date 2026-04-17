@@ -1042,7 +1042,6 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </>
   )}
 </div>
-</div>
                 {/* ===== VIDAME_REPERE_SENS_DU_MOT ===== */}
       <div className="max-w-3xl space-y-6 border-t border-slate-900 pt-10">
         <div className="text-sm uppercase tracking-[0.2em] text-slate-900">

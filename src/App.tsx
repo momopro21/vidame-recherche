@@ -1119,31 +1119,7 @@ function APropos({
     </Card>
   ))}
 </div>
-                {/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
-      <div className="grid gap-8 md:grid-cols-3">
-        {[
-          {
-            title: "Intégrité",
-            text: "Préserver la parole des participants en maintenant l’intégrité du sens tout au long de la chaîne opératoire Vidame.",
-          },
-          {
-            title: "Rigueur",
-            text: "Documenter les choix et encadrer les étapes sensibles par des pratiques méthodologiques explicites et traçables.",
-          },
-          {
-            title: "Responsabilité",
-            text: "Assumer des choix techniques conformes aux exigences éthiques, juridiques et scientifiques des contextes d’intervention, et veiller à la souveraineté des données scientifiques canadiennes.",
-          },
-        ].map((item) => (
-          <Card key={item.title} className="rounded-[1.5rem] border-slate-200">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">{item.text}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-
+             
                 {/* ===== VIDAME_REPERE_CITATION_ET_COORDONNEES ===== */}
       <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
                   {/* ===== VIDAME_REPERE_CITATION_APROPOS ===== */}

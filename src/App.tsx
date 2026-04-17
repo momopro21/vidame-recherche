@@ -1280,33 +1280,33 @@ function ServicesPage({
 
     {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3, duration: 0.5 }}
-      className="mt-10 inline-flex gap-2 rounded-2xl border border-slate-200 bg-white/80 p-1.5 shadow-sm backdrop-blur"
-    >
-      <button
-        onClick={() => setActiveTab("carte")}
-        className={`rounded-full px-6 py-2 font-medium shadow-sm ${
-          activeTab === "carte"
-            ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
-            : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
-        }`}
-      >
-        {lang === "fr" ? "Services à la carte" : "À la carte services"}
-      </button>
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3, duration: 0.5 }}
+  className="mt-10 inline-flex gap-2 rounded-2xl border border-slate-200 bg-white/80 p-1.5 shadow-sm backdrop-blur"
+>
+  <button
+    onClick={() => setActiveTab("carte")}
+    className={`rounded-full px-6 py-2 font-medium shadow-sm ${
+      activeTab === "carte"
+        ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
+        : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
+    }`}
+  >
+    {lang === "fr" ? "Services à la carte" : "Custom services"}
+  </button>
 
-      <button
-        onClick={() => setActiveTab("pipeline")}
-        className={`rounded-full px-6 py-2 font-medium shadow-sm ${
-          activeTab === "pipeline"
-            ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
-            : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
-        }`}
-      >
-        {lang === "fr" ? "Chaîne opératoire Vidame" : "Vidame pipeline"}
-      </button>
-    </motion.div>
+  <button
+    onClick={() => setActiveTab("pipeline")}
+    className={`rounded-full px-6 py-2 font-medium shadow-sm ${
+      activeTab === "pipeline"
+        ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
+        : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
+    }`}
+  >
+    {lang === "fr" ? "Chaîne opératoire Vidame" : "Vidame workflow"}
+  </button>
+</motion.div>
   </div>
 </section>
 

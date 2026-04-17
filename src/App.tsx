@@ -255,7 +255,7 @@ return (
                 {lang === "fr" ? (
                   <span>Soutien à la recherche qualitative.</span>
                 ) : (
-                  <span>Structured support for qualitative research.</span>
+                  <span>Support for qualitative research.</span>
                 )}
               </div>
             </div>

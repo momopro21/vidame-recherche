@@ -1168,7 +1168,13 @@ function APropos({
 );
 }
 // ===== VIDAME_REPERE_PAGE_SERVICES =====
-function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
+function ServicesPage({
+  setPage,
+  lang,
+}: {
+  setPage: (page: string) => void;
+  lang: "fr" | "en";
+}) {
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
   const [expandedService, setExpandedService] = useState<number | null>(null);
 

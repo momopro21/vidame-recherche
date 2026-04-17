@@ -340,7 +340,6 @@ return (
 {page === "soumission" && <Soumission lang={lang} />}
 {page === "blog" && <Blog />}
 </motion.div>
-)}
 </AnimatePresence>
 </main>
 

@@ -537,7 +537,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-             {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
 <section>
   <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
 
@@ -556,10 +556,9 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         className="block h-auto w-full"
       />
     </div>
-    
+
   </div>
 </section>
-
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
           <div className="max-w-3xl text-left">
             <p className="text-[17px] leading-7 text-slate-700">

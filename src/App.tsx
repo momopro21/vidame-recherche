@@ -522,7 +522,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             </p>
 
             {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}
-            <div className="flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
                 {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
               </Button>
@@ -538,7 +538,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             </div>
 
             {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
               {lang === "fr"
                 ? "Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative."
                 : "Vidame transforms your raw data into a structured corpus, ready for qualitative analysis."}

@@ -1178,43 +1178,69 @@ function ServicesPage({
   const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
   const [expandedService, setExpandedService] = useState<number | null>(null);
 
-  // ===== VIDAME_REPERE_DONNEES_SERVICES =====
-  const servicesACarte = [
-    {
-      icon: Languages,
-      color: "bg-amber-50 text-amber-700 border-amber-200",
-      accent: "border-l-amber-400",
-      badge: "bg-amber-50 text-amber-700",
-      title: "Traduction EN vers FR",
-      subtitle: "Français canadien · Adaptation culturelle",
-      description:
-        "Traduction professionnelle de l'anglais vers le français canadien, avec révision linguistique complète, harmonisation terminologique et adaptation au registre et au public cible.",
-      details: [
-        "Traduction fidèle au sens et à la nuance",
-        "Adaptation au vocabulaire de la recherche qualitative",
-        "Harmonisation des termes clés du corpus",
-        "Révision par une spécialiste bilingue",
-      ],
-      tag: "Service à la carte",
-    },
-    {
-      icon: FileText,
-      color: "bg-sky-50 text-sky-700 border-sky-200",
-      accent: "border-l-sky-400",
-      badge: "bg-sky-50 text-sky-700",
-      title: "Transcription",
-      subtitle: "Assistée par IA · Validée par un humain",
-      description:
-        "Transcription de verbatim assistée par intelligence artificielle, avec validation humaine systématique. Fidèle au discours réel, aux hésitations, aux nuances et au langage authentique des participants.",
-      details: [
-        "Transcription intégrale ou sélective selon le besoin",
-        "Respect des particularités langagières",
-        "Marqueurs de discours conservés",
-        "Livraison dans les formats requis (.docx, .txt)",
-      ],
-      tag: "Service à la carte",
-    },
-  ];
+ // ===== VIDAME_REPERE_DONNEES_SERVICES =====
+const servicesACarte = [
+  {
+    icon: Languages,
+    color: "bg-amber-50 text-amber-700 border-amber-200",
+    accent: "border-l-amber-400",
+    badge: "bg-amber-50 text-amber-700",
+    title: lang === "fr" ? "Traduction EN vers FR" : "EN to FR Translation",
+    subtitle:
+      lang === "fr"
+        ? "Français canadien · Adaptation culturelle"
+        : "Canadian French · Cultural adaptation",
+    description:
+      lang === "fr"
+        ? "Traduction professionnelle de l'anglais vers le français canadien, avec révision linguistique complète, harmonisation terminologique et adaptation au registre et au public cible."
+        : "Professional translation from English into Canadian French, including full linguistic revision, terminological harmonization, and adaptation to the appropriate register and target audience.",
+    details:
+      lang === "fr"
+        ? [
+            "Traduction fidèle au sens et à la nuance",
+            "Adaptation au vocabulaire de la recherche qualitative",
+            "Harmonisation des termes clés du corpus",
+            "Révision par une spécialiste bilingue",
+          ]
+        : [
+            "Translation faithful to meaning and nuance",
+            "Adaptation to qualitative research vocabulary",
+            "Harmonization of key corpus terminology",
+            "Revision by a bilingual specialist",
+          ],
+    tag: lang === "fr" ? "Service à la carte" : "À la carte service",
+  },
+  {
+    icon: FileText,
+    color: "bg-sky-50 text-sky-700 border-sky-200",
+    accent: "border-l-sky-400",
+    badge: "bg-sky-50 text-sky-700",
+    title: lang === "fr" ? "Transcription" : "Transcription",
+    subtitle:
+      lang === "fr"
+        ? "Assistée par IA · Validée par un humain"
+        : "AI-assisted · Human-validated",
+    description:
+      lang === "fr"
+        ? "Transcription de verbatim assistée par intelligence artificielle, avec validation humaine systématique. Fidèle au discours réel, aux hésitations, aux nuances et au langage authentique des participants."
+        : "AI-assisted verbatim transcription with systematic human validation. Faithful to real speech, including hesitations, nuances, and the authentic language of participants.",
+    details:
+      lang === "fr"
+        ? [
+            "Transcription intégrale ou sélective selon le besoin",
+            "Respect des particularités langagières",
+            "Marqueurs de discours conservés",
+            "Livraison dans les formats requis (.docx, .txt)",
+          ]
+        : [
+            "Full or selective transcription depending on needs",
+            "Respect for linguistic particularities",
+            "Preservation of discourse markers",
+            "Delivery in required formats (.docx, .txt)",
+          ],
+    tag: lang === "fr" ? "Service à la carte" : "À la carte service",
+  },
+];
 
   // ===== VIDAME_REPERE_DONNEES_PIPELINE_SERVICES =====
   const pipelineSteps = [

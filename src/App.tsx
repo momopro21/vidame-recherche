@@ -372,16 +372,16 @@ return (
           <div className="font-semibold">Vidame</div>
           <div className="text-sm text-slate-500">
             {lang === "fr"
-              ? "Soutien à la recherche qualitative, traduction, transcription"
-              : "Support for qualitative research, translation, and transcription"}
+              ? "Soutien à la recherche qualitative"
+              : "Support for qualitative research"}
           </div>
         </div>
       </div>
 
       <p className="text-sm leading-7 text-slate-600">
         {lang === "fr"
-          ? "La chaîne opératoire (le pipeline) Vidame est conçue pour préparer les données de recherche qualitative à analyser."
-          : "The Vidame operational chain (pipeline) is designed to prepare qualitative research data for analysis."}
+          ? "Le pipeline Vidame (chaine opératoire) est conçu pour structurer les données de recherche qualitative en vue de leur analyse."
+          : "The Vidame pipeline is designed to structure qualitative research data for analysis."}
       </p>
     </div>
 

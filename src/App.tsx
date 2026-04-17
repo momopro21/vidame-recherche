@@ -1248,7 +1248,7 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div className="min-h-screen bg-white">
-     {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
+    {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
 <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
   <div className="relative mx-auto max-w-5xl text-center">
     {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
@@ -1270,6 +1270,8 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
           : "Its professional operations include à la carte services in translation and transcription, as well as the preparation of qualitative data prior to analysis."}
       </p>
     </motion.div>
+  </div>
+</section>
           {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}

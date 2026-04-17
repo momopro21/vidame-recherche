@@ -507,7 +507,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             ? "Un service de traitement des données qualitatives"
             : "A qualitative data processing service"}
          </span>
-         <span className="mt-4 block text-slate-700">
+         <span className="mt-3 block text-slate-700">
           {lang === "fr"
           ? "dans le respect de la souveraineté des données au Canada"
           : "aligned with Canadian data sovereignty"}

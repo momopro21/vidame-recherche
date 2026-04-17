@@ -31,7 +31,7 @@ const pages = [
 ];
 
 // ===== VIDAME_REPERE_DONNEES_BLOG =====
-const blogPosts = [
+const blogPosts = (lang: "fr" | "en") => [
   {
     title:
       lang === "fr"
@@ -69,7 +69,6 @@ const blogPosts = [
     date: lang === "fr" ? "Mars 2026" : "March 2026",
   },
 ];
-
 // ===== VIDAME_REPERE_TYPES =====
 type SectionTitleProps = {
   eyebrow: string;

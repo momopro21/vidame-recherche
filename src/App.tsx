@@ -527,16 +527,16 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         </div>
       </section>
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-<section>
-  <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
-              {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-          <div className="mt-2 mb-8 max-w-4xl">
-            <img
-              src="/flowchart_vidame4.png"
-              alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
-              className="block h-auto w-full"
-            />
-          </div>
+     <section>
+      <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
+             {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
+      <div className="mt-2 mb-8 max-w-4xl">
+      <img
+        src={lang === "fr" ? "/flowchart_vidame4.png" : "/flowchart_vidame4_en.png"}
+        alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
+        className="block h-auto w-full"
+      />
+      </div>
 
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
           <div className="max-w-3xl text-left">

@@ -1248,7 +1248,8 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
 
   return (
     <div className="min-h-screen bg-white">
-    {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
+    
+     {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
 <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
   <div className="relative mx-auto max-w-5xl text-center">
     {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
@@ -1270,38 +1271,38 @@ function ServicesPage({ setPage }: { setPage: (page: string) => void }) {
           : "Its professional operations include à la carte services in translation and transcription, as well as the preparation of qualitative data prior to analysis."}
       </p>
     </motion.div>
+
+    {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="mt-10 inline-flex gap-2 rounded-2xl border border-slate-200 bg-white/80 p-1.5 shadow-sm backdrop-blur"
+    >
+      <button
+        onClick={() => setActiveTab("carte")}
+        className={`rounded-full px-6 py-2 font-medium shadow-sm ${
+          activeTab === "carte"
+            ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
+            : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
+        }`}
+      >
+        {lang === "fr" ? "Services à la carte" : "À la carte services"}
+      </button>
+
+      <button
+        onClick={() => setActiveTab("pipeline")}
+        className={`rounded-full px-6 py-2 font-medium shadow-sm ${
+          activeTab === "pipeline"
+            ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
+            : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
+        }`}
+      >
+        {lang === "fr" ? "Chaîne opératoire Vidame" : "Vidame pipeline"}
+      </button>
+    </motion.div>
   </div>
 </section>
-          {/* ===== VIDAME_REPERE_ONGLETS_SERVICES ===== */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="mt-10 inline-flex gap-2 rounded-2xl border border-slate-200 bg-white/80 p-1.5 shadow-sm backdrop-blur"
-          >
-            <button
-              onClick={() => setActiveTab("carte")}
-              className={`rounded-full px-6 py-2 font-medium shadow-sm ${
-                activeTab === "carte"
-                  ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
-                  : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
-              }`}
-            >
-              Services à la carte
-            </button>
-            <button
-              onClick={() => setActiveTab("pipeline")}
-              className={`rounded-full px-6 py-2 font-medium shadow-sm ${
-                activeTab === "pipeline"
-                  ? "bg-gradient-to-b from-slate-800 to-slate-950 text-white"
-                  : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
-              }`}
-            >
-              Chaîne opératoire Vidame
-            </button>
-          </motion.div>
-        </div>
-      </section>
 
       {/* ===== VIDAME_REPERE_CONTENU_SERVICES ===== */}
       <AnimatePresence mode="wait">

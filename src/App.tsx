@@ -556,6 +556,9 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         className="block h-auto w-full"
       />
     </div>
+    
+  </div>
+</section>
 
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
           <div className="max-w-3xl text-left">

@@ -1435,18 +1435,25 @@ const pipelineSteps = [
 
             {/* ===== VIDAME_REPERE_CTA_SERVICES_CARTE ===== */}
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
-              <h3 className="text-xl font-semibold text-slate-900">Prêt à lancer votre projet ?</h3>
-              <p className="mt-2 text-sm text-slate-500">
-                Obtenez un devis personnalisé en moins de 48 heures.
-              </p>
-              <button
-                className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
-                onClick={() => setPage("soumission")}
-              >
-                Obtenir un devis <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-          </motion.div>
+            <h3 className="text-xl font-semibold text-slate-900">
+            {lang === "fr"
+              ? "Prêt à lancer votre projet ?"
+              : "Ready to start your project?"}
+            </h3>
+            <p className="mt-2 text-sm text-slate-500">
+            {lang === "fr"
+              ? "Obtenez un devis personnalisé en moins de 48 heures."
+              : "Get a tailored quote in less than 48 hours."}
+            </p>
+          <button
+            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+            onClick={() => setPage("soumission")}
+           >
+          {lang === "fr" ? "Obtenir un devis" : "Request a quote"}{" "}
+          <ChevronRight className="h-4 w-4" />
+        </button>
+      </div>
+     </motion.div>
         ) : (
           <motion.div
             key="pipeline"

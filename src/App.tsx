@@ -732,13 +732,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
                     </div>
                   )}
 
-                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
-                  {i < steps.length - 1 && (
-                    <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
-                      <ChevronRight className="h-5 w-5 text-slate-400" />
-                    </div>
-                  )}
-                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
+                                    {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
                   {i < steps.length - 1 && (
                     <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
                       <ChevronRight className="h-5 w-5 text-slate-400" />

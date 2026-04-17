@@ -1382,13 +1382,19 @@ function ServicesPage({
                         )}
                       </AnimatePresence>
 
-                      {/* ===== VIDAME_REPERE_ETAT_EXPANSION_SERVICE ===== */}
-                      <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
-                        <ChevronRight
-                          className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
-                        />
-                        {isExpanded ? "Réduire" : "Voir les détails"}
-                      </div>
+                     {/* ===== VIDAME_REPERE_ETAT_EXPANSION_SERVICE ===== */}
+            <div className="mt-4 flex items-center gap-1 text-xs font-medium text-slate-400">
+              <ChevronRight
+              className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`}
+            />
+              {lang === "fr"
+              ? isExpanded
+              ? "Réduire"
+              : "Voir les détails"
+              : isExpanded
+              ? "Collapse"
+              : "View details"}
+              </div>
                     </div>
                   </motion.div>
                 );

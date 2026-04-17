@@ -1716,19 +1716,27 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 }
 
 // ===== VIDAME_REPERE_PAGE_BLOG =====
-function Blog() {
+function Blog({ lang }: { lang: "fr" | "en" }) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
       {/* ===== VIDAME_REPERE_ENTETE_BLOG ===== */}
       <SectionTitle
         eyebrow="Blog"
-        title="Réflexions sur les données, le langage et l'IA"
-        text="Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs."
+        title={
+          lang === "fr"
+            ? "Réflexions sur les données, le langage et l'IA"
+            : "Reflections on data, language, and AI"
+        }
+        text={
+          lang === "fr"
+            ? "Une section pensée pour approfondir les enjeux méthodologiques, linguistiques et éthiques liés au traitement des corpus qualitatifs."
+            : "A space designed to explore the methodological, linguistic, and ethical issues involved in working with qualitative corpora."
+        }
       />
 
       {/* ===== VIDAME_REPERE_GRILLE_BLOG ===== */}
       <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {blogPosts.map((post) => (
+        {blogPosts(lang).map((post) => (
           <Card key={post.title} className="rounded-[1.5rem] border-slate-200">
             <CardContent className="p-6">
               <div className="text-xs uppercase tracking-[0.14em] text-slate-500">
@@ -1748,7 +1756,6 @@ function Blog() {
     </div>
   );
 }
-
 // ===== VIDAME_REPERE_POINT_ENTREE_APP =====
 export default function App() {
   // ===== VIDAME_REPERE_ETAT_APP =====

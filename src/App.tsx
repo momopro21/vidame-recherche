@@ -1323,8 +1323,10 @@ function ServicesPage({
           >
             {/* ===== VIDAME_REPERE_SECTION_SERVICES_CARTE ===== */}
             <div className="mb-10 text-center">
-              <h2 className="text-2xl font-semibold text-slate-900">
-                Services linguistiques à la carte
+             <h2 className="text-2xl font-semibold text-slate-900">
+              {lang === "fr"
+                ? "Services linguistiques à la carte"
+              : "À la carte language services"}
               </h2>
             </div>
 

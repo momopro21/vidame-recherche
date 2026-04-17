@@ -1285,7 +1285,8 @@ const pipelineSteps = [
     color: "bg-slate-700",
   },
 ];
-    
+    return (
+  <div className="min-h-screen bg-white">
      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
 <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
   <div className="relative mx-auto max-w-5xl text-center">

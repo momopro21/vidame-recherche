@@ -1495,21 +1495,25 @@ const pipelineSteps = [
             </div>
 
             {/* ===== VIDAME_REPERE_CTA_PIPELINE_SERVICES ===== */}
-            <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
-              <h3 className="text-xl font-semibold text-slate-900">
-                Besoin d’un cadre de traitement complet ?
-              </h3>
-              <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-500">
-                Vidame peut intervenir en amont de l’analyse pour préparer, structurer et sécuriser
-                vos données qualitatives.
-              </p>
-              <button
-                className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
-                onClick={() => setPage("soumission")}
-              >
-                Obtenir un devis <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
+           <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
+          <h3 className="text-xl font-semibold text-slate-900">
+          {lang === "fr"
+            ? "Besoin d’un cadre de traitement complet ?"
+            : "Need a complete data processing framework?"}
+          </h3>
+          <p className="mx-auto mt-2 max-w-2xl text-sm text-slate-500">
+          {lang === "fr"
+            ? "Vidame peut intervenir en amont de l’analyse pour préparer, structurer et sécuriser vos données qualitatives."
+            : "Vidame can step in upstream of analysis to prepare, structure, and secure your qualitative data."}
+          </p>
+          <button
+            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+            onClick={() => setPage("soumission")}
+          >
+             {lang === "fr" ? "Obtenir un devis" : "Request a quote"}{" "}
+              <ChevronRight className="h-4 w-4" />
+            </button>
+            </div>  
           </motion.div>
         )}
       </AnimatePresence>

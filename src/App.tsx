@@ -68,7 +68,7 @@ const blogPosts = (lang: "fr" | "en") => [
     tag: lang === "fr" ? "Méthode" : "Method",
     date: lang === "fr" ? "Mars 2026" : "March 2026",
   },
-];
+]; 
 // ===== VIDAME_REPERE_TYPES =====
 type SectionTitleProps = {
   eyebrow: string;

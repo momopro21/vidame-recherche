@@ -33,25 +33,25 @@ const pages = [
 // ===== VIDAME_REPERE_DONNEES_BLOG =====
 const blogPosts = [
   {
-    title: "Pourquoi la préparation des données est une étape scientifique à part entière",
+    title: "Why data preparation is a scientific step in its own right",
     excerpt:
-      "Transcrire, segmenter, anonymiser et structurer un corpus ne relève pas seulement de l'exécution technique : ce sont des opérations qui influencent directement la qualité du matériau de recherche.",
-    tag: "Réflexion",
-    date: "Mars 2026",
+      "Transcribing, segmenting, anonymizing, and structuring a corpus is not merely technical execution — these operations directly shape the quality of the research material.",
+    tag: "Insight",
+    date: "March 2026",
   },
   {
-    title: "L'IA en contexte sensible : garder la conformité au centre du workflow",
+    title: "AI in sensitive contexts: keeping compliance at the core of the workflow",
     excerpt:
-      "Quand les données touchent la santé, la recherche ou des milieux institutionnels, l'enjeu n'est pas seulement la performance des outils, mais la gouvernance de leur usage.",
-    tag: "Conformité",
-    date: "Mars 2026",
+      "When working with data related to health, research, or institutional settings, the challenge is not only tool performance, but the governance of their use.",
+    tag: "Compliance",
+    date: "March 2026",
   },
   {
-    title: "Du verbatim brut au corpus exploitable : les étapes du pipeline Vidame",
+    title: "From raw verbatim to usable corpus: the steps of the Vidame pipeline",
     excerpt:
-      "Un bon pipeline ne se limite pas à produire du texte. Il organise une chaîne opératoire complète : intégrité, anonymisation, structuration, traçabilité et réutilisation.",
-    tag: "Méthode",
-    date: "Mars 2026",
+      "A strong pipeline does more than produce text. It structures a complete operational chain: integrity, anonymization, structuring, traceability, and reuse.",
+    tag: "Method",
+    date: "March 2026",
   },
 ];
 

@@ -333,15 +333,13 @@ return (
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
           >
-            {/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
-            {page === "accueil" && <Accueil setPage={setPage} lang={lang} />}
-            {page === "apropos" && <APropos setPage={setPage} />}
-            {page === "services" && <ServicesPage setPage={setPage} />}
-            {page === "soumission" && <Soumission lang={lang} />}
-            {page === "blog" && <Blog />}
-          </motion.div>
-        </AnimatePresence>
-      </main>
+           {/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
+        {page === "accueil" && <Accueil setPage={setPage} lang={lang} />}
+        {page === "apropos" && <APropos setPage={setPage} lang={lang} />}
+        {page === "services" && <ServicesPage setPage={setPage} lang={lang} />}
+        {page === "soumission" && <Soumission lang={lang} />}
+        {page === "blog" && <Blog />}
+        </motion.div>
 
     {/* ===== VIDAME_REPERE_FOOTER ===== */}
 <footer className="border-t border-slate-300 bg-slate-200">

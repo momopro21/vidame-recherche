@@ -33,25 +33,40 @@ const pages = [
 // ===== VIDAME_REPERE_DONNEES_BLOG =====
 const blogPosts = [
   {
-    title: "Why data preparation is a scientific step in its own right",
+    title:
+      lang === "fr"
+        ? "Pourquoi la préparation des données est une étape scientifique à part entière"
+        : "Why data preparation is a scientific step in its own right",
     excerpt:
-      "Transcribing, segmenting, anonymizing, and structuring a corpus is not merely technical execution — these operations directly shape the quality of the research material.",
-    tag: "Insight",
-    date: "March 2026",
+      lang === "fr"
+        ? "Transcrire, segmenter, anonymiser et structurer un corpus ne relève pas seulement de l'exécution technique : ce sont des opérations qui influencent directement la qualité du matériau de recherche."
+        : "Transcribing, segmenting, anonymizing, and structuring a corpus is not merely technical execution — these operations directly shape the quality of the research material.",
+    tag: lang === "fr" ? "Réflexion" : "Insight",
+    date: lang === "fr" ? "Mars 2026" : "March 2026",
   },
   {
-    title: "AI in sensitive contexts: keeping compliance at the core of the workflow",
+    title:
+      lang === "fr"
+        ? "L'IA en contexte sensible : garder la conformité au centre du workflow"
+        : "AI in sensitive contexts: keeping compliance at the core of the workflow",
     excerpt:
-      "When working with data related to health, research, or institutional settings, the challenge is not only tool performance, but the governance of their use.",
-    tag: "Compliance",
-    date: "March 2026",
+      lang === "fr"
+        ? "Quand les données touchent la santé, la recherche ou des milieux institutionnels, l'enjeu n'est pas seulement la performance des outils, mais la gouvernance de leur usage."
+        : "When working with data related to health, research, or institutional settings, the challenge is not only tool performance, but the governance of their use.",
+    tag: lang === "fr" ? "Conformité" : "Compliance",
+    date: lang === "fr" ? "Mars 2026" : "March 2026",
   },
   {
-    title: "From raw verbatim to usable corpus: the steps of the Vidame pipeline",
+    title:
+      lang === "fr"
+        ? "Du verbatim brut au corpus exploitable : les étapes du pipeline Vidame"
+        : "From raw verbatim to usable corpus: the steps of the Vidame pipeline",
     excerpt:
-      "A strong pipeline does more than produce text. It structures a complete operational chain: integrity, anonymization, structuring, traceability, and reuse.",
-    tag: "Method",
-    date: "March 2026",
+      lang === "fr"
+        ? "Un bon pipeline ne se limite pas à produire du texte. Il organise une chaîne opératoire complète : intégrité, anonymisation, structuration, traçabilité et réutilisation."
+        : "A strong pipeline does more than produce text. It structures a complete operational chain: integrity, anonymization, structuring, traceability, and reuse.",
+    tag: lang === "fr" ? "Méthode" : "Method",
+    date: lang === "fr" ? "Mars 2026" : "March 2026",
   },
 ];
 

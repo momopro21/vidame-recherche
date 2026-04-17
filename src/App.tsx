@@ -1051,33 +1051,74 @@ function APropos({
       </div>
 
             {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card className="rounded-[2rem] border-slate-200">
-              <CardHeader>
-                <CardTitle>Mission</CardTitle>
-              </CardHeader>
-              <CardContent className="px-6 pb-6">
-            <p className="leading-8 text-slate-600">
-              Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le
-              développement de connaissances ancrées localement, au Québec et au Canada.
-            </p>
-            </CardContent>
-            </Card>
+<div className="grid gap-8 md:grid-cols-2">
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="leading-8 text-slate-600">
+        {lang === "fr"
+          ? "Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le développement de connaissances ancrées localement, au Québec et au Canada."
+          : "To contribute to research by mobilizing my resources and expertise in support of knowledge development grounded in local realities in Quebec and across Canada."}
+      </p>
+    </CardContent>
+  </Card>
 
-            <Card className="rounded-[2rem] border-slate-200">
-              <CardHeader>
-                <CardTitle>Vision</CardTitle>
-              </CardHeader>
-              <CardContent className="px-6 pb-6">
-              <p className="leading-8 text-slate-600">
-                  Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui
-                  demeure profondément humaine : transparente, traçable, adaptée aux contraintes du
-                  terrain et respectueuse de la valeur scientifique des données.
-               </p>
-          </CardContent>
-        </Card>
-      </div>
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Vision" : "Vision"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="leading-8 text-slate-600">
+        {lang === "fr"
+          ? "Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui demeure profondément humaine : transparente, traçable, adaptée aux contraintes du terrain et respectueuse de la valeur scientifique des données."
+          : "A practice of qualitative research assisted by artificial intelligence that remains fundamentally human: transparent, traceable, responsive to field constraints, and respectful of the scientific value of data."}
+      </p>
+    </CardContent>
+  </Card>
+</div>
 
+{/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
+<div className="grid gap-8 md:grid-cols-3">
+  {(lang === "fr"
+    ? [
+        {
+          title: "Intégrité",
+          text: "Préserver la parole des participants en maintenant l’intégrité du sens tout au long de la chaîne opératoire Vidame.",
+        },
+        {
+          title: "Rigueur",
+          text: "Documenter les choix et encadrer les étapes sensibles par des pratiques méthodologiques explicites et traçables.",
+        },
+        {
+          title: "Responsabilité",
+          text: "Assumer des choix techniques conformes aux exigences éthiques, juridiques et scientifiques des contextes d’intervention, et veiller à la souveraineté des données scientifiques canadiennes.",
+        },
+      ]
+    : [
+        {
+          title: "Integrity",
+          text: "Preserve participants’ words by maintaining the integrity of meaning throughout the Vidame operational pipeline.",
+        },
+        {
+          title: "Rigour",
+          text: "Document decisions and frame sensitive stages through explicit, traceable methodological practices.",
+        },
+        {
+          title: "Responsibility",
+          text: "Make technical choices that align with ethical, legal, and scientific requirements in each context of intervention, while safeguarding the sovereignty of Canadian research data.",
+        },
+      ]
+  ).map((item) => (
+    <Card key={item.title} className="rounded-[1.5rem] border-slate-200">
+      <CardContent className="p-6">
+        <h3 className="text-xl font-semibold">{item.title}</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-600">{item.text}</p>
+      </CardContent>
+    </Card>
+  ))}
+</div>
                 {/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
       <div className="grid gap-8 md:grid-cols-3">
         {[

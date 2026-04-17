@@ -1242,44 +1242,49 @@ const servicesACarte = [
   },
 ];
 
-  // ===== VIDAME_REPERE_DONNEES_PIPELINE_SERVICES =====
-  const pipelineSteps = [
-    {
-      step: "01",
-      icon: FileText,
-      title: "Transcription validée",
-      description:
-        "Conversion du verbatim brut en texte exploitable, avec validation humaine à chaque segment sensible.",
-      color: "bg-teal-600",
-    },
-    {
-      step: "02",
-      icon: ShieldCheck,
-      title: "Anonymisation conforme",
-      description:
-        "Neutralisation des identifiants personnels selon les exigences éthiques et légales en vigueur (Canada).",
-      color: "bg-teal-700",
-    },
-    {
-      step: "03",
-      icon: Workflow,
-      title: "Segmentation et structuration",
-      description:
-        "Organisation du corpus en unités de sens cohérentes, prêtes pour l'analyse qualitative.",
-      color: "bg-teal-800",
-    },
-    {
-      step: "04",
-      icon: Lock,
-      title: "Traçabilité et documentation",
-      description:
-        "Chaque opération est documentée, horodatée et traçable — pour la rigueur scientifique et les comités d'éthique.",
-      color: "bg-slate-700",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+// ===== VIDAME_REPERE_DONNEES_PIPELINE_SERVICES =====
+const pipelineSteps = [
+  {
+    step: "01",
+    icon: FileText,
+    title: lang === "fr" ? "Transcription validée" : "Validated transcription",
+    description:
+      lang === "fr"
+        ? "Conversion du verbatim brut en texte exploitable, avec validation humaine à chaque segment sensible."
+        : "Conversion of raw verbatim into usable text, with human validation at each sensitive segment.",
+    color: "bg-teal-600",
+  },
+  {
+    step: "02",
+    icon: ShieldCheck,
+    title: lang === "fr" ? "Anonymisation conforme" : "Compliant anonymization",
+    description:
+      lang === "fr"
+        ? "Neutralisation des identifiants personnels selon les exigences éthiques et légales en vigueur (Canada)."
+        : "Removal of personal identifiers in accordance with current ethical and legal requirements (Canada).",
+    color: "bg-teal-700",
+  },
+  {
+    step: "03",
+    icon: Workflow,
+    title: lang === "fr" ? "Segmentation et structuration" : "Segmentation and structuring",
+    description:
+      lang === "fr"
+        ? "Organisation du corpus en unités de sens cohérentes, prêtes pour l'analyse qualitative."
+        : "Organization of the corpus into coherent units of meaning, ready for qualitative analysis.",
+    color: "bg-teal-800",
+  },
+  {
+    step: "04",
+    icon: Lock,
+    title: lang === "fr" ? "Traçabilité et documentation" : "Traceability and documentation",
+    description:
+      lang === "fr"
+        ? "Chaque opération est documentée, horodatée et traçable — pour la rigueur scientifique et les comités d'éthique."
+        : "Each operation is documented, time-stamped, and traceable — for scientific rigour and ethics review boards.",
+    color: "bg-slate-700",
+  },
+];
     
      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
 <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">

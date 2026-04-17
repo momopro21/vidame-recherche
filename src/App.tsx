@@ -558,7 +558,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </div>
 
   </div>
-</section>
+</section> 
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
           <div className="max-w-3xl text-left">
             <p className="text-[17px] leading-7 text-slate-700">

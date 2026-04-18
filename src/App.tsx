@@ -628,17 +628,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? "Voir l'offre de services" : "View services"}
 </Button>
 </div>
-
-           {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
-            <a
-              href="#charte"
-              className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
-            >
-              {lang === "fr"
-                ? "En savoir plus sur le traitement des données sensibles"
-                : "Learn more about the processing of sensitive data"}
-            </a>
-          </div>
+</div>
 
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
           <div className="mt-10">

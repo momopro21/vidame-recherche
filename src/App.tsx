@@ -633,11 +633,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
           <div className="mt-24">
             <SectionTitle
               eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
-              title={
-                lang === "fr"
-                  ? "Du terrain à l'analyse : la chaîne opératoire Vidame"
-                  : "From fieldwork to analysis: the Vidame operational chain"
-              }
+             title={
+              lang === "fr"
+              ? "Du terrain à l'analyse : la chaîne opératoire\u00A0Vidame"
+              : "From fieldwork to analysis: the Vidame operational chain"
+            }
             />
           </div>
 

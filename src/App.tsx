@@ -636,7 +636,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
              title={
               lang === "fr"
               ? "Du terrain à l'analyse : le pipeline\u00A0Vidame"
-              : "From fieldwork to analysis: the Pipeline Vidame"
+              : "From fieldwork to analysis: the Vidame Pipeline"
             }
             />
           </div>

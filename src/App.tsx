@@ -487,92 +487,110 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
   return (
     <div>
-            {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-      <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
-        <div className="max-w-5xl space-y-8">
-          {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
-          <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
-            {lang === "fr"
-              ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
-              : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}
-          </Badge>
+          {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
+<section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
+  <div className="mx-auto max-w-5xl space-y-8 text-center">
+    {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
+    <div className="flex justify-center">
+      <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
+        {lang === "fr"
+          ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
+          : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}
+      </Badge>
+    </div>
 
-          {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
-          <div className="space-y-6">
-            {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-            <h1 className="text-4xl font-semibold text-slate-900">
-          <span className="block">
+    {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
+    <div className="space-y-6">
+      {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
+      <h1 className="text-4xl font-semibold text-slate-900 md:text-5xl">
+        <span className="block">
           {lang === "fr"
             ? "Un service de traitement des données qualitatives"
             : "A qualitative data processing service"}
-         </span>
-         <span className="mt-3 block text-slate-700">
+        </span>
+        <span className="mt-3 block text-slate-700">
           {lang === "fr"
-          ? "dans le respect de la souveraineté des données au Canada"
-          : "aligned with Canadian data sovereignty"}
-      </span>
-          </h1>
+            ? "dans le respect de la souveraineté des données au Canada"
+            : "aligned with Canadian data sovereignty"}
+        </span>
+      </h1>
 
-            {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
-            <p className="max-w-2xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              {lang === "fr"
-                ? "Une chaîne opératoire (pipeline) de traitement des données qualitatives, encadrée à un niveau doctoral et fondée sur une approche humaine assistée par l’IA"
-                : "A qualitative data processing pipeline, overseen at the doctoral level and based on a human-centered, AI-assisted approach"}
-            </p>
-           
-        {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-<p className="mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
-  {lang === "fr" ? (
-    <>
-      <span className="font-bold">Vidame :</span>{" "}
-      
-      <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        méthode
-        <span className="text-slate-400">↗</span>
-      </a>
-      
-      <span className="mx-2 text-slate-400">·</span>
-      
-      <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        sécurité des données
-        <span className="text-slate-400">↗</span>
-      </a>
-      
-      <span className="mx-2 text-slate-400">·</span>
-      
-      <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        chercheuse expérimentée
-        <span className="text-slate-400">↗</span>
-      </a>
-    </>
-  ) : (
-    <>
-      <span className="font-bold">Vidame:</span>{" "}
-      
-      <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        method
-        <span className="text-slate-400">↗</span>
-      </a>
-      
-      <span className="mx-2 text-slate-400">·</span>
-      
-      <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        data security
-        <span className="text-slate-400">↗</span>
-      </a>
-      
-      <span className="mx-2 text-slate-400">·</span>
-      
-          <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-            experienced researcher
-            <span className="text-slate-400">↗</span>
-          </a>
-        </>
-      )}
-    </p>
-          </div>
-        </div>
-      </section>
+      {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
+      <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+        {lang === "fr"
+          ? "Une chaîne opératoire (pipeline) de traitement des données qualitatives, encadrée à un niveau doctoral et fondée sur une approche humaine assistée par l’IA"
+          : "A qualitative data processing pipeline, overseen at the doctoral level and based on a human-centered, AI-assisted approach"}
+      </p>
+
+      {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+      <p className="mx-auto mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
+        {lang === "fr" ? (
+          <>
+            <span className="font-bold">Vidame :</span>{" "}
+            <a
+              href="#pipeline"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              méthode
+              <span className="text-slate-400">↗</span>
+            </a>
+
+            <span className="mx-2 text-slate-400">·</span>
+
+            <a
+              href="#securite"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              sécurité des données
+              <span className="text-slate-400">↗</span>
+            </a>
+
+            <span className="mx-2 text-slate-400">·</span>
+
+            <a
+              href="#apropos"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              chercheuse expérimentée
+              <span className="text-slate-400">↗</span>
+            </a>
+          </>
+        ) : (
+          <>
+            <span className="font-bold">Vidame:</span>{" "}
+            <a
+              href="#pipeline"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              method
+              <span className="text-slate-400">↗</span>
+            </a>
+
+            <span className="mx-2 text-slate-400">·</span>
+
+            <a
+              href="#securite"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              data security
+              <span className="text-slate-400">↗</span>
+            </a>
+
+            <span className="mx-2 text-slate-400">·</span>
+
+            <a
+              href="#apropos"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+            >
+              experienced researcher
+              <span className="text-slate-400">↗</span>
+            </a>
+          </>
+        )}
+      </p>
+    </div>
+  </div>
+</section>
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
      <section>
       <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">

@@ -492,7 +492,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   <div className="mx-auto max-w-6xl space-y-8 text-center">
     {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
     <div className="flex justify-center">
-      <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">
+      <Badge className="rounded-full bg-slate-200 px-6 py-1.5 text-slate-900 hover:bg-slate-200">
         {lang === "fr"
           ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
           : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}
@@ -503,16 +503,28 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     <div className="space-y-6">
       {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
       <h1 className="mx-auto max-w-6xl text-4xl font-semibold text-slate-900 md:text-5xl">
-  <span className="block">
-    {lang === "fr"
-      ? "Un service de traitement des données\u00A0qualitatives"
-      : "A qualitative data processing service"}
-  </span>
-  <span className="mt-3 block text-slate-700">
-    {lang === "fr"
-      ? "dans le respect de la souveraineté des données au Canada"
-      : "aligned with Canadian data sovereignty"}
-  </span>
+  {lang === "fr" ? (
+    <>
+      <span className="block">
+        Un service de traitement des données qualitatives
+      </span>
+      <span className="mt-3 block">
+        dans le respect de la souveraineté des données
+      </span>
+      <span className="mt-3 block text-slate-700">
+        au Canada
+      </span>
+    </>
+  ) : (
+    <>
+      <span className="block">
+        A qualitative data processing service
+      </span>
+      <span className="mt-3 block">
+        aligned with Canadian data sovereignty
+      </span>
+    </>
+  )}
 </h1>
 
       {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}

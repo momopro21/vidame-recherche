@@ -595,7 +595,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
      <section>
       <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
              {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-      <div className="mt-2 mb-8 max-w-4xl">
+      <div className="mt-2 mb-8 max-w-5xl">
       <img
     src={lang === "fr" ? "/flowchart_vidame4.png" : "/flowchart_vidame4_en.png"}
     alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}

@@ -489,7 +489,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
 <section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
-  <div className="mx-auto max-w-5xl space-y-8 text-center">
+  <div className="mx-auto max-w-6xl space-y-8 text-center">
     {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
     <div className="flex justify-center">
       <Badge className="rounded-full bg-slate-200 px-4 py-1.5 text-slate-900 hover:bg-slate-200">

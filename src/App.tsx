@@ -819,7 +819,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </div>
 
     {/* ===== VIDAME_REPERE_TITRE_CHARTE ===== */}
-    <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl leading-tight">
+    <h2 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
       {lang === "fr"
         ? "Pour le traitement des données plus sensibles"
         : "For the processing of more sensitive data"}
@@ -827,180 +827,193 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* ===== VIDAME_REPERE_BLOC_VISUEL_CHARTE ===== */}
     <div className="rounded-2xl border border-slate-200 bg-slate-100 p-6 md:p-8">
-      <p className="text-xl md:text-2xl leading-9 text-slate-900 font-medium">
+      <p className="text-xl font-medium leading-9 text-slate-900 md:text-2xl">
         {lang === "fr"
           ? "Préserver l’intégrité du matériau et protéger les participants."
           : "Preserving the integrity of the material and protecting participants."}
       </p>
     </div>
 
-    {/* ===== VIDAME_REPERE_CONTENU_CHARTE ===== */}
-    <div className="space-y-6">
-      {/* ===== VIDAME_REPERE_CHARTE_PRINCIPE_DIRECTEUR ===== */}
-      <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">
-          {lang === "fr" ? "1. Principe directeur" : "1. Guiding principle"}
-        </h3>
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants."
-            : "The processing of qualitative data is grounded in a fundamental requirement: preserving the integrity of the material and protecting participants."}
-        </p>
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet."
-            : "The methods and tools used are selected according to the level of data sensitivity and the ethical requirements specific to each project."}
-        </p>
-      </div>
+    {/* ===== VIDAME_REPERE_CONTROLE_CHARTE ===== */}
+    <div>
+      <button
+        type="button"
+        onClick={() => setCharteOpen(!charteOpen)}
+        className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-[16px] font-medium text-slate-900 transition hover:bg-slate-50"
+      >
+        {charteOpen
+          ? lang === "fr"
+            ? "Réduire"
+            : "Collapse"
+          : lang === "fr"
+            ? "Voir le cadre de traitement"
+            : "View framework"}
+        <span className="text-slate-500">{charteOpen ? "−" : "+"}</span>
+      </button>
+    </div>
 
-      {/* ===== VIDAME_REPERE_CHARTE_POSITIONNEMENT ===== */}
-      <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">
-          {lang === "fr" ? "2. Positionnement" : "2. Positioning"}
-        </h3>
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques."
-            : "Vidame adopts a structured approach to data processing, in which technical choices are subordinated to methodological and ethical requirements."}
-        </p>
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte."
-            : "The objective is not to automate systematically, but to determine the method best suited to the context."}
-        </p>
-      </div>
+    {charteOpen && (
+      <>
+        {/* ===== VIDAME_REPERE_CONTENU_CHARTE ===== */}
+        <div className="space-y-6">
+          {/* ===== VIDAME_REPERE_CHARTE_PRINCIPE_DIRECTEUR ===== */}
+          <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {lang === "fr" ? "1. Principe directeur" : "1. Guiding principle"}
+            </h3>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Le traitement des données qualitatives repose sur une exigence fondamentale : préserver l’intégrité du matériau et protéger les participants."
+                : "The processing of qualitative data is grounded in a fundamental requirement: preserving the integrity of the material and protecting participants."}
+            </p>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Les méthodes et outils utilisés sont sélectionnés en fonction du niveau de sensibilité des données et des exigences éthiques propres à chaque projet."
+                : "The methods and tools used are selected according to the level of data sensitivity and the ethical requirements specific to each project."}
+            </p>
+          </div>
 
-      {/* ===== VIDAME_REPERE_CHARTE_DONNEES_SENSIBLES ===== */}
-      <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">
-          {lang === "fr" ? "3. Données sensibles" : "3. Sensitive data"}
-        </h3>
+          {/* ===== VIDAME_REPERE_CHARTE_POSITIONNEMENT ===== */}
+          <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {lang === "fr" ? "2. Positionnement" : "2. Positioning"}
+            </h3>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Vidame adopte une approche structurée du traitement des données, dans laquelle les choix techniques sont subordonnés aux impératifs méthodologiques et éthiques."
+                : "Vidame adopts a structured approach to data processing, in which technical choices are subordinated to methodological and ethical requirements."}
+            </p>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "L’objectif n’est pas d’automatiser systématiquement, mais de déterminer la méthode la plus appropriée au contexte."
+                : "The objective is not to automate systematically, but to determine the method best suited to the context."}
+            </p>
+          </div>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :"
-            : "Some corpora involve a high level of sensitivity, particularly when they include:"}
-        </p>
+          {/* ===== VIDAME_REPERE_CHARTE_DONNEES_SENSIBLES ===== */}
+          <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {lang === "fr" ? "3. Données sensibles" : "3. Sensitive data"}
+            </h3>
 
-        {/* ===== VIDAME_REPERE_LISTE_DONNEES_SENSIBLES ===== */}
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>
-            {lang === "fr" ? "des personnes mineures" : "minors"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "des situations de vulnérabilité (santé mentale, parcours de vie)"
-              : "situations of vulnerability (mental health, life trajectories)"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "des milieux institutionnels sensibles (police, justice, milieu carcéral)"
-              : "sensitive institutional settings (police, justice, correctional environments)"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "des contenus à risque (discours violents, extrémisme, situations conflictuelles)"
-              : "high-risk content (violent discourse, extremism, conflict situations)"}
-          </li>
-        </ul>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Certains corpus présentent un niveau de sensibilité élevé, notamment lorsqu’ils impliquent :"
+                : "Some corpora involve a high level of sensitivity, particularly when they include:"}
+            </p>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche."
-            : "In such cases, the use of automated tools may introduce uncertainties that are incompatible with research requirements."}
-        </p>
+            <ul className="list-disc space-y-2 pl-6 text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              <li>{lang === "fr" ? "des personnes mineures" : "minors"}</li>
+              <li>
+                {lang === "fr"
+                  ? "des situations de vulnérabilité (santé mentale, parcours de vie)"
+                  : "situations of vulnerability (mental health, life trajectories)"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "des milieux institutionnels sensibles (police, justice, milieu carcéral)"
+                  : "sensitive institutional settings (police, justice, correctional environments)"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "des contenus à risque (discours violents, extrémisme, situations conflictuelles)"
+                  : "high-risk content (violent discourse, extremism, conflict situations)"}
+              </li>
+            </ul>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Ces incertitudes peuvent concerner :"
-            : "These uncertainties may relate to:"}
-        </p>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Dans ces cas, l’utilisation d’outils automatisés peut introduire des incertitudes incompatibles avec les exigences de la recherche."
+                : "In such cases, the use of automated tools may introduce uncertainties that are incompatible with research requirements."}
+            </p>
 
-        {/* ===== VIDAME_REPERE_LISTE_INCERTITUDES ===== */}
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>
-            {lang === "fr" ? "la résidence des données" : "data residency"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "la rétention temporaire liée aux mécanismes de sécurité"
-              : "temporary retention linked to security mechanisms"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "les transformations involontaires du contenu (filtrage, reformulation, atténuation)"
-              : "unintended transformations of content (filtering, reformulation, attenuation)"}
-          </li>
-        </ul>
-      </div>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Ces incertitudes peuvent concerner :"
+                : "These uncertainties may relate to:"}
+            </p>
 
-      {/* ===== VIDAME_REPERE_CHARTE_TRAITEMENT_MANUEL ===== */}
-      <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">
-          {lang === "fr" ? "4. Traitement manuel" : "4. Manual processing"}
-        </h3>
+            <ul className="list-disc space-y-2 pl-6 text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              <li>{lang === "fr" ? "la résidence des données" : "data residency"}</li>
+              <li>
+                {lang === "fr"
+                  ? "la rétention temporaire liée aux mécanismes de sécurité"
+                  : "temporary retention linked to security mechanisms"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "les transformations involontaires du contenu (filtrage, reformulation, atténuation)"
+                  : "unintended transformations of content (filtering, reformulation, attenuation)"}
+              </li>
+            </ul>
+          </div>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle."
-            : "When the nature of the data requires it, processing is carried out entirely manually."}
-        </p>
+          {/* ===== VIDAME_REPERE_CHARTE_TRAITEMENT_MANUEL ===== */}
+          <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {lang === "fr" ? "4. Traitement manuel" : "4. Manual processing"}
+            </h3>
 
-        {/* ===== VIDAME_REPERE_LISTE_TRAITEMENT_MANUEL ===== */}
-        <ul className="list-disc pl-6 space-y-2 text-slate-700 text-[17px] md:text-[18px] leading-8">
-          <li>
-            {lang === "fr"
-              ? "contrôle complet sur chaque étape"
-              : "full control over each step"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "fidélité du discours et de ses nuances"
-              : "faithfulness to speech and its nuances"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "préservation des éléments analytiques essentiels"
-              : "preservation of essential analytical elements"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "anonymisation fine et contextualisée"
-              : "fine-grained, context-sensitive anonymization"}
-          </li>
-          <li>
-            {lang === "fr"
-              ? "traçabilité des transformations"
-              : "traceability of transformations"}
-          </li>
-        </ul>
-      </div>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Lorsque la nature des données le requiert, le traitement est effectué entièrement de manière manuelle."
+                : "When the nature of the data requires it, processing is carried out entirely manually."}
+            </p>
 
-      {/* ===== VIDAME_REPERE_CHARTE_IA_CADREE ===== */}
-      <div className="space-y-3 border-l-2 border-slate-300 pl-4">
-        <h3 className="text-lg font-semibold text-slate-900">
-          {lang === "fr"
-            ? "5. Utilisation des outils assistés par IA"
-            : "5. Use of AI-assisted tools"}
-          </h3>
+            <ul className="list-disc space-y-2 pl-6 text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              <li>
+                {lang === "fr"
+                  ? "contrôle complet sur chaque étape"
+                  : "full control over each step"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "fidélité du discours et de ses nuances"
+                  : "faithfulness to speech and its nuances"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "préservation des éléments analytiques essentiels"
+                  : "preservation of essential analytical elements"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "anonymisation fine et contextualisée"
+                  : "fine-grained, context-sensitive anonymization"}
+              </li>
+              <li>
+                {lang === "fr"
+                  ? "traçabilité des transformations"
+                  : "traceability of transformations"}
+              </li>
+            </ul>
+          </div>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet."
-            : "AI-assisted tools are used selectively, only when the level of data sensitivity allows it."}
-          </p>
+          {/* ===== VIDAME_REPERE_CHARTE_IA_CADREE ===== */}
+          <div className="space-y-3 border-l-2 border-slate-300 pl-4">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {lang === "fr"
+                ? "5. Utilisation des outils assistés par IA"
+                : "5. Use of AI-assisted tools"}
+            </h3>
 
-        <p className="text-[17px] md:text-[18px] leading-8 text-slate-700">
-          {lang === "fr"
-            ? "Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel."
-            : "They are used within a controlled methodological framework and never replace professional judgment."}
-          </p>
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Les outils assistés par IA sont utilisés de manière ciblée, uniquement lorsque le niveau de sensibilité des données le permet."
+                : "AI-assisted tools are used selectively, only when the level of data sensitivity allows it."}
+            </p>
+
+            <p className="text-[17px] leading-8 text-slate-700 md:text-[18px]">
+              {lang === "fr"
+                ? "Ils s’inscrivent dans un cadre méthodologique contrôlé et ne se substituent jamais au jugement professionnel."
+                : "They are used within a controlled methodological framework and never replace professional judgment."}
+            </p>
+          </div>
         </div>
-      </div>
 
         {/* ===== VIDAME_REPERE_SIGNATURE_CHARTE ===== */}
-        <div className="pt-8 border-t border-slate-200">
-          <p className="text-xl md:text-2xl font-semibold text-slate-900">
+        <div className="border-t border-slate-200 pt-8">
+          <p className="text-xl font-semibold text-slate-900 md:text-2xl">
             {lang === "fr"
               ? "Intégrité des données. Protection des participants. Méthode avant outil."
               : "Data integrity. Participant protection. Method before tools."}
@@ -1011,13 +1024,15 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         <div className="pt-6">
           <button
             onClick={() => setPage("soumission")}
-            className="text-[17px] md:text-[18px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"
+            className="text-[17px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700 md:text-[18px]"
           >
             {lang === "fr" ? "Discuter de votre projet" : "Discuss your project"}
           </button>
         </div>
-      </div>
-    </section>
+      </>
+    )}
+  </div>
+</section>
     </div>
   );
 }

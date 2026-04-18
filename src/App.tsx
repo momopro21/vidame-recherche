@@ -511,7 +511,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <span className="mt-3 block">
         dans le respect de la souveraineté des données
       </span>
-      <span className="mt-3 block text-slate-700">
+      <span className="mt-2 block text-slate-700">
         au Canada
       </span>
     </>

@@ -536,11 +536,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-          {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+        {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
 <p className="mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
   {lang === "fr" ? (
     <>
-      {/* FR */}
       <span className="font-bold">Vidame :</span>{" "}
       
       <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
@@ -561,35 +560,9 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         chercheuse expérimentée
         <span className="text-slate-400">↗</span>
       </a>
-
-      {/* EN en dessous */}
-      <br />
-      <span className="text-sm font-normal text-slate-600">
-        <span className="font-medium">Vidame:</span>{" "}
-        
-        <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-          method
-          <span className="text-slate-400">↗</span>
-        </a>
-        
-        <span className="mx-2 text-slate-400">·</span>
-        
-        <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-          data security
-          <span className="text-slate-400">↗</span>
-        </a>
-        
-        <span className="mx-2 text-slate-400">·</span>
-        
-        <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-          experienced researcher
-          <span className="text-slate-400">↗</span>
-        </a>
-      </span>
     </>
   ) : (
     <>
-      {/* EN seulement si site en anglais */}
       <span className="font-bold">Vidame:</span>{" "}
       
       <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
@@ -606,13 +579,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       
       <span className="mx-2 text-slate-400">·</span>
       
-      <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
-        experienced researcher
-        <span className="text-slate-400">↗</span>
-      </a>
-    </>
-  )}
-</p>
+          <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+            experienced researcher
+            <span className="text-slate-400">↗</span>
+          </a>
+        </>
+      )}
+    </p>
           </div>
         </div>
       </section>

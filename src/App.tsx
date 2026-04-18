@@ -536,12 +536,60 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-            {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-              {lang === "fr"
-                ? "Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative."
-                : "Vidame transforms your raw data into a structured corpus, ready for qualitative analysis."}
-            </p>
+           {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+<p className="mt-8 max-w-4xl text-lg font-semibold leading-8 text-slate-900 md:text-xl md:leading-9">
+  {lang === "fr" ? (
+    <>
+      <span className="font-bold">Vidame :</span>{" "}
+      <a
+        href="#pipeline"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        méthode
+      </a>
+      ,{" "}
+      <a
+        href="#securite"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        sécurité des données
+      </a>
+      ,{" "}
+      <a
+        href="#apropos"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        chercheuse expérimentée
+      </a>
+      .
+    </>
+  ) : (
+    <>
+      <span className="font-bold">Vidame:</span>{" "}
+      <a
+        href="#pipeline"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        method
+      </a>
+      ,{" "}
+      <a
+        href="#securite"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        data security
+      </a>
+      ,{" "}
+      <a
+        href="#apropos"
+        className="underline underline-offset-4 hover:text-slate-700"
+      >
+        experienced researcher
+      </a>
+      .
+    </>
+  )}
+</p>
           </div>
         </div>
       </section>

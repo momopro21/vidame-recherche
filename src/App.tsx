@@ -543,50 +543,44 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <span className="font-bold">Vidame :</span>{" "}
       <a
         href="#pipeline"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         méthode
-      </a>
-      ,{" "}
+      </a>{" "}
       <a
         href="#securite"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         sécurité des données
-      </a>
-      ,{" "}
+      </a>{" "}
       <a
         href="#apropos"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         chercheuse expérimentée
       </a>
-      .
     </>
   ) : (
     <>
       <span className="font-bold">Vidame:</span>{" "}
       <a
         href="#pipeline"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         method
-      </a>
-      ,{" "}
+      </a>{" "}
       <a
         href="#securite"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         data security
-      </a>
-      ,{" "}
+      </a>{" "}
       <a
         href="#apropos"
-        className="underline underline-offset-4 hover:text-slate-700"
+        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
       >
         experienced researcher
       </a>
-      .
     </>
   )}
 </p>

@@ -505,7 +505,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <h1 className="mx-auto max-w-6xl text-4xl font-semibold text-slate-900 md:text-5xl">
   <span className="block">
     {lang === "fr"
-      ? "Un service de traitement des données qualitatives"
+      ? "Un service de traitement des données\u00A0qualitatives"
       : "A qualitative data processing service"}
   </span>
   <span className="mt-3 block text-slate-700">

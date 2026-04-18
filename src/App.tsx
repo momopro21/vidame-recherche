@@ -488,7 +488,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   return (
     <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}
-<section className="mx-auto max-w-7xl px-10 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
+<section className="mx-auto max-w-7xl px-15 pt-18 pb-4 md:px-8 md:pt-16 md:pb-4">
   <div className="mx-auto max-w-6xl space-y-8 text-center">
     {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
     <div className="flex justify-center">
@@ -535,7 +535,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </p>
 
       {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-      <p className="mx-auto mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
+      <p className="mx-auto mt-10 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
         {lang === "fr" ? (
           <>
             <span className="font-bold">Vidame :</span>{" "}

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -537,21 +536,27 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-           {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-<section>
-  <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
-
-    {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-    <div className="mt-2 mb-8 max-w-4xl">
+            {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+              {lang === "fr"
+                ? "Vidame transforme vos données brutes en un corpus structuré, prêt pour l’analyse qualitative."
+                : "Vidame transforms your raw data into a structured corpus, ready for qualitative analysis."}
+            </p>
+          </div>
+        </div>
+      </section>
+     {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+     <section>
+      <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
+             {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
+      <div className="mt-2 mb-8 max-w-4xl">
       <img
         src={lang === "fr" ? "/flowchart_vidame4.png" : "/flowchart_vidame4_en.png"}
         alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
         className="block h-auto w-full"
       />
-    </div>
+      </div>
 
-  </div>
-</section> 
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
           <div className="max-w-3xl text-left">
             <p className="text-[17px] leading-7 text-slate-700">
@@ -725,7 +730,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
                     </div>
                   )}
 
-                                    {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
+                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
+                  {i < steps.length - 1 && (
+                    <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
+                      <ChevronRight className="h-5 w-5 text-slate-400" />
+                    </div>
+                  )}
+                  {/* ===== VIDAME_REPERE_FLECHE_ETAPE_PIPELINE ===== */}
                   {i < steps.length - 1 && (
                     <div className="absolute right-[-12px] top-1/2 hidden translate-y-[-50%] md:block">
                       <ChevronRight className="h-5 w-5 text-slate-400" />

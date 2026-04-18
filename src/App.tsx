@@ -592,8 +592,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
   <Button
   size="lg"
-  variant="outline"
-  className="rounded-full bg-slate-500 hover:bg-slate-900 border-slate-300 text-slate-900"
+  className="rounded-full border border-slate-300 bg-slate-200 text-slate-900 hover:bg-slate-300"
   onClick={() => setPage("services")}
 >
   {lang === "fr" ? "Voir l'offre de services" : "View services"}

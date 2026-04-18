@@ -591,13 +591,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </Button>
 
   <Button
-    size="lg"
-    variant="outline"
-   className="rounded-full bg-slate-600 hover:bg-slate-900"
-    onClick={() => setPage("services")}
-  >
-    {lang === "fr" ? "Voir l'offre de services" : "View services"}
-  </Button>
+  size="lg"
+  variant="outline"
+  className="rounded-full bg-slate-100 hover:bg-slate-200 border-slate-300 text-slate-900"
+  onClick={() => setPage("services")}
+>
+  {lang === "fr" ? "Voir l'offre de services" : "View services"}
+</Button>
 </div>
 
           {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}

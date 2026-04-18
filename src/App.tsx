@@ -618,13 +618,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "Les traitements automatisés sont vérifiés et corrigés manuellement pour vérifier l'intégrité des transcriptions et de l'anonymisation ainsi qu'après l'extraction des concepts clés."
+                  ? "Les traitements automatisés sont réviser et corrigés manuellement pour confirmer l'intégrité des transcriptions et de l'anonymisation ainsi qu'après l'extraction des concepts clés."
                   : "Automated processing is reviewed manually by human intervention at critical moments."}
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "À l’étape de l’analyse, un corpus bien structuré prend toute sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter."
+                  ? "C'est à l’étape de l’analyse, qu'un corpus bien structuré révèle sa valeur. Sans préparation rigoureuse, les données restent difficiles à explorer, à comparer et à interpréter."
                   : "At the analysis stage, a well-structured corpus reveals its full value. Without rigorous preparation, data remains difficult to explore, compare, and interpret."}
               </p>
 

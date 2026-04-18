@@ -624,8 +624,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "Les traitements automatisés sont encadrés par des interventions humaines aux moments critiques."
-                  : "Automated processing is framed by human intervention at critical moments."}
+                  ? "Les traitements automatisés sont vérifiés et corrigés manuellement aux étapes critiques, afin d'assurer l'intégrité des données."
+                  : "Automated processing is reviewed manually by human intervention at critical moments."}
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
@@ -636,7 +636,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "L’objectif de Vidame est de vous permettre de vous consacrer à l’analyse à partir d’un corpus déjà structuré, fiable et exploitable."
+                  ? "L’objectif de Vidame est de contribuer aux projets de recherche scientifique en structurant les données brutes pour les rendre fiables et exploitables."
                   : "Vidame’s goal is to allow you to focus on analysis using a corpus that is already structured, reliable, and ready to use."}
               </p>
 

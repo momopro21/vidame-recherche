@@ -630,7 +630,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 </div>
 
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
-          <div className="mt-10">
+          <div className="mt-16">
             <SectionTitle
               eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
               title={

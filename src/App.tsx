@@ -628,7 +628,6 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? "Voir l'offre de services" : "View services"}
 </Button>
 </div>
-</div>
 
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
           <div className="mt-10">

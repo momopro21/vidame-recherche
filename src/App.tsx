@@ -585,7 +585,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       />
       </div>
        {/* ===== VIDAME_REPERE_CTA_APRES_PIPELINE ===== */}
-<div className="mt-6 mb-12 flex flex-wrap gap-3 md:ml-[14rem]">
+<div className="mt-10 mb-12 flex flex-wrap gap-3 md:ml-[14rem]">
   <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
     {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
   </Button>

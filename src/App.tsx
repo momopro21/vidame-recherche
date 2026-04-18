@@ -629,15 +629,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 </Button>
 </div>
 
-          {/* ===== VIDAME_REPERE_INTRO_TRAITEMENT_SENSIBLE ===== */}
-          <div className="max-w-3xl text-left">
-            <p className="text-[17px] leading-7 text-slate-700">
-              {lang === "fr"
-                ? "Dans certains cas, le niveau de sensibilité des données requiert un traitement manuel spécialisé."
-                : "In some cases, the sensitivity of the data requires specialized manual processing."}
-            </p>
-
-            {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
+           {/* ===== VIDAME_REPERE_LIEN_CHARTE_ACCUEIL ===== */}
             <a
               href="#charte"
               className="mt-2 inline-block text-[18px] md:text-[19px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700"

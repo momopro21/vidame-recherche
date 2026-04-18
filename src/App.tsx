@@ -519,23 +519,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
                 ? "Une chaîne opératoire (pipeline) de traitement des données qualitatives, encadrée à un niveau doctoral et fondée sur une approche humaine assistée par l’IA"
                 : "A qualitative data processing pipeline, overseen at the doctoral level and based on a human-centered, AI-assisted approach"}
             </p>
-
-            {/* ===== VIDAME_REPERE_BOUTONS_HERO_ACCUEIL ===== */}
-            <div className="mt-24 flex flex-wrap gap-3">
-              <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
-                {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full"
-                onClick={() => setPage("services")}
-              >
-                {lang === "fr" ? "Voir l'offre de services" : "View services"}
-              </Button>
-            </div>
-
+           
         {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
 <p className="mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
   {lang === "fr" ? (

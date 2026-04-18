@@ -446,7 +446,7 @@ return (
 function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | "en";
 }) {
   const [activeStep, setActiveStep] = useState(0);
-
+  const [charteOpen, setCharteOpen] = useState(false);
   // ===== VIDAME_REPERE_DONNEES_ETAPES_PIPELINE =====
   const steps = [
     {

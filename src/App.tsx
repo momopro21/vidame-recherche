@@ -635,8 +635,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
              title={
               lang === "fr"
-              ? "Du terrain à l'analyse : la chaîne opératoire\u00A0Vidame"
-              : "From fieldwork to analysis: the Vidame operational chain"
+              ? "Du terrain à l'analyse : le pipeline\u00A0Vidame"
+              : "From fieldwork to analysis: the Pipeline Vidame"
             }
             />
           </div>

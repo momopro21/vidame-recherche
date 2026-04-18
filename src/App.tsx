@@ -612,19 +612,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "Le pipeline Vidame organise le passage des données brutes vers un corpus exploitable pour l’analyse qualitative."
-                  : "The Vidame pipeline organizes the transition from raw data to a corpus that can be used for qualitative analysis."}
-              </p>
-
-              <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
-                {lang === "fr"
-                  ? "Chaque étape constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques."
+                  ? "Chaque étape de la chaine opératoire Vidame constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques."
                   : "Each step is treated as a distinct operation, with explicit validation points to ensure processing quality, traceability of transformations, and compliance with ethical requirements."}
               </p>
 
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "Les traitements automatisés sont vérifiés et corrigés manuellement aux étapes critiques, afin d'assurer l'intégrité des données."
+                  ? "Les traitements automatisés sont vérifiés et corrigés manuellement pour vérifier l'intégrité des transcriptions et de l'anonymisation ainsi qu'après l'extraction des concepts clés."
                   : "Automated processing is reviewed manually by human intervention at critical moments."}
               </p>
 

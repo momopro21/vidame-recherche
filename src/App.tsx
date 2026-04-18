@@ -536,50 +536,79 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
               </Button>
             </div>
 
-           {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-<p className="mt-8 max-w-4xl text-lg font-semibold leading-8 text-slate-900 md:text-xl md:leading-9">
+          {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+<p className="mt-8 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
   {lang === "fr" ? (
     <>
+      {/* FR */}
       <span className="font-bold">Vidame :</span>{" "}
-      <a
-        href="#pipeline"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
+      
+      <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
         méthode
-      </a>{" "}
-      <a
-        href="#securite"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
-        sécurité des données
-      </a>{" "}
-      <a
-        href="#apropos"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
-        chercheuse expérimentée
+        <span className="text-slate-400">↗</span>
       </a>
+      
+      <span className="mx-2 text-slate-400">·</span>
+      
+      <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+        sécurité des données
+        <span className="text-slate-400">↗</span>
+      </a>
+      
+      <span className="mx-2 text-slate-400">·</span>
+      
+      <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+        chercheuse expérimentée
+        <span className="text-slate-400">↗</span>
+      </a>
+
+      {/* EN en dessous */}
+      <br />
+      <span className="text-sm font-normal text-slate-600">
+        <span className="font-medium">Vidame:</span>{" "}
+        
+        <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+          method
+          <span className="text-slate-400">↗</span>
+        </a>
+        
+        <span className="mx-2 text-slate-400">·</span>
+        
+        <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+          data security
+          <span className="text-slate-400">↗</span>
+        </a>
+        
+        <span className="mx-2 text-slate-400">·</span>
+        
+        <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
+          experienced researcher
+          <span className="text-slate-400">↗</span>
+        </a>
+      </span>
     </>
   ) : (
     <>
+      {/* EN seulement si site en anglais */}
       <span className="font-bold">Vidame:</span>{" "}
-      <a
-        href="#pipeline"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
+      
+      <a href="#pipeline" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
         method
-      </a>{" "}
-      <a
-        href="#securite"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
+        <span className="text-slate-400">↗</span>
+      </a>
+      
+      <span className="mx-2 text-slate-400">·</span>
+      
+      <a href="#securite" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
         data security
-      </a>{" "}
-      <a
-        href="#apropos"
-        className="inline-block rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-slate-200"
-      >
+        <span className="text-slate-400">↗</span>
+      </a>
+      
+      <span className="mx-2 text-slate-400">·</span>
+      
+      <a href="#apropos" className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700">
         experienced researcher
+        <span className="text-slate-400">↗</span>
       </a>
     </>
   )}

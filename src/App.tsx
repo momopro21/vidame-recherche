@@ -612,7 +612,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             <div className="max-w-5xl space-y-6 border-t border-slate-200 pt-6">
               <p className="text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">
                 {lang === "fr"
-                  ? "Chaque étape de la chaine opératoire Vidame constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des transformations et la conformité aux exigences éthiques."
+                  ? "Chaque étape de la chaine opératoire Vidame constitue une opération distincte, avec des points de validation explicites assurant la qualité du traitement, la traçabilité des segments et la conformité aux exigences éthiques."
                   : "Each step is treated as a distinct operation, with explicit validation points to ensure processing quality, traceability of transformations, and compliance with ethical requirements."}
               </p>
 

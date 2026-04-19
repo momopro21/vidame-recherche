@@ -528,7 +528,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 </h1>
 
       {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
-<div className="mx-auto max-w-5xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+<div className="mx-auto max-w-8xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
   {lang === "fr" ? (
     <>
       <p>

@@ -528,78 +528,112 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 </h1>
 
       {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
-      <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-        {lang === "fr"
-          ? "Une chaîne opératoire (pipeline) de traitement des données qualitatives, encadrée à un niveau doctoral et fondée sur une approche humaine assistée par l’IA"
-          : "A qualitative data processing pipeline, overseen at the doctoral level and based on a human-centered, AI-assisted approach"}
+<div className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
+  {lang === "fr" ? (
+    <>
+      <p>
+        Dans le contexte actuel de transformation numérique de la recherche, les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
       </p>
-
-      {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-      <p className="mx-auto mt-10 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
-        {lang === "fr" ? (
-          <>
-            <span className="font-bold">Vidame :</span>{" "}
-            <a
-              href="#pipeline"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              méthode
-              <span className="text-slate-400">↗</span>
-            </a>
-
-            <span className="mx-2 text-slate-400">·</span>
-
-            <a
-              href="#securite"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              sécurité des données
-              <span className="text-slate-400">↗</span>
-            </a>
-
-            <span className="mx-2 text-slate-400">·</span>
-
-            <a
-              href="#apropos"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              chercheuse expérimentée
-              <span className="text-slate-400">↗</span>
-            </a>
-          </>
-        ) : (
-          <>
-            <span className="font-bold">Vidame:</span>{" "}
-            <a
-              href="#pipeline"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              method
-              <span className="text-slate-400">↗</span>
-            </a>
-
-            <span className="mx-2 text-slate-400">·</span>
-
-            <a
-              href="#securite"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              data security
-              <span className="text-slate-400">↗</span>
-            </a>
-
-            <span className="mx-2 text-slate-400">·</span>
-
-            <a
-              href="#apropos"
-              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-            >
-              experienced researcher
-              <span className="text-slate-400">↗</span>
-            </a>
-          </>
-        )}
+      <p className="mt-4">
+        L’accélération est réelle. Les gains sont importants.
       </p>
+      <p className="mt-4">
+        Mais une question demeure :
+        <span className="font-medium text-slate-900">
+          {" "}comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
+        </span>
+      </p>
+      <p className="mt-4">
+        Une chaîne opératoire (pipeline) structurée pour intégrer les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
+      </p>
+    </>
+  ) : (
+    <>
+      <p>
+        In the current context of digital transformation in research, artificial intelligence tools are rapidly reshaping qualitative data processing practices.
+      </p>
+      <p className="mt-4">
+        The acceleration is real. The gains are significant.
+      </p>
+      <p className="mt-4">
+        But one question remains:
+        <span className="font-medium text-slate-900">
+          {" "}how can these tools be integrated without losing control over data, meaning, and the ethical requirements that govern research?
+        </span>
+      </p>
+      <p className="mt-4">
+        A structured pipeline designed to integrate modern tools while ensuring control over data, meaning, and ethical compliance.
+      </p>
+    </>
+  )}
+</div>
+
+     {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
+<p className="mx-auto mt-10 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
+  {lang === "fr" ? (
+    <>
+      <span className="font-bold">Vidame :</span>{" "}
+      <a
+        href="#pipeline"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        méthode
+        <span className="text-slate-400">↗</span>
+      </a>
+
+      <span className="mx-2 text-slate-400">·</span>
+
+      <a
+        href="#securite"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        sécurité des données
+        <span className="text-slate-400">↗</span>
+      </a>
+
+      <span className="mx-2 text-slate-400">·</span>
+
+      <a
+        href="#apropos"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        chercheuse expérimentée
+        <span className="text-slate-400">↗</span>
+      </a>
+    </>
+  ) : (
+    <>
+      <span className="font-bold">Vidame:</span>{" "}
+      <a
+        href="#pipeline"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        methodology
+        <span className="text-slate-400">↗</span>
+      </a>
+
+      <span className="mx-2 text-slate-400">·</span>
+
+      <a
+        href="#securite"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        data security
+        <span className="text-slate-400">↗</span>
+      </a>
+
+      <span className="mx-2 text-slate-400">·</span>
+
+      <a
+        href="#apropos"
+        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
+      >
+        experienced researcher
+        <span className="text-slate-400">↗</span>
+      </a>
+    </>
+  )}
+</p>
     </div>
   </div>
 </section>

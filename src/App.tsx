@@ -537,17 +537,17 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <p className="mt-4">
         L’accélération est réelle. Les gains sont importants.
       </p>
-      <p className="mt-4">
+      <p className="mt-6">
         Mais une question demeure :{" "}
-        <span className="font-medium text-slate-900">
+        <span className="font-semibold text-slate-900">
           comment intégrer ces outils sans perdre la maîtrise des données,
           <br />
           du sens et des exigences éthiques qui encadrent la recherche ?
         </span>
       </p>
       <p className="mt-4">
-        <span className="font-medium text-slate-900">
-          Vidame a développé une chaîne opératoire (pipeline) structurée pour intégrer les outils contemporains
+        <span className="font-medium text-slate-700">
+          Vidame a développé une chaîne opératoire (pipeline)<br /> structurée pour intégrer les outils contemporains
         </span>
         <br />
         tout en assurant la maîtrise des données, du sens et de la conformité éthique.

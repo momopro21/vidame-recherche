@@ -527,7 +527,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   )}
 </h1>
 
-      {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
+     {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mx-auto max-w-5xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
   {lang === "fr" ? (
     <>
@@ -538,13 +538,19 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         L’accélération est réelle. Les gains sont importants.
       </p>
       <p className="mt-4">
-        Mais une question demeure :
+        Mais une question demeure :{" "}
         <span className="font-medium text-slate-900">
-          {" "}comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
+          comment intégrer ces outils sans perdre la maîtrise des données,
+          <br />
+          du sens et des exigences éthiques qui encadrent la recherche ?
         </span>
       </p>
       <p className="mt-4">
-       Vidame a développé une chaîne opératoire (pipeline) structurée pour intégrer les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
+        <span className="font-medium text-slate-900">
+          Vidame a développé une chaîne opératoire (pipeline) structurée pour intégrer les outils contemporains
+        </span>
+        <br />
+        tout en assurant la maîtrise des données, du sens et de la conformité éthique.
       </p>
     </>
   ) : (
@@ -556,13 +562,19 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         The acceleration is real. The gains are significant.
       </p>
       <p className="mt-4">
-        But one question remains:
+        But one question remains:{" "}
         <span className="font-medium text-slate-900">
-          {" "}how can these tools be integrated without losing control over data, meaning, and the ethical requirements that govern research?
+          how can these tools be integrated without losing control over data,
+          <br />
+          meaning, and the ethical requirements that govern research?
         </span>
       </p>
       <p className="mt-4">
-        Vidame has developed a structured pipeline designed to integrate modern tools while ensuring control over data, meaning, and ethical compliance.
+        <span className="font-medium text-slate-900">
+          Vidame has developed a structured pipeline designed to integrate modern tools
+        </span>
+        <br />
+        while ensuring control over data, meaning, and ethical compliance.
       </p>
     </>
   )}

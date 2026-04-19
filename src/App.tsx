@@ -682,8 +682,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
          <div className="mt-24 max-w-5xl">
             <SectionTitle
-              eyebrow={lang === "fr" ? "PIPELINE VIDAME" : "VIDAME PIPELINE"}
-             title={
+              title={
               lang === "fr"
               ? "Du terrain à l'analyse : le pipeline\u00A0Vidame"
               : "From fieldwork to analysis: the Vidame Pipeline"

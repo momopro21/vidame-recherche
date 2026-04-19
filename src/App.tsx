@@ -652,8 +652,12 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
      <section>
       <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
+        {/* ===== VIDAME_REPERE_TITRE_PIPELINE ===== */}
+    <h2 className="mt-12 text-center text-2xl font-semibold text-slate-900 md:text-3xl">
+      {lang === "fr" ? "Pipeline Vidame" : "Vidame Pipeline"}
+    </h2>
              {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
-      <div className="mt-2 mb-8 max-w-7xl">
+      <div className="mt-6 mb-8 max-w-7xl">
       <img
     src={lang === "fr" ? "/flowchart_vidame4.png" : "/flowchart_vidame4_en.png"}
     alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}

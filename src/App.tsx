@@ -558,7 +558,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
        Mais une question demeure.
       </p>
 
-    <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-700 md:mx-auto md:max-w-[520px] md:text-center">
+    <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-600 md:mx-auto md:max-w-[520px] md:text-center">
         Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
     </p>
 

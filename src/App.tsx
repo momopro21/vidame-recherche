@@ -554,16 +554,17 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         L’accélération est réelle. Les gains sont importants.
      </p>
       <p className="mt-6">
-        Mais une question demeure :{" "}
-        <span className="font-semibold text-slate-900">
-          comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
-        </span>
-      </p>
-      <p className="mt-4">
-        <span className="font-normal text-slate-700">
-          C'est pour répondre à cette question, que le pipeline Vidame a été conçue. Un service de soutien à la recheche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
-      </span>
-       </p>
+  Mais une question demeure :{" "}
+  <span className="font-medium text-slate-700">
+    comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
+  </span>
+</p>
+
+<p className="mt-4">
+  <span className="font-[350] text-slate-600">
+    C'est pour répondre à cette question, que le pipeline Vidame a été conçue. Un service de soutien à la recherche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
+  </span>
+</p>
     </>
   ) : (
     <>

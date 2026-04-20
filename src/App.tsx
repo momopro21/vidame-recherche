@@ -506,10 +506,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? (
     <>
       <span className="block">
-        Un service de traitement des données qualitatives
+        Un service de prétraitement des données bruts 
       </span>
       <span className="mt-3 block">
-        dans le respect de la souveraineté des données
+        dédié à l'analyse qualitative, respectueux de la souveraineté des données
       </span>
       <span className="mt-2 block text-slate-700">
         au Canada
@@ -589,7 +589,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#pipeline"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        méthode
+        Méthode
         <span className="text-slate-400">↗</span>
       </a>
 
@@ -599,7 +599,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#securite"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        sécurité des données
+        Sécurité des données
         <span className="text-slate-400">↗</span>
       </a>
 
@@ -609,7 +609,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#apropos"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        chercheuse expérimentée
+        Crédibilité
         <span className="text-slate-400">↗</span>
       </a>
     </>
@@ -620,7 +620,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#pipeline"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        methodology
+        Methodology
         <span className="text-slate-400">↗</span>
       </a>
 
@@ -630,7 +630,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#securite"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        data security
+        Data security
         <span className="text-slate-400">↗</span>
       </a>
 
@@ -640,7 +640,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         href="#apropos"
         className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
       >
-        experienced researcher
+        Experience 
         <span className="text-slate-400">↗</span>
       </a>
     </>

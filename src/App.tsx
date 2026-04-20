@@ -554,11 +554,12 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         L’accélération est réelle. Les gains sont importants.
       </p>
       <p className="mt-6">
-        Mais une question demeure :{" "}
         <span className="font-semibold text-slate-900">
-          comment intégrer ces outils sans perdre la maîtrise des données,
-          <br />
-          du sens et des exigences éthiques qui encadrent la recherche ?
+        Mais une question demeure :
+       </p>
+        <p className="mt-6">
+        <span className="font-semibold text-slate-900">
+          comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
         </span>
       </p>
       <p className="mt-4">

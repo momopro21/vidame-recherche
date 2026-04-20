@@ -554,9 +554,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
       <p>L’accélération est réelle.</p>
       <p>Les gains sont importants.</p>
-      <p>Mais une question demeure.</p>
+      <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600">
+       Mais une question demeure.
+      </p>
 
-     <p className="pt-2 text-[20px] font-medium leading-7 text-slate-700 md:mx-auto md:max-w-[520px] md:text-center">
+    <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-700 md:mx-auto md:max-w-[520px] md:text-center">
         Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
     </p>
 

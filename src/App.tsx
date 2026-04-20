@@ -556,9 +556,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <p className="mt-6">
         Mais une question demeure :{" "}
         <span className="font-semibold text-slate-900">
-          comment intégrer ces outils sans perdre la maîtrise des données,
-          <br /> 
-          du sens et des exigences éthiques qui encadrent la recherche ?
+          comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
         </span>
       </p>
       <p className="mt-4">

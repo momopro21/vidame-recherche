@@ -560,7 +560,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </span>
 </p>
 
-<p className="mt-4 font-[350] text-slate-600 md:mx-auto md:max-w-lg md:text-center">
+<p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-lg md:text-center">
     C'est pour répondre à cette question, que le pipeline Vidame a été conçue. Un service de soutien à la recherche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
  </p>
     </>

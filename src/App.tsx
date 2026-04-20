@@ -531,6 +531,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         <>
           Respectful of Canadian data sovereignty.
           <br className="hidden md:block" />
+          <span className="block h-2 md:hidden"></span>
           Designed to meet government and research ethics requirements for data residency in Canada.
         </>
       )}

@@ -550,15 +550,17 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <p>
         Dans le contexte actuel de transformation numérique de la recherche, les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
       </p>
-      <p className="mt-4">
-        L’accélération est réelle. Les gains sont importants.
-     </p>
-      <p className="mt-6">
-  Mais une question demeure :{" "}
-  <span className="font-medium text-slate-700">
-    comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
-  </span>
-</p>
+     <div className="mt-6 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center space-y-2">
+
+      <p>L’accélération est réelle.</p>
+      <p>Les gains sont importants.</p>
+      <p>Mais une question demeure.</p>
+
+      <p className="pt-2 font-medium text-slate-700">
+        Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
+    </p>
+
+</div>
 
 <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-lg md:text-center">
     C'est pour répondre à cette question, que le pipeline Vidame a été conçue. Un service de soutien à la recherche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.

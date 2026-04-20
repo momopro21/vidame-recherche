@@ -502,30 +502,42 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
     <div className="space-y-6">
       {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-   <h1 className="text-left text-4xl font-semibold text-slate-900 md:mx-auto md:max-w-5xl md:text-center md:text-5xl">
+ <h1 className="text-left text-3xl font-semibold text-slate-900 md:mx-auto md:max-w-5xl md:text-center md:text-5xl">
   {lang === "fr" ? (
     <>
       <span className="block">
-        Un service de prétraitement des données bruts 
+        Un service de prétraitement de données brutes
       </span>
-      <span className="mt-3 block">
-        dédié à l'analyse qualitative, 
-      </span>
-      <span className="mt-3 block text-slate-700">
-        respectueux de la souveraineté des données au Canada
+      <span className="mt-2 block">
+        dédié à l’analyse qualitative
       </span>
     </>
   ) : (
     <>
       <span className="block">
-        A qualitative data processing service
+        A qualitative data preprocessing service
       </span>
-      <span className="mt-3 block">
-        aligned with Canadian data sovereignty
+      <span className="mt-2 block">
+        designed for research
       </span>
     </>
   )}
 </h1>
+      <h2 className="mt-4 text-left text-[18px] font-medium leading-7 text-slate-700 md:mx-auto md:max-w-3xl md:text-center md:text-[20px] md:leading-8">
+      {lang === "fr" ? (
+        <>
+          Respectueux de la souveraineté des données au Canada.
+          <br className="hidden md:block" />
+          Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
+        </>
+      ) : (
+        <>
+          Respectful of Canadian data sovereignty.
+          <br className="hidden md:block" />
+          Designed to meet government and research ethics requirements for data residency in Canada.
+        </>
+      )}
+    </h2>
 
      {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mx-auto max-w-5xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">

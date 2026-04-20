@@ -502,7 +502,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
     <div className="space-y-6">
       {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-      <h1 className="mx-auto max-w-7xl text-4xl font-semibold text-slate-900 md:text-5xl">
+      <h1 className="mx-auto max-w-5xl text-4xl font-semibold text-slate-900 md:text-5xl">
   {lang === "fr" ? (
     <>
       <span className="block">

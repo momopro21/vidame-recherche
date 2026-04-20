@@ -502,17 +502,17 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
     <div className="space-y-6">
       {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
-      <h1 className="mx-auto max-w-5xl text-4xl font-semibold text-slate-900 md:text-5xl">
+      <h1 className="mx-auto max-w-4xl text-4xl font-semibold text-slate-900 md:text-5xl">
   {lang === "fr" ? (
     <>
       <span className="block">
         Un service de prétraitement des données bruts 
       </span>
       <span className="mt-3 block">
-        dédié à l'analyse qualitative, respectueux de la souveraineté des données
+        dédié à l'analyse qualitative, respectueux de la souveraineté 
       </span>
-      <span className="mt-2 block text-slate-700">
-        au Canada
+      <span className="mt-3 block text-slate-700">
+        des données au Canada
       </span>
     </>
   ) : (

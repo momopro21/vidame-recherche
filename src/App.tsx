@@ -502,7 +502,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ===== VIDAME_REPERE_CONTENU_HERO_ACCUEIL ===== */}
     <div className="px-6 space-y-6 md:px-0">
       {/* ===== VIDAME_REPERE_TITRE_PRINCIPAL_ACCUEIL ===== */}
- <h1 className="text-left text-3xl font-semibold text-slate-900 md:mx-auto md:max-w-5xl md:text-center md:text-5xl">
+<h1 className="text-left text-[32px] font-light leading-[1.05] text-slate-900 md:mx-auto md:max-w-5xl md:text-center md:text-[56px]">
   {lang === "fr" ? (
     <>
       <span className="block">
@@ -696,8 +696,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             <SectionTitle
               title={
               lang === "fr"
-              ? "Du terrain à l'analyse : le pipeline\u00A0Vidame"
-              : "From fieldwork to analysis: the Vidame Pipeline"
+              ? "Du terrain à l'analyse"
+              : "From fieldwork to analysis"
             }
             />
           </div>

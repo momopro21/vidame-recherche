@@ -544,7 +544,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
      {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mt-6 h-[2px] w-24 bg-slate-500 md:mx-auto"></div>
-<div className="mt-8 text-left text-[20px] leading-7 md:mx-auto md:max-w-xl md:text-center md:text-[20px]">
+<div className="mt-8 text-left text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">
   {lang === "fr" ? (
     <>
       <p>

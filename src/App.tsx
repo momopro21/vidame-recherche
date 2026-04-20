@@ -524,10 +524,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? (
     <>
       <span className="block md:inline">
-        Respectueux de la souveraineté des données au Canada.
+        Respectueux de la souveraineté des données au Canada. 
       </span>
-      <span className="mt-5 block md:mt-2 md:inline">
-        Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
+      <span className="mt-5 block md:mt-0 md:inline">
+         {" "}Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
       </span>
     </>
   ) : (

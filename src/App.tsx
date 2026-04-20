@@ -506,10 +506,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? (
     <>
       <span className="block">
-        Un service de prétraitement de données brutes
-      </span>
-      <span className="mt-2 block">
-        dédié à l’analyse qualitative
+        Un service de prétraitement de données brutes dédié à l’analyse qualitative
       </span>
     </>
   ) : (
@@ -523,7 +520,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </>
   )}
 </h1>
-      <h2 className="mt-4 text-left text-[18px] font-medium leading-7 text-slate-700 md:mx-auto md:max-w-3xl md:text-center md:text-[20px] md:leading-8">
+      <h2 className="mt-4 text-left text-[18px] font-large leading-7 text-slate-700 md:mx-auto md:max-w-3xl md:text-center md:text-[20px] md:leading-8">
       {lang === "fr" ? (
         <>
           Respectueux de la souveraineté des données au Canada.

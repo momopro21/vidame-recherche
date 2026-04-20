@@ -562,7 +562,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       <p className="mt-4">
         <span className="font-medium text-slate-700">
           C'est pour répondre à cette question, que la chaine opératoire Vidame a été conçue. Un service de soutien à la recheche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
-      </p>
+      </span>
+       </p>
     </>
   ) : (
     <>

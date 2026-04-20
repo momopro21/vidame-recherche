@@ -520,7 +520,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </>
   )}
 </h1>
-      <h2 className="mt-5 text-left text-[24px] font-medium leading-7 text-slate-500 md:mx-auto md:max-w-3xl md:text-center md:text-2xl md:leading-8">
+      <h2 className="mt-5 text-left text-[24px] font-medium leading-7 text-slate-500 md:mx-auto md:max-w-2xl md:text-center md:text-2xl md:leading-8">
   {lang === "fr" ? (
     <>
       <span className="block md:inline">

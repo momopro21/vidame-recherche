@@ -548,7 +548,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? (
     <>
       <p>
-        Dans le contexte actuel de transformation numérique de la recherche, les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
+        Dans le contexte actuel de transformation numérique de la recherche,{" "} les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
       </p>
       <p className="mt-4">
         L’accélération est réelle. Les gains sont importants.

@@ -509,10 +509,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         Un service de prétraitement des données bruts 
       </span>
       <span className="mt-3 block">
-        dédié à l'analyse qualitative, respectueux de la souveraineté 
+        dédié à l'analyse qualitative, 
       </span>
       <span className="mt-3 block text-slate-700">
-        des données au Canada
+        respectueux de la souveraineté des données au Canada
       </span>
     </>
   ) : (

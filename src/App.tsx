@@ -561,7 +561,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </p>
       <p className="mt-4">
         <span className="font-medium text-slate-700">
-          C'est pour répondre à cette question, que Vidame a développé une chaîne opératoire (pipeline)<br /> structurée pour intégrer les outils contemporains
+          C'est pour répondre à cette question, que la chaine opératoire Vidame a été conçue. Un pipeline qui intègre les outils contemporains
         </span>
         <br />
         tout en assurant la maîtrise des données, du sens et de la conformité éthique.

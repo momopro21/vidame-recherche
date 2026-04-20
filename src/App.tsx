@@ -520,22 +520,27 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </>
   )}
 </h1>
-      <h2 className="mt-4 text-left text-[20px] font-medium leading-7 text-slate-700 md:mx-auto md:max-w-3xl md:text-center md:text-[24px] md:leading-8">
-      {lang === "fr" ? (
-        <>
-          Respectueux de la souveraineté des données au Canada.
-         <br className="block md:hidden" />
-         Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
-        </>
-      ) : (
-        <>
-          Respectful of Canadian data sovereignty.
-          <br className="hidden md:block" />
-          <span className="block h-5 md:hidden"></span>
-          Designed to meet government and research ethics requirements for data residency in Canada.
-        </>
-      )}
-    </h2>
+      <h2 className="mt-5 text-left text-xl font-medium leading-7 text-slate-700 md:mx-auto md:max-w-3xl md:text-center md:text-2xl md:leading-8">
+  {lang === "fr" ? (
+    <>
+      <span className="block md:inline">
+        Respectueux de la souveraineté des données au Canada.
+      </span>
+      <span className="mt-5 block md:mt-0 md:inline">
+        Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
+      </span>
+    </>
+  ) : (
+    <>
+      <span className="block md:inline">
+        Respectful of Canadian data sovereignty.
+      </span>
+      <span className="mt-5 block md:mt-0 md:inline">
+        Designed to meet government and research ethics requirements for data residency in Canada.
+      </span>
+    </>
+  )}
+</h2>
 
      {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mx-auto max-w-5xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">

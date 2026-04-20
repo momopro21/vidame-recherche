@@ -557,7 +557,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         Mais une question demeure :{" "}
         <span className="font-semibold text-slate-900">
           comment intégrer ces outils sans perdre la maîtrise des données,
-          <br />
+          <br /> 
           du sens et des exigences éthiques qui encadrent la recherche ?
         </span>
       </p>

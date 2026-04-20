@@ -524,9 +524,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       {lang === "fr" ? (
         <>
           Respectueux de la souveraineté des données au Canada.
-          <br className="block md:hidden" />
-          <span className="block md:inline mt-1 md:mt-0">
-          Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
+         <br className="block md:hidden" />
+         Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
         </>
       ) : (
         <>

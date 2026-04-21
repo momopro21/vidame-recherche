@@ -674,7 +674,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
              {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
       <div className="mt-6 mb-8 max-w-7xl">
       <img
-    src={lang === "fr" ? "/flowchart_vidame21.png" : "/flowchart_vidame4_en.png"}
+    src={lang === "fr" ? "/flowchart_vidame21.png" : "/flowchart_vidame21_en.png"}
     alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
     className="block h-auto w-full"
   />

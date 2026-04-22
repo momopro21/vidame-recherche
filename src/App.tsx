@@ -794,47 +794,16 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </h3>
 
     <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
-      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse.
+      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
     </p>
 
-    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
-      À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
-    </p>
-
-    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
+      <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
       Le résultat est un corpus segmenté en unités de sens, structuré dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation avec des logiciels comme NVivo, MAXQDA, Delve et autres, dans le respect des exigences de confidentialité et de sécurité des données attendues dans les recherches encadrées par des comités d’éthique.
     </p>
   </div>
 
 </section>
-          {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
-         <div className="mt-24 max-w-5xl">
-            <SectionTitle
-              title={
-              lang === "fr"
-              ? "Du terrain à l'analyse"
-              : "From fieldwork to analysis"
-            }
-            />
-          </div>
-
-        
-                   {/* ===== VIDAME_REPERE_DETAIL_ETAPE_ACTIVE ===== */}
-          <div className="mt-8 hidden rounded-2xl border border-slate-300 bg-slate-100 p-6 md:block md:p-7">
-            <div className="mb-2 text-sm uppercase tracking-[0.2em] text-slate-500 md:text-base">
-              Étape {activeStep + 1}
-            </div>
-
-            <div className="text-xl font-semibold text-slate-900 md:text-2xl">
-              {steps[activeStep].title}
-            </div>
-
-            <p className="mt-3 text-lg leading-8 text-slate-700 md:text-[1.15rem] md:leading-9">
-              {steps[activeStep].detail}
-            </p>
-          </div>
-        </div>
-      </section>
+       
      {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
 <section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
   <div className="max-w-3xl space-y-8">

@@ -817,7 +817,6 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
             }
             />
           </div>
-
          
           {/* ===== VIDAME_REPERE_TEXTE_SECTION_PIPELINE ===== */}
           <div className="mt-4 space-y-8">

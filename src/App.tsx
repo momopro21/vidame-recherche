@@ -717,9 +717,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         <div className="flex w-28 flex-col items-center">
           <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain" />
           <div className="mt-3 flex flex-col items-center">
-            <div className="h-8 w-px bg-slate-400"></div>
-            <div className="text-slate-500 text-base leading-none">↓</div>
+        <div className="h-8 w-px bg-slate-400"></div>
+      <div className="text-slate-500 text-base leading-none">↓</div>
     </div>
+      </div>
         </div>
         <div>
           <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>

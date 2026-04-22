@@ -742,7 +742,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 4 */}
     <div className="flex items-start gap-4"> 
-      <img src="/icons/icon-validation1.png" alt="Validation humaine" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-validation.png" alt="Validation humain" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
@@ -776,7 +776,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 7 */}
     <div className="flex items-start gap-4 md:col-span-2 md:max-w-[48%]">
-      <img src="/icons/icon-validation2.png" alt="Validation humaine unités de sens" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-validationFin.png" alt="Validation humaine unités de sens" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(unités de sens)</div>

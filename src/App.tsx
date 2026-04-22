@@ -721,7 +721,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
   </div>
 
-<div className="mt-3">
+<div className="mt-5">
     <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
     <p className="mt-4 text-[14px] leading-relaxed text-slate-600">
       Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.

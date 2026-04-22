@@ -807,17 +807,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
 </section>
-          {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
-         <div className="mt-24 max-w-5xl">
-            <SectionTitle
-              title={
-              lang === "fr"
-              ? "Du terrain à l'analyse"
-              : "From fieldwork to analysis"
-            }
-            />
-          </div>
-
+        
           {/* ===== VIDAME_REPERE_TEXTE_SECTION_PIPELINE ===== */}
           <div className="mt-4 space-y-8">
             <p className="max-w-5xl text-[1.15rem] leading-9 text-slate-700 md:text-[1.2rem] md:leading-9">

@@ -694,22 +694,14 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 </Button>
 </div>
 {/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
+{/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
 <section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
 
   {/* ===== INTRO ===== */}
   <div className="mx-auto max-w-3xl text-center">
     <p className="text-[18px] leading-relaxed text-slate-700">
       La chaîne opératoire Vidame repose sur une transformation progressive du corpus, à partir des données brutes produites sur le terrain jusqu’à un corpus structuré, prêt pour l’analyse.
-    </p>
-
-    <p className="mt-4 text-[18px] leading-relaxed text-slate-700">
-      À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
-    </p>
-
-    <p className="mt-4 text-[18px] leading-relaxed text-slate-700">
-      Cette structuration s’appuie sur l’identification d’unités de sens à différents niveaux de granularité.
-    </p>
-  </div>
+    </p
 
   {/* ===== BLOCS ===== */}
   <div className="mt-16 grid gap-x-12 gap-y-12 md:grid-cols-2">

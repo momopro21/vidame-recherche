@@ -1027,8 +1027,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     )}
   </div>
 </section>
-    </div>
-  );
+   );
 }
 
          // ===== VIDAME_REPERE_PAGE_APROPOS =====

@@ -718,7 +718,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   <div className="flex w-28 flex-col items-center">
     <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain" />
 
-    <div className="mt-2 text-slate-500 text-2xl leading-none">↓</div>
+   <div className="mt-1 text-slate-400 text-2xl leading-none">↓</div>
   </div>
 
   <div>

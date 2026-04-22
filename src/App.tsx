@@ -715,11 +715,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       {/* 1 */}
       <div className="flex items-start gap-4">
         <div className="flex w-14 flex-col items-center">
-          <img src="/icons/icon-donnees.png" className="h-14 w-14 object-contain" />
-          <div className="mt-2 flex flex-col items-center">
-            <div className="h-5 w-px bg-slate-300"></div>
-            <div className="text-slate-400 text-sm">↓</div>
-          </div>
+          <img src="/icons/icon-donnees.png" className="h-18 w-18 object-contain" />
+          <div className="mt-3 flex flex-col items-center">
+            <div className="h-8 w-px bg-slate-500"></div>
+            <div className="text-slate-500 text-base leading-none">↓</div>
+    </div>
         </div>
         <div>
           <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>

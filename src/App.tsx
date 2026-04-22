@@ -693,22 +693,23 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? "Voir l'offre de services" : "View services"}
 </Button>
 </div>
-{/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
+
 {/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
 <section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
 
-  {/* ===== INTRO ===== */}
+  {/* ===== TITRE ===== */}
   <div className="mx-auto max-w-3xl text-center">
-    <p className="text-[18px] leading-relaxed text-slate-700">
-      La chaîne opératoire Vidame repose sur une transformation progressive du corpus, à partir des données brutes produites sur le terrain jusqu’à un corpus structuré, prêt pour l’analyse.
-    </p
+    <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[34px]">
+      La chaîne opératoire Vidame repose sur une transformation progressive du corpus.
+    </h2>
+  </div>
 
   {/* ===== BLOCS ===== */}
   <div className="mt-16 grid gap-x-12 gap-y-12 md:grid-cols-2">
 
     {/* 1 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-donnees.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-donnees.png" alt="Données terrain" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -719,7 +720,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 2 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-transcription.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-transcription.png" alt="Transcription automatisée" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Transcription automatisée</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -730,7 +731,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 3 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-anonymisation.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-anonymisation.png" alt="Anonymisation des données" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Anonymisation des données</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -741,11 +742,9 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 4 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-validation-sens.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-validation.png" alt="Validation humaine" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">
-          Validation humaine
-        </h3>
+        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
           Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
@@ -755,7 +754,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 5 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-segmentation.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-segmentation.png" alt="Segmentation du corpus" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Segmentation du corpus</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -766,7 +765,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 6 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-lexique.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-lexique.png" alt="Lexique et collocations" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Lexique et collocations</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -777,18 +776,15 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 7 */}
     <div className="flex items-start gap-4 md:col-span-2 md:max-w-[48%]">
-      <img src="/icons/icon-validation-sens.png" className="mt-1 h-12 w-12 shrink-0" />
+      <img src="/icons/icon-validation-sens.png" alt="Validation humaine unités de sens" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">
-          Validation humaine
-        </h3>
+        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(unités de sens)</div>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
           Une validation finale assure la cohérence des unités de sens produites dans le corpus.
         </p>
       </div>
     </div>
-
   </div>
 
   {/* ===== CONCLUSION ===== */}
@@ -796,13 +792,21 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     <h3 className="text-lg font-semibold text-slate-900">
       Corpus prêt pour l’analyse
     </h3>
-    <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
-      Le corpus est structuré, validé et prêt à être analysé sans intervention interprétative en amont.
+
+    <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
+      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse.
+    </p>
+
+    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
+      À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
+    </p>
+
+    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
+      Le résultat est un corpus segmenté en unités de sens, structuré dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation avec des logiciels comme NVivo, MAXQDA, Delve et autres, dans le respect des exigences de confidentialité et de sécurité des données attendues dans les recherches encadrées par des comités d’éthique.
     </p>
   </div>
 
 </section>
-
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
          <div className="mt-24 max-w-5xl">
             <SectionTitle

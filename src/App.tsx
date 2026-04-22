@@ -740,7 +740,17 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </div>
     </div>
 
-  
+      {/* 4 */}
+    <div className="flex items-start gap-4"> 
+      <img src="/icons/icon-validation.png" alt="Validation humain" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="min-w-0">
+        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
+        <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
+        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+          Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
+        </p>
+      </div>
+    </div>
 
     {/* 5 */}
     <div className="flex items-start gap-4">

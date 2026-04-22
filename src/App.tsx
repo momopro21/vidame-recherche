@@ -741,7 +741,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </div>
 
     {/* 4 */}
-    <div className="flex items-start gap-4">
+    <div className="flex items-start gap-4"> 
       <img src="/icons/icon-validation.png" alt="Validation humaine" className="mt-1 h-12 w-12 shrink-0" />
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>

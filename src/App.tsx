@@ -774,7 +774,18 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </div>
     </div>
 
-   
+   {/* 7 */}
+    <div className="flex items-start gap-4 md:col-span-2 md:max-w-[48%]">
+      <img src="/icons/icon-validationFin.png" alt="Validation humaine unités de sens" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="min-w-0">
+        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
+        <div className="text-[13px] text-slate-500">(unités de sens)</div>
+        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+          Une validation finale assure la cohérence des unités de sens produites dans le corpus.
+        </p>
+      </div>
+    </div>
+  </div>
 
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">

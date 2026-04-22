@@ -704,108 +704,138 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     </h2>
   </div>
 
-  {/* ===== BLOCS ===== */}
-  <div className="mt-16 grid gap-x-12 gap-y-14 md:grid-cols-2">
+  {/* ===== DEUX COLONNES ===== */}
+  <div className="mt-16 grid gap-12 md:grid-cols-2">
 
-    {/* 1 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-donnees.png" className="h-12 w-12 object-contain" />
-        <div className="mt-2 text-sm text-slate-300">↓</div>
+    {/* ========================= */}
+    {/* COLONNE GAUCHE (1 → 4) */}
+    {/* ========================= */}
+    <div className="space-y-12">
+
+      {/* 1 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-donnees.png" className="h-14 w-14 object-contain" />
+          <div className="mt-2 flex flex-col items-center">
+            <div className="h-5 w-px bg-slate-300"></div>
+            <div className="text-slate-400 text-sm">↓</div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
+          </p>
+        </div>
       </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
-        </p>
+
+      {/* 2 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-transcription.png" className="h-14 w-14 object-contain" />
+          <div className="mt-2 flex flex-col items-center">
+            <div className="h-5 w-px bg-slate-300"></div>
+            <div className="text-slate-400 text-sm">↓</div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Transcription automatisée</h3>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            La transcription transforme le corpus audio ou vidéo en texte exploitable. Certaines formes orales peuvent être mal reconnues, ce qui nécessite une validation humaine.
+          </p>
+        </div>
       </div>
+
+      {/* 3 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-anonymisation.png" className="h-14 w-14 object-contain" />
+          <div className="mt-2 flex flex-col items-center">
+            <div className="h-5 w-px bg-slate-300"></div>
+            <div className="text-slate-400 text-sm">↓</div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Anonymisation des données</h3>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus.
+          </p>
+        </div>
+      </div>
+
+      {/* 4 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-validation.png" className="h-14 w-14 object-contain" />
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
+          <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
+          </p>
+        </div>
+      </div>
+
     </div>
 
-    {/* 2 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-transcription.png" className="h-12 w-12 object-contain" />
-        <div className="mt-2 text-sm text-slate-300">↓</div>
-      </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Transcription automatisée</h3>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          La transcription transforme le corpus audio ou vidéo en texte exploitable. Certaines formes orales peuvent être mal reconnues, ce qui nécessite une validation humaine.
-        </p>
-      </div>
-    </div>
+    {/* ========================= */}
+    {/* COLONNE DROITE (5 → 7) */}
+    {/* ========================= */}
+    <div className="space-y-12 md:pt-8">
 
-    {/* 3 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-anonymisation.png" className="h-12 w-12 object-contain" />
-        <div className="mt-2 text-sm text-slate-300">↓</div>
+      {/* 5 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-segmentation.png" className="h-14 w-14 object-contain" />
+          <div className="mt-2 flex flex-col items-center">
+            <div className="h-5 w-px bg-slate-300"></div>
+            <div className="text-slate-400 text-sm">↓</div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Segmentation du corpus</h3>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            La segmentation organise le texte en unités de sens cohérentes sans introduire d’interprétation.
+          </p>
+        </div>
       </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Anonymisation des données</h3>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus.
-        </p>
-      </div>
-    </div>
 
-    {/* 4 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-validation.png" className="h-12 w-12 object-contain" />
+      {/* 6 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-lexique.png" className="h-14 w-14 object-contain" />
+          <div className="mt-2 flex flex-col items-center">
+            <div className="h-5 w-px bg-slate-300"></div>
+            <div className="text-slate-400 text-sm">↓</div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Lexique et collocations</h3>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique.
+          </p>
+        </div>
       </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
-        <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
-        </p>
-      </div>
-    </div>
 
-    {/* 5 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-segmentation.png" className="h-12 w-12 object-contain" />
-        <div className="mt-2 text-sm text-slate-300">↓</div>
+      {/* 7 */}
+      <div className="flex items-start gap-4">
+        <div className="flex w-14 flex-col items-center">
+          <img src="/icons/icon-validationFin.png" className="h-14 w-14 object-contain" />
+        </div>
+        <div>
+          <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
+          <div className="text-[13px] text-slate-500">(unités de sens)</div>
+          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+            Une validation finale assure la cohérence des unités de sens produites dans le corpus.
+          </p>
+        </div>
       </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Segmentation du corpus</h3>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          La segmentation organise le texte en unités de sens cohérentes sans introduire d’interprétation.
-        </p>
-      </div>
-    </div>
 
-    {/* 6 */}
-    <div className="flex items-start gap-4">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-lexique.png" className="h-12 w-12 object-contain" />
-        <div className="mt-2 text-sm text-slate-300">↓</div>
-      </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Lexique et collocations</h3>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique.
-        </p>
-      </div>
-    </div>
-
-    {/* 7 */}
-    <div className="flex items-start gap-4 md:col-span-2 md:max-w-[48%]">
-      <div className="flex w-12 flex-col items-center">
-        <img src="/icons/icon-validationFin.png" className="h-12 w-12 object-contain" />
-      </div>
-      <div className="min-w-0">
-        <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
-        <div className="text-[13px] text-slate-500">(unités de sens)</div>
-        <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-          Une validation finale assure la cohérence des unités de sens produites dans le corpus.
-        </p>
-      </div>
     </div>
 
   </div>
+
 
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">

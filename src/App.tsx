@@ -712,24 +712,26 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ========================= */}
     <div className="space-y-12">
 
-      {/* 1 */}
-      <div className="flex items-start gap-4">
-        <div className="flex w-28 flex-col items-center">
-          <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain" />
-         <div className="mt-2 flex flex-col items-center leading-none">
-        <div className="h-6 w-px bg-slate-400"></div>
+     {/* 1 */}
+<div className="flex items-start gap-4">
+
+  <div className="flex w-28 flex-col items-center">
+    <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain" />
+
+    <div className="mt-2 flex flex-col items-center leading-none">
+      <div className="h-6 w-px bg-slate-400"></div>
       <div className="text-slate-500 text-sm -mt-[2px]">↓</div>
     </div>
-    </div>
-      </div>
-        </div>
-        <div>
-          <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
-          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-            Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
-          </p>
-        </div>
-      </div>
+  </div>
+
+  <div>
+    <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
+    <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
+      Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
+    </p>
+  </div>
+
+</div>
 
       {/* 2 */}
       <div className="flex items-start gap-4">

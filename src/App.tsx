@@ -705,18 +705,14 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
   {/* ===== BLOCS ===== */}
-  <div className="mt-16 grid gap-x-12 gap-y-12 md:grid-cols-2">
+  <div className="mt-16 grid gap-x-12 gap-y-14 md:grid-cols-2">
 
     {/* 1 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-donnees.png" alt="Données terrain" className="mt-1 h-12 w-12 shrink-0" />
-      <div className="flex flex-col items-center">
-  <img src="/icons/icon-donnees.png" className="h-12 w-12" />
-
-  <div className="mt-2 text-slate-300 text-lg leading-none">
-    ↓
-  </div>
-</div>
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-donnees.png" className="h-12 w-12 object-contain" />
+        <div className="mt-2 text-sm text-slate-300">↓</div>
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -727,7 +723,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 2 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-transcription.png" alt="Transcription automatisée" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-transcription.png" className="h-12 w-12 object-contain" />
+        <div className="mt-2 text-sm text-slate-300">↓</div>
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Transcription automatisée</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -738,7 +737,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 3 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-anonymisation.png" alt="Anonymisation des données" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-anonymisation.png" className="h-12 w-12 object-contain" />
+        <div className="mt-2 text-sm text-slate-300">↓</div>
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Anonymisation des données</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -747,9 +749,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </div>
     </div>
 
-      {/* 4 */}
-    <div className="flex items-start gap-4"> 
-      <img src="/icons/icon-validation.png" alt="Validation humain" className="mt-1 h-12 w-12 shrink-0" />
+    {/* 4 */}
+    <div className="flex items-start gap-4">
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-validation.png" className="h-12 w-12 object-contain" />
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
@@ -761,7 +765,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 5 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-segmentation.png" alt="Segmentation du corpus" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-segmentation.png" className="h-12 w-12 object-contain" />
+        <div className="mt-2 text-sm text-slate-300">↓</div>
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Segmentation du corpus</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -772,7 +779,10 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
     {/* 6 */}
     <div className="flex items-start gap-4">
-      <img src="/icons/icon-lexique.png" alt="Lexique et collocations" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-lexique.png" className="h-12 w-12 object-contain" />
+        <div className="mt-2 text-sm text-slate-300">↓</div>
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Lexique et collocations</h3>
         <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
@@ -781,9 +791,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       </div>
     </div>
 
-   {/* 7 */}
+    {/* 7 */}
     <div className="flex items-start gap-4 md:col-span-2 md:max-w-[48%]">
-      <img src="/icons/icon-validationFin.png" alt="Validation humaine unités de sens" className="mt-1 h-12 w-12 shrink-0" />
+      <div className="flex w-12 flex-col items-center">
+        <img src="/icons/icon-validationFin.png" className="h-12 w-12 object-contain" />
+      </div>
       <div className="min-w-0">
         <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
         <div className="text-[13px] text-slate-500">(unités de sens)</div>
@@ -792,6 +804,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
         </p>
       </div>
     </div>
+
   </div>
 
   {/* ===== CONCLUSION ===== */}

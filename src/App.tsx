@@ -693,6 +693,121 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {lang === "fr" ? "Voir l'offre de services" : "View services"}
 </Button>
 </div>
+{/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
+<section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
+
+  {/* ===== INTRO ===== */}
+  <div className="mx-auto max-w-3xl text-center">
+    <p className="text-[18px] leading-relaxed text-slate-700">
+      La chaîne opératoire Vidame repose sur une transformation progressive du corpus, à partir des données brutes produites sur le terrain jusqu’à un corpus structuré, prêt pour l’analyse.
+    </p>
+
+    <p className="mt-4 text-[18px] leading-relaxed text-slate-700">
+      À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
+    </p>
+
+    <p className="mt-4 text-[18px] leading-relaxed text-slate-700">
+      Cette structuration s’appuie sur l’identification d’unités de sens à différents niveaux de granularité.
+    </p>
+  </div>
+
+  {/* ===== BLOCS ===== */}
+  <div className="mt-16 grid gap-12 md:grid-cols-2">
+
+    {/* 1. Données terrain */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-donnees.png" alt="Données terrain" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Données terrain</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
+        </p>
+      </div>
+    </div>
+
+    {/* 2. Transcription */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-transcription.png" alt="Transcription automatisée" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Transcription automatisée</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          La transcription transforme le corpus audio ou vidéo en texte exploitable. Une révision humaine est prévue pour corriger les ambiguïtés liées à l’oral.
+        </p>
+      </div>
+    </div>
+
+    {/* 3. Anonymisation */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-anonymisation.png" alt="Anonymisation des données" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Anonymisation des données</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          Cette étape vise à protéger les informations sensibles. Les transformations appliquées respectent la structure du corpus tout en assurant sa confidentialité.
+        </p>
+      </div>
+    </div>
+
+    {/* 4. Validation humaine (fidélité + conformité) */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-validation.png" alt="Validation humaine" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">
+          Validation humaine <span className="text-slate-500 text-[13px]">(fidélité et conformité)</span>
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation, afin d’assurer la qualité scientifique du corpus.
+        </p>
+      </div>
+    </div>
+
+    {/* 5. Segmentation */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-segmentation.png" alt="Segmentation du corpus" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Segmentation du corpus</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          La segmentation organise le texte en unités de sens cohérentes, facilitant l’analyse sans introduire d’interprétation.
+        </p>
+      </div>
+    </div>
+
+    {/* 6. Lexique */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-lexique.png" alt="Lexique et collocations" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Lexique et collocations</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          Cette étape met en évidence des régularités linguistiques à un niveau plus fin, à partir de cooccurrences observables dans le corpus, sans interprétation analytique.
+        </p>
+      </div>
+    </div>
+
+    {/* 7. Validation humaine (unités de sens) */}
+    <div className="flex items-start gap-4">
+      <img src="/icons/icon-validation.png" alt="Validation humaine unités de sens" className="h-11 w-11" />
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">
+          Validation humaine <span className="text-slate-500 text-[13px]">(unités de sens)</span>
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          Une validation finale assure la cohérence des unités de sens produites, qu’elles soient segmentaires ou lexicales.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  {/* ===== CONCLUSION ===== */}
+  <div className="mx-auto mt-16 max-w-2xl text-center">
+    <h3 className="text-lg font-semibold text-slate-900">
+      Corpus prêt pour l’analyse
+    </h3>
+    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+      Le corpus est structuré, validé et prêt à être analysé par le chercheur, sans intervention interprétative en amont.
+    </p>
+  </div>
+
+</section>
 
           {/* ===== VIDAME_REPERE_TITRE_SECTION_PIPELINE ===== */}
          <div className="mt-24 max-w-5xl">

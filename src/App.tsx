@@ -712,16 +712,13 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
     {/* ========================= */}
     <div className="space-y-12">
 
-     {/* 1 */}
+   {/* 1 */}
 <div className="flex items-start gap-4">
 
   <div className="flex w-28 flex-col items-center">
     <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain" />
 
-    <div className="mt-1 flex flex-col items-center leading-none">
-      <div className="h-5 w-[2px] bg-slate-400"></div>
-      <div className="text-slate-500 text-sm -mt-[3px]">↓</div>
-    </div>
+    <div className="mt-2 text-slate-500 text-2xl leading-none">↓</div>
   </div>
 
   <div>
@@ -732,7 +729,6 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
 </div>
-
       {/* 2 */}
       <div className="flex items-start gap-4">
         <div className="flex w-14 flex-col items-center">

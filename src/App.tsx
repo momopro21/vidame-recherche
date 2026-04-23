@@ -749,38 +749,25 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 </div>
 
-      {/* 3 */}
-      <div className="flex items-start gap-4">
-        <div className="flex w-14 flex-col items-center">
-          <img src="/icons/icon-anonymisation.png" className="h-14 w-14 object-contain" />
-          <div className="mt-2 flex flex-col items-center">
-            <div className="h-5 w-px bg-slate-300"></div>
-            <div className="text-slate-400 text-sm">↓</div>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-[16px] font-semibold text-slate-900">Anonymisation des données</h3>
-          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-            Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus.
-          </p>
-        </div>
-      </div>
+   {/* 3 */}
+<div className="flex items-start gap-4">
 
-      {/* 4 */}
-      <div className="flex items-start gap-4">
-        <div className="flex w-14 flex-col items-center">
-          <img src="/icons/icon-validation.png" className="h-14 w-14 object-contain" />
-        </div>
-        <div>
-          <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
-          <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
-          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-            Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
-          </p>
-        </div>
-      </div>
+  <div className="flex w-28 flex-col items-center">
+    <img src="/icons/icon-anonymisation.png" className="h-[92px] w-[92px] object-contain" />
 
-    </div>
+    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
+  </div>
+
+  <div className="mt-6">
+    <h3 className="text-[16px] font-semibold text-slate-900">
+      Anonymisation des données
+    </h3>
+    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus.
+    </p>
+  </div>
+
+</div>
 
     {/* ========================= */}
     {/* COLONNE DROITE (5 → 7) */}

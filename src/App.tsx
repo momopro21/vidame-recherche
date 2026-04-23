@@ -851,9 +851,8 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 </div>
 
-  {/* 7 */}
+ {/* 7 */}
 <div className="flex items-start gap-4">
-
   <div className="flex w-28 flex-col items-center">
     <img
       src="/icons/icon-validationFin.png"
@@ -871,14 +870,31 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       Une validation finale assure la cohérence des unités de sens produites dans le corpus.
     </p>
   </div>
+</div>
 
+{/* 8 */}
+<div className="flex items-start gap-4">
+  <div className="flex w-28 flex-col items-center">
+    <img
+      src="/icons/icon-corpus.png"
+      className="h-[92px] w-[92px] object-contain"
+      alt="Corpus prêt pour l’analyse"
+    />
+  </div>
+
+  <div className="mt-6">
+    <h3 className="text-[16px] font-semibold text-slate-900">
+      Corpus prêt pour l’analyse
+    </h3>
+    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif.
+    </p>
+  </div>
 </div>
 
     </div>
 
   </div>
-
-
 
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">

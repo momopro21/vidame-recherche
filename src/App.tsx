@@ -829,23 +829,33 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 </div>
 
-      {/* 7 */}
-      <div className="flex items-start gap-4">
-        <div className="flex w-14 flex-col items-center">
-          <img src="/icons/icon-validationFin.png" className="h-14 w-14 object-contain" />
-        </div>
-        <div>
-          <h3 className="text-[16px] font-semibold text-slate-900">Validation humaine</h3>
-          <div className="text-[13px] text-slate-500">(unités de sens)</div>
-          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-            Une validation finale assure la cohérence des unités de sens produites dans le corpus.
-          </p>
-        </div>
-      </div>
+  {/* 7 */}
+<div className="flex items-start gap-4">
+
+  <div className="flex w-28 flex-col items-center">
+    <img
+      src="/icons/icon-validationFin.png"
+      className="h-[92px] w-[92px] object-contain"
+      alt="Validation humaine (unités de sens)"
+    />
+  </div>
+
+  <div className="mt-6">
+    <h3 className="text-[16px] font-semibold text-slate-900">
+      Validation humaine
+    </h3>
+    <div className="text-[13px] text-slate-500">(unités de sens)</div>
+    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      Une validation finale assure la cohérence des unités de sens produites dans le corpus.
+    </p>
+  </div>
+
+</div>
 
     </div>
 
   </div>
+
 
 
   {/* ===== CONCLUSION ===== */}

@@ -899,15 +899,11 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">
     <h3 className="text-lg font-semibold text-slate-900">
-      Corpus prêt pour l’analyse
+      Du terrain à l'analyse
     </h3>
 
     <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
-      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse.
-    </p>
-
-    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
-      À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
+      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
     </p>
 
     <p className="mt-4 text-[15px] leading-relaxed text-slate-500">

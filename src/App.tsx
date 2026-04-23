@@ -806,21 +806,28 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 
       {/* 6 */}
-      <div className="flex items-start gap-4">
-        <div className="flex w-14 flex-col items-center">
-          <img src="/icons/icon-lexique.png" className="h-14 w-14 object-contain" />
-          <div className="mt-2 flex flex-col items-center">
-            <div className="h-5 w-px bg-slate-300"></div>
-            <div className="text-slate-400 text-sm">↓</div>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-[16px] font-semibold text-slate-900">Lexique et collocations</h3>
-          <p className="mt-2 text-[14px] leading-relaxed text-slate-600">
-            Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique.
-          </p>
-        </div>
-      </div>
+<div className="flex items-start gap-4">
+
+  <div className="flex w-28 flex-col items-center">
+    <img
+      src="/icons/icon-lexique.png"
+      className="h-[92px] w-[92px] object-contain"
+      alt="Lexique et collocations"
+    />
+
+    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
+  </div>
+
+  <div className="mt-6">
+    <h3 className="text-[16px] font-semibold text-slate-900">
+      Lexique et collocations
+    </h3>
+    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique.
+    </p>
+  </div>
+
+</div>
 
       {/* 7 */}
       <div className="flex items-start gap-4">

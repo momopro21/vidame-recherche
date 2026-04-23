@@ -716,7 +716,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 <div className="flex items-start gap-4">
 
   <div className="flex w-28 flex-col items-center">
-    <img src="/icons/icon-transcription.png" className="h-[92px] w-[92px] object-contain scale-125" />
+    <img src="/icons/icon-donnees.png" className="h-[92px] w-[92px] object-contain scale-125" />
 
    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
   </div>

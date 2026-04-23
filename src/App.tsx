@@ -768,7 +768,6 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
 </div>
-
     {/* ========================= */}
     {/* COLONNE DROITE (5 → 7) */}
     {/* ========================= */}

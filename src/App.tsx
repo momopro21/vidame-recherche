@@ -749,7 +749,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 </div>
 
- {/* 3 */}
+{/* 3 */}
 <div className="flex items-start gap-4">
 
   <div className="flex w-28 flex-col items-center">
@@ -759,9 +759,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
       alt="Anonymisation des données"
     />
 
-    <div className="-mt-2 text-slate-300 text-2xl leading-none">
-      ↓
-    </div>
+    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
   </div>
 
   <div className="mt-6">
@@ -774,6 +772,9 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
 </div>
+
+</div>
+
     {/* ========================= */}
     {/* COLONNE DROITE (5 → 7) */}
     {/* ========================= */}

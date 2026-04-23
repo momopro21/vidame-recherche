@@ -749,13 +749,19 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
 
 </div>
 
-   {/* 3 */}
+ {/* 3 */}
 <div className="flex items-start gap-4">
 
   <div className="flex w-28 flex-col items-center">
-    <img src="/icons/icon-anonymisation.png" className="h-[92px] w-[92px] object-contain" />
+    <img
+      src="/icons/icon-anonymisation.png"
+      className="h-[92px] w-[92px] object-contain"
+      alt="Anonymisation des données"
+    />
 
-    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
+    <div className="-mt-2 text-slate-300 text-2xl leading-none">
+      ↓
+    </div>
   </div>
 
   <div className="mt-6">

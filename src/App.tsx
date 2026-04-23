@@ -772,9 +772,7 @@ function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | 
   </div>
 
 </div>
-
-</div>
-{/* 4 */}
+              {/* 4 */}
 <div className="flex items-start gap-4">
 
   <div className="flex w-28 flex-col items-center">

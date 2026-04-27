@@ -532,7 +532,7 @@ return (
     </>
   ) : (
     <>
-    <p className="md:mx-auto md:max-w-xl">
+    <p className="md:mx-auto md:max-w-2xl">
   In the current context of digital transformation
   <br className="hidden md:block" />
   in research, artificial intelligence tools are rapidly reshaping qualitative

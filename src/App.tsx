@@ -454,7 +454,7 @@ return (
   <div className="mx-auto max-w-6xl space-y-8 text-center">
     {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
     <div className="flex justify-center">
-       <Badge className="rounded-full bg-slate-200 px-6 py-1.5 text-base text-slate-900 hover:bg-slate-200">
+      <Badge className="rounded-full bg-slate-200 px-6 py-2 text-base font-normal tracking-normal text-slate-900 hover:bg-slate-200 md:text-lg">
         {lang === "fr"
           ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
           : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}

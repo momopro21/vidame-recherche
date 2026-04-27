@@ -1146,7 +1146,7 @@ function APropos({
             {lang === "fr" ? "À propos" : "About"}
           </div>
 
-          <h1 className="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+          <h1 className="text-4xl font-light leading-tight text-slate-900 md:text-5xl">
             {lang === "fr"
               ? "Un regard humain aguerri, au cœur des données complexes"
               : "An experienced human perspective at the core of complex data"}

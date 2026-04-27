@@ -595,9 +595,11 @@ return (
 
   {/* ===== TITRE ===== */}
   <div className="mx-auto max-w-3xl text-center">
-    <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[34px]">
-      La chaîne opératoire Vidame repose sur une transformation progressive du corpus.
-    </h2>
+   <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[34px]">
+  {lang === "fr"
+    ? "La chaîne opératoire Vidame repose sur une transformation progressive du corpus."
+    : "The Vidame operational chain is based on a progressive transformation of the corpus."}
+  </h2>
   </div>
 
   {/* ===== DEUX COLONNES ===== */}
@@ -795,8 +797,8 @@ return (
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">
     <h3 className="text-lg font-semibold text-slate-900">
-      Du terrain à l'analyse
-    </h3>
+  {lang === "fr" ? "Du terrain à l’analyse" : "From fieldwork to analysis"}
+  </h3>
 
     <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
       À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.

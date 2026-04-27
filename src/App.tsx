@@ -620,10 +620,14 @@ return (
   </div>
 
 <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">Données terrain</h3>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire.
-    </p>
+   <h3 className="text-[16px] font-semibold text-slate-900">
+  {lang === "fr" ? "Données terrain" : "Field data"}
+</h3>
+   <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
+  {lang === "fr"
+    ? "À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée."
+    : "Starting from raw data produced in the field, the Vidame operational chain leads to a structured corpus ready for analysis. At each step, the process aims to organize the content without altering its meaning, combining automation with targeted human validation."}
+</p>
   </div>
 
 </div>
@@ -637,12 +641,14 @@ return (
   </div>
 
   <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
-      Transcription automatisée
-    </h3>
+   <h3 className="text-[16px] font-semibold text-slate-900">
+  {lang === "fr" ? "Transcription automatisée" : "Automated transcription"}
+</h3>
     <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      La transcription transforme le corpus audio ou vidéo en texte exploitable. Certaines formes orales peuvent être mal reconnues, ce qui nécessite une validation humaine.
-    </p>
+  {lang === "fr"
+    ? "La transcription transforme le corpus audio ou vidéo en texte exploitable. Certaines formes orales peuvent être mal reconnues, ce qui nécessite une validation humaine."
+    : "Transcription converts audio or video material into usable text. Some oral forms may be imperfectly recognized, which requires human validation."}
+</p>
   </div>
 
 </div>
@@ -663,36 +669,48 @@ return (
   <div className="mt-6">
     <h3 className="text-[16px] font-semibold text-slate-900">
       Anonymisation des données
-    </h3>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus.
-    </p>
+    <h3 className="text-[16px] font-semibold text-slate-900">
+  {lang === "fr" ? "Anonymisation des données" : "Data anonymization"}
+</h3>
+<p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+  {lang === "fr"
+    ? "Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus."
+    : "This step protects sensitive information while preserving the structure and readability of the corpus."}
+</p>
   </div>
 
 </div>
-              {/* 4 */}
+            {/* 4 */}
 <div className="flex items-start gap-4">
-
   <div className="flex w-28 flex-col items-center">
     <img
       src="/icons/icon-validation.png"
       className="h-[92px] w-[92px] object-contain"
-      alt="Validation humaine (fidélité et conformité)"
+      alt={
+        lang === "fr"
+          ? "Validation humaine (fidélité et conformité)"
+          : "Human validation (fidelity and compliance)"
+      }
     />
   </div>
 
   <div className="mt-6">
     <h3 className="text-[16px] font-semibold text-slate-900">
-      Validation humaine
+      {lang === "fr" ? "Validation humaine" : "Human validation"}
     </h3>
-    <div className="text-[13px] text-slate-500">(fidélité et conformité)</div>
+
+    <div className="text-[13px] text-slate-500">
+      {lang === "fr"
+        ? "(fidélité et conformité)"
+        : "(fidelity and compliance)"}
+    </div>
+
     <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus.
+      {lang === "fr"
+        ? "Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus."
+        : "Human validation verifies the fidelity of the text and the compliance of anonymization to ensure corpus quality."}
     </p>
   </div>
-
-</div>
-
 </div>
 
     {/* ========================= */}

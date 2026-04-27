@@ -281,6 +281,22 @@ return (
 
         {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
         <div className="flex items-center gap-3">
+          {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
+          <div className="hidden items-center gap-2 md:flex">
+            <button
+              onClick={() => setLang("fr")}
+              className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
+            >
+              FR
+            </button>
+            <span className="text-slate-500">|</span>
+            <button
+              onClick={() => setLang("en")}
+              className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
+            >
+              EN
+            </button>
+          </div>
         {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
 <div className="hidden items-center gap-2 md:flex">
   <button
@@ -298,6 +314,16 @@ return (
   </button>
 </div>
 
+          {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
+          <button
+            className="rounded-xl border border-slate-200 p-2 md:hidden"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Ouvrir le menu"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
+      </div>
 {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
 <button
   className="rounded-xl border border-slate-200 p-2 md:hidden"
@@ -309,6 +335,7 @@ return (
 </div>
 </div>
 
+      {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
 {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
 <AnimatePresence>
   {open && (
@@ -623,7 +650,7 @@ return (
   {/* ===== TITRE ===== */}
   <div className="mx-auto max-w-2xl text-left md:text-center">
    <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[30px]">
-     
+
   {lang === "fr"
     ? "La chaîne opératoire Vidame repose sur une transformation progressive du corpus."
     : "The Vidame operational chain is based on a progressive transformation of the corpus."}
@@ -916,7 +943,7 @@ return (
 
     {charteOpen && (
       <>
-     
+
         {/* ===== VIDAME_REPERE_CONTENU_CHARTE ===== */}
         <div className="space-y-6">
           {/* ===== VIDAME_REPERE_CHARTE_PRINCIPE_DIRECTEUR ===== */}
@@ -1112,77 +1139,196 @@ function APropos({
     id="apropos"
     className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24"
   >
-    {/* ===== VIDAME_REPERE_TEXTE_APROPOS ===== */}
-<div className="space-y-6 font-serif">
+      {/* ===== VIDAME_REPERE_BLOC_INTRO_APROPOS ===== */}
+      <div className="grid items-start gap-8 md:grid-cols-[0.5fr_1fr]">
+        {/* ===== VIDAME_REPERE_PHOTO_APROPOS ===== */}
+        <div className="h-full w-full overflow-hidden rounded-[2rem]">
+          <img
+            src="/monique.jpg"
+            alt="Monique Provost"
+            className="h-full w-full object-cover object-[center_20%]"
+          />
+        </div>
+
+        {/* ===== VIDAME_REPERE_TEXTE_APROPOS ===== */}
+        <div className="space-y-6">
+          <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            {lang === "fr" ? "À propos" : "About"}
+          </div>
+
+          <h1 className="text-3xl font-semibold leading-tight text-slate-900 md:text-4xl">
+            {lang === "fr"
+              ? "Un regard humain aguerri, au cœur des données complexes"
+              : "An experienced human perspective at the core of complex data"}
+          </h1>
+
+          {lang === "fr" ? (
+            <>
+              <p className="text-lg leading-8 text-slate-700">
+                Monique Provost est titulaire d’un Ph. D. en ethnologie et patrimoine de l’Université
+                Laval (2016) et d’une maîtrise en ethnomusicologie de l’Université de Montréal (2010).
+                Ses travaux s’inscrivaient alors dans l’étude des phénomènes de mutation et des
+                processus d’adaptation locale des patrimoines culturels immatériels en contexte de
+                mondialisation.
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                Elle a contribué à plusieurs projets de recherche en ethnologie, notamment au sein de
+                la Chaire de recherche du Canada en patrimoine ethnologique (Université Laval), sous la
+                direction de Laurier Turgeon, ainsi qu’au Laboratoire d’enquête ethnologique et
+                multimédia (LEEM), dans le cadre des projets IREPI (Inventaire des ressources
+                ethnologiques du patrimoine immatériel) et IPIR (Inventaire du patrimoine immatériel
+                religieux du Québec). Elle a également participé à des activités de recherche et
+                d’édition scientifique, notamment comme assistante à la rédaction pour la revue{" "}
+                <em>Ethnologies</em> et comme responsable documentaire au Laboratoire de recherche sur
+                les musiques du monde (LRMM).
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                Après plusieurs années de pratique professionnelle en traduction et en soutien à la
+                recherche scientifique auprès de différentes équipes universitaires canadiennes, elle a
+                développé le pipeline Vidame, conçu comme un cadre de traitement rigoureux des données
+                qualitatives. Ses travaux actuels s’inscrivent dans un champ de recherche émergent,
+                celui du patrimoine cognitif à l’ère de l’intelligence artificielle.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-lg leading-8 text-slate-700">
+                Monique Provost holds a Ph.D. in Ethnology and Heritage from Université Laval (2016)
+                and a Master’s degree in Ethnomusicology from Université de Montréal (2010). Her early
+                work focused on processes of transformation and local adaptation of intangible cultural
+                heritage in contexts of globalization.
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                She contributed to several research projects in ethnology, notably within the Canada
+                Research Chair in Ethnological Heritage (Université Laval), under the supervision of
+                Laurier Turgeon, as well as at the Laboratoire d’enquête ethnologique et multimédia
+                (LEEM), through projects such as IREPI (Inventory of Ethnological Resources of
+                Intangible Heritage) and IPIR (Inventory of Religious Intangible Heritage of Quebec).
+                She also took part in research and academic publishing activities, including serving as
+                editorial assistant for the journal <em>Ethnologies</em> and as documentation manager at
+                the Laboratoire de recherche sur les musiques du monde (LRMM).
+              </p>
+
+              <p className="leading-8 text-slate-600">
+                After several years of professional practice in translation and research support with
+                various Canadian university teams, she developed the Vidame pipeline, designed as a
+                rigorous framework for processing qualitative data. Her current work is situated within
+                an emerging research field: cognitive heritage in the era of artificial intelligence.
+              </p>
+            </>
+          )}
+        </div>
+      </div>
+
+            {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}
+<div className="grid gap-8 md:grid-cols-2">
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="leading-8 text-slate-600">
+        {lang === "fr"
+          ? "Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le développement de connaissances ancrées localement, au Québec et au Canada."
+          : "To contribute to research by mobilizing my resources and expertise in support of knowledge development grounded in local realities in Quebec and across Canada."}
+      </p>
+    </CardContent>
+  </Card>
+
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Vision" : "Vision"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="leading-8 text-slate-600">
+        {lang === "fr"
+          ? "Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui demeure profondément humaine : transparente, traçable, adaptée aux contraintes du terrain et respectueuse de la valeur scientifique des données."
+          : "A practice of qualitative research assisted by artificial intelligence that remains fundamentally human: transparent, traceable, responsive to field constraints, and respectful of the scientific value of data."}
+      </p>
+    </CardContent>
+  </Card>
+</div>
+
+{/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
+<div className="grid gap-8 md:grid-cols-3">
+  {(lang === "fr"
+    ? [
+        {
+          title: "Intégrité",
+          text: "Préserver la parole des participants en maintenant l’intégrité du sens tout au long de la chaîne opératoire Vidame.",
+        },
+        {
+          title: "Rigueur",
+          text: "Documenter les choix et encadrer les étapes sensibles par des pratiques méthodologiques explicites et traçables.",
+        },
+        {
+          title: "Responsabilité",
+          text: "Assumer des choix techniques conformes aux exigences éthiques, juridiques et scientifiques des contextes d’intervention, et veiller à la souveraineté des données scientifiques canadiennes.",
+        },
+      ]
+    : [
+        {
+          title: "Integrity",
+          text: "Preserve participants’ words by maintaining the integrity of meaning throughout the Vidame processing pipeline.",
+        },
+        {
+          title: "Rigour",
+          text: "Document decisions and frame sensitive stages through explicit, traceable methodological practices.",
+        },
+        {
+          title: "Responsibility",
+          text: "Make technical choices that align with ethical, legal, and scientific requirements in each context of intervention, while safeguarding the sovereignty of Canadian research data.",
+        },
+      ]
+  ).map((item) => (
+    <Card key={item.title} className="rounded-[1.5rem] border-slate-200">
+      <CardContent className="p-6">
+        <h3 className="text-xl font-semibold">{item.title}</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-600">{item.text}</p>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
+              {/* ===== VIDAME_REPERE_CITATION_ET_COORDONNEES ===== */}
+<div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
+
+  {/* ===== VIDAME_REPERE_CITATION_APROPOS ===== */}
+  <Card className="rounded-[2rem] border-slate-200 bg-slate-50">
+    <CardContent className="p-8">
+      <Quote className="h-8 w-8 text-slate-400" />
+      <p className="mt-5 text-xl leading-9 text-slate-800">
+        {lang === "fr"
+          ? "Vidame s’adresse aux équipes de recherche souhaitant intégrer des outils contemporains tout en maintenant la maîtrise de leurs données, de leurs textes et de leurs décisions."
+          : "Vidame is designed for research teams seeking to integrate contemporary tools while maintaining control over their data, their texts, and their decisions."}
+      </p>
+    </CardContent>
+  </Card>
+
+{/* ===== VIDAME_REPERE_BLOC_COORDONNEES_APROPOS ===== */}
+<div className="space-y-4 rounded-[2rem] border border-slate-200 p-8">
   <div className="text-sm uppercase tracking-[0.2em] text-slate-500">
-    {lang === "fr" ? "À propos" : "About"}
+    {lang === "fr" ? "Coordonnées" : "Contact"}
   </div>
 
-  <h1 className="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+  <p className="text-sm text-slate-600">
     {lang === "fr"
-      ? "Un regard humain aguerri, au cœur des données complexes"
-      : "An experienced human perspective at the core of complex data"}
-  </h1>
+      ? "Pour toute question ou pour discuter de votre projet :"
+      : "For any question or to discuss your project:"}
+  </p>
 
-  {lang === "fr" ? (
-    <>
-      <p className="text-[20px] leading-9 text-slate-700">
-        Monique Provost est titulaire d’un Ph. D. en ethnologie et patrimoine de l’Université
-        Laval (2016) et d’une maîtrise en ethnomusicologie de l’Université de Montréal (2010).
-        Ses travaux s’inscrivaient alors dans l’étude des phénomènes de mutation et des
-        processus d’adaptation locale des patrimoines culturels immatériels en contexte de
-        mondialisation.
-      </p>
-
-      <p className="text-[20px] leading-9 text-slate-700">
-        Elle a contribué à plusieurs projets de recherche en ethnologie, notamment au sein de
-        la Chaire de recherche du Canada en patrimoine ethnologique (Université Laval), sous la
-        direction de Laurier Turgeon, ainsi qu’au Laboratoire d’enquête ethnologique et
-        multimédia (LEEM), dans le cadre des projets IREPI (Inventaire des ressources
-        ethnologiques du patrimoine immatériel) et IPIR (Inventaire du patrimoine immatériel
-        religieux du Québec). Elle a également participé à des activités de recherche et
-        d’édition scientifique, notamment comme assistante à la rédaction pour la revue{" "}
-        <em>Ethnologies</em> et comme responsable documentaire au Laboratoire de recherche sur
-        les musiques du monde (LRMM).
-      </p>
-
-      <p className="text-[20px] leading-9 text-slate-700">
-        Après plusieurs années de pratique professionnelle en traduction et en soutien à la
-        recherche scientifique auprès de différentes équipes universitaires canadiennes, elle a
-        développé le pipeline Vidame, conçu comme un cadre de traitement rigoureux des données
-        qualitatives. Ses travaux actuels s’inscrivent dans un champ de recherche émergent,
-        celui du patrimoine cognitif à l’ère de l’intelligence artificielle.
-      </p>
-    </>
-  ) : (
-    <>
-      <p className="text-[20px] leading-9 text-slate-700">
-        Monique Provost holds a Ph.D. in Ethnology and Heritage from Université Laval (2016)
-        and a Master’s degree in Ethnomusicology from Université de Montréal (2010). Her early
-        work focused on processes of transformation and local adaptation of intangible cultural
-        heritage in contexts of globalization.
-      </p>
-
-      <p className="text-[20px] leading-9 text-slate-700">
-        She contributed to several research projects in ethnology, notably within the Canada
-        Research Chair in Ethnological Heritage (Université Laval), under the supervision of
-        Laurier Turgeon, as well as at the Laboratoire d’enquête ethnologique et multimédia
-        (LEEM), through projects such as IREPI (Inventory of Ethnological Resources of
-        Intangible Heritage) and IPIR (Inventory of Religious Intangible Heritage of Quebec).
-        She also took part in research and academic publishing activities, including serving as
-        editorial assistant for the journal <em>Ethnologies</em> and as documentation manager at
-        the Laboratoire de recherche sur les musiques du monde (LRMM).
-      </p>
-
-      <p className="text-[20px] leading-9 text-slate-700">
-        After several years of professional practice in translation and research support with
-        various Canadian university teams, she developed the Vidame pipeline, designed as a
-        rigorous framework for processing qualitative data. Her current work is situated within
-        an emerging research field: cognitive heritage in the era of artificial intelligence.
-      </p>
-    </>
-  )}
-</div>
+  <div className="space-y-2 text-slate-700">
+    <p>Monique Provost</p>
+    <p>{lang === "fr" ? "Montréal, Québec" : "Montreal, Quebec"}</p>
+    <p>
+      <a href="mailto:info@monique-provost.com" className="underline underline-offset-2">
+        info@monique-provost.com
+      </a>
+    </p>
+  </div>
 
   {/* ===== VIDAME_REPERE_CTA_APROPOS ===== */}
   <Button className="mt-4 rounded-full" onClick={() => setPage("soumission")}>

@@ -570,7 +570,7 @@ return (
              {/* ===== VIDAME_REPERE_BLOC_PNG_PIPELINE ===== */}
       <div className="mt-6 mb-8 max-w-7xl">
       <img
-    src={lang === "fr" ? "/flowchart_vidame21.png" : "/flowchart_vidame21_eng"}
+    src={lang === "fr" ? "/flowchart_vidame21_fr" : "/flowchart_vidame21_en"}
     alt={lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
     className="block h-auto w-full"
   />

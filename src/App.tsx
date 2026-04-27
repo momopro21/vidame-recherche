@@ -454,7 +454,7 @@ return (
   <div className="mx-auto max-w-6xl space-y-8 text-center">
     {/* ===== VIDAME_REPERE_BADGE_HERO_ACCUEIL ===== */}
     <div className="flex justify-center">
-      <Badge className="rounded-full bg-slate-200 px-6 py-1.5 text-slate-900 hover:bg-slate-200">
+       <Badge className="rounded-full bg-slate-200 px-6 py-1.5 text-base text-slate-900 hover:bg-slate-200">
         {lang === "fr"
           ? "Données sensibles · Conformité éthique · Cadre légal canadien, incluant la Loi 25"
           : "Sensitive data · Ethical compliance · Canadian legal framework, including Law 25"}
@@ -517,7 +517,7 @@ return (
         <p>L’accélération est réelle.</p>
         <p>Les gains sont importants.</p>
 
-        <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600">
+        <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-900">
           Mais une question demeure.
         </p>
 

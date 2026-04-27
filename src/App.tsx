@@ -576,25 +576,26 @@ return (
     className="block h-auto w-full"
   />
 </div>
-     {/* ===== VIDAME_REPERE_CTA_APRES_PIPELINE ===== */}
+    {/* ===== VIDAME_REPERE_CTA_APRES_PIPELINE ===== */}
 <div className="mt-16 mb-12 flex flex-wrap gap-3 md:ml-[26rem]">
   <Button
+    variant="ghost"
     size="lg"
-    className="rounded-full bg-slate-700 text-white hover:bg-slate-800"
+    className="rounded-full bg-black px-8 py-6 text-white hover:bg-slate-900 hover:text-white"
     onClick={() => setPage("soumission")}
   >
     {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
   </Button>
 
   <Button
+    variant="ghost"
     size="lg"
-    className="rounded-full border border-slate-300 bg-slate-200 text-slate-900 hover:bg-slate-300"
+    className="rounded-full border border-slate-300 bg-slate-200 px-8 py-6 text-slate-900 hover:bg-slate-300"
     onClick={() => setPage("services")}
   >
     {lang === "fr" ? "Voir l'offre de services" : "View services"}
   </Button>
 </div>
-
 {/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
 <section className="mx-auto mt-20 max-w-6xl px-2 md:px-8">
 

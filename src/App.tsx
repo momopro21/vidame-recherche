@@ -595,7 +595,7 @@ return (
 </div>
 
 {/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}
-<section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
+<section className="mx-auto mt-20 max-w-6xl px-2 md:px-8">
 
   {/* ===== TITRE ===== */}
   <div className="mx-auto max-w-2xl text-left md:text-center">
@@ -615,7 +615,7 @@ return (
    {/* ========================= */}
 <div className="space-y-12">
   {/* 1 */}
-  <div className="flex items-start gap-2 md:gap-4">
+  <div className="flex items-start gap-4">
     <div className="flex w-20 flex-col items-center md:w-28">
       <img
         src="/icons/icon-donnees.png"

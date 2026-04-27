@@ -482,14 +482,14 @@ return (
     </>
   )}
 </h1>
-    <h2 className="mt-5 text-left text-[22px] font-[400] leading-7 text-slate-500 md:mx-auto md:max-w-xl md:text-center md:text-[26px] md:leading-8">
+   <h2 className="mt-5 text-left text-[22px] font-[400] leading-7 text-slate-500 md:mx-auto md:max-w-xl md:text-center md:text-[26px] md:leading-8">
   {lang === "fr" ? (
     <>
       <span className="block md:inline">
-        Respectueux de la souveraineté des données au Canada. 
+        Respectueux de la souveraineté des données au Canada.
       </span>
       <span className="mt-5 block md:mt-0 md:inline">
-         {" "}Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
+        {" "}Conçu pour répondre aux exigences gouvernementales et aux comités d’éthique en matière de résidence des données.
       </span>
     </>
   ) : (
@@ -498,12 +498,11 @@ return (
         Respectful of Canadian data sovereignty.
       </span>
       <span className="mt-5 block md:mt-0 md:inline">
-        Designed to meet government and research ethics requirements for data residency in Canada.
+        {" "}Designed to meet government and research ethics requirements for data residency in Canada.
       </span>
     </>
   )}
 </h2>
-
   {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mt-6 h-[2px] w-24 bg-slate-500 md:mx-auto"></div>
 

@@ -325,7 +325,7 @@ return (
                     setPage(item.id);
                     setOpen(false);
                   }}
-                  className="rounded-xl px-3 py-3 text-left text-sm text-slate-900 hover:bg-slate-100"
+                className="rounded-xl px-4 py-4 text-left text-[17px] font-medium text-slate-900 hover:bg-slate-100"
                 >
                   {lang === "fr" ? item.labelFr : item.labelEn}
                 </button>

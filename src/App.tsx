@@ -346,10 +346,11 @@ return (
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
           >
-         {/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
+{/* ===== VIDAME_REPERE_ROUTAGE_PAGES ===== */}
 {page === "accueil" && <Accueil setPage={setPage} lang={lang} />}
 {page === "apropos" && <APropos setPage={setPage} lang={lang} />}
 {page === "services" && <ServicesPage setPage={setPage} lang={lang} />}
+{page === "soumission" && <Soumission lang={lang} />}
 {page === "blog" && <Blog lang={lang} />}
 </motion.div>
 </AnimatePresence>

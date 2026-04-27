@@ -1184,7 +1184,7 @@ function APropos({
     : [
         {
           title: "Integrity",
-          text: "Preserve participants’ words by maintaining the integrity of meaning throughout the Vidame operational pipeline.",
+          text: "Preserve participants’ words by maintaining the integrity of meaning throughout the Vidame processing pipeline.",
         },
         {
           title: "Rigour",
@@ -1553,7 +1553,7 @@ const pipelineSteps = [
             <h2 className="text-2xl font-semibold text-slate-900">
             {lang === "fr"
             ? "Chaîne opératoire Vidame"
-            : "Vidame operational pipeline"}
+            : "Vidame pipeline"}
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-slate-500">
               {lang === "fr"

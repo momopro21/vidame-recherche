@@ -812,7 +812,7 @@ return (
         </div>
       </section>
      {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
-<section id="charte" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
+<section id="securite" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
   <div className="max-w-3xl space-y-8">
     {/* ===== VIDAME_REPERE_SURTITRE_CHARTE ===== */}
     <div className="text-sm font-medium uppercase tracking-[0.2em] text-slate-900">

@@ -742,7 +742,7 @@ return (
   </div>
 
   {/* 6 */}
-  <div className="flex items-start gap-4">
+  <div className="mt-4 flex items-start gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-lexique.png"

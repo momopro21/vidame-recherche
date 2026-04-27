@@ -477,7 +477,7 @@ return (
         A qualitative data preprocessing service
       </span>
       <span className="mt-2 block">
-        designed for research
+        designed for qualitative research
       </span>
     </>
   )}

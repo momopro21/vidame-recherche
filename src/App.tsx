@@ -619,7 +619,7 @@ return (
     <div className="flex w-20 flex-col items-center md:w-28">
       <img
         src="/icons/icon-donnees.png"
-        className="h-[92px] w-[92px] object-contain scale-125"
+        className="h-[108px] w-[108px] object-contain scale-125 md:h-[92px] md:w-[92px]"
         alt={lang === "fr" ? "Données terrain" : "Field data"}
       />
       <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>

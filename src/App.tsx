@@ -616,7 +616,7 @@ return (
 <div className="space-y-12">
   {/* 1 */}
   <div className="flex items-start gap-4">
-    <div className="flex w-20 flex-col items-center md:w-28">
+    <div className="flex w-28 flex-col items-center md:w-28">
       <img
         src="/icons/icon-donnees.png"
         className="h-[120px] w-[120px] object-contain scale-125 md:h-[92px] md:w-[92px]"

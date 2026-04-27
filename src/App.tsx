@@ -234,6 +234,7 @@ useEffect(() => {
 
 return (
   <div className="min-h-screen bg-white text-slate-800">
+    
     {/* ===== VIDAME_REPERE_HEADER ===== */}
     <header className="sticky top-0 z-40 border-b border-slate-400 bg-slate-300">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
@@ -280,35 +281,35 @@ return (
 
         {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
         <div className="flex items-center gap-3">
-          {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
-          <div className="hidden items-center gap-2 md:flex">
-            <button
-              onClick={() => setLang("fr")}
-              className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
-            >
-              FR
-            </button>
-            <span className="text-slate-500">|</span>
-            <button
-              onClick={() => setLang("en")}
-              className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
-            >
-              EN
-            </button>
-          </div>
+        {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
+<div className="hidden items-center gap-2 md:flex">
+  <button
+    onClick={() => setLang("fr")}
+    className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
+  >
+    FR
+  </button>
+  <span className="text-slate-500">|</span>
+  <button
+    onClick={() => setLang("en")}
+    className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
+  >
+    EN
+  </button>
+</div>
 
-          {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
-          <button
-            className="rounded-xl border border-slate-200 p-2 md:hidden"
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Ouvrir le menu"
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
-      </div>
+{/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
+<button
+  className="rounded-xl border border-slate-200 p-2 md:hidden"
+  onClick={() => setOpen((v) => !v)}
+  aria-label="Ouvrir le menu"
+>
+  {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+</button>
+</div>
+</div>
 
-      {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+{/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
 <AnimatePresence>
   {open && (
     <motion.div
@@ -318,6 +319,26 @@ return (
       className="border-t border-slate-200 bg-white md:hidden"
     >
       <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
+        <div className="mb-2 flex items-center gap-3 border-b border-slate-200 px-4 pb-3">
+          <button
+            onClick={() => setLang("fr")}
+            className={`text-[16px] ${
+              lang === "fr" ? "font-semibold underline" : "opacity-60"
+            }`}
+          >
+            FR
+          </button>
+          <span className="text-slate-500">|</span>
+          <button
+            onClick={() => setLang("en")}
+            className={`text-[16px] ${
+              lang === "en" ? "font-semibold underline" : "opacity-60"
+            }`}
+          >
+            EN
+          </button>
+        </div>
+
         {pages.map((item) => (
           <button
             key={item.id}

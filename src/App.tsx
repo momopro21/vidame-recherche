@@ -532,10 +532,12 @@ return (
     </>
   ) : (
     <>
-     <p className="md:mx-auto md:max-w-xl">
-  In the current context of digital transformation in research,
+    <p className="md:mx-auto md:max-w-xl">
+  In the current context of digital transformation
   <br className="hidden md:block" />
-  artificial intelligence tools are rapidly reshaping qualitative data processing practices.
+  in research, artificial intelligence tools are rapidly reshaping qualitative
+  <br className="hidden md:block" />
+  data processing practices.
 </p>
 
       <div className="mt-6 space-y-2 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">

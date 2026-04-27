@@ -1062,15 +1062,15 @@ return (
           </p>
         </div>
 
-        {/* ===== VIDAME_REPERE_CTA_CHARTE ===== */}
-        <div className="pt-6">
-          <button
-            onClick={() => setPage("soumission")}
-            className="text-[17px] font-medium text-slate-900 underline underline-offset-4 hover:text-slate-700 md:text-[18px]"
-          >
-            {lang === "fr" ? "Discuter de votre projet" : "Discuss your project"}
-          </button>
-        </div>
+       {/* ===== VIDAME_REPERE_CTA_CHARTE ===== */}
+<div className="pt-6">
+  <button
+    onClick={() => setPage("soumission")}
+    className="inline-flex rounded-full bg-black px-6 py-3 text-[16px] font-medium text-white transition hover:bg-slate-900 md:text-[17px]"
+  >
+    {lang === "fr" ? "Discuter de votre projet" : "Discuss your project"}
+  </button>
+</div>
       </>
     )}
   </div>
@@ -1078,7 +1078,6 @@ return (
     </div>
   );
 }
-
 // ===== VIDAME_REPERE_PAGE_APROPOS =====
 function APropos({
   setPage,

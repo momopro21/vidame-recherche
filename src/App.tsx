@@ -504,7 +504,7 @@ return (
   )}
 </h2>
 
-    {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
+  {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mt-6 h-[2px] w-24 bg-slate-500 md:mx-auto"></div>
 
 <div className="mt-8 text-left text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">
@@ -556,9 +556,14 @@ return (
     </>
   )}
 </div>
-     {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-     <section id="pipeline">
-      <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
+
+</div>
+</div>
+</section>
+
+{/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
+<section id="pipeline">
+  <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
         {/* ===== VIDAME_REPERE_TITRE_PIPELINE ===== */}
     <h2 className="mt-12 text-center text-2xl font-semibold text-slate-900 md:text-3xl">
       {lang === "fr" ? "Pipeline Vidame" : "Vidame Pipeline"}

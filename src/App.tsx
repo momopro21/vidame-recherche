@@ -443,48 +443,10 @@ return (
   );
 }
 
-// ===== VIDAME_REPERE_PAGE_ACCUEIL =====
-function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | "en";
+  // ===== VIDAME_REPERE_PAGE_ACCUEIL =====
+  function Accueil({setPage,lang,}: {setPage: (page: string) => void;lang: "fr" | "en";
 }) {
    const [charteOpen, setCharteOpen] = useState(false);
-  // ===== VIDAME_REPERE_DONNEES_ETAPES_PIPELINE =====
-  const steps = [
-    {
-      icon: FileText,
-      title: "Corpus brut",
-      text: "Entrevues audio/vidéo",
-      detail: "Données issues du terrain : riches, mais non exploitables telles quelles.",
-    },
-    {
-      icon: PenSquare,
-      title: "Transcription",
-      text: "Fidélité du discours",
-      detail:
-        "Transcription assistée + validation humaine visant la restitution du sens de la parole au texte, avec respect des nuances et du langage réel. Transcrire, c'est préserver le sens — pas seulement les mots.",
-      highlight: "Validation humaine",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Préparation",
-      text: "Anonymisation, segmentation",
-      detail: "Nettoyage du texte, anonymisation et mise en forme du corpus.",
-      highlight: "Conformité",
-    },
-    {
-      icon: Workflow,
-      title: "Segmentation analytique",
-      text: "Organisation analytique",
-      detail: "Repérage de thèmes et structuration pour faciliter l'analyse.",
-    },
-    {
-      icon: Microscope,
-      title: "Analyse",
-      text: "Corpus exploitable",
-      detail: "Corpus prêt pour NVivo, MAXQDA ou autre, structuré et traçable.",
-      highlight: "Intégrité analytique",
-    },
-  ];
-
   return (
     <div>
           {/* ===== VIDAME_REPERE_HERO_ACCUEIL ===== */}

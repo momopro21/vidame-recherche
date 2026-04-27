@@ -598,7 +598,7 @@ return (
 <section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
 
   {/* ===== TITRE ===== */}
-  <div className="mx-auto max-w-3xl text-center">
+  <div className="mx-auto max-w-2xl text-center">
    <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[30px]">
   {lang === "fr"
     ? "La chaîne opératoire Vidame repose sur une transformation progressive du corpus."

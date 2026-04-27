@@ -1391,7 +1391,7 @@ const pipelineSteps = [
       <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600">
         {lang === "fr"
           ? "Ses opérations professionnelles comprennent des services à la carte en traduction et transcription, ainsi que la préparation des données qualitatives en amont de l’analyse."
-          : "Its professional operations include à la carte services in translation and transcription, as well as the preparation of qualitative data prior to analysis."}
+          : "Vidame offers à la carte translation and transcription services, as well as qualitative data preparation prior to analysis."}
       </p>
     </motion.div>
 

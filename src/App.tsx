@@ -615,7 +615,7 @@ return (
    {/* ========================= */}
 <div className="space-y-12">
   {/* 1 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-donnees.png"
@@ -638,7 +638,7 @@ return (
   </div>
 
   {/* 2 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-transcription.png"
@@ -661,7 +661,7 @@ return (
   </div>
 
   {/* 3 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-anonymisation.png"
@@ -684,7 +684,7 @@ return (
   </div>
 
   {/* 4 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-validation.png"
@@ -719,7 +719,7 @@ return (
 {/* ========================= */}
 <div className="space-y-16">
   {/* 5 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-segmentation.png"
@@ -742,7 +742,7 @@ return (
   </div>
 
   {/* 6 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-lexique.png"
@@ -765,7 +765,7 @@ return (
   </div>
 
   {/* 7 */}
-  <div className="flex items-start gap-4">
+  <div className="flex items-start gap-2 md:gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-validationFin.png"
@@ -796,7 +796,7 @@ return (
   </div>
 
 {/* 8 */}
-<div className="flex items-start gap-4">
+<div className="flex items-start gap-2 md:gap-4">
   <div className="flex w-28 flex-col items-center">
     <img
       src="/icons/icon-corpus.png"

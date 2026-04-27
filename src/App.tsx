@@ -1241,11 +1241,9 @@ function APropos({
         </Card>
 
         <Card className="rounded-[2rem] border-slate-200">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-slate-900">
-              {lang === "fr" ? "Vision" : "Vision"}
-            </CardTitle>
-          </CardHeader>
+        <CardHeader>
+        <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
+        </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="text-[18px] leading-8 text-slate-700">
               {lang === "fr"

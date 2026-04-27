@@ -1217,7 +1217,9 @@ function APropos({
 <div className="grid gap-8 md:grid-cols-2">
   <Card className="rounded-[2rem] border-slate-200">
     <CardHeader>
-      <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
+    <h3 className="text-2xl font-semibold text-slate-900">
+      {lang === "fr" ? "Mission" : "Mission"}
+    </h3>
     </CardHeader>
     <CardContent className="px-6 pb-6">
       <p className="text-[18px] leading-8 text-slate-700">
@@ -1230,7 +1232,9 @@ function APropos({
 
   <Card className="rounded-[2rem] border-slate-200">
     <CardHeader>
-      <CardTitle>{lang === "fr" ? "Vision" : "Vision"}</CardTitle>
+    <h3 className="text-2xl font-semibold text-slate-900">
+      {lang === "fr" ? "Vision" : "Vision"}
+    </h3>
     </CardHeader>
     <CardContent className="px-6 pb-6">
       <p className="text-[18px] leading-8 text-slate-700">

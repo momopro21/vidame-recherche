@@ -1223,37 +1223,34 @@ function APropos({
         </div>
       </div>
 
-      {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}
-      <div className="grid gap-8 md:grid-cols-2">
-        <Card className="rounded-[2rem] border-slate-200">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-slate-900">
-              {lang === "fr" ? "Mission" : "Mission"}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="px-6 pb-6">
-            <p className="text-[18px] leading-8 text-slate-700">
-              {lang === "fr"
-                ? "Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le développement de connaissances ancrées localement, au Québec et au Canada."
-                : "To contribute to research by mobilizing my resources and expertise in support of knowledge development grounded in local realities in Quebec and across Canada."}
-            </p>
-          </CardContent>
-        </Card>
+ {/* ===== VIDAME_REPERE_MISSION_VISION ===== */}
+<div className="grid gap-8 md:grid-cols-2">
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="text-[18px] leading-8 text-slate-700">
+        {lang === "fr"
+          ? "Contribuer à la recherche en mobilisant mes ressources et mes compétences pour le développement de connaissances ancrées localement, au Québec et au Canada."
+          : "To contribute to research by mobilizing my resources and expertise in support of knowledge development grounded in local realities in Quebec and across Canada."}
+      </p>
+    </CardContent>
+  </Card>
 
-        <Card className="rounded-[2rem] border-slate-200">
-        <CardHeader>
-        <CardTitle>{lang === "fr" ? "Mission" : "Mission"}</CardTitle>
-        </CardHeader>
-          <CardContent className="px-6 pb-6">
-            <p className="text-[18px] leading-8 text-slate-700">
-              {lang === "fr"
-                ? "Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui demeure profondément humaine : transparente, traçable, adaptée aux contraintes du terrain et respectueuse de la valeur scientifique des données."
-                : "A practice of qualitative research assisted by artificial intelligence that remains fundamentally human: transparent, traceable, responsive to field constraints, and respectful of the scientific value of data."}
-            </p>
-          </CardContent>
-        </Card>
-      </div>
-
+  <Card className="rounded-[2rem] border-slate-200">
+    <CardHeader>
+      <CardTitle>{lang === "fr" ? "Vision" : "Vision"}</CardTitle>
+    </CardHeader>
+    <CardContent className="px-6 pb-6">
+      <p className="text-[18px] leading-8 text-slate-700">
+        {lang === "fr"
+          ? "Une pratique de la recherche qualitative assistée par l’intelligence artificielle qui demeure profondément humaine : transparente, traçable, adaptée aux contraintes du terrain et respectueuse de la valeur scientifique des données."
+          : "A practice of qualitative research assisted by artificial intelligence that remains fundamentally human: transparent, traceable, responsive to field constraints, and respectful of the scientific value of data."}
+      </p>
+    </CardContent>
+  </Card>
+</div>
       {/* ===== VIDAME_REPERE_VALEURS_APROPOS ===== */}
       <div className="grid gap-8 md:grid-cols-3">
         {(lang === "fr"

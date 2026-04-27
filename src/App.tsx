@@ -504,62 +504,58 @@ return (
   )}
 </h2>
 
-     {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
+    {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mt-6 h-[2px] w-24 bg-slate-500 md:mx-auto"></div>
+
 <div className="mt-8 text-left text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">
   {lang === "fr" ? (
     <>
       <p>
         Dans le contexte actuel de transformation numérique de la recherche, les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
       </p>
-     <div className="mt-6 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center space-y-2">
 
-      <p>L’accélération est réelle.</p>
-      <p>Les gains sont importants.</p>
-      <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600">
-       Mais une question demeure.
+      <div className="mt-6 space-y-2 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">
+        <p>L’accélération est réelle.</p>
+        <p>Les gains sont importants.</p>
+
+        <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600">
+          Mais une question demeure.
+        </p>
+
+        <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-600 md:mx-auto md:max-w-[520px] md:text-center">
+          Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
+        </p>
+      </div>
+
+      <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-lg md:text-center">
+        C'est pour répondre à cette question que le pipeline Vidame a été conçu. Un service de soutien à la recherche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
       </p>
-
-    <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-600 md:mx-auto md:max-w-[520px] md:text-center">
-        Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
-    </p>
-
-</div>
-
-<p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-lg md:text-center">
-    C'est pour répondre à cette question, que le pipeline Vidame a été conçue. Un service de soutien à la recherche qualitative qui intègre les outils contemporains tout en assurant la maîtrise des données, du sens et de la conformité éthique.
- </p>
     </>
   ) : (
     <>
       <p>
         In the current context of digital transformation in research, artificial intelligence tools are rapidly reshaping qualitative data processing practices.
       </p>
-      <p className="mt-4">
-        The acceleration is real. The gains are significant.
-      </p>
-      <p className="mt-4">
-        But one question remains:{" "}
-        <span className="font-medium text-slate-900">
-          how can these tools be integrated without losing control over data,
-          <br />
-          meaning, and the ethical requirements that govern research?
-        </span>
-      </p>
-      <p className="mt-4">
-        <span className="font-medium text-slate-900">
-          Vidame has developed a structured pipeline designed to integrate modern tools
-        </span>
-        <br />
-        while ensuring control over data, meaning, and ethical compliance.
+
+      <div className="mt-6 space-y-2 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-xl md:text-center">
+        <p>The acceleration is real.</p>
+        <p>The gains are significant.</p>
+
+        <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600">
+          But one question remains.
+        </p>
+
+        <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-600 md:mx-auto md:max-w-[520px] md:text-center">
+          How can these tools be integrated without losing control over data, meaning, and the ethical requirements that govern research?
+        </p>
+      </div>
+
+      <p className="mt-4 text-[20px] font-[350] leading-7 text-slate-600 md:mx-auto md:max-w-lg md:text-center">
+        This is the question the Vidame Pipeline was designed to address. A qualitative research support service that integrates contemporary tools while ensuring control over data, meaning, and ethical compliance.
       </p>
     </>
   )}
 </div>
-
-     </div>
-  </div>
-</section>
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
      <section id="pipeline">
       <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">

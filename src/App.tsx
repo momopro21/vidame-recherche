@@ -625,10 +625,10 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[18px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Données terrain" : "Field data"}
       </h3>
-      <p className="mt-1 text-[16px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "Le pipeline prend appui sur les données brutes produites sur le terrain. Le traitement ultérieur vise à structurer ce corpus sans en modifier le sens ni la valeur documentaire."
           : "The pipeline begins with raw data produced in the field. The subsequent processing aims to structure the corpus without altering its meaning or documentary value."}

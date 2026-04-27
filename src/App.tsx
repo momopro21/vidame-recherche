@@ -599,7 +599,7 @@ return (
 
   {/* ===== TITRE ===== */}
   <div className="mx-auto max-w-3xl text-center">
-   <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[34px]">
+   <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[30px]">
   {lang === "fr"
     ? "La chaîne opératoire Vidame repose sur une transformation progressive du corpus."
     : "The Vidame operational chain is based on a progressive transformation of the corpus."}

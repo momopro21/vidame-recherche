@@ -1038,7 +1038,7 @@ return (
   );
 }
 
-         // ===== VIDAME_REPERE_PAGE_APROPOS =====
+// ===== VIDAME_REPERE_PAGE_APROPOS =====
 function APropos({
   setPage,
   lang,
@@ -1047,7 +1047,10 @@ function APropos({
   lang: "fr" | "en";
 }) {
   return (
-    <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24">
+    <div
+    id="apropos"
+    className="mx-auto max-w-7xl space-y-16 px-4 py-16 md:px-8 md:py-24"
+  >
       {/* ===== VIDAME_REPERE_BLOC_INTRO_APROPOS ===== */}
       <div className="grid items-start gap-8 md:grid-cols-[0.5fr_1fr]">
         {/* ===== VIDAME_REPERE_PHOTO_APROPOS ===== */}

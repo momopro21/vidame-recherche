@@ -709,105 +709,109 @@ return (
     </div>
   </div>
 </div>
-    {/* ========================= */}
-    {/* COLONNE DROITE (5 → 7) */}
-    {/* ========================= */}
-    <div className="space-y-12 md:pt-8">
-
-     {/* 5 */}
-<div className="flex items-start gap-4">
-
-  <div className="flex w-28 flex-col items-center">
-    <img
-      src="/icons/icon-segmentation.png"
-      className="h-[92px] w-[92px] object-contain"
-      alt="Segmentation du corpus"
-    />
-
-    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
-  </div>
-
-  <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
-      Segmentation du corpus
-    </h3>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      La segmentation organise le texte en unités de sens cohérentes sans introduire d’interprétation.
-    </p>
-  </div>
-
-</div>
-
-
-      {/* 6 */}
-<div className="flex items-start gap-4">
-
-  <div className="flex w-28 flex-col items-center">
-    <img
-      src="/icons/icon-lexique.png"
-      className="h-[92px] w-[92px] object-contain"
-      alt="Lexique et collocations"
-    />
-
-    <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
-  </div>
-
-  <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
-      Lexique et collocations
-    </h3>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique.
-    </p>
-  </div>
-
-</div>
-
- {/* 7 */}
-<div className="flex items-start gap-4">
-  <div className="flex w-28 flex-col items-center">
-    <img
-      src="/icons/icon-validationFin.png"
-      className="h-[92px] w-[92px] object-contain"
-      alt="Validation humaine (unités de sens)"
-    />
-  </div>
-
-  <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
-      Validation humaine
-    </h3>
-    <div className="text-[13px] text-slate-500">(unités de sens)</div>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Une validation finale assure la cohérence des unités de sens produites dans le corpus.
-    </p>
-  </div>
-</div>
-
-{/* 8 */}
-<div className="flex items-start gap-4">
-  <div className="flex w-28 flex-col items-center">
-    <img
-      src="/icons/icon-corpus.png"
-      className="h-[92px] w-[92px] object-contain"
-      alt="Corpus prêt pour l’analyse"
-    />
-  </div>
-
-  <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
-      Corpus prêt pour l’analyse
-    </h3>
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-      Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif.
-    </p>
-  </div>
-</div>
-
+   {/* ========================= */}
+{/* COLONNE DROITE (5 → 8) */}
+{/* ========================= */}
+<div className="space-y-12 md:pt-8">
+  {/* 5 */}
+  <div className="flex items-start gap-4">
+    <div className="flex w-28 flex-col items-center">
+      <img
+        src="/icons/icon-segmentation.png"
+        className="h-[92px] w-[92px] object-contain"
+        alt={lang === "fr" ? "Segmentation du corpus" : "Corpus segmentation"}
+      />
+      <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
     </div>
 
+    <div className="mt-6">
+      <h3 className="text-[16px] font-semibold text-slate-900">
+        {lang === "fr" ? "Segmentation du corpus" : "Corpus segmentation"}
+      </h3>
+      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+        {lang === "fr"
+          ? "La segmentation organise le texte en unités de sens cohérentes sans introduire d’interprétation."
+          : "Segmentation organizes the text into coherent units of meaning without introducing interpretation."}
+      </p>
+    </div>
   </div>
 
+  {/* 6 */}
+  <div className="flex items-start gap-4">
+    <div className="flex w-28 flex-col items-center">
+      <img
+        src="/icons/icon-lexique.png"
+        className="h-[92px] w-[92px] object-contain"
+        alt={lang === "fr" ? "Lexique et collocations" : "Lexicon and collocations"}
+      />
+      <div className="-mt-2 text-slate-300 text-2xl leading-none">↓</div>
+    </div>
+
+    <div className="mt-6">
+      <h3 className="text-[16px] font-semibold text-slate-900">
+        {lang === "fr" ? "Lexique et collocations" : "Lexicon and collocations"}
+      </h3>
+      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+        {lang === "fr"
+          ? "Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique."
+          : "This step highlights linguistic regularities through observable co-occurrences, without analytical interpretation."}
+      </p>
+    </div>
+  </div>
+
+  {/* 7 */}
+  <div className="flex items-start gap-4">
+    <div className="flex w-28 flex-col items-center">
+      <img
+        src="/icons/icon-validationFin.png"
+        className="h-[92px] w-[92px] object-contain"
+        alt={
+          lang === "fr"
+            ? "Validation humaine (unités de sens)"
+            : "Human validation (units of meaning)"
+        }
+      />
+    </div>
+
+    <div className="mt-6">
+      <h3 className="text-[16px] font-semibold text-slate-900">
+        {lang === "fr" ? "Validation humaine" : "Human validation"}
+      </h3>
+
+      <div className="text-[13px] text-slate-500">
+        {lang === "fr" ? "(unités de sens)" : "(units of meaning)"}
+      </div>
+
+      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+        {lang === "fr"
+          ? "Une validation finale assure la cohérence des unités de sens produites dans le corpus."
+          : "A final validation ensures the coherence of the units of meaning produced in the corpus."}
+      </p>
+    </div>
+  </div>
+
+  {/* 8 */}
+  <div className="flex items-start gap-4">
+    <div className="flex w-28 flex-col items-center">
+      <img
+        src="/icons/icon-corpus.png"
+        className="h-[92px] w-[92px] object-contain"
+        alt={lang === "fr" ? "Corpus prêt pour l’analyse" : "Corpus ready for analysis"}
+      />
+    </div>
+
+    <div className="mt-6">
+      <h3 className="text-[16px] font-semibold text-slate-900">
+        {lang === "fr" ? "Corpus prêt pour l’analyse" : "Corpus ready for analysis"}
+      </h3>
+      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+        {lang === "fr"
+          ? "Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif."
+          : "The corpus is structured, validated, and ready to be analyzed using qualitative coding tools."}
+      </p>
+    </div>
+  </div>
+</div>
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">
     <h3 className="text-lg font-semibold text-slate-900">

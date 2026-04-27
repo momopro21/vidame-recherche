@@ -561,7 +561,7 @@ return (
   </div>
 </section>
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}
-     <section>
+     <section id="pipeline">
       <div className="mx-auto max-w-7xl px-6 pt-0 pb-6 md:px-8 md:pt-0 md:pb-8">
         {/* ===== VIDAME_REPERE_TITRE_PIPELINE ===== */}
     <h2 className="mt-12 text-center text-2xl font-semibold text-slate-900 md:text-3xl">

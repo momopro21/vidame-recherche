@@ -557,73 +557,7 @@ return (
   )}
 </div>
 
-     {/* ===== VIDAME_REPERE_PHRASE_FERMETURE_HERO_ACCUEIL ===== */}
-<p className="mx-auto mt-10 max-w-4xl text-lg font-semibold text-slate-900 md:text-xl">
-  {lang === "fr" ? (
-    <>
-      <span className="font-bold">Vidame :</span>{" "}
-      <a
-        href="#pipeline"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Méthode
-        <span className="text-slate-400">↗</span>
-      </a>
-
-      <span className="mx-2 text-slate-400">·</span>
-
-      <a
-        href="#securite"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Sécurité des données
-        <span className="text-slate-400">↗</span>
-      </a>
-
-      <span className="mx-2 text-slate-400">·</span>
-
-      <a
-        href="#apropos"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Crédibilité
-        <span className="text-slate-400">↗</span>
-      </a>
-    </>
-  ) : (
-    <>
-      <span className="font-bold">Vidame:</span>{" "}
-      <a
-        href="#pipeline"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Methodology
-        <span className="text-slate-400">↗</span>
-      </a>
-
-      <span className="mx-2 text-slate-400">·</span>
-
-      <a
-        href="#securite"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Data security
-        <span className="text-slate-400">↗</span>
-      </a>
-
-      <span className="mx-2 text-slate-400">·</span>
-
-      <a
-        href="#apropos"
-        className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-slate-700"
-      >
-        Experience 
-        <span className="text-slate-400">↗</span>
-      </a>
-    </>
-  )}
-</p>
-    </div>
+     </div>
   </div>
 </section>
      {/* ===== VIDAME_REPERE_SECTION_PIPELINE ===== */}

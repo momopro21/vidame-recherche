@@ -648,10 +648,10 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Transcription automatisée" : "Automated transcription"}
       </h3>
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "La transcription transforme le corpus audio ou vidéo en texte exploitable. Certaines formes orales peuvent être mal reconnues, ce qui nécessite une validation humaine."
           : "Transcription converts audio or video material into usable text. Some oral forms may be imperfectly recognized, which requires human validation."}
@@ -671,10 +671,10 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Anonymisation des données" : "Data anonymization"}
       </h3>
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "Cette étape protège les informations sensibles en préservant la structure et la lisibilité du corpus."
           : "This step protects sensitive information while preserving the structure and readability of the corpus."}
@@ -697,15 +697,15 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Validation humaine" : "Human validation"}
       </h3>
 
-      <div className="text-[13px] text-slate-500">
+      <div className="text-[16px] text-slate-500">
         {lang === "fr" ? "(fidélité et conformité)" : "(fidelity and compliance)"}
       </div>
 
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "Une validation humaine vérifie la fidélité du texte et la conformité de l’anonymisation afin d’assurer la qualité du corpus."
           : "Human validation verifies the fidelity of the text and the compliance of anonymization to ensure corpus quality."}
@@ -729,10 +729,10 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Segmentation du corpus" : "Corpus segmentation"}
       </h3>
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "La segmentation organise le texte en unités de sens cohérentes sans introduire d’interprétation."
           : "Segmentation organizes the text into coherent units of meaning without introducing interpretation."}
@@ -752,10 +752,10 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Lexique et collocations" : "Lexicon and collocations"}
       </h3>
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "Cette étape met en évidence des régularités linguistiques à partir de cooccurrences observables, sans interprétation analytique."
           : "This step highlights linguistic regularities through observable co-occurrences, without analytical interpretation."}
@@ -778,15 +778,15 @@ return (
     </div>
 
     <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
+      <h3 className="text-[20px] font-semibold text-slate-900">
         {lang === "fr" ? "Validation humaine" : "Human validation"}
       </h3>
 
-      <div className="text-[13px] text-slate-500">
+      <div className="text-[16px] text-slate-500">
         {lang === "fr" ? "(unités de sens)" : "(units of meaning)"}
       </div>
 
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
         {lang === "fr"
           ? "Une validation finale assure la cohérence des unités de sens produites dans le corpus."
           : "A final validation ensures the coherence of the units of meaning produced in the corpus."}
@@ -809,13 +809,13 @@ return (
   </div>
 
   <div className="mt-6">
-    <h3 className="text-[16px] font-semibold text-slate-900">
+    <h3 className="text-[20px] font-semibold text-slate-900">
       {lang === "fr"
         ? "Corpus prêt pour l’analyse"
         : "Corpus ready for analysis"}
     </h3>
 
-    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+    <p className="mt-1 text-[18px] leading-relaxed text-slate-600">
       {lang === "fr"
         ? "Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif."
         : "The corpus is structured, validated, and ready to be analyzed using qualitative coding tools."}

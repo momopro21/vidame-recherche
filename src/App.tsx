@@ -895,6 +895,7 @@ return (
 
     {charteOpen && (
       <>
+     
         {/* ===== VIDAME_REPERE_CONTENU_CHARTE ===== */}
         <div className="space-y-6">
           {/* ===== VIDAME_REPERE_CHARTE_PRINCIPE_DIRECTEUR ===== */}

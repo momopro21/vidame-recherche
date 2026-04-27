@@ -638,8 +638,8 @@ return (
   </div>
 
   {/* 2 */}
-  <div className="flex items-start gap-2 md:gap-4">
-   <div className="flex w-20 flex-col items-center md:w-28">
+ <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-transcription.png"
         className="h-[92px] w-[92px] object-contain scale-125"
@@ -661,8 +661,8 @@ return (
   </div>
 
   {/* 3 */}
-  <div className="flex items-start gap-2 md:gap-4">
-   <div className="flex w-20 flex-col items-center md:w-28">
+  <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-anonymisation.png"
         className="h-[92px] w-[92px] object-contain"
@@ -684,8 +684,8 @@ return (
   </div>
 
   {/* 4 */}
-  <div className="flex items-start gap-2 md:gap-4">
-   <div className="flex w-20 flex-col items-center md:w-28">
+  <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-validation.png"
         className="h-[92px] w-[92px] object-contain"
@@ -719,8 +719,8 @@ return (
 {/* ========================= */}
 <div className="space-y-16">
   {/* 5 */}
-  <div className="flex items-start gap-2 md:gap-4">
-  <div className="flex w-20 flex-col items-center md:w-28">
+  <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-segmentation.png"
         className="h-[92px] w-[92px] object-contain"
@@ -742,8 +742,8 @@ return (
   </div>
 
   {/* 6 */}
-  <div className="flex items-start gap-2 md:gap-4">
-   <div className="flex w-20 flex-col items-center md:w-28">
+  <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-lexique.png"
         className="h-[92px] w-[92px] object-contain"
@@ -765,8 +765,8 @@ return (
   </div>
 
   {/* 7 */}
-  <div className="flex items-start gap-2 md:gap-4">
-  <div className="flex w-20 flex-col items-center md:w-28">
+ <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
       <img
         src="/icons/icon-validationFin.png"
         className="h-[92px] w-[92px] object-contain"
@@ -796,8 +796,8 @@ return (
   </div>
 
 {/* 8 */}
-<div className="flex items-start gap-2 md:gap-4">
- <div className="flex w-20 flex-col items-center md:w-28">
+<div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+  <div className="flex justify-center md:w-28 md:flex-col md:items-center">
     <img
       src="/icons/icon-corpus.png"
       className="h-[92px] w-[92px] object-contain"

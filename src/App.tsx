@@ -822,25 +822,28 @@ return (
 </div>
 </div>
 {/* ===== CONCLUSION ===== */}
-  {/* ===== CONCLUSION ===== */}
-  <div className="mx-auto mt-16 max-w-2xl text-center">
-    <h3 className="text-lg font-semibold text-slate-900">
-  {lang === "fr" ? "Du terrain à l’analyse" : "From fieldwork to analysis"}
+<div className="mx-auto mt-16 max-w-2xl text-center">
+  <h3 className="text-lg font-semibold text-slate-900">
+    {lang === "fr" ? "Du terrain à l’analyse" : "From fieldwork to analysis"}
   </h3>
 
-    <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
-      À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée.
-    </p>
+  <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
+    {lang === "fr"
+      ? "À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée."
+      : "Starting from raw data produced in the field, the Vidame operational chain leads to a structured corpus ready for analysis. At each step, the process aims to organize the content without altering its meaning, combining automation with targeted human validation."}
+  </p>
 
-    <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
-      Le résultat est un corpus segmenté en unités de sens, structuré dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation avec des logiciels comme NVivo, MAXQDA, Delve et autres, dans le respect des exigences de confidentialité et de sécurité des données attendues dans les recherches encadrées par des comités d’éthique.
-    </p>
-  </div>
+  <p className="mt-4 text-[15px] leading-relaxed text-slate-500">
+    {lang === "fr"
+      ? "Le résultat est un corpus segmenté en unités de sens, structuré dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation avec des logiciels comme NVivo, MAXQDA, Delve et autres, dans le respect des exigences de confidentialité et de sécurité des données attendues dans les recherches encadrées par des comités d’éthique."
+      : "The result is a corpus segmented into units of meaning, structured in a tabular format (Excel or CSV compatible), ready for team coding or for use with software such as NVivo, MAXQDA, Delve, and others, while meeting the confidentiality and data security requirements expected in ethics-governed research."}
+  </p>
+</div>
 
 </section>
-        
-        </div>
-      </section>
+
+</div>
+</section>
      {/* ===== VIDAME_REPERE_CHARTE_ACCUEIL ===== */}
 <section id="securite" className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
   <div className="max-w-3xl space-y-8">

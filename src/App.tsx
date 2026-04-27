@@ -717,7 +717,7 @@ return (
 {/* ========================= */}
 {/* COLONNE DROITE (5 → 8) */}
 {/* ========================= */}
-<div className="space-y-12">
+<div className="space-y-16">
   {/* 5 */}
   <div className="flex items-start gap-4">
     <div className="flex w-28 flex-col items-center">
@@ -742,7 +742,7 @@ return (
   </div>
 
   {/* 6 */}
-  <div className="mt-4 flex items-start gap-4">
+  <div className="flex items-start gap-4">
     <div className="flex w-28 flex-col items-center">
       <img
         src="/icons/icon-lexique.png"

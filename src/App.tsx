@@ -717,7 +717,7 @@ return (
 {/* ========================= */}
 {/* COLONNE DROITE (5 → 8) */}
 {/* ========================= */}
-<div className="space-y-12 md:pt-8">
+<div className="space-y-12">
   {/* 5 */}
   <div className="flex items-start gap-4">
     <div className="flex w-28 flex-col items-center">

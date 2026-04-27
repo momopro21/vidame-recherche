@@ -309,33 +309,33 @@ return (
       </div>
 
       {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="border-t border-slate-200 bg-white md:hidden"
+    {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+<AnimatePresence>
+  {open && (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: "auto", opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      className="border-t border-slate-200 bg-white md:hidden"
+    >
+      <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
+        {pages.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => {
+              setPage(item.id);
+              setOpen(false);
+            }}
+            className="rounded-xl px-4 py-2.5 text-left text-[17px] font-medium text-slate-900 hover:bg-slate-100"
           >
-            <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
-              {pages.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => {
-                    setPage(item.id);
-                    setOpen(false);
-                  }}
-                className="rounded-xl px-4 py-4 text-left text-[17px] font-medium text-slate-900 hover:bg-slate-100"
-                >
-                  {lang === "fr" ? item.labelFr : item.labelEn}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
-
+            {lang === "fr" ? item.labelFr : item.labelEn}
+          </button>
+        ))}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+</header>
       {/* ===== VIDAME_REPERE_CONTENU_PRINCIPAL ===== */}
       <main>
         <AnimatePresence mode="wait">

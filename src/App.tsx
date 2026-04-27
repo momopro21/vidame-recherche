@@ -532,8 +532,7 @@ return (
     </>
   ) : (
     <>
-      <p>
-       <p className="md:mx-auto md:max-w-2xl">
+      <p className="md:mx-auto md:max-w-2xl">
         In the current context of digital transformation in research, artificial intelligence tools are rapidly reshaping qualitative data processing practices.
       </p>
 

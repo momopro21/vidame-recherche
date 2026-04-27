@@ -598,8 +598,9 @@ return (
 <section className="mx-auto mt-20 max-w-6xl px-6 md:px-8">
 
   {/* ===== TITRE ===== */}
-  <div className="mx-auto max-w-2xl text-center">
+  <div className="mx-auto max-w-2xl text-left md:text-center">
    <h2 className="text-[28px] leading-tight tracking-tight text-slate-900 md:text-[30px]">
+     
   {lang === "fr"
     ? "La chaîne opératoire Vidame repose sur une transformation progressive du corpus."
     : "The Vidame operational chain is based on a progressive transformation of the corpus."}
@@ -827,11 +828,11 @@ return (
 </div>
 {/* ===== CONCLUSION ===== */}
 <div className="mx-auto mt-16 max-w-2xl text-center">
-  <h3 className="text-lg font-semibold text-slate-900">
+  <h3 className="text-xl font-semibold text-slate-900">
     {lang === "fr" ? "Du terrain à l’analyse" : "From fieldwork to analysis"}
   </h3>
 
-  <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
+  <p className="mt-3 text-[18px] leading-relaxed text-slate-500">
     {lang === "fr"
       ? "À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée."
       : "Starting from raw data produced in the field, the Vidame operational chain leads to a structured corpus ready for analysis. At each step, the process aims to organize the content without altering its meaning, combining automation with targeted human validation."}

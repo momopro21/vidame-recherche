@@ -880,7 +880,7 @@ return (
       <button
         type="button"
         onClick={() => setCharteOpen(!charteOpen)}
-        className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-[16px] font-medium text-slate-900 transition hover:bg-slate-50"
+       className="inline-flex items-center gap-2 rounded-full border border-slate-400 bg-slate-300 px-5 py-2.5 text-[16px] font-medium text-slate-900 transition hover:bg-slate-400"
       >
         {charteOpen
           ? lang === "fr"

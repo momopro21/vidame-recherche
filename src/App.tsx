@@ -335,8 +335,7 @@ return (
 </div>
 </div>
 
-      {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-{/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+   {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
 <AnimatePresence>
   {open && (
     <motion.div

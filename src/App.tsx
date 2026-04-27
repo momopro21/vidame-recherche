@@ -267,7 +267,7 @@ return (
             <button
               key={item.id}
               onClick={() => setPage(item.id)}
-              className={`rounded-full px-4 py-2 text-base font-medium transition ${
+             className={`rounded-full px-5 py-2.5 text-[17px] font-medium transition ${
                 page === item.id
                   ? "bg-black text-white"
                   : "text-slate-800 hover:bg-slate-100 hover:text-slate-900"

@@ -309,7 +309,6 @@ return (
       </div>
 
       {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-    {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
 <AnimatePresence>
   {open && (
     <motion.div
@@ -577,19 +576,23 @@ return (
     className="block h-auto w-full"
   />
 </div>
-       {/* ===== VIDAME_REPERE_CTA_APRES_PIPELINE ===== */}
+     {/* ===== VIDAME_REPERE_CTA_APRES_PIPELINE ===== */}
 <div className="mt-16 mb-12 flex flex-wrap gap-3 md:ml-[26rem]">
-  <Button size="lg" className="rounded-full" onClick={() => setPage("soumission")}>
+  <Button
+    size="lg"
+    className="rounded-full bg-slate-700 text-white hover:bg-slate-800"
+    onClick={() => setPage("soumission")}
+  >
     {lang === "fr" ? "Obtenir un devis" : "Request a quote"}
   </Button>
 
   <Button
-  size="lg"
-  className="rounded-full border border-slate-300 bg-slate-200 text-slate-900 hover:bg-slate-300"
-  onClick={() => setPage("services")}
->
-  {lang === "fr" ? "Voir l'offre de services" : "View services"}
-</Button>
+    size="lg"
+    className="rounded-full border border-slate-300 bg-slate-200 text-slate-900 hover:bg-slate-300"
+    onClick={() => setPage("services")}
+  >
+    {lang === "fr" ? "Voir l'offre de services" : "View services"}
+  </Button>
 </div>
 
 {/* ===== VIDAME_REPERE_DETAIL_PIPELINE_ACCUEIL ===== */}

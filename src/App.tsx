@@ -790,28 +790,38 @@ return (
     </div>
   </div>
 
-  {/* 8 */}
-  <div className="flex items-start gap-4">
-    <div className="flex w-28 flex-col items-center">
-      <img
-        src="/icons/icon-corpus.png"
-        className="h-[92px] w-[92px] object-contain"
-        alt={lang === "fr" ? "Corpus prêt pour l’analyse" : "Corpus ready for analysis"}
-      />
-    </div>
+{/* 8 */}
+<div className="flex items-start gap-4">
+  <div className="flex w-28 flex-col items-center">
+    <img
+      src="/icons/icon-corpus.png"
+      className="h-[92px] w-[92px] object-contain"
+      alt={
+        lang === "fr"
+          ? "Corpus prêt pour l’analyse"
+          : "Corpus ready for analysis"
+      }
+    />
+  </div>
 
-    <div className="mt-6">
-      <h3 className="text-[16px] font-semibold text-slate-900">
-        {lang === "fr" ? "Corpus prêt pour l’analyse" : "Corpus ready for analysis"}
-      </h3>
-      <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
-        {lang === "fr"
-          ? "Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif."
-          : "The corpus is structured, validated, and ready to be analyzed using qualitative coding tools."}
-      </p>
-    </div>
+  <div className="mt-6">
+    <h3 className="text-[16px] font-semibold text-slate-900">
+      {lang === "fr"
+        ? "Corpus prêt pour l’analyse"
+        : "Corpus ready for analysis"}
+    </h3>
+
+    <p className="mt-1 text-[14px] leading-relaxed text-slate-600">
+      {lang === "fr"
+        ? "Le corpus est structuré, validé et prêt à être analysé avec des outils de codage qualitatif."
+        : "The corpus is structured, validated, and ready to be analyzed using qualitative coding tools."}
+    </p>
   </div>
 </div>
+
+</div>
+
+{/* ===== CONCLUSION ===== */}
   {/* ===== CONCLUSION ===== */}
   <div className="mx-auto mt-16 max-w-2xl text-center">
     <h3 className="text-lg font-semibold text-slate-900">

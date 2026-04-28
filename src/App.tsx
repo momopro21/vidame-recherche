@@ -1456,7 +1456,7 @@ const pipelineSteps = [
     return (
   <div id="services" className="min-h-screen bg-white">
      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
-<section className="relative overflow-hidden bg-gradient-to-b from-slate-100 via-slate-50 to-white px-4 py-20">
+<section className="relative overflow-hidden bg-gradient-to-b from-slate-300 via-slate-100 to-white px-4 py-20">
   <div className="relative mx-auto max-w-5xl text-center">
     {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
    <motion.div

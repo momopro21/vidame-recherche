@@ -1899,7 +1899,7 @@ function Blog({ lang }: { lang: "fr" | "en" }) {
         eyebrow="Blog"
         title={
           lang === "fr"
-            ? "Réflexions sur les données, le langage et l'IA"
+            ? "Réflexions sur les données, le langage et l’IA"
             : "Reflections on data, language, and AI"
         }
         text={
@@ -1910,23 +1910,16 @@ function Blog({ lang }: { lang: "fr" | "en" }) {
       />
 
       {/* ===== VIDAME_REPERE_GRILLE_BLOG ===== */}
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {blogPosts(lang).map((post) => (
-          <Card key={post.title} className="rounded-[1.5rem] border-slate-200">
-            <CardContent className="p-6">
-              <div className="text-xs uppercase tracking-[0.14em] text-slate-500">
-                {post.date}
-              </div>
-              <h3 className="mt-2 text-xl font-semibold tracking-tight text-slate-900">
-                {post.title}
-              </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">{post.excerpt}</p>
-              <div className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-500">
-                {post.tag}
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+      <div className="mt-12 rounded-[2rem] border border-slate-200 bg-slate-50 px-8 py-14 text-center">
+        <div className="text-[18px] leading-8 text-slate-700">
+          {lang === "fr"
+            ? "Les premiers articles sont en préparation. Le blogue Vidame accueillera bientôt des réflexions sur les méthodes de travail, les outils contemporains et les transformations de la recherche qualitative."
+            : "The first articles are in preparation. The Vidame blog will soon feature reflections on working methods, contemporary tools, and transformations in qualitative research."}
+        </div>
+
+        <div className="mt-6 text-[17px] font-medium text-slate-500">
+          {lang === "fr" ? "Bientôt" : "Coming soon"}
+        </div>
       </div>
     </div>
   );

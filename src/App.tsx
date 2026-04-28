@@ -1659,7 +1659,7 @@ const pipelineSteps = [
                     : "/icons/icon-validation.png"
                 }
                 alt={step.title}
-                className="h-9 w-9 object-contain"
+                className="h-11 w-11 object-contain"
               />
             </div>
           </div>

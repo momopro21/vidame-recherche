@@ -1628,7 +1628,7 @@ const pipelineSteps = [
             ? "Chaîne opératoire Vidame"
             : "Vidame pipeline"}
             </h2>
-           <p className="mx-auto mt-6 max-w-2xl text-[18px] leading-8 text-slate-700">
+           <p className="mx-auto mt-6 max-w-xl text-[18px] leading-8 text-slate-700">
               {lang === "fr"
               ? "Une séquence de traitement structurée pour transformer un matériau brut en corpus exploitable, traçable et conforme."
               : "A structured processing sequence to transform raw material into a usable, traceable, and compliant corpus."}

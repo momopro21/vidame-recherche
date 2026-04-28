@@ -1876,7 +1876,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 
           <Textarea
             name="message"
-            className="mt-2 border border-slate-300 bg-slate-100 focus:border-slate-400 focus:ring-0"
+            className="mt-2 border border-slate-300 bg-slate-100 text-slate-900 placeholder:text-slate-500 focus:border-slate-400 focus:ring-0"
             placeholder={t.placeholder}
           />
         </div>

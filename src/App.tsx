@@ -1846,7 +1846,9 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 
         {/* ===== VIDAME_REPERE_CHECKBOX_SOUTIEN_SOUMISSION ===== */}
         <div>
-          <label className="text-sm font-medium">{t.supportLabel}</label>
+          <label className="text-[18px] font-medium text-slate-900">
+            {t.supportLabel}
+          </label>
           <div className="mt-2 space-y-3 rounded-xl border border-slate-200 p-4">
             {Object.entries(t.supportOptions).map(([value, label]) => (
               <label key={value} className="flex items-start gap-3 text-sm">
@@ -1864,11 +1866,13 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
 
         {/* ===== VIDAME_REPERE_BLOC_DESCRIPTION_DEMANDE ===== */}
         <div className="space-y-2 rounded-xl bg-slate-50 p-5">
-          <label className="text-sm font-medium">{t.requestLabel}</label>
+          <label className="text-[18px] font-medium text-slate-900">
+          {t.requestLabel}
+          </label>
 
-          <p className="text-sm leading-6 text-slate-500">{t.p1}</p>
-          <p className="text-sm leading-6 text-slate-500">{t.p2}</p>
-          <p className="mt-2 text-sm leading-6 text-slate-500">{t.p3}</p>
+          <p className="text-[17px] leading-8 text-slate-700">{t.p1}</p>
+          <p className="text-[17px] leading-8 text-slate-700">{t.p2}</p>
+          <p className="mt-2 text-[17px] leading-8 text-slate-700">{t.p3}</p>
 
           <Textarea
             name="message"

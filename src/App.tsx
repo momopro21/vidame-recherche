@@ -1635,46 +1635,47 @@ const pipelineSteps = [
             </p>
           </div>
 
-            {/* ===== VIDAME_REPERE_GRILLE_PIPELINE_SERVICES ===== */}
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {pipelineSteps.map((step) => {
-                const Icon = step.icon;
-                return (
-                  <Card key={step.step} className="overflow-hidden rounded-[2rem] border-slate-200">
-                    <div className={`h-2 w-full ${step.color}`} />
-                    <CardContent className="p-6">
-                      <div className="mb-4 flex items-center justify-between">
-                        <div className="text-sm font-semibold tracking-[0.18em] text-slate-400">
-                          {step.step}
-                        </div>
-                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100">
-                          <img
-                              src={
-                                step.step === "01"
-                                  ? "/icons/icon-transcription.png"
-                                  : step.step === "02"
-                                  ? "/icons/icon-anonymisation.png"
-                                 : step.step === "03"
-                                  ? "/icons/icon-segmentation.png"
-                                  : "/icons/icon-validation.png"
-                            }
-                            alt={step.title}
-                            className="h-9 w-9 object-contain"
-                          />
-                        </div>
-                      </div>
-                     <h3 className="text-[20px] font-semibold text-slate-900">
-                      {step.title}
-                  </h3>
-
-                  <p className="mt-3 text-[18px] leading-8 text-slate-700">
-                  {step.description}
-                  </p>
-                  </CardContent>
-                  </Card>
-                );
-              })}
+           {/* ===== VIDAME_REPERE_GRILLE_PIPELINE_SERVICES ===== */}
+<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+  {pipelineSteps.map((step) => {
+    return (
+      <Card key={step.step} className="overflow-hidden rounded-[2rem] border-slate-200">
+        <div className={`h-2 w-full ${step.color}`} />
+        <CardContent className="p-6">
+          <div className="mb-4 flex items-center justify-between">
+            <div className="text-sm font-semibold tracking-[0.18em] text-slate-400">
+              {step.step}
             </div>
+
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100">
+              <img
+                src={
+                  step.step === "01"
+                    ? "/icons/icon-transcription.png"
+                    : step.step === "02"
+                    ? "/icons/icon-anonymisation.png"
+                    : step.step === "03"
+                    ? "/icons/icon-segmentation.png"
+                    : "/icons/icon-validation.png"
+                }
+                alt={step.title}
+                className="h-9 w-9 object-contain"
+              />
+            </div>
+          </div>
+
+          <h3 className="text-[20px] font-semibold text-slate-900">
+            {step.title}
+          </h3>
+
+          <p className="mt-3 text-[18px] leading-8 text-slate-700">
+            {step.description}
+          </p>
+        </CardContent>
+      </Card>
+    );
+  })}
+</div>
 
             {/* ===== VIDAME_REPERE_CTA_PIPELINE_SERVICES ===== */}
            <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">

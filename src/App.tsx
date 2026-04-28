@@ -1647,8 +1647,20 @@ const pipelineSteps = [
                         <div className="text-sm font-semibold tracking-[0.18em] text-slate-400">
                           {step.step}
                         </div>
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100">
-                          <Icon className="h-6 w-6 text-slate-700" />
+                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100">
+                          <img
+                              src={
+                                step.step === "01"
+                                  ? "/icons/icon-transcription.png"
+                                  : step.step === "02"
+                                  ? "/icons/icon-anonymisation.png"
+                                 : step.step === "03"
+                                  ? "/icons/icon-segmentation.png"
+                                  : "/icons/icon-validation.png"
+                            }
+                            alt={step.title}
+                            className="h-9 w-9 object-contain"
+                          />
                         </div>
                       </div>
                      <h3 className="text-[20px] font-semibold text-slate-900">

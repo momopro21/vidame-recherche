@@ -180,6 +180,7 @@ function Textarea({ className = "", ...props }: React.TextareaHTMLAttributes<HTM
     <textarea
       {...props}
       className={`min-h-28 w-full rounded-xl border border-slate-200 px-4 py-3 text-[17px] text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-300 ${className}`}
+    />
   );
 }
 

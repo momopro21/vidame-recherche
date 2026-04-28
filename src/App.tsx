@@ -1465,7 +1465,7 @@ const pipelineSteps = [
   transition={{ duration: 0.6 }}
   className="mx-auto max-w-4xl"
 >
-  <h1 className="mx-auto max-w-3xl text-4xl font-light leading-tight tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
+  <h1 className="mx-auto max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
     {lang === "fr"
       ? "Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts."
       : "Vidame supports the preservation of meaning and the faithful rendering of discourse and concepts."}

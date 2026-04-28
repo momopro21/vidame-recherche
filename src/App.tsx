@@ -1488,7 +1488,7 @@ const pipelineSteps = [
         : "border border-slate-300 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900"
     }`}
   >
-    {lang === "fr" ? "Chaîne opératoire Vidame" : "Vidame pipeline"}
+   {lang === "fr" ? "Pipeline Vidame" : "Vidame pipeline"}
   </button>
 </motion.div>
   </div>

@@ -1398,7 +1398,7 @@ const servicesACarte = [
 const pipelineSteps = [
   {
     step: "01",
-    icon: FileText,
+    icon: Mic,
     title: lang === "fr" ? "Transcription validée" : "Validated transcription",
     description:
       lang === "fr"
@@ -1408,7 +1408,7 @@ const pipelineSteps = [
   },
   {
     step: "02",
-    icon: ShieldCheck,
+    icon: UserRoundMinus,
     title: lang === "fr" ? "Anonymisation conforme" : "Compliant anonymization",
     description:
       lang === "fr"
@@ -1418,7 +1418,7 @@ const pipelineSteps = [
   },
   {
     step: "03",
-    icon: Workflow,
+    icon: Scissors,
     title: lang === "fr" ? "Segmentation et structuration" : "Segmentation and structuring",
     description:
       lang === "fr"
@@ -1428,7 +1428,7 @@ const pipelineSteps = [
   },
   {
     step: "04",
-    icon: Lock,
+    icon: FileSearch,
     title: lang === "fr" ? "Traçabilité et documentation" : "Traceability and documentation",
     description:
       lang === "fr"

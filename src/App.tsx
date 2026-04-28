@@ -1593,18 +1593,18 @@ const pipelineSteps = [
 
             {/* ===== VIDAME_REPERE_CTA_SERVICES_CARTE ===== */}
             <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center">
-            <h3 className="text-xl font-semibold text-slate-900">
+           <h3 className="text-[20px] font-semibold text-slate-900">
             {lang === "fr"
               ? "Prêt à lancer votre projet ?"
               : "Ready to start your project?"}
             </h3>
-            <p className="mt-2 text-sm text-slate-500">
+          <p className="mt-3 text-[18px] leading-8 text-slate-700">
             {lang === "fr"
               ? "Obtenez un devis personnalisé en moins de 48 heures."
               : "Get a tailored quote in less than 48 hours."}
             </p>
           <button
-            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-[17px] font-medium text-white transition hover:bg-slate-800"
             onClick={() => setPage("soumission")}
            >
           {lang === "fr" ? "Obtenir un devis" : "Request a quote"}{" "}

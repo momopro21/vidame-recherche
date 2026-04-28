@@ -1851,7 +1851,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
           </label>
           <div className="mt-2 space-y-3 rounded-xl border border-slate-200 p-4">
             {Object.entries(t.supportOptions).map(([value, label]) => (
-              <label key={value} className="flex items-start gap-3 text-sm">
+             <label key={value}className="flex items-start gap-3 text-[17px] leading-7 text-slate-700">
                 <input
                   type="checkbox"
                   name="support_type"

@@ -1456,7 +1456,7 @@ const pipelineSteps = [
     return (
   <div id="services" className="min-h-screen bg-white">
      {/* ===== VIDAME_REPERE_HERO_SERVICES ===== */}
-<section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900/10 to-white px-4 py-20">
+<section className="relative overflow-hidden bg-gradient-to-b from-slate-100 via-slate-50 to-white px-4 py-20">
   <div className="relative mx-auto max-w-5xl text-center">
     {/* ===== VIDAME_REPERE_TEXTE_HERO_SERVICES ===== */}
    <motion.div
@@ -1465,7 +1465,7 @@ const pipelineSteps = [
   transition={{ duration: 0.6 }}
   className="mx-auto max-w-4xl"
 >
-  <h1 className="mx-auto max-w-3xl text-4xl font-medium leading-tight tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
+  <h1 className="mx-auto max-w-3xl text-4xl font-light leading-tight tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
     {lang === "fr"
       ? "Vidame intervient pour préserver l’intégrité du sens et restituer fidèlement les discours et les concepts."
       : "Vidame supports the preservation of meaning and the faithful rendering of discourse and concepts."}

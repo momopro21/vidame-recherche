@@ -1651,9 +1651,14 @@ const pipelineSteps = [
                           <Icon className="h-6 w-6 text-slate-700" />
                         </div>
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-900">{step.title}</h3>
-                      <p className="mt-3 text-sm leading-7 text-slate-600">{step.description}</p>
-                    </CardContent>
+                     <h3 className="text-[20px] font-semibold text-slate-900">
+                      {step.title}
+                  </h3>
+
+                  <p className="mt-3 text-[18px] leading-8 text-slate-700">
+                  {step.description}
+                  </p>
+                  </CardContent>
                   </Card>
                 );
               })}

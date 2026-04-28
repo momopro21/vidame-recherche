@@ -1672,34 +1672,20 @@ const pipelineSteps = [
             : "Need a complete data processing framework?"}
           </h3>
         <p className="mx-auto mt-3 max-w-2xl text-[18px] leading-8 text-slate-700">
-  {lang === "fr" ? (
-    <>
-      Vidame peut intervenir en amont de l’analyse pour préparer,
-      <br />
-      structurer et sécuriser vos données qualitatives.
-    </>
-  ) : (
-    <>
-      Vidame can step in upstream of analysis to prepare,
-      <br />
-      structure, and secure your qualitative data.
-    </>
-  )}
-</p><p className="mx-auto mt-3 max-w-2xl text-[18px] leading-8 text-slate-700">
-  {lang === "fr" ? (
-    <>
-      Vidame peut intervenir en amont de l’analyse pour préparer,
-      <br />
-      structurer et sécuriser vos données qualitatives.
-    </>
-  ) : (
-    <>
-      Vidame can step in upstream of analysis to prepare,
-      <br />
-      structure, and secure your qualitative data.
-    </>
-  )}
-</p>
+        {lang === "fr" ? (
+          <>
+            Vidame peut intervenir en amont de l’analyse pour préparer,
+            <br />
+            structurer et sécuriser vos données qualitatives.
+          </>
+        ) : (
+        <>
+            Vidame can step in upstream of analysis to prepare,
+            <br />
+            structure, and secure your qualitative data.
+          </>
+          )}
+         </p>
           <button
             className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
             onClick={() => setPage("soumission")}

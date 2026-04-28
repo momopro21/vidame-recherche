@@ -1911,7 +1911,7 @@ function Blog({ lang }: { lang: "fr" | "en" }) {
 
       {/* ===== VIDAME_REPERE_GRILLE_BLOG ===== */}
       <div className="mt-12 rounded-[2rem] border border-slate-200 bg-slate-50 px-8 py-14 text-center">
-        <div className="text-[18px] leading-8 text-slate-700">
+       <div className="mx-auto max-w-2xl text-[18px] leading-8 text-slate-700">
           {lang === "fr"
             ? "Les premiers articles sont en préparation. Le blogue Vidame accueillera bientôt des réflexions sur les méthodes de travail, les outils contemporains et les transformations de la recherche qualitative."
             : "The first articles are in preparation. The Vidame blog will soon feature reflections on working methods, contemporary tools, and transformations in qualitative research."}

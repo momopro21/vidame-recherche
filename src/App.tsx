@@ -1882,7 +1882,7 @@ function Soumission({ lang = "fr" }: { lang?: "fr" | "en" }) {
         </div>
 
         {/* ===== VIDAME_REPERE_BOUTON_ENVOI_SOUMISSION ===== */}
-        <Button type="submit" className="mt-8 rounded-full">
+       <Button type="submit" className="mt-8 rounded-full px-6 py-3 text-[17px] font-medium">
           {t.submit}
         </Button>
       </form>

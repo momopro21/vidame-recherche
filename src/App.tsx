@@ -1700,7 +1700,7 @@ const pipelineSteps = [
           )}
          </p>
           <button
-            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+            className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-black px-6 py-3 text-[17px] font-medium text-white transition hover:bg-slate-800"
             onClick={() => setPage("soumission")}
           >
              {lang === "fr" ? "Obtenir un devis" : "Request a quote"}{" "}

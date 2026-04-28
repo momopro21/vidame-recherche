@@ -1327,7 +1327,7 @@ function ServicesPage({
   setPage: (page: string) => void;
   lang: "fr" | "en";
 }) {
-  const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("carte");
+  const [activeTab, setActiveTab] = useState<"carte" | "pipeline">("pipeline");
   const [expandedService, setExpandedService] = useState<number | null>(null);
 
  // ===== VIDAME_REPERE_DONNEES_SERVICES =====

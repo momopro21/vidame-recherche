@@ -280,98 +280,82 @@ return (
         </nav>
 
         {/* ===== VIDAME_REPERE_ACTIONS_HEADER ===== */}
-        <div className="flex items-center gap-3">
-          {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
-          <div className="hidden items-center gap-2 md:flex">
-            <button
-              onClick={() => setLang("fr")}
-              className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
-            >
-              FR
-            </button>
-            <span className="text-slate-500">|</span>
-            <button
-              onClick={() => setLang("en")}
-              className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
-            >
-              EN
-            </button>
-          </div>
-        {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
-<div className="hidden items-center gap-2 md:flex">
+<div className="flex items-center gap-3">
+  {/* ===== VIDAME_REPERE_SWITCH_LANGUE ===== */}
+  <div className="hidden items-center gap-2 md:flex">
+    <button
+      onClick={() => setLang("fr")}
+      className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
+    >
+      FR
+    </button>
+    <span className="text-slate-500">|</span>
+    <button
+      onClick={() => setLang("en")}
+      className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
+    >
+      EN
+    </button>
+  </div>
+
+  {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
   <button
-    onClick={() => setLang("fr")}
-    className={`text-sm ${lang === "fr" ? "font-semibold underline" : "opacity-60"}`}
+    className="rounded-xl border border-slate-200 p-2 md:hidden"
+    onClick={() => setOpen((v) => !v)}
+    aria-label="Ouvrir le menu"
   >
-    FR
-  </button>
-  <span className="text-slate-500">|</span>
-  <button
-    onClick={() => setLang("en")}
-    className={`text-sm ${lang === "en" ? "font-semibold underline" : "opacity-60"}`}
-  >
-    EN
+    {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
   </button>
 </div>
+</div>
 
-         {/* ===== VIDAME_REPERE_BOUTON_MENU_MOBILE ===== */}
-<button
-  className="rounded-xl border border-slate-200 p-2 md:hidden"
-  onClick={() => setOpen((v) => !v)}
-  aria-label="Ouvrir le menu"
->
-  {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-</button>
-        </div>
-      </div>
-
-      {/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="border-t border-slate-200 bg-white md:hidden"
+{/* ===== VIDAME_REPERE_MENU_MOBILE ===== */}
+<AnimatePresence>
+  {open && (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: "auto", opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      className="border-t border-slate-200 bg-white md:hidden"
+    >
+      <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
+        <div className="mb-2 flex items-center gap-3 border-b border-slate-200 px-4 pb-3">
+          <button
+            onClick={() => setLang("fr")}
+            className={`text-[16px] ${
+              lang === "fr" ? "font-semibold underline" : "opacity-60"
+            }`}
           >
-            <div className="mx-auto flex max-w-7xl flex-col px-4 py-3">
-              <div className="mb-2 flex items-center gap-3 border-b border-slate-200 px-4 pb-3">
-                <button
-                  onClick={() => setLang("fr")}
-                  className={`text-[16px] ${
-                    lang === "fr" ? "font-semibold underline" : "opacity-60"
-                  }`}
-                >
-                  FR
-                </button>
-                <span className="text-slate-500">|</span>
-                <button
-                  onClick={() => setLang("en")}
-                  className={`text-[16px] ${
-                    lang === "en" ? "font-semibold underline" : "opacity-60"
-                  }`}
-                >
-                  EN
-                </button>
-              </div>
+            FR
+          </button>
+          <span className="text-slate-500">|</span>
+          <button
+            onClick={() => setLang("en")}
+            className={`text-[16px] ${
+              lang === "en" ? "font-semibold underline" : "opacity-60"
+            }`}
+          >
+            EN
+          </button>
+        </div>
 
-              {pages.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => {
-                    setPage(item.id);
-                    setOpen(false);
-                  }}
-                  className="rounded-xl px-4 py-2.5 text-left text-[17px] font-medium text-slate-900 hover:bg-slate-100"
-                >
-                  {lang === "fr" ? item.labelFr : item.labelEn}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
+        {pages.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => {
+              setPage(item.id);
+              setOpen(false);
+            }}
+            className="rounded-xl px-4 py-2.5 text-left text-[17px] font-medium text-slate-900 hover:bg-slate-100"
+          >
+            {lang === "fr" ? item.labelFr : item.labelEn}
+          </button>
+        ))}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+</header>
     
     {/* ===== VIDAME_REPERE_CONTENU_PRINCIPAL ===== */}
       <main>

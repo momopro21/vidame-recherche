@@ -858,13 +858,13 @@ return (
 
   <p className="mt-3 text-[18px] leading-relaxed text-slate-500">
     {lang === "fr"
-      ? "À partir des données brutes produites sur le terrain, la chaîne opératoire Vidame conduit à un corpus structuré, prêt pour l’analyse. À chaque étape, le traitement vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine ciblée."
+      ? "À partir des données brutes colletées sur le terrain, la chaîne opératoire Vidame produit un corpus structuré, prêt pour l’analyse. Chaque étape vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine manuelle."
       : "Starting from raw data produced in the field, the Vidame operational chain leads to a structured corpus ready for analysis. At each step, the process aims to organize the content without altering its meaning, combining automation with targeted human validation."}
   </p>
 
   <p className="mt-4 text-[18px] leading-relaxed text-slate-500">
     {lang === "fr"
-      ? "Le résultat est un corpus segmenté en unités de sens, structuré dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation avec des logiciels comme NVivo, MAXQDA, Delve et autres, dans le respect des exigences de confidentialité et de sécurité des données attendues dans les recherches encadrées par des comités d’éthique."
+      ? "Le résultat présente un corpus segmenté en unités de sens, dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation des logiciels CAQDAS, comme NVivo, MAXQDA, LibreQDA, QDA Miner et autres. Le traitement des corpus brut effectué par Vidame respecte les exigences de confidentialité et de sécurité des données exigées par les comités d’éthique et les lois gouvernementales sur la souveraineté des données au Canada et au Québec."
       : "The result is a corpus segmented into units of meaning, structured in a tabular format (Excel or CSV compatible), ready for team coding or for use with software such as NVivo, MAXQDA, Delve, and others, while meeting the confidentiality and data security requirements expected in ethics-governed research."}
   </p>
 </div>

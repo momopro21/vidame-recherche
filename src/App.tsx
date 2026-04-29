@@ -851,7 +851,7 @@ return (
 </div>
 </div>
 {/* ===== CONCLUSION ===== */}
-<div className="mx-auto mt-16 max-w-2xl text-center">
+<div className="mx-auto mt-16 max-w-xl text-center">
   <h3 className="text-xl font-semibold text-slate-900">
     {lang === "fr" ? "Du terrain à l’analyse" : "From fieldwork to analysis"}
   </h3>

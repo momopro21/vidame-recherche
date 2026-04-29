@@ -864,7 +864,7 @@ return (
 
   <p className="mt-4 text-[18px] leading-relaxed text-slate-500">
     {lang === "fr"
-      ? "Le résultat présente un corpus segmenté en unités de sens, dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation des logiciels CAQDAS, comme NVivo, MAXQDA, LibreQDA, QDA Miner et autres. Le traitement des corpus brut effectué par Vidame respecte les exigences de confidentialité et de sécurité des données exigées par les comités d’éthique et les lois gouvernementales sur la souveraineté des données au Canada et au Québec."
+      ? "Le résultat présente un corpus segmenté en unités de sens, dans un format tabulaire (compatible Excel ou CSV), prêt pour le codage en équipe ou pour l’utilisation des logiciels CAQDAS (NVivo, MAXQDA, LibreQDA, QDA Miner). Le traitement des corpus brut effectué par Vidame respecte les exigences de confidentialité et de sécurité des données exigées par les comités d’éthique et les lois gouvernementales sur la souveraineté des données au Canada et au Québec."
       : "The result is a corpus segmented into units of meaning, structured in a tabular format (Excel or CSV compatible), ready for team coding or for use with software such as NVivo, MAXQDA, Delve, and others, while meeting the confidentiality and data security requirements expected in ethics-governed research."}
   </p>
 </div>

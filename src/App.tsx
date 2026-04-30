@@ -525,7 +525,7 @@ return (
   {/* ===== VIDAME_REPERE_TEXTE_HERO_ACCUEIL ===== */}
 <div className="mt-6 h-[2px] w-24 bg-slate-500 md:mx-auto"></div>
 
-<div className="mt-8 text-left text-[20px] font-[350] leading-7 text-slate-900 md:mx-auto md:max-w-xl md:text-center">
+<div className="mt-8 text-left text-[20px] font-[350] leading-7 text-slate-900 md:mx-auto md:max-w-lg md:text-center">
   {lang === "fr" ? (
     <>
       <p>
@@ -540,7 +540,7 @@ return (
           Mais une question demeure.
         </p>
 
-        <p className="mt-3 text-[20px] font-medium leading-[0.98] text-slate-900 md:mx-auto md:max-w-[520px] md:text-center">
+        <p className="mt-3 text-[20px] font-medium leading-[1.3] text-slate-900 md:mx-auto md:max-w-[520px] md:text-center">
           Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
         </p>
       </div>

@@ -540,7 +540,7 @@ return (
           Mais une question demeure.
         </p>
 
-        <p className="mt-3 text-[20px] font-medium leading-[1.1] text-slate-900 md:mx-auto md:max-w-[520px] md:text-center">
+        <p className="mt-3 text-[20px] font-medium leading-[0.98] text-slate-900 md:mx-auto md:max-w-[520px] md:text-center">
           Comment intégrer ces outils sans perdre la maîtrise des données, du sens et des exigences éthiques qui encadrent la recherche ?
         </p>
       </div>

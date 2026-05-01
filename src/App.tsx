@@ -857,10 +857,18 @@ return (
   </h3>
 
   <p className="mt-3 text-[18px] leading-relaxed text-slate-500">
-    {lang === "fr"
-      ? "À partir des données brutes colletées sur le terrain, la chaîne opératoire Vidame produit un corpus structuré, prêt pour l’analyse. Chaque étape vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine manuelle."
-      : "Starting from raw data produced in the field, the Vidame operational chain leads to a structured corpus ready for analysis. At each step, the process aims to organize the content without altering its meaning, combining automation  <br with targeted human validation. />"}
-  </p>
+  {lang === "fr" ? (
+    "À partir des données brutes colletées sur le terrain, la chaîne opératoire Vidame produit un corpus structuré, prêt pour l’analyse. Chaque étape vise à organiser le contenu sans en altérer le sens, en combinant automatisation et validation humaine manuelle."
+  ) : (
+    <>
+      Starting from raw data produced in the field, the Vidame operational
+      chain leads to a structured corpus ready for analysis. At each step,
+      the process aims to organize the content without altering its meaning,
+      combining automation <br />
+      with targeted human validation.
+    </>
+  )}
+</p>
 
   <p className="mt-4 text-[18px] leading-relaxed text-slate-500">
     {lang === "fr"

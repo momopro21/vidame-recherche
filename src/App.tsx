@@ -529,7 +529,7 @@ return (
   {lang === "fr" ? (
     <>
       <p>
-        Dans le contexte actuel de transformation numérique des pratiques de recherche qualitative, les outils d’intelligence artificielle redéfinissent rapidement les pratiques de traitement des données qualitatives.
+        Dans le contexte actuel de transformation numérique des pratiques de recherche qualitative, les outils d’intelligence artificielle redéfinissent rapidement les modalités de traitement des données qualitatives.
       </p>
 
       <div className="mt-6 space-y-2 text-[20px] font-[350] leading-7 text-slate-900 md:mx-auto md:max-w-xl md:text-center">
